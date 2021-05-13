@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - avatar
+  - hozana
+  - BracoL
+  - BracoR
+  - Corpo_female
+  - Cabelo_female
+  - Calca_female
+  - Camisa_female
+  - Iris_female
+  - Olhos_female
+  - icaro
+  - Corpo_male
+  - Cabelo_male
+  - Calca_male
+  - Camisa_male
+  - Iris_male
+  - Olhos_male
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 3d
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

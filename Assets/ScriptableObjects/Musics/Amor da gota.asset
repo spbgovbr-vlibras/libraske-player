@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b7b916552a7c74daa8dcfef954fe03, type: 3}
+  m_Name: Amor da gota
+  m_EditorClassIdentifier: 
+  _sprite: {fileID: 21300000, guid: 89144a5aec5c5774d9538de5b4fb19a9, type: 3}
+  _name: Amor da gota
+  _author: Os Gonzagas
+  _id: 1
+  _minutesDuration: 2
+  _secondsDuration: 24
