@@ -5,8 +5,7 @@ public partial class SubtitleBar : MonoBehaviour
 {
     private const int ValuePerUpperCaseCharacter = 86;
     private const int ValuePerLowerCaseCharacter = 66;
-    private const int ValuePerSpaceCharacter = 38;
-    private const int ValuePerSpecialCharacter = 22;
+    private const int ValuePerSpecialCharacter = 40;
 
     private const int ValuePerTinyLetterLow = 36; // i, I, l, t, T, 1, j
     private const int ValuePerLetterRLower = 46;
@@ -39,9 +38,6 @@ public partial class SubtitleBar : MonoBehaviour
 
             case 'W':
                 return ValuePerLetterWUpper;
-
-            case ' ':
-                return ValuePerSpaceCharacter;
 
             case 'L':
                 return 0;

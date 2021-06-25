@@ -25,14 +25,7 @@ public partial class SubtitleBar : MonoBehaviour
         int width = 0;
 
         for (int i = 0; i < charArray.Length; i++)
-        {
             width += GetSizeOfBar(charArray[i]);
-
-            if (charArray[i] == 'L')
-                Debug.Log(GetSizeOfBar(charArray[i]));
-        }
-
-        Debug.Log(width);
 
         _image.sizeDelta = new Vector2(width,_height);
     }
