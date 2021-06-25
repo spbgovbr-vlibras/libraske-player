@@ -1,9 +1,7 @@
-﻿namespace Lavid.Libraske.Subtitle
+﻿using Lavid.Libraske.Util;
+
+namespace Lavid.Libraske.Subtitle
 {
-    internal class TimeConversor
-    {
-        public static float ToSeconds(int hours, int minutes, float seconds) => (hours * 60 * 60) + (minutes * 60) + seconds;
-    }
 
     [System.Serializable]
     public class SubtitleInterval
@@ -25,7 +23,7 @@
         private float GetInSeconds(string time)
         {
             string[] _ = time.Split(':');
-            return TimeConversor.ToSeconds(int.Parse(_[0]), int.Parse(_[1]), int.Parse(_[2]));
+            return TimeConversor.ToSeconds(int.Parse(_[0]), int.Parse(_[1]), float.Parse(_[2]));
         }
     }
 }

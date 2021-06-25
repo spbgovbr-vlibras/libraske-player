@@ -6,12 +6,14 @@ using UnityEngine;
 public class Subtitle : MonoBehaviour
 {
     // Variables
-    [SerializeField] private string _folderName = "Musics/falcon";
-    [SerializeField] private string _FileName = "falcon.src";
+    [SerializeField] private string _folderName;
+    [SerializeField] private string _fileName;
+
+    private const string FileExtension = ".lsrt";
 
     private Queue<SubtitleLine> _lineQueue;
 
-    public bool HasNextLine() => _lineQueue.Count >= 1;
+    public bool HasNextLine() => _lineQueue.Count > 0;
     public SubtitleLine GetNextLine() => _lineQueue.Dequeue();
 
     private void Awake() =>_lineQueue = ReadFromFile();
@@ -20,22 +22,18 @@ public class Subtitle : MonoBehaviour
     {
         Queue <SubtitleLine> tempQueue = new Queue<SubtitleLine>();
 
-        string fullFilePath = Path.Combine(Application.dataPath, _folderName, _FileName);
+        string fullFilePath = Path.Combine(Application.dataPath, _folderName, _fileName + FileExtension);
 
         string[] lines = File.ReadAllLines(fullFilePath);
 
-        SubtitleLine line = null;
+        SubtitleLine line;
 
         for (int i = 0; i < lines.Length; i++)
         {
             if (lines[i].Contains("#"))
             {
                 line = new SubtitleLine(new SubtitleInterval(lines[i]), null);
-            }
-
-            if (lines[i].Contains("\""))
-            {
-                string sentence = lines[i].Replace("\"", "");
+                string sentence = lines[++i]; // line after time interval
                 line.SetText(sentence);
                 tempQueue.Enqueue(line);
             }

@@ -8,7 +8,9 @@
         public SubtitleLine(SubtitleInterval interval, string text)
         {
             _interval = interval;
-            _text = text;
+
+            if(_text != null)
+                _text = text;
         }
 
         public SubtitleInterval GetInterval() => _interval;
