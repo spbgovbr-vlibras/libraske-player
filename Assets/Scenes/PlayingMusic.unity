@@ -1147,7 +1147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf449d9e29d5c46408b599bc059761fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _folderName: Resources/Subtitles
+  _folderName: Subtitles
   _fileName: teste
 --- !u!4 &1188997920
 Transform:

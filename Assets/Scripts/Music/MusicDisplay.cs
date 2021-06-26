@@ -10,6 +10,12 @@ public class MusicDisplay : MonoBehaviour
 
     [SerializeField] private MusicSO _music;
 
+    private int _currentSelection;
+
+    public void SetCurrentSelection(int value) => _currentSelection = value;
+    public void Increase() => _currentSelection++;
+    public void Decrease() => _currentSelection--;
+
     private const string TextB4ShowDuration = "Duração: ";
 
     private void OnEnable()

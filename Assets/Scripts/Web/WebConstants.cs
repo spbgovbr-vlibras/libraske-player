@@ -10,6 +10,9 @@ public static class WebConstants
         PontuationURL
     }
 
+    public static string SongIdField = "idSongId";
+    public static string UserIdField = "idUser";
+
     private static Dictionary<URL, string> UrlDictionary;
 
     private static void SetupDictionary()

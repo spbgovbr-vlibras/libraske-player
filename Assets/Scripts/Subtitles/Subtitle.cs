@@ -22,9 +22,11 @@ public class Subtitle : MonoBehaviour
     {
         Queue <SubtitleLine> tempQueue = new Queue<SubtitleLine>();
 
-        string fullFilePath = Path.Combine(Application.dataPath, _folderName, _fileName + FileExtension);
+        string fullFilePath = _folderName + "/" + _fileName;
 
-        string[] lines = File.ReadAllLines(fullFilePath);
+        var mytxtData = Resources.Load<TextAsset>(fullFilePath);
+
+        string[] lines = mytxtData.text.Split('\n');
 
         SubtitleLine line;
 

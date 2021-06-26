@@ -4,7 +4,12 @@ using UnityEngine.Networking;
 
 public static class WebRequest
 {
-    public static string a = "a";
+    public static UnityWebRequest GetTexture(string url)
+    {
+        var request = UnityWebRequestTexture.GetTexture(url);
+        request.downloadHandler = new DownloadHandlerBuffer();
+        return request;
+    }
 
     public static UnityWebRequest Get(WebConstants.URL url, string addicionalURL = "")
     {
