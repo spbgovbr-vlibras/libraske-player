@@ -1,36 +1,28 @@
-﻿using UnityEngine;
+﻿using Lavid.Libraske.UI;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class MusicDisplay : MonoBehaviour
 {
     [SerializeField] private Image _image;
-    [SerializeField] private Text _name;
-    [SerializeField] private Text _author;
-    [SerializeField] private Text _duration;
+    [SerializeField] private TextUI _name;
+    [SerializeField] private TextUI _author;
+    [SerializeField] private TextUI _duration;
 
-    [SerializeField] private MusicSO _music;
+    public int debugValue;
 
-    private int _currentSelection;
 
-    public void SetCurrentSelection(int value) => _currentSelection = value;
-    public void Increase() => _currentSelection++;
-    public void Decrease() => _currentSelection--;
 
-    private const string TextB4ShowDuration = "Duração: ";
-
-    private void OnEnable()
+    public void DisplayMusic(Song music)
     {
-        if (_music != null)
-            SetMusic(_music);
+        //DisplayMusic(music.Thumbnail, music.Name, music.Singers, music.Description, music.Subtitle);
     }
 
-    public void SetMusic(MusicSO music)
+    public void DisplayMusic(Image image, TextUI name, TextUI author, TextUI duration)
     {
-        _music = music;
-
-        _image.sprite = music.GetSprite();
-        _name.text = music.GetName();
-        _author.text = music.GetAuthor();
-        _duration.text = TextB4ShowDuration + music.GetMinutesOfDuration() + ":" + music.GetSecondsOfDuration();
+        _image.sprite = image.sprite;
+        _name.SetText(name.GetText());
+        _author.SetText(author.GetText());
+        _duration.SetText(duration.GetText());
     }
 }

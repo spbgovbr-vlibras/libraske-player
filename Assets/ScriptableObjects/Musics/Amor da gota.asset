@@ -16,5 +16,5 @@ MonoBehaviour:
   _name: Amor da gota
   _author: Os Gonzagas
   _id: 1
-  _minutesDuration: 2
+  _minutesDuration: 10
   _secondsDuration: 24

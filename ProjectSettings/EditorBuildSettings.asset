@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Subtitle.unity
     guid: 2fcbed0e95c5d824c8a6a51c3db0b0c6
+  - enabled: 1
+    path: Assets/Scenes/ApiTesting.unity
+    guid: bfd495204c457224e81e75a0eaa86cb0
   m_configObjects: {}

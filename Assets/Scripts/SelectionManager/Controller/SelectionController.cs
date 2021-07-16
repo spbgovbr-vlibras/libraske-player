@@ -1,31 +1,40 @@
 ﻿using Lavid.Libraske.DataStruct;
-using System;
 using UnityEngine;
 
 public abstract class SelectionController : SelectionSubject
 {
-    [SerializeField] private ClampedValue _currentSelection;
-    [SerializeField] private Selection[] _selections;
+    [SerializeField] private IntClampedValue _currentSelection;
+    [SerializeField] private Wrapper<GameObject> _selectionObservers;
 
-    public event Action OnSelectionChange;
+    private Wrapper<object> _items;
+    private Wrapper<ISelectionObserver> _observers;
 
-    private void Start()
+    private void Awake()
     {
-        for (int i = 0; i < _selections.Length; i++)
-        {
-            _selections[i].ID = i;
-        }
+        _observers = new Wrapper<ISelectionObserver>(_selectionObservers.Length);
 
-        UpdateValues();
+        if (_items == null)
+            _items = new Wrapper<object>();
+
+        for (int i = 0; i < _selectionObservers.Length; i++)
+        {
+            _observers.SetValue(i, _selectionObservers.At(i).GetComponent<ISelectionObserver>());
+            AddObserver(_observers.At(i));
+        }
+            
+        NotifyObservers();
     }
 
-    public ClampedValue GetClampedValue() => _currentSelection;
-
+    protected void Update() => VerifyInputs();
     protected abstract void VerifyInputs();
+
+    public bool IsSelectingLastItem() => _currentSelection.GetCurrentValue() >= _currentSelection.GetMaxValue();
+
+    public int GetQuantityOfItems() => _items.Length;
+    public object GetItem(int index) => _items.At(index);
+
     protected void Increase() => _currentSelection.Add(1);
     protected void Decrease() => _currentSelection.Add(-1);
-    protected void Update() => VerifyInputs();
-
-    /// <summary> Update all selections from this menu with the current value </summary>
-    public void UpdateValues() => NotifyObservers((int)_currentSelection.GetCurrentValue());
+    
+    public void NotifyObservers() => NotifyObservers(_currentSelection.GetCurrentValue());
 }

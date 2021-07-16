@@ -15,7 +15,7 @@ namespace Lavid.Libraske.UI
 
         public void ResetText() => SetText("");
 
-        public string GetValue() => _value;
+        public string GetText() => _value;
 
         public void AddLetter(char letter) => SetText(_value + letter);
 

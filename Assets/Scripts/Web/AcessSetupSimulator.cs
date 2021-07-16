@@ -2,7 +2,7 @@
 
 public class AcessSetupSimulator : MonoBehaviour
 {
-    public AcessSetup acessSetup;
+    public AccessSetup acessSetup;
 
     private void OnEnable()
     {

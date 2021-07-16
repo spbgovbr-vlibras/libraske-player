@@ -9,7 +9,7 @@
             else if (InputManager.GetVerticalAxisRaw() > 0)
                 Decrease();
 
-            UpdateValues();
+            NotifyObservers();
         }
     }
 }

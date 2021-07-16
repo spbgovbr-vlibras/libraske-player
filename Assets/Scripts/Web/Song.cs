@@ -1,4 +1,5 @@
-﻿public class Song
+﻿[System.Serializable]
+public class Song
 {
     private string _id;
     private string _singers;

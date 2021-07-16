@@ -17,9 +17,15 @@ public class URLImage : MonoBehaviour
 
         yield return request.SendWebRequest();
 
-        if (request.isNetworkError || request.isHttpError)
+        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
             Debug.Log(request.error);
         else
-            _image.texture = ((DownloadHandlerTexture)request.downloadHandler).texture;
+        {
+            var img = DownloadHandlerTexture.GetContent(request);
+
+            if(img != null)
+                _image.texture = img;
+        }
+            
     }
 }
