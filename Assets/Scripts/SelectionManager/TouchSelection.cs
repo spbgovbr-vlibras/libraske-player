@@ -10,28 +10,7 @@ public class TouchSelection : MonoBehaviour, ITouchComponent
     [SerializeField] private UnityEvent _onEnter;
     [SerializeField] private UnityEvent _onExit;
 
-    private const string AnimIsDown = "isDown";
-    private const string AnimOnPress = "isPressed";
-
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        if(_anim != null)
-            _anim.SetTrigger(AnimOnPress);
-
-        _onClick?.Invoke();
-    }
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        if (_anim != null)
-            _anim.SetBool(AnimIsDown, true);
-
-        _onEnter?.Invoke();
-    }
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        if (_anim != null)
-            _anim.SetBool(AnimIsDown, false);
-
-        _onExit?.Invoke();
-    }
+    public void OnPointerClick(PointerEventData eventData) => _onClick?.Invoke();
+    public void OnPointerEnter(PointerEventData eventData) => _onEnter?.Invoke();
+    public void OnPointerExit(PointerEventData eventData) => _onExit?.Invoke();
 }

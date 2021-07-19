@@ -5,7 +5,7 @@ public class AccessSetup : MonoBehaviour
 {
     public static string RefreshToken { get; private set; }
     public static string AccessToken { get; private set; }
-    public static string Name { get; private set; }
+    public static string UserName { get; private set; }
     public static string Email { get; private set; }
 
     [SerializeField] private UnityEvent _onRecieveData;
@@ -20,8 +20,8 @@ public class AccessSetup : MonoBehaviour
                     AccessToken == null ||
                     AccessToken == "" ||
 
-                    Name == null ||
-                    Name == "" ||
+                    UserName == null ||
+                    UserName == "" ||
 
                     Email == null ||
                     Email == ""
@@ -35,7 +35,7 @@ public class AccessSetup : MonoBehaviour
               Debug.Log(
                 "Refresh Token: " + RefreshToken +
                 " Access Token: " + AccessToken +
-                " Name: " + Name +
+                " Name: " + UserName +
                 " Email " + Email
              );
 
@@ -60,7 +60,7 @@ public class AccessSetup : MonoBehaviour
     public void SetName(string data)
     {
         Debug.Log("Recebeu: " + data);
-        Name = data;
+        UserName = data;
         RecievedNewData();
     }
 
@@ -80,7 +80,7 @@ public class AccessSetup : MonoBehaviour
     {
         RefreshToken = refreshToken;
         AccessToken = accessToken;
-        Name = name;
+        UserName = name;
         Email = email;
 
         Debug.Log(
