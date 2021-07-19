@@ -3,11 +3,12 @@
 public class AcessSetupSimulator : MonoBehaviour
 {
     public AccessSetup acessSetup;
+    public string userName;
 
     private void OnEnable()
     {
         string id = "562e354d-772b-492a-8c28-ce7d29735324";
-        string name = "admintest";
+        string name = userName;//"admintest";
         string email = "admin@test.com";
         string profilePhoto = null;
         string refreshToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcGYiOm51bGwsImlhdCI6MTYyNDQxMTMzNiwiZXhwIjoxNjI0NDk3NzM2fQ.zBsHAk1u-8UK8WWT1V3h6LzYorMGdNq78rSs05jTWPk";
