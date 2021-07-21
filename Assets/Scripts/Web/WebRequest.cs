@@ -7,7 +7,7 @@ public static class WebRequest
     public static UnityWebRequest GetTexture(string url)
     {
         var request = UnityWebRequestTexture.GetTexture(url);
-        request.downloadHandler = new DownloadHandlerBuffer();
+        //request.downloadHandler = new DownloadHandlerBuffer();
         return request;
     }
 

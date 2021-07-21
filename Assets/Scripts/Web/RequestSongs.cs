@@ -1,10 +1,11 @@
-﻿using System.Collections;
+﻿using Lavid.Libraske.DataStruct;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 
 public class RequestSongs : MonoBehaviour
 {
-    private Song[] _songs;
+    private Wrapper<Music> _songs;
 
     void Start()
     {

@@ -1,15 +1,16 @@
-﻿[System.Serializable]
-public class Song
+﻿using UnityEngine;
+
+[System.Serializable]
+public class Music
 {
-    private string _id;
-    private string _singers;
-    private string _name;
-    private string _description;
+    [SerializeField] private string _id;
+    [SerializeField] private string _singers;
+    [SerializeField] private string _name;
+    [SerializeField, TextArea(5, 10)] private string _description;
+    [SerializeField] private string _subtitle;
+    [SerializeField] private string _thumbnail;
 
-    private string _subtitle;
-    private string _thumbnail;
-
-    public Song(string id, string singers, string name, string description, string subtitle, string thumbnail)
+    public Music(string id, string singers, string name, string description, string subtitle, string thumbnail)
     {
         _id = id;
         _singers = singers;

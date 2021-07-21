@@ -3,29 +3,42 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(RawImage))]
-public class URLImage : MonoBehaviour
+namespace Lavid.Libraske.UI
 {
-    [SerializeField] private RawImage _image;
-    [SerializeField] private string _url;
-
-    private void Awake() => StartCoroutine(DownloadImage());
-
-    private IEnumerator DownloadImage()
+    [RequireComponent(typeof(RawImage))]
+    public class URLImage : MonoBehaviour
     {
-        var request = WebRequest.GetTexture(_url);
+        [SerializeField] private RawImage _image;
+        [SerializeField, Tooltip("Texture to apply case fail to get image from url")] private Texture _applyCaseFail;
 
-        yield return request.SendWebRequest();
-
-        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
-            Debug.Log(request.error);
-        else
+        public void SetImageFrom(string url)
         {
-            var img = DownloadHandlerTexture.GetContent(request);
-
-            if(img != null)
-                _image.texture = img;
+            if(gameObject.activeInHierarchy)
+                StartCoroutine(DownloadImage(url));
         }
-            
+
+        private IEnumerator DownloadImage(string url)
+        {
+            var request = WebRequest.GetTexture(url);
+
+            yield return request.SendWebRequest();
+
+            if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+            {
+                Debug.Log("[URL Image]: " + request.error);
+
+                if (_applyCaseFail != null)
+                    _image.texture = _applyCaseFail;
+            }
+            else
+            {
+                var img = DownloadHandlerTexture.GetContent(request);
+
+                if (img != null)
+                    _image.texture = img;
+            }
+        }
+
+        private void OnDestroy() => StopAllCoroutines();
     }
 }

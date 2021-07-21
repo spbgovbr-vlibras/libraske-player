@@ -5,7 +5,6 @@ using UnityEngine.EventSystems;
 
 public class TouchSelection : MonoBehaviour, ITouchComponent
 {
-    [SerializeField] private Animator _anim;
     [SerializeField] private UnityEvent _onClick;
     [SerializeField] private UnityEvent _onEnter;
     [SerializeField] private UnityEvent _onExit;
