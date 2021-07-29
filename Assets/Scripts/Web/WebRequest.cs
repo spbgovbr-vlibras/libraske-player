@@ -20,6 +20,25 @@ public static class WebRequest
         return request;
     }
 
+    public static UnityWebRequest SendFrame(
+                                                WebConstants.URL url,
+                                                int frameId,
+                                                byte[] image,
+                                                string sessionId, 
+                                                string addicionalURL = ""
+                                            )
+    {
+        WWWForm form = new WWWForm();
+
+        form.AddField(WebConstants.FrameIdField, frameId);
+
+        if (image != null)
+            form.AddBinaryData("frame", image, $"{sessionId}-{frameId}.png", "image/png");
+
+        UnityWebRequest www = UnityWebRequest.Post(url + addicionalURL, form);
+        return www;
+    }
+
     public static UnityWebRequest Post(WebConstants.URL url, string jsonString, string addicionalURL = "")
     {
         string urlValue = WebConstants.GetString(url) + addicionalURL;

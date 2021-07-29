@@ -1,10 +1,12 @@
 ﻿using Lavid.Libraske.DataStruct;
+using Lavid.Libraske.Json;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 
 public class RequestSongs : MonoBehaviour
 {
+    [SerializeField] private MusicMenu _musicMenu;
     private Wrapper<Music> _songs;
 
     void Start()
@@ -24,13 +26,15 @@ public class RequestSongs : MonoBehaviour
         {
             case UnityWebRequest.Result.ConnectionError:
             case UnityWebRequest.Result.DataProcessingError:
-                Debug.LogError("[RequestSongs]:  " + ": Error: " + webRequest.error);
+                Debug.LogError("[RequestSongs]:  " + ": Error: " + webRequest.error + " at " + url);
                 break;
             case UnityWebRequest.Result.ProtocolError:
                 Debug.LogError("[RequestSongs]:  " + ": HTTP Error: " + webRequest.error);
                 break;
             case UnityWebRequest.Result.Success:
                 Debug.Log("[RequestSongs]:  " + ":\nReceived: " + webRequest.downloadHandler.text);
+                _songs = JsonArray.FromJson<Music>(webRequest.downloadHandler.text);
+                _musicMenu.SetMusics(_songs);
                 break;
         }   
     }

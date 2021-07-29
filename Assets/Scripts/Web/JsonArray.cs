@@ -11,6 +11,11 @@ namespace Lavid.Libraske.Json
             return wrapper;
         }
 
+        public static string ToJson<T>(Wrapper<T> wrapper)
+        {
+            return JsonUtility.ToJson(wrapper);
+        }
+
         public static string ToJson<T>(T[] array)
         {
             Wrapper<T> wrapper = new Wrapper<T>(array);
