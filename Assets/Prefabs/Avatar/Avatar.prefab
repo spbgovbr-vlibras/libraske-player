@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7036949472460775385}
   - component: {fileID: 7036949472460775384}
   - component: {fileID: 7036949472460775387}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,6 +53,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -125,7 +126,7 @@ GameObject:
   - component: {fileID: 7036949472711458103}
   - component: {fileID: 7036949472711458102}
   - component: {fileID: 7036949472711458089}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: busto_dir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,6 +166,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -236,7 +238,7 @@ GameObject:
   - component: {fileID: 7036949472902167666}
   - component: {fileID: 7036949472902167669}
   - component: {fileID: 7036949472902167668}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mao_esq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -276,6 +278,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -328,7 +331,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577184}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnSobrancCentro_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -358,7 +361,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577186}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnSobrancLateral.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -389,7 +392,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577188}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnSobrancLateral.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -419,7 +422,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577190}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnSobrancLateral.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -450,7 +453,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577192}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnSobrancCentro.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -481,7 +484,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577194}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnSobrancCentro.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -511,7 +514,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577196}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnSobrancCentro.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -542,7 +545,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577198}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnSobrancCentro.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -563,80 +566,6 @@ Transform:
   m_Father: {fileID: 7036949473201577196}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7036949473201405968
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7036949473201577200}
-  - component: {fileID: 7036949473202127624}
-  m_Layer: 0
-  m_Name: Camera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &7036949473201577200
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7036949473201405968}
-  m_LocalRotation: {x: 0.00009467313, y: -0.9999043, z: 0.009015162, w: 0.010499358}
-  m_LocalPosition: {x: 0.3000546, y: 3.4530578, z: 18.045546}
-  m_LocalScale: {x: 100.00001, y: 100.00001, z: 100}
-  m_Children: []
-  m_Father: {fileID: 7036949473201577228}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!20 &7036949473202127624
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7036949473201405968}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 2
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 32, y: 18}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 35
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.099999994
-  far clip plane: 100
-  field of view: 28.841547
-  orthographic: 0
-  orthographic size: 0.0025714263
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
 --- !u!1 &7036949473201405970
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,7 +576,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036949473201577202}
   - component: {fileID: 7036949473198230560}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Camisa
   m_TagString: Camisa_female
   m_Icon: {fileID: 0}
@@ -666,7 +595,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 7036949473201577228}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &7036949473198230560
 SkinnedMeshRenderer:
@@ -679,6 +608,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -813,7 +743,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036949473201577204}
   - component: {fileID: 7036949473198230562}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dentes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -832,7 +762,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 7036949473201577228}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &7036949473198230562
 SkinnedMeshRenderer:
@@ -845,6 +775,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -978,7 +909,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577206}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ik_FK.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1009,7 +940,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577208}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnSobrancLateral.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1040,7 +971,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036949473201577210}
   - component: {fileID: 7036949473198230570}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cabecaModifAlisson
   m_TagString: Corpo_female
   m_Icon: {fileID: 0}
@@ -1072,6 +1003,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1206,7 +1138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036949473201577212}
   - component: {fileID: 7036949473198230572}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cabelo
   m_TagString: Cabelo_female
   m_Icon: {fileID: 0}
@@ -1238,6 +1170,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1372,7 +1305,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036949473201577214}
   - component: {fileID: 7036949473198230574}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Calca
   m_TagString: Calca_female
   m_Icon: {fileID: 0}
@@ -1404,6 +1337,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1538,7 +1472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036949473201576960}
   - component: {fileID: 7036949473195428872}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Light_Cold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1557,7 +1491,7 @@ Transform:
   m_LocalScale: {x: 99.99999, y: 99.99999, z: 100}
   m_Children: []
   m_Father: {fileID: 7036949473201577228}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &7036949473195428872
 Light:
@@ -1618,6 +1552,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1 &7036949473201405986
@@ -1630,7 +1565,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036949473201576962}
   - component: {fileID: 7036949473195428874}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Light_Hot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1649,7 +1584,7 @@ Transform:
   m_LocalScale: {x: 99.999985, y: 99.99999, z: 99.99999}
   m_Children: []
   m_Father: {fileID: 7036949473201577228}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &7036949473195428874
 Light:
@@ -1710,6 +1645,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1 &7036949473201405988
@@ -1722,7 +1658,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036949473201576964}
   - component: {fileID: 7036949473195428876}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Light_Spot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1741,7 +1677,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 7036949473201577228}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &7036949473195428876
 Light:
@@ -1802,6 +1738,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1 &7036949473201405990
@@ -1814,7 +1751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036949473201576966}
   - component: {fileID: 7036949473198230566}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Lingua
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1833,7 +1770,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 7036949473201577228}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &7036949473198230566
 SkinnedMeshRenderer:
@@ -1846,6 +1783,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1979,7 +1917,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201576968}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ik_FK.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2009,7 +1947,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201576970}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ik_FK.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2040,7 +1978,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201576972}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ik_FK.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2071,7 +2009,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036949473201576974}
   - component: {fileID: 7036949473198230564}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Iris
   m_TagString: Iris_female
   m_Icon: {fileID: 0}
@@ -2090,7 +2028,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 7036949473201577228}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &7036949473198230564
 SkinnedMeshRenderer:
@@ -2103,6 +2041,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2237,7 +2176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036949473201576984}
   - component: {fileID: 7036949473198230584}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Olhos
   m_TagString: Olhos_female
   m_Icon: {fileID: 0}
@@ -2256,7 +2195,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 7036949473201577228}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &7036949473198230584
 SkinnedMeshRenderer:
@@ -2269,6 +2208,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2403,7 +2343,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036949473201576986}
   - component: {fileID: 7036949473198230586}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pupila
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2422,7 +2362,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 7036949473201577228}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &7036949473198230586
 SkinnedMeshRenderer:
@@ -2435,6 +2375,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2568,7 +2509,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577312}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2599,7 +2540,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577314}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2630,7 +2571,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577316}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.007_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2660,7 +2601,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577318}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2691,7 +2632,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577320}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2722,7 +2663,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577322}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2753,7 +2694,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577324}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2784,7 +2725,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577326}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.005_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2814,7 +2755,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577328}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.011_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2844,7 +2785,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577330}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2875,7 +2816,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577332}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2906,7 +2847,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577334}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.013_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2936,7 +2877,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577336}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2967,7 +2908,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577338}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.009_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2997,7 +2938,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577340}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3028,7 +2969,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577342}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3059,7 +3000,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577088}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnLabioCentroInfer_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3089,7 +3030,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577090}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnLabioCentroSuper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3120,7 +3061,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577092}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnLabioCentroSuper_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3150,7 +3091,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577094}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnLingua
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3181,7 +3122,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577096}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3212,7 +3153,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577098}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDirigeQueixo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3243,7 +3184,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577100}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDirigeQueixo_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3273,7 +3214,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577102}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnLabioCentroInfer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3304,7 +3245,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577104}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnMandibula
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3336,7 +3277,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577106}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnMao.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3372,7 +3313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577108}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnMao.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3407,7 +3348,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577110}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnMaoOrient.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3438,7 +3379,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577112}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnLingua.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3469,7 +3410,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577114}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnLingua.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3500,7 +3441,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577116}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnLingua.002_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3530,7 +3471,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577118}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnLingua.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3561,7 +3502,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577120}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnOlho.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3591,7 +3532,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577122}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnOlho.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3622,7 +3563,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577124}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnOlho.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3652,7 +3593,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577126}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnOlhoMira.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3683,7 +3624,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577128}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnMaoOrient.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3713,7 +3654,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577130}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnMaoOrient.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3744,7 +3685,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577132}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnMaoOrient.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3774,7 +3715,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577134}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnOlho.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3805,7 +3746,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577136}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnOmbro.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3836,7 +3777,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577138}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnOmbro.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3867,7 +3808,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577140}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPalpebInfe.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3898,7 +3839,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577142}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPalpebInfe.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3928,7 +3869,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577144}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnOlhoMira.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3958,7 +3899,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577146}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnOlhoMira.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3989,7 +3930,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577148}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnOlhoMira.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4019,7 +3960,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577150}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnOlhosMira
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4051,7 +3992,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577152}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPalpebSuper.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4082,7 +4023,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577154}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPalpebSuper.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4112,7 +4053,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577156}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPerna.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4143,7 +4084,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577158}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPerna.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4173,7 +4114,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577160}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPalpebInfe.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4204,7 +4145,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577162}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPalpebInfe.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4234,7 +4175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577164}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPalpebSuper.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4265,7 +4206,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577166}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPalpebSuper.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4295,7 +4236,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577168}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPolyV.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4325,7 +4266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577170}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPolyV.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4356,7 +4297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577172}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPolyV.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4386,7 +4327,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577174}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnSobrancCentro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4417,7 +4358,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577176}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPerna.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4448,7 +4389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577178}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPerna.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4478,7 +4419,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577180}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPescoco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4509,7 +4450,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577182}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPolyV.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4540,7 +4481,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577216}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnAntBraco.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4571,7 +4512,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577218}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnAntBraco.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4602,7 +4543,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577220}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnAntBraco.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4634,7 +4575,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577222}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBacia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4667,7 +4608,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036949473201577224}
   - component: {fileID: 7036949473198230568}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Acessorios
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4699,6 +4640,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4832,7 +4774,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577226}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Armature.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4871,13 +4813,13 @@ GameObject:
   - component: {fileID: 7036949473201577228}
   - component: {fileID: 7036949473299333895}
   - component: {fileID: 7036949473299333892}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Avatar_Female
   m_TagString: hozana
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7036949473201577228
 Transform:
   m_ObjectHideFlags: 0
@@ -4886,7 +4828,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7036949473201406252}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -24.74, y: 0, z: -1.7}
+  m_LocalPosition: {x: 0, y: 0, z: -1.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7036949473201577224}
@@ -4894,7 +4836,6 @@ Transform:
   - {fileID: 7036949473201577210}
   - {fileID: 7036949473201577212}
   - {fileID: 7036949473201577214}
-  - {fileID: 7036949473201577200}
   - {fileID: 7036949473201577202}
   - {fileID: 7036949473201577204}
   - {fileID: 7036949473201576974}
@@ -4989,7 +4930,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577230}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnAntBraco.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5020,7 +4961,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577232}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBocaCanto.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5050,7 +4991,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577234}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBocaCanto.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5081,7 +5022,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577236}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBocaCanto.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5111,7 +5052,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577238}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBochecha.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5142,7 +5083,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577240}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBacia.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5174,7 +5115,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577242}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBacia_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5205,7 +5146,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577244}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBacia_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5236,7 +5177,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577246}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBocaCanto.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5267,7 +5208,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577248}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBraco.R
   m_TagString: BracoR
   m_Icon: {fileID: 0}
@@ -5298,7 +5239,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577250}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnCabeca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5348,7 +5289,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577252}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnCol-01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5379,7 +5320,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577254}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnCol-02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5410,7 +5351,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577256}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBochecha.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5440,7 +5381,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577258}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBochecha.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5471,7 +5412,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577260}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBochecha.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5501,7 +5442,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577262}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBraco.L
   m_TagString: BracoL
   m_Icon: {fileID: 0}
@@ -5532,7 +5473,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577264}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5563,7 +5504,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577266}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5594,7 +5535,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577268}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5625,7 +5566,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577270}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.005_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5655,7 +5596,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577272}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnCol-03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5690,7 +5631,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577274}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5721,7 +5662,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577276}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5752,7 +5693,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577278}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5783,7 +5724,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577280}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5814,7 +5755,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577282}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.009_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5844,7 +5785,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577284}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5875,7 +5816,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577286}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5906,7 +5847,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577288}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5937,7 +5878,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577290}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5968,7 +5909,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577292}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.007_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5998,7 +5939,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577294}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6029,7 +5970,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577296}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6060,7 +6001,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577298}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6091,7 +6032,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577300}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6122,7 +6063,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577302}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6153,7 +6094,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577304}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.011_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6183,7 +6124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577306}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6214,7 +6155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577308}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6245,7 +6186,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473201577310}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.013_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6275,7 +6216,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322209}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6296,7 +6237,7 @@ Transform:
   - {fileID: 7036949473805322237}
   m_Father: {fileID: 7036949473805322191}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -59.931446, y: -7.012465, z: 2.9871187}
+  m_LocalEulerAnglesHint: {x: -0.6947185, y: 0.08066333, z: 0.82644206}
 --- !u!1 &7036949473805621763
 GameObject:
   m_ObjectHideFlags: 0
@@ -6306,7 +6247,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322211}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.009_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6336,7 +6277,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322213}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.011_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6366,7 +6307,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322215}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6387,7 +6328,7 @@ Transform:
   - {fileID: 7036949473805322213}
   m_Father: {fileID: 7036949473805322219}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -47.62302, y: 14.080138, z: -9.4172325}
+  m_LocalEulerAnglesHint: {x: -0.054393698, y: -0.13521373, z: -0.092734724}
 --- !u!1 &7036949473805621769
 GameObject:
   m_ObjectHideFlags: 0
@@ -6397,7 +6338,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322217}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6418,7 +6359,7 @@ Transform:
   - {fileID: 7036949473805322223}
   m_Father: {fileID: 7036949473805322221}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 14.480382, y: 11.879252, z: 11.5558}
+  m_LocalEulerAnglesHint: {x: 1.7086288, y: 7.712857, z: -7.2273674}
 --- !u!1 &7036949473805621771
 GameObject:
   m_ObjectHideFlags: 0
@@ -6428,7 +6369,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322219}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6449,7 +6390,7 @@ Transform:
   - {fileID: 7036949473805322215}
   m_Father: {fileID: 7036949473805322189}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -37.621548, y: -7.664542, z: 6.374428}
+  m_LocalEulerAnglesHint: {x: 0.012469656, y: 1.0113804, z: 0.49576774}
 --- !u!1 &7036949473805621773
 GameObject:
   m_ObjectHideFlags: 0
@@ -6459,7 +6400,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322221}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6480,7 +6421,7 @@ Transform:
   - {fileID: 7036949473805322217}
   m_Father: {fileID: 7036949473805322227}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 10.902961, y: 84.66938, z: 39.717182}
+  m_LocalEulerAnglesHint: {x: -5.379868, y: 61.304028, z: 16.778532}
 --- !u!1 &7036949473805621775
 GameObject:
   m_ObjectHideFlags: 0
@@ -6490,7 +6431,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322223}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.013_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6520,7 +6461,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322225}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6541,7 +6482,7 @@ Transform:
   - {fileID: 7036949473805322231}
   m_Father: {fileID: 7036949473805322229}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -49.66205, y: -5.3516054, z: -3.9587407}
+  m_LocalEulerAnglesHint: {x: 0.011081831, y: -1.6538457, z: 0.27230284}
 --- !u!1 &7036949473805621779
 GameObject:
   m_ObjectHideFlags: 0
@@ -6551,7 +6492,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322227}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6572,7 +6513,7 @@ Transform:
   - {fileID: 7036949473805322221}
   m_Father: {fileID: 7036949473805321737}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: -57.23945, y: -67.86831, z: 42.178066}
+  m_LocalEulerAnglesHint: {x: -19.681894, y: -72.301575, z: 3.5782187}
 --- !u!1 &7036949473805621781
 GameObject:
   m_ObjectHideFlags: 0
@@ -6582,7 +6523,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322229}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6603,7 +6544,7 @@ Transform:
   - {fileID: 7036949473805322225}
   m_Father: {fileID: 7036949473805322187}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -47.92622, y: 14.142491, z: -17.25768}
+  m_LocalEulerAnglesHint: {x: 0.072320774, y: 0.021943292, z: -0.6360905}
 --- !u!1 &7036949473805621783
 GameObject:
   m_ObjectHideFlags: 0
@@ -6613,7 +6554,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322231}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.005_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6643,7 +6584,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322233}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.007_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6673,7 +6614,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322235}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6694,7 +6635,7 @@ Transform:
   - {fileID: 7036949473805322233}
   m_Father: {fileID: 7036949473805322239}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -50.24905, y: 6.3263125, z: -8.511925}
+  m_LocalEulerAnglesHint: {x: 0.043219734, y: -0.5237519, z: 0.156913}
 --- !u!1 &7036949473805621789
 GameObject:
   m_ObjectHideFlags: 0
@@ -6704,7 +6645,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322237}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6725,7 +6666,7 @@ Transform:
   - {fileID: 7036949473805322211}
   m_Father: {fileID: 7036949473805322209}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -57.386616, y: 12.522636, z: -9.425579}
+  m_LocalEulerAnglesHint: {x: -0.63699865, y: -1.2603196, z: -1.1620946}
 --- !u!1 &7036949473805621791
 GameObject:
   m_ObjectHideFlags: 0
@@ -6735,7 +6676,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322239}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6756,7 +6697,7 @@ Transform:
   - {fileID: 7036949473805322235}
   m_Father: {fileID: 7036949473805322185}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -50.288322, y: 2.8361185, z: -9.9407015}
+  m_LocalEulerAnglesHint: {x: -0.027603827, y: -1.2419068, z: -0.3876775}
 --- !u!1 &7036949473805621793
 GameObject:
   m_ObjectHideFlags: 0
@@ -6766,7 +6707,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321729}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnLingua.002_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6796,7 +6737,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321731}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnLingua.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6817,7 +6758,7 @@ Transform:
   - {fileID: 7036949473805321729}
   m_Father: {fileID: 7036949473805321757}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 15.134181, y: 0.00025628798, z: 0.000060498376}
+  m_LocalEulerAnglesHint: {x: 15.134183, y: 0.000254056, z: 0.000058893285}
 --- !u!1 &7036949473805621797
 GameObject:
   m_ObjectHideFlags: 0
@@ -6827,7 +6768,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321733}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnMandibula
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6848,7 +6789,7 @@ Transform:
   - {fileID: 7036949473805321759}
   m_Father: {fileID: 7036949473805322171}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 82.783585, y: -89.753105, z: -179.88847}
+  m_LocalEulerAnglesHint: {x: 64.60691, y: -90.02433, z: 179.97104}
 --- !u!1 &7036949473805621799
 GameObject:
   m_ObjectHideFlags: 0
@@ -6858,7 +6799,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321735}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnLingua.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6879,7 +6820,7 @@ Transform:
   - {fileID: 7036949473805321757}
   m_Father: {fileID: 7036949473805321759}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 8.477986, y: 0.0001469497, z: 0.000017116266}
+  m_LocalEulerAnglesHint: {x: 8.477989, y: 0.00014329577, z: 0.000018283981}
 --- !u!1 &7036949473805621801
 GameObject:
   m_ObjectHideFlags: 0
@@ -6889,7 +6830,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321737}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnMao.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6914,7 +6855,7 @@ Transform:
   - {fileID: 7036949473805322227}
   m_Father: {fileID: 7036949473805322137}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 28.289528, y: -53.71306, z: -27.985203}
+  m_LocalEulerAnglesHint: {x: 3.322793, y: 1.1625422, z: -12.73345}
 --- !u!1 &7036949473805621803
 GameObject:
   m_ObjectHideFlags: 0
@@ -6924,7 +6865,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321739}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnMao.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6949,7 +6890,7 @@ Transform:
   - {fileID: 7036949473805322155}
   m_Father: {fileID: 7036949473805322133}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 1.5172842, y: -1.5129652, z: -0.6763659}
+  m_LocalEulerAnglesHint: {x: 1.5172817, y: -1.5129632, z: -0.6763667}
 --- !u!1 &7036949473805621805
 GameObject:
   m_ObjectHideFlags: 0
@@ -6959,7 +6900,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321741}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnMaoOrient.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6989,7 +6930,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321743}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnMaoOrient.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7010,7 +6951,7 @@ Transform:
   - {fileID: 7036949473805321741}
   m_Father: {fileID: 7036949473805322131}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0.00021084686, y: 0.00017304695, z: 81.89306}
+  m_LocalEulerAnglesHint: {x: 0.00020902262, y: 0.00017646409, z: 81.89306}
 --- !u!1 &7036949473805621809
 GameObject:
   m_ObjectHideFlags: 0
@@ -7020,7 +6961,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321745}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDirigeQueixo_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7050,7 +6991,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321747}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDirigeQueixo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7071,7 +7012,7 @@ Transform:
   - {fileID: 7036949473805321745}
   m_Father: {fileID: 7036949473805322171}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 84.90307, y: -89.9994, z: 179.99896}
+  m_LocalEulerAnglesHint: {x: 84.97476, y: -89.99952, z: 179.99886}
 --- !u!1 &7036949473805621813
 GameObject:
   m_ObjectHideFlags: 0
@@ -7081,7 +7022,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321749}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnLabioCentroInfer_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7111,7 +7052,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321751}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnLabioCentroInfer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7132,7 +7073,7 @@ Transform:
   - {fileID: 7036949473805321749}
   m_Father: {fileID: 7036949473805322171}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 8.859777, y: -89.99991, z: 0.0013448183}
+  m_LocalEulerAnglesHint: {x: 8.8593235, y: -89.99991, z: 0.0013467217}
 --- !u!1 &7036949473805621817
 GameObject:
   m_ObjectHideFlags: 0
@@ -7142,7 +7083,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321753}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnLabioCentroSuper_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7172,7 +7113,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321755}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnLabioCentroSuper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7193,7 +7134,7 @@ Transform:
   - {fileID: 7036949473805321753}
   m_Father: {fileID: 7036949473805322171}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 8.86236, y: -89.99968, z: 0.0010643057}
+  m_LocalEulerAnglesHint: {x: 8.862329, y: -89.99968, z: 0.0010562764}
 --- !u!1 &7036949473805621821
 GameObject:
   m_ObjectHideFlags: 0
@@ -7203,7 +7144,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321757}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnLingua.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7224,7 +7165,7 @@ Transform:
   - {fileID: 7036949473805321731}
   m_Father: {fileID: 7036949473805321735}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 13.761067, y: 0.0002436386, z: 0.00004994782}
+  m_LocalEulerAnglesHint: {x: 13.761068, y: 0.00024350612, z: 0.000052820986}
 --- !u!1 &7036949473805621823
 GameObject:
   m_ObjectHideFlags: 0
@@ -7234,7 +7175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321759}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnLingua
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7255,7 +7196,7 @@ Transform:
   - {fileID: 7036949473805321735}
   m_Father: {fileID: 7036949473805321733}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -36.85021, y: -0.014375835, z: 0.0025528853}
+  m_LocalEulerAnglesHint: {x: -36.85021, y: -0.01437744, z: 0.002555722}
 --- !u!1 &7036949473805621825
 GameObject:
   m_ObjectHideFlags: 0
@@ -7265,7 +7206,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321761}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnOlhoMira.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7295,7 +7236,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321763}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnOlhoMira.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7316,7 +7257,7 @@ Transform:
   - {fileID: 7036949473805321761}
   m_Father: {fileID: 7036949473805321767}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -80.838776, y: -89.98596, z: -90.01614}
+  m_LocalEulerAnglesHint: {x: -80.83884, y: -89.98605, z: -90.01605}
 --- !u!1 &7036949473805621829
 GameObject:
   m_ObjectHideFlags: 0
@@ -7326,7 +7267,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321765}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnOmbro.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7347,7 +7288,7 @@ Transform:
   - {fileID: 7036949473805322167}
   m_Father: {fileID: 7036949473805322173}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -81.26349, y: -131.25153, z: -143.80646}
+  m_LocalEulerAnglesHint: {x: -82.84272, y: 163.91426, z: -79.87311}
 --- !u!1 &7036949473805621831
 GameObject:
   m_ObjectHideFlags: 0
@@ -7357,7 +7298,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321767}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnOlhosMira
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7379,7 +7320,7 @@ Transform:
   - {fileID: 7036949473805321763}
   m_Father: {fileID: 7036949473805322171}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: -8.834608, y: 90.00148, z: -0.00044749433}
+  m_LocalEulerAnglesHint: {x: -8.835139, y: 90.00149, z: -0.0004513359}
 --- !u!1 &7036949473805621833
 GameObject:
   m_ObjectHideFlags: 0
@@ -7389,7 +7330,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321769}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPalpebInfe.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7410,7 +7351,7 @@ Transform:
   - {fileID: 7036949473805321775}
   m_Father: {fileID: 7036949473805322171}
   m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: -5.928969, y: 166.06702, z: 118.64324}
+  m_LocalEulerAnglesHint: {x: -5.8848643, y: 166.0496, z: 103.4846}
 --- !u!1 &7036949473805621835
 GameObject:
   m_ObjectHideFlags: 0
@@ -7420,7 +7361,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321771}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnOmbro.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7441,7 +7382,7 @@ Transform:
   - {fileID: 7036949473805322165}
   m_Father: {fileID: 7036949473805322173}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 4.2228985, y: -14.904658, z: -99.025894}
+  m_LocalEulerAnglesHint: {x: -4.8109202, y: 6.419872, z: -83.601166}
 --- !u!1 &7036949473805621837
 GameObject:
   m_ObjectHideFlags: 0
@@ -7451,7 +7392,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321773}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPalpebInfe.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7472,7 +7413,7 @@ Transform:
   - {fileID: 7036949473805321811}
   m_Father: {fileID: 7036949473805322171}
   m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 6.446433, y: -166.1434, z: 118.702675}
+  m_LocalEulerAnglesHint: {x: 6.389928, y: -166.12343, z: 100.4714}
 --- !u!1 &7036949473805621839
 GameObject:
   m_ObjectHideFlags: 0
@@ -7482,7 +7423,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321775}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPalpebInfe.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7512,7 +7453,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321777}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnMaoOrient.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7542,7 +7483,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321779}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnMaoOrient.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7563,7 +7504,7 @@ Transform:
   - {fileID: 7036949473805321777}
   m_Father: {fileID: 7036949473805322131}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0.0002111519, y: -0.00017300347, z: -81.89306}
+  m_LocalEulerAnglesHint: {x: 0.0002095281, y: -0.00017639203, z: -81.89306}
 --- !u!1 &7036949473805621845
 GameObject:
   m_ObjectHideFlags: 0
@@ -7573,7 +7514,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321781}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnOlho.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7603,7 +7544,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321783}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnOlho.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7624,7 +7565,7 @@ Transform:
   - {fileID: 7036949473805321781}
   m_Father: {fileID: 7036949473805322171}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: -76.99378, y: -86.51316, z: -4.0306883}
+  m_LocalEulerAnglesHint: {x: -88.63958, y: -158.02391, z: 74.63604}
 --- !u!1 &7036949473805621849
 GameObject:
   m_ObjectHideFlags: 0
@@ -7634,7 +7575,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321785}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnOlho.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7664,7 +7605,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321787}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnOlho.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7685,7 +7626,7 @@ Transform:
   - {fileID: 7036949473805321785}
   m_Father: {fileID: 7036949473805322171}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: -77.034454, y: -86.63311, z: -4.506196}
+  m_LocalEulerAnglesHint: {x: -88.68537, y: -157.92233, z: 74.06377}
 --- !u!1 &7036949473805621853
 GameObject:
   m_ObjectHideFlags: 0
@@ -7695,7 +7636,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321789}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnOlhoMira.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7725,7 +7666,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321791}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnOlhoMira.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7746,7 +7687,7 @@ Transform:
   - {fileID: 7036949473805321789}
   m_Father: {fileID: 7036949473805321767}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -80.839165, y: 89.98312, z: 90.01609}
+  m_LocalEulerAnglesHint: {x: -80.83918, y: 89.982994, z: 90.016235}
 --- !u!1 &7036949473805621857
 GameObject:
   m_ObjectHideFlags: 0
@@ -7756,7 +7697,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321793}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPescoco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7777,7 +7718,7 @@ Transform:
   - {fileID: 7036949473805322171}
   m_Father: {fileID: 7036949473805322173}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 22.26598, y: -0.0017104424, z: 0.00090170826}
+  m_LocalEulerAnglesHint: {x: 7.3644896, y: 7.738167, z: 4.054577}
 --- !u!1 &7036949473805621859
 GameObject:
   m_ObjectHideFlags: 0
@@ -7787,7 +7728,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321795}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPerna.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7817,7 +7758,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321797}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPolyV.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7847,7 +7788,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321799}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPolyV.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7878,7 +7819,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321801}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPolyV.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7908,7 +7849,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321803}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPolyV.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7939,7 +7880,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321805}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnSobrancCentro.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7960,7 +7901,7 @@ Transform:
   - {fileID: 7036949473805321843}
   m_Father: {fileID: 7036949473805322171}
   m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: -8.400679, y: 86.08207, z: -3.2754784}
+  m_LocalEulerAnglesHint: {x: -8.400681, y: 86.082085, z: -3.2754774}
 --- !u!1 &7036949473805621871
 GameObject:
   m_ObjectHideFlags: 0
@@ -7970,7 +7911,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321807}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnSobrancCentro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7991,7 +7932,7 @@ Transform:
   - {fileID: 7036949473805321845}
   m_Father: {fileID: 7036949473805322171}
   m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: -8.564862, y: 86.09531, z: -1.8082708}
+  m_LocalEulerAnglesHint: {x: -8.564857, y: 86.09531, z: -1.8082706}
 --- !u!1 &7036949473805621873
 GameObject:
   m_ObjectHideFlags: 0
@@ -8001,7 +7942,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321809}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPalpebSuper.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8022,7 +7963,7 @@ Transform:
   - {fileID: 7036949473805321815}
   m_Father: {fileID: 7036949473805322171}
   m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 3.361823, y: -14.30273, z: -45.736137}
+  m_LocalEulerAnglesHint: {x: 1.9635859, y: -14.51975, z: -71.086914}
 --- !u!1 &7036949473805621875
 GameObject:
   m_ObjectHideFlags: 0
@@ -8032,7 +7973,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321811}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPalpebInfe.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8062,7 +8003,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321813}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPalpebSuper.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8083,7 +8024,7 @@ Transform:
   - {fileID: 7036949473805321819}
   m_Father: {fileID: 7036949473805322171}
   m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: -3.9739785, y: 14.073244, z: -45.81625}
+  m_LocalEulerAnglesHint: {x: -2.4788673, y: 14.442696, z: -70.005394}
 --- !u!1 &7036949473805621879
 GameObject:
   m_ObjectHideFlags: 0
@@ -8093,7 +8034,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321815}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPalpebSuper.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8123,7 +8064,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321817}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPerna.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8154,7 +8095,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321819}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPalpebSuper.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8184,7 +8125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321821}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPerna.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8205,7 +8146,7 @@ Transform:
   - {fileID: 7036949473805321795}
   m_Father: {fileID: 7036949473805322113}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -7.200968, y: -111.61955, z: 83.359856}
+  m_LocalEulerAnglesHint: {x: -7.200964, y: -111.61955, z: 83.359856}
 --- !u!1 &7036949473805621887
 GameObject:
   m_ObjectHideFlags: 0
@@ -8215,7 +8156,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321823}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnPerna.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8246,7 +8187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036949473805321825}
   - component: {fileID: 7036949473802507953}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cabelo
   m_TagString: Cabelo_male
   m_Icon: {fileID: 0}
@@ -8278,6 +8219,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -8412,7 +8354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036949473805321827}
   - component: {fileID: 7036949473802507955}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cabecaModifAlisson
   m_TagString: Corpo_male
   m_Icon: {fileID: 0}
@@ -8444,6 +8386,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -8601,7 +8544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036949473805321829}
   - component: {fileID: 7036949473802507957}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Camisa
   m_TagString: Camisa_male
   m_Icon: {fileID: 0}
@@ -8633,6 +8576,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -8767,7 +8711,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036949473805321831}
   - component: {fileID: 7036949473802507959}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Calca
   m_TagString: Calca_male
   m_Icon: {fileID: 0}
@@ -8799,6 +8743,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -8932,7 +8877,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321833}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ik_FK.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8953,7 +8898,7 @@ Transform:
   - {fileID: 7036949473805321839}
   m_Father: {fileID: 7036949473805322131}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 90, y: 0.0000019914992, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0.000003300124, z: 0}
 --- !u!1 &7036949473805621899
 GameObject:
   m_ObjectHideFlags: 0
@@ -8964,7 +8909,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036949473805321835}
   - component: {fileID: 7036949473802507963}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dentes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8996,6 +8941,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -9129,7 +9075,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321837}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ik_FK.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9150,7 +9096,7 @@ Transform:
   - {fileID: 7036949473805321875}
   m_Father: {fileID: 7036949473805322131}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 90, y: -0.0000019914992, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: -0.000003300124, z: 0}
 --- !u!1 &7036949473805621903
 GameObject:
   m_ObjectHideFlags: 0
@@ -9160,7 +9106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321839}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ik_FK.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9190,7 +9136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321841}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnSobrancCentro.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9211,7 +9157,7 @@ Transform:
   - {fileID: 7036949473805321847}
   m_Father: {fileID: 7036949473805322171}
   m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: -8.400988, y: 93.91785, z: 3.2751968}
+  m_LocalEulerAnglesHint: {x: -8.400994, y: 93.91785, z: 3.2751992}
 --- !u!1 &7036949473805621907
 GameObject:
   m_ObjectHideFlags: 0
@@ -9221,7 +9167,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321843}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnSobrancCentro.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9251,7 +9197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321845}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnSobrancCentro_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9281,7 +9227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321847}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnSobrancCentro.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9311,7 +9257,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321849}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnSobrancLateral.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9341,7 +9287,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321851}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnSobrancLateral.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9362,7 +9308,7 @@ Transform:
   - {fileID: 7036949473805321849}
   m_Father: {fileID: 7036949473805322171}
   m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: -8.277352, y: 85.860794, z: 31.395914}
+  m_LocalEulerAnglesHint: {x: -8.400298, y: 86.082184, z: -3.2755663}
 --- !u!1 &7036949473805621917
 GameObject:
   m_ObjectHideFlags: 0
@@ -9372,7 +9318,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321853}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnSobrancLateral.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9402,7 +9348,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321855}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnSobrancLateral.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9423,7 +9369,7 @@ Transform:
   - {fileID: 7036949473805321853}
   m_Father: {fileID: 7036949473805322171}
   m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: -8.414928, y: 93.85674, z: -14.773745}
+  m_LocalEulerAnglesHint: {x: -8.399586, y: 93.91781, z: 3.2743402}
 --- !u!1 &7036949473805621937
 GameObject:
   m_ObjectHideFlags: 0
@@ -9434,7 +9380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036949473805321873}
   - component: {fileID: 7036949473802507961}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Iris
   m_TagString: Iris_male
   m_Icon: {fileID: 0}
@@ -9466,6 +9412,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -9599,7 +9546,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805321875}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ik_FK.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9630,7 +9577,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036949473805321877}
   - component: {fileID: 7036949473802507965}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Olhos
   m_TagString: Olhos_male
   m_Icon: {fileID: 0}
@@ -9662,6 +9609,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -9796,7 +9744,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036949473805321879}
   - component: {fileID: 7036949473802507967}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Lingua
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9828,6 +9776,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -9961,7 +9910,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322113}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBacia_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9992,7 +9941,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322115}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBacia_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10013,7 +9962,7 @@ Transform:
   - {fileID: 7036949473805321817}
   m_Father: {fileID: 7036949473805322143}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 84.8232, y: -38.196175, z: -130.06529}
+  m_LocalEulerAnglesHint: {x: 84.823204, y: -38.19618, z: -130.06529}
 --- !u!1 &7036949473805622181
 GameObject:
   m_ObjectHideFlags: 0
@@ -10023,7 +9972,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322117}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBocaCanto.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10053,7 +10002,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322119}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBocaCanto.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10074,7 +10023,7 @@ Transform:
   - {fileID: 7036949473805322117}
   m_Father: {fileID: 7036949473805322171}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -8.601671, y: 86.09057, z: -1.5021685}
+  m_LocalEulerAnglesHint: {x: -8.601662, y: 86.09055, z: -1.5021733}
 --- !u!1 &7036949473805622185
 GameObject:
   m_ObjectHideFlags: 0
@@ -10084,7 +10033,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322121}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBocaCanto.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10114,7 +10063,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322123}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBocaCanto.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10135,7 +10084,7 @@ Transform:
   - {fileID: 7036949473805322121}
   m_Father: {fileID: 7036949473805322171}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -8.601804, y: 93.909424, z: 1.5014167}
+  m_LocalEulerAnglesHint: {x: -8.601802, y: 93.909424, z: 1.5014151}
 --- !u!1 &7036949473805622189
 GameObject:
   m_ObjectHideFlags: 0
@@ -10145,7 +10094,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322125}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBochecha.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10175,7 +10124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322127}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBochecha.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10196,7 +10145,7 @@ Transform:
   - {fileID: 7036949473805322125}
   m_Father: {fileID: 7036949473805322171}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -8.711567, y: 86.09253, z: -0.53227615}
+  m_LocalEulerAnglesHint: {x: -8.711562, y: 86.09253, z: -0.5322793}
 --- !u!1 &7036949473805622193
 GameObject:
   m_ObjectHideFlags: 0
@@ -10208,7 +10157,7 @@ GameObject:
   - component: {fileID: 7036949473805322129}
   - component: {fileID: 7036949472645797012}
   - component: {fileID: 7036949472645797013}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Avatar_Male
   m_TagString: icaro
   m_Icon: {fileID: 0}
@@ -10223,7 +10172,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7036949473805622193}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -2.96, y: 0.01, z: -2.02}
+  m_LocalPosition: {x: 0, y: 0.01, z: -2.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7036949473805322131}
@@ -10320,7 +10269,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322131}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Armature.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10357,7 +10306,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322133}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnAntBraco.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10378,7 +10327,7 @@ Transform:
   - {fileID: 7036949473805321739}
   m_Father: {fileID: 7036949473805322135}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.021103807, y: 0.002930503, z: -0.91241366}
+  m_LocalEulerAnglesHint: {x: 0.02104956, y: 0.002931605, z: -0.9124176}
 --- !u!1 &7036949473805622199
 GameObject:
   m_ObjectHideFlags: 0
@@ -10388,7 +10337,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322135}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnAntBraco.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10409,7 +10358,7 @@ Transform:
   - {fileID: 7036949473805322133}
   m_Father: {fileID: 7036949473805322167}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -1.3424432, y: 1.161886, z: 55.48656}
+  m_LocalEulerAnglesHint: {x: -1.3424432, y: 1.1618892, z: 55.48656}
 --- !u!1 &7036949473805622201
 GameObject:
   m_ObjectHideFlags: 0
@@ -10419,7 +10368,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322137}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnAntBraco.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10440,7 +10389,7 @@ Transform:
   - {fileID: 7036949473805321737}
   m_Father: {fileID: 7036949473805322139}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.3566866, y: 24.745752, z: 0.8317881}
+  m_LocalEulerAnglesHint: {x: 0.023169108, y: 0.07156313, z: 0.90659064}
 --- !u!1 &7036949473805622203
 GameObject:
   m_ObjectHideFlags: 0
@@ -10450,7 +10399,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322139}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnAntBraco.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10471,7 +10420,7 @@ Transform:
   - {fileID: 7036949473805322137}
   m_Father: {fileID: 7036949473805322165}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 59.58789, y: -94.81281, z: -120.28192}
+  m_LocalEulerAnglesHint: {x: -27.668516, y: 44.644634, z: -151.54636}
 --- !u!1 &7036949473805622205
 GameObject:
   m_ObjectHideFlags: 0
@@ -10481,7 +10430,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322141}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBacia.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10513,7 +10462,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322143}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBacia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10535,7 +10484,7 @@ Transform:
   - {fileID: 7036949473805322113}
   m_Father: {fileID: 7036949473805322141}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 62.27841, y: -179.99995, z: 0.000016204518}
+  m_LocalEulerAnglesHint: {x: 62.27841, y: -179.99995, z: 0.000016825963}
 --- !u!1 &7036949473805622209
 GameObject:
   m_ObjectHideFlags: 0
@@ -10545,7 +10494,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322145}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10566,7 +10515,7 @@ Transform:
   - {fileID: 7036949473805322199}
   m_Father: {fileID: 7036949473805321739}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -0.87227315, y: 1.0578572, z: -11.819051}
+  m_LocalEulerAnglesHint: {x: -0.8722757, y: 1.0578539, z: -11.819054}
 --- !u!1 &7036949473805622211
 GameObject:
   m_ObjectHideFlags: 0
@@ -10576,7 +10525,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322147}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10597,7 +10546,7 @@ Transform:
   - {fileID: 7036949473805322157}
   m_Father: {fileID: 7036949473805321739}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.7328325, y: 1.1506548, z: -25.855028}
+  m_LocalEulerAnglesHint: {x: -0.73283225, y: 1.1506563, z: -25.855028}
 --- !u!1 &7036949473805622213
 GameObject:
   m_ObjectHideFlags: 0
@@ -10607,7 +10556,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322149}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10628,7 +10577,7 @@ Transform:
   - {fileID: 7036949473805322179}
   m_Father: {fileID: 7036949473805321739}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: -12.21838, y: 1.8856136, z: 4.962696}
+  m_LocalEulerAnglesHint: {x: -12.21271, y: 1.8866103, z: 4.9602137}
 --- !u!1 &7036949473805622215
 GameObject:
   m_ObjectHideFlags: 0
@@ -10638,7 +10587,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322151}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10659,7 +10608,7 @@ Transform:
   - {fileID: 7036949473805322201}
   m_Father: {fileID: 7036949473805321739}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -1.026802, y: 1.0471157, z: -2.103802}
+  m_LocalEulerAnglesHint: {x: -1.0255303, y: 1.0483607, z: -2.1037962}
 --- !u!1 &7036949473805622217
 GameObject:
   m_ObjectHideFlags: 0
@@ -10669,7 +10618,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322153}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10690,7 +10639,7 @@ Transform:
   - {fileID: 7036949473805322159}
   m_Father: {fileID: 7036949473805322157}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -1.9723309, y: 1.2324374, z: -0.11532665}
+  m_LocalEulerAnglesHint: {x: -1.9723297, y: 1.2324373, z: -0.11532998}
 --- !u!1 &7036949473805622219
 GameObject:
   m_ObjectHideFlags: 0
@@ -10700,7 +10649,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322155}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10721,7 +10670,7 @@ Transform:
   - {fileID: 7036949473805322181}
   m_Father: {fileID: 7036949473805321739}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: -43.40873, y: 108.80431, z: -18.938353}
+  m_LocalEulerAnglesHint: {x: -43.256424, y: 108.96439, z: -19.084517}
 --- !u!1 &7036949473805622221
 GameObject:
   m_ObjectHideFlags: 0
@@ -10731,7 +10680,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322157}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10752,7 +10701,7 @@ Transform:
   - {fileID: 7036949473805322153}
   m_Father: {fileID: 7036949473805322147}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.3753247, y: 0.22183117, z: 0.5054299}
+  m_LocalEulerAnglesHint: {x: -0.3753264, y: 0.22183041, z: 0.50542694}
 --- !u!1 &7036949473805622223
 GameObject:
   m_ObjectHideFlags: 0
@@ -10762,7 +10711,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322159}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.005_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10792,7 +10741,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322161}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBochecha.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10822,7 +10771,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322163}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBochecha.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10843,7 +10792,7 @@ Transform:
   - {fileID: 7036949473805322161}
   m_Father: {fileID: 7036949473805322171}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: -8.711498, y: 93.90746, z: 0.5315289}
+  m_LocalEulerAnglesHint: {x: -8.71149, y: 93.90746, z: 0.53153086}
 --- !u!1 &7036949473805622229
 GameObject:
   m_ObjectHideFlags: 0
@@ -10853,7 +10802,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322165}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBraco.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10874,7 +10823,7 @@ Transform:
   - {fileID: 7036949473805322139}
   m_Father: {fileID: 7036949473805321771}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -13.824827, y: -49.418564, z: -58.50049}
+  m_LocalEulerAnglesHint: {x: -60.397724, y: -55.02681, z: -62.37858}
 --- !u!1 &7036949473805622231
 GameObject:
   m_ObjectHideFlags: 0
@@ -10884,7 +10833,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322167}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnBraco.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10905,7 +10854,7 @@ Transform:
   - {fileID: 7036949473805322135}
   m_Father: {fileID: 7036949473805321765}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -65.60515, y: -56.582195, z: 42.680412}
+  m_LocalEulerAnglesHint: {x: -68.74681, y: -82.47317, z: 68.162}
 --- !u!1 &7036949473805622233
 GameObject:
   m_ObjectHideFlags: 0
@@ -10915,7 +10864,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322169}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnCol-01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10946,7 +10895,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322171}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnCabeca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10986,7 +10935,7 @@ Transform:
   - {fileID: 7036949473805321855}
   m_Father: {fileID: 7036949473805321793}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.80786526, y: -89.57616, z: 7.1179733}
+  m_LocalEulerAnglesHint: {x: -1.8608537, y: -83.21458, z: 14.446951}
 --- !u!1 &7036949473805622237
 GameObject:
   m_ObjectHideFlags: 0
@@ -10996,7 +10945,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322173}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnCol-03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11019,7 +10968,7 @@ Transform:
   - {fileID: 7036949473805321793}
   m_Father: {fileID: 7036949473805322175}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 2.1297796, y: -0.00007067088, z: -0.00000048393343}
+  m_LocalEulerAnglesHint: {x: -0.0015579665, y: -0.000020348545, z: 3.9313514e-10}
 --- !u!1 &7036949473805622239
 GameObject:
   m_ObjectHideFlags: 0
@@ -11029,7 +10978,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322175}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnCol-02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11050,7 +10999,7 @@ Transform:
   - {fileID: 7036949473805322173}
   m_Father: {fileID: 7036949473805322169}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.000057332996, y: 0.000009089157, z: 4.4374222e-12}
+  m_LocalEulerAnglesHint: {x: 0.000020736356, y: 0.000008175773, z: 5.09436e-12}
 --- !u!1 &7036949473805622241
 GameObject:
   m_ObjectHideFlags: 0
@@ -11060,7 +11009,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322177}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11081,7 +11030,7 @@ Transform:
   - {fileID: 7036949473805322183}
   m_Father: {fileID: 7036949473805322181}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 1.707716, y: -7.7121053, z: 7.2277555}
+  m_LocalEulerAnglesHint: {x: 1.7077167, y: -7.7121043, z: 7.2277527}
 --- !u!1 &7036949473805622243
 GameObject:
   m_ObjectHideFlags: 0
@@ -11091,7 +11040,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322179}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11112,7 +11061,7 @@ Transform:
   - {fileID: 7036949473805322207}
   m_Father: {fileID: 7036949473805322149}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 10.315549, y: -1.14914, z: 0.2871075}
+  m_LocalEulerAnglesHint: {x: 10.315545, y: -1.1491395, z: 0.28710446}
 --- !u!1 &7036949473805622245
 GameObject:
   m_ObjectHideFlags: 0
@@ -11122,7 +11071,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322181}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11143,7 +11092,7 @@ Transform:
   - {fileID: 7036949473805322177}
   m_Father: {fileID: 7036949473805322155}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -5.397733, y: -61.36463, z: -16.744373}
+  m_LocalEulerAnglesHint: {x: -5.380102, y: -61.30582, z: -16.776787}
 --- !u!1 &7036949473805622247
 GameObject:
   m_ObjectHideFlags: 0
@@ -11153,7 +11102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322183}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.013_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11183,7 +11132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322185}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11204,7 +11153,7 @@ Transform:
   - {fileID: 7036949473805322239}
   m_Father: {fileID: 7036949473805321737}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -39.546898, y: -8.88384, z: 10.905798}
+  m_LocalEulerAnglesHint: {x: -2.9462545, y: -0.36930126, z: -0.5710062}
 --- !u!1 &7036949473805622251
 GameObject:
   m_ObjectHideFlags: 0
@@ -11214,7 +11163,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322187}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11235,7 +11184,7 @@ Transform:
   - {fileID: 7036949473805322229}
   m_Father: {fileID: 7036949473805321737}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -38.069687, y: -2.4805393, z: 11.402696}
+  m_LocalEulerAnglesHint: {x: -4.8139286, y: -2.5622516, z: -3.5918684}
 --- !u!1 &7036949473805622253
 GameObject:
   m_ObjectHideFlags: 0
@@ -11245,7 +11194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322189}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11266,7 +11215,7 @@ Transform:
   - {fileID: 7036949473805322219}
   m_Father: {fileID: 7036949473805321737}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: -46.387684, y: -26.728445, z: 24.206642}
+  m_LocalEulerAnglesHint: {x: -3.3093169, y: -2.4238281, z: 4.182217}
 --- !u!1 &7036949473805622255
 GameObject:
   m_ObjectHideFlags: 0
@@ -11276,7 +11225,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322191}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.R.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11297,7 +11246,7 @@ Transform:
   - {fileID: 7036949473805322209}
   m_Father: {fileID: 7036949473805321737}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -37.00709, y: -20.645975, z: 20.67093}
+  m_LocalEulerAnglesHint: {x: -1.0106125, y: -1.42474, z: 2.1087408}
 --- !u!1 &7036949473805622257
 GameObject:
   m_ObjectHideFlags: 0
@@ -11307,7 +11256,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322193}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.007_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11337,7 +11286,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322195}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11358,7 +11307,7 @@ Transform:
   - {fileID: 7036949473805322193}
   m_Father: {fileID: 7036949473805322199}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.41316593, y: 0.3066046, z: 0.7392691}
+  m_LocalEulerAnglesHint: {x: -0.41317034, y: 0.30660096, z: 0.73926413}
 --- !u!1 &7036949473805622261
 GameObject:
   m_ObjectHideFlags: 0
@@ -11368,7 +11317,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322197}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11389,7 +11338,7 @@ Transform:
   - {fileID: 7036949473805322203}
   m_Father: {fileID: 7036949473805322201}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.63055485, y: 0.54469323, z: 1.1664722}
+  m_LocalEulerAnglesHint: {x: -0.6305559, y: 0.5446926, z: 1.1664715}
 --- !u!1 &7036949473805622263
 GameObject:
   m_ObjectHideFlags: 0
@@ -11399,7 +11348,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322199}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11420,7 +11369,7 @@ Transform:
   - {fileID: 7036949473805322195}
   m_Father: {fileID: 7036949473805322145}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.5222196, y: 0.42916998, z: -0.49502817}
+  m_LocalEulerAnglesHint: {x: -0.5222224, y: 0.42917067, z: -0.4950304}
 --- !u!1 &7036949473805622265
 GameObject:
   m_ObjectHideFlags: 0
@@ -11430,7 +11379,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322201}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11451,7 +11400,7 @@ Transform:
   - {fileID: 7036949473805322197}
   m_Father: {fileID: 7036949473805322151}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.6885259, y: 0.67833036, z: -0.8290596}
+  m_LocalEulerAnglesHint: {x: -0.6885277, y: 0.6783324, z: -0.829062}
 --- !u!1 &7036949473805622267
 GameObject:
   m_ObjectHideFlags: 0
@@ -11461,7 +11410,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322203}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.009_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11491,7 +11440,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322205}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.011_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11521,7 +11470,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036949473805322207}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BnDedo.1.L.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11542,7 +11491,7 @@ Transform:
   - {fileID: 7036949473805322205}
   m_Father: {fileID: 7036949473805322179}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.031386044, y: -0.06096226, z: 0.8773814}
+  m_LocalEulerAnglesHint: {x: 0.031385157, y: -0.060963772, z: 0.8773831}
 --- !u!1 &7036949473839538716
 GameObject:
   m_ObjectHideFlags: 0
@@ -11555,7 +11504,7 @@ GameObject:
   - component: {fileID: 7036949473839538712}
   - component: {fileID: 7036949473839538715}
   - component: {fileID: 7036949473839538714}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mao_dir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11595,6 +11544,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -11648,7 +11598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036949474095573269}
   - component: {fileID: 7036949474095573268}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Avatar
   m_TagString: avatar
   m_Icon: {fileID: 0}
@@ -11699,7 +11649,7 @@ GameObject:
   - component: {fileID: 7036949474225061582}
   - component: {fileID: 7036949474225061569}
   - component: {fileID: 7036949474225061568}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: busto_esq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11739,6 +11689,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
