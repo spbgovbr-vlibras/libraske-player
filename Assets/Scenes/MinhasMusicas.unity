@@ -571,7 +571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7115788723199518411, guid: 3d87267f49aa0874bae515e474b2cc7d, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7115788723199518411, guid: 3d87267f49aa0874bae515e474b2cc7d, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1592,7 +1592,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1104428927
 GameObject:
@@ -2281,7 +2281,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: PlayingMusic
+          m_StringArgument: TreinoSinais
           m_BoolArgument: 0
         m_CallState: 2
   _onEnter:
@@ -2378,7 +2378,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1703552967632203831, guid: 6c691b1fbbdf21c48898c28eaef7290b, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1703552967632203831, guid: 6c691b1fbbdf21c48898c28eaef7290b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2418,6 +2418,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1703552967632203831, guid: 6c691b1fbbdf21c48898c28eaef7290b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2932705497394330982, guid: 6c691b1fbbdf21c48898c28eaef7290b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4140217055197597182, guid: 6c691b1fbbdf21c48898c28eaef7290b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5511543127334482685, guid: 6c691b1fbbdf21c48898c28eaef7290b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5780438205700529680, guid: 6c691b1fbbdf21c48898c28eaef7290b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7387054594143997657, guid: 6c691b1fbbdf21c48898c28eaef7290b, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3092,7 +3112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3613442237960328930, guid: 13f5f338a928e384dafcf237b55e1be6, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3613442237960328930, guid: 13f5f338a928e384dafcf237b55e1be6, type: 3}
       propertyPath: m_AnchorMax.x

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8048258546961677480}
   - component: {fileID: 8048258546961677483}
   - component: {fileID: 8048258546961677482}
+  - component: {fileID: 3943689276529298176}
   m_Layer: 0
   m_Name: ParticulasNotasMusicais
   m_TagString: MainCamera
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8048258546961677477}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -8.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -4806,3 +4807,45 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &3943689276529298176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8048258546961677477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3512125f964339a4282f84fe23a1c6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onPause:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8048258546961677483}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Pause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  _onResume:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8048258546961677483}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
