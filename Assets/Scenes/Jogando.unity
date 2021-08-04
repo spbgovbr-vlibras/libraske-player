@@ -2715,18 +2715,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3943689276529298176, guid: caafec0a95ae7484ca22f985336e3a04, type: 3}
-      propertyPath: _onResume.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3943689276529298176, guid: caafec0a95ae7484ca22f985336e3a04, type: 3}
-      propertyPath: _onResume.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3943689276529298176, guid: caafec0a95ae7484ca22f985336e3a04, type: 3}
-      propertyPath: _onResume.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Play
-      objectReference: {fileID: 0}
     - target: {fileID: 8048258546961677477, guid: caafec0a95ae7484ca22f985336e3a04, type: 3}
       propertyPath: m_Name
       value: ParticulasNotasMusicais

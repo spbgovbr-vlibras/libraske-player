@@ -4,23 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - avatar
-  - hozana
-  - BracoL
-  - BracoR
-  - Corpo_female
-  - Cabelo_female
-  - Calca_female
-  - Camisa_female
-  - Iris_female
-  - Olhos_female
-  - icaro
-  - Corpo_male
-  - Cabelo_male
-  - Calca_male
-  - Camisa_male
-  - Iris_male
-  - Olhos_male
+  - Icaro
+  - Hozana
   layers:
   - Default
   - TransparentFX
