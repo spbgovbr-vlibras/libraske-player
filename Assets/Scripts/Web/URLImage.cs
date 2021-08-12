@@ -11,6 +11,9 @@ namespace Lavid.Libraske.UI
         [SerializeField] private RawImage _image;
         [SerializeField, Tooltip("Texture to apply case fail to get image from url")] private Texture _applyCaseFail;
 
+        public void SetTexture(Texture texture) => _image.texture = texture;
+        public RawImage GetRawImage() => _image;
+
         public void SetImageFrom(string url)
         {
             if(gameObject.activeInHierarchy)

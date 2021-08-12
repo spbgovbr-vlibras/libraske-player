@@ -209,6 +209,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &94556443 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2932705497394330982, guid: 6c691b1fbbdf21c48898c28eaef7290b, type: 3}
+  m_PrefabInstance: {fileID: 1622850998}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &94946874 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8450824742337739168, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
@@ -2115,7 +2120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _songs:
     _items:
-    - _id: 
+    - _id: 0
       _singers: Peppa
       _name: "Rap da fam\xEDlia Pig"
       _description: "Peppa Pig \xE9 uma s\xE9rie de desenho animado brit\xE2nico
@@ -2123,8 +2128,8 @@ MonoBehaviour:
         pela Astley Baker Davies e Entertainment One. O desenho conta a hist\xF3ria
         de Pepa. "
       _subtitle: 
-      _thumbnail: https://yt3.ggpht.com/ytc/AKedOLRwPU7pJs1QscUwew5U9ZnxUeH5W7ccAyAiFRDSxw=s900-c-k-c0x00ffffff-no-rj
-    - _id: 
+      _thumbnailURL: https://s2.glbimg.com/o7ABEoUjDKQGEMB5qwI6f9ChoVI=/512x320/smart/e.glbimg.com/og/ed/f/original/2019/06/09/peppa.jpg
+    - _id: 1
       _singers: AC/DC
       _name: Back in black
       _description: "Back In Black \xE9 o s\xE9timo \xE1lbum de est\xFAdio da banda
@@ -2132,8 +2137,8 @@ MonoBehaviour:
         j\xE1 vendeu 51 milh\xF5es de c\xF3pias, sendo o \xE1lbum de rock mais vendido
         de todos os tempos."
       _subtitle: 
-      _thumbnail: https://www.radiorock.com.br/wp-content/uploads/2020/07/ac-dc-serie.jpg
-    - _id: 
+      _thumbnailURL: https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2020/10/ac-dc-power-up-696x696.jpeg
+    - _id: 2
       _singers: Galinha Pintadinha
       _name: A galinha pintadinha
       _description: "Percebendo a possibilidade de sucesso, o projeto seguiu adiante
@@ -2141,7 +2146,7 @@ MonoBehaviour:
         contava com anima\xE7\xF5es em 2D com personagens infantis e m\xFAsicas de
         dom\xEDnio p\xFAblico."
       _subtitle: 
-      _thumbnail: https://images.madeiramadeira.com.br/product/images/95074696-painel-decorativo-festa-galinha-pintadinha-04-180x120sku3326v12211-405-1-800x605.jpg
+      _thumbnailURL: https://i1.sndcdn.com/avatars-000102364285-r5db0p-t500x500.jpg
   _musicMenu: {fileID: 220374582}
 --- !u!1 &1411775610
 GameObject:
@@ -2272,6 +2277,18 @@ MonoBehaviour:
   _onClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 94556443}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 598945710205685843}
         m_TargetAssemblyTypeName: Lavid.Libraske.Util.LoadSceneManager, Assembly-CSharp
         m_MethodName: LoadScene
@@ -2422,7 +2439,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2932705497394330982, guid: 6c691b1fbbdf21c48898c28eaef7290b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4140217055197597182, guid: 6c691b1fbbdf21c48898c28eaef7290b, type: 3}
       propertyPath: m_IsActive
@@ -2810,7 +2827,7 @@ GameObject:
   - component: {fileID: 1847877915}
   - component: {fileID: 1847877916}
   m_Layer: 5
-  m_Name: Tooltip
+  m_Name: DescricaoDaMusica
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2943,6 +2960,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1847877916}
+        m_TargetAssemblyTypeName: MusicDisplay, Assembly-CSharp
+        m_MethodName: SetDataFromHolder
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: af5b1cdbed07e0f4399d89ea65025dd1, type: 2}
+          m_ObjectArgumentAssemblyTypeName: MusicHolderSO, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _onDisableObject:
     m_PersistentCalls:
       m_Calls:
@@ -3000,6 +3029,7 @@ MonoBehaviour:
   _description: {fileID: 1685100237}
   _filterNameOverflow: 0
   _maxNameCharacters: 15
+  _musicHolder: {fileID: 11400000, guid: af5b1cdbed07e0f4399d89ea65025dd1, type: 2}
 --- !u!1 &1901930558
 GameObject:
   m_ObjectHideFlags: 0
@@ -3503,28 +3533,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1847877909}
+      objectReference: {fileID: 8450824742431604638}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1847877916}
+      objectReference: {fileID: 1847877909}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 36280882}
+      objectReference: {fileID: 1847877916}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -3539,27 +3569,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
+      value: ApplyMyDataOnMusicHolder
       objectReference: {fileID: 0}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetDataFromDisplay
+      value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: set_enabled
+      value: SetDataFromHolder
       objectReference: {fileID: 0}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
-      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: MusicDisplay, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
+      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: UnityEngine.Behaviour, UnityEngine
+      value: MusicDisplay, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
@@ -3571,7 +3601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -3580,18 +3610,22 @@ PrefabInstance:
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 8450824742431604638}
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
+      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: af5b1cdbed07e0f4399d89ea65025dd1, type: 2}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: MusicDisplay, Assembly-CSharp
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: MusicHolderSO, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8450824742337739168, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: m_Pivot.x
@@ -3681,6 +3715,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicDisplay
       objectReference: {fileID: 0}
+    - target: {fileID: 8450824742337739174, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
+      propertyPath: _musicHolder
+      value: 
+      objectReference: {fileID: 11400000, guid: af5b1cdbed07e0f4399d89ea65025dd1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
 --- !u!1 &8450824742431604635 stripped
