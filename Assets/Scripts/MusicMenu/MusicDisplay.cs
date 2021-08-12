@@ -12,17 +12,32 @@ public class MusicDisplay : MonoBehaviour
     [SerializeField] private bool _filterNameOverflow;
     [SerializeField, Range(0, 18)] private int _maxNameCharacters = 15;
 
-    private Music _currentMusic;
-    public Music GetCurrentMusic() => _currentMusic;
+    [Header("Selected Music"), Space(5)]
+    [Tooltip("Apply music to ScrpitableObject to pass informations to others scenes.")]
+    [SerializeField] 
+    private MusicHolderSO _musicHolder;
 
-    public void SetDataFromDisplay(MusicDisplay display) => SetDataFromMusic(display.GetCurrentMusic());
+    private Music _myMusic; // Music that this display shows
+
+    public void SetDataFromHolder(MusicHolderSO holder)
+    {
+        Music music = holder.GetMusic();
+        SetData(music.Name, music.Singers, music.Description, holder.GetThumbnail());
+    }
 
     public void SetDataFromMusic(Music music) 
     {
-        if(music != _currentMusic)
-            SetData(music.Name, music.Singers, music.Description, music.Thumbnail);
+        _myMusic = music;
+        SetData(music.Name, music.Singers, music.Description, music.ThumbnailURL);
+    }
 
-        _currentMusic = music;
+    public void ApplyMyDataOnMusicHolder()
+    {
+        if (_musicHolder != null)
+        {
+            _musicHolder.SetMusic(_myMusic);
+            _musicHolder.SetThumbnail(_image.GetRawImage());
+        }
     }
 
     private void SetData(string name, string singers, string description, string imageURL)
@@ -44,6 +59,27 @@ public class MusicDisplay : MonoBehaviour
             _singers.SetText(singers);
 
         if(_description != null)
+            _description.SetText(description);
+    }
+    private void SetData(string name, string singers, string description, Texture texture)
+    {
+        if (_image != null)
+        {
+            _image.SetTexture(texture);
+        }
+
+        if (_name != null)
+        {
+            if (_filterNameOverflow)
+                _name.SetText(OverflowFilter(name));
+            else
+                _name.SetText(name);
+        }
+
+        if (_singers != null)
+            _singers.SetText(singers);
+
+        if (_description != null)
             _description.SetText(description);
     }
 

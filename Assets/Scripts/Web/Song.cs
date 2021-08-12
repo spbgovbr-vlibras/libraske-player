@@ -8,7 +8,7 @@ public class Music
     [SerializeField] private string _name;
     [SerializeField, TextArea(5, 10)] private string _description;
     [SerializeField] private string _subtitle;
-    [SerializeField] private string _thumbnail;
+    [SerializeField] private string _thumbnailURL;
 
     public Music(string id, string singers, string name, string description, string subtitle, string thumbnail)
     {
@@ -17,7 +17,7 @@ public class Music
         _name = name;
         _description = description;
         _subtitle = subtitle;
-        _thumbnail = thumbnail;
+        _thumbnailURL = thumbnail;
     }
 
     public string Id { get => _id;}
@@ -25,5 +25,5 @@ public class Music
     public string Name { get => _name;}
     public string Description { get => _description;}
     public string Subtitle { get => _subtitle;}
-    public string Thumbnail { get => _thumbnail;}
+    public string ThumbnailURL { get => _thumbnailURL;}
 }

@@ -786,9 +786,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5849173178730652985, guid: ec8e88b6f57b75c4c95cced81b92e565, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d65fc37a045865945b9ddd10b35061bd, type: 2}
     - target: {fileID: 5849173180330424282, guid: ec8e88b6f57b75c4c95cced81b92e565, type: 3}
       propertyPath: m_Name
       value: Avatar (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849173180330424283, guid: ec8e88b6f57b75c4c95cced81b92e565, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5849173180330424284, guid: ec8e88b6f57b75c4c95cced81b92e565, type: 3}
       propertyPath: m_RootOrder

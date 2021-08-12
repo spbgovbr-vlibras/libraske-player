@@ -18,8 +18,8 @@ public abstract class SelectionController : SelectionSubject
 
         for (int i = 0; i < _selectionObservers.Length; i++)
         {
-            _observers.SetValue(i, _selectionObservers.At(i).GetComponent<ISelectionObserver>());
-            AddObserver(_observers.At(i));
+            _observers.SetValue(i, _selectionObservers[i].GetComponent<ISelectionObserver>());
+            AddObserver(_observers[i]);
         }
             
         NotifyObservers();
@@ -31,7 +31,7 @@ public abstract class SelectionController : SelectionSubject
     public bool IsSelectingLastItem() => _currentSelection.GetCurrentValue() >= _currentSelection.GetMaxValue();
 
     public int GetQuantityOfItems() => _items.Length;
-    public object GetItem(int index) => _items.At(index);
+    public object GetItem(int index) => _items[index];
 
     protected void Increase() => _currentSelection.Add(1);
     protected void Decrease() => _currentSelection.Add(-1);
