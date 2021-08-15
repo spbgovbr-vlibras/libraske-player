@@ -1443,6 +1443,10 @@ PrefabInstance:
       value: 0.0010632623
       objectReference: {fileID: 0}
     - target: {fileID: 8291691317751146252, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291691317751146252, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
       propertyPath: _musicToApply
       value: 
       objectReference: {fileID: 9100000, guid: 385833028a09a0445bbe754069ea22af, type: 2}

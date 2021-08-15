@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _thumbnail: {fileID: 0}
   _music:
-    _id: 1
+    _id: 0
     _singers: Peppa
     _name: "Rap da fam\xEDlia Pig"
     _description: "Peppa Pig \xE9 uma s\xE9rie de desenho animado brit\xE2nico destinado

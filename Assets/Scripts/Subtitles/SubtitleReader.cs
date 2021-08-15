@@ -1,11 +1,10 @@
 ﻿using Lavid.Libraske.Subtitle;
 using Lavid.Libraske.UI;
 using UnityEngine;
-using UnityEngine.Video;
 
 public class SubtitleReader : MonoBehaviour
 {
-    [SerializeField] private VideoPlayer _video;
+    [SerializeField] private AudioSource _audio;
     [SerializeField] private Subtitle _subs;
     [SerializeField] private SubtitleBar _subtitleBar;
     [SerializeField] private TextUI _text;
@@ -34,7 +33,7 @@ public class SubtitleReader : MonoBehaviour
             _setup = true;
         }
 
-        _timeCurrent = _video.time;
+        _timeCurrent = _audio.time;
 
         var nextLineInterval = _nextLine.GetInterval();
 

@@ -1144,7 +1144,7 @@ Animator:
   m_GameObject: {fileID: 5849173178730652984}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ebcbdc4ad5d0bfc47996c3fcd1332875, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2909,7 +2909,7 @@ Animator:
   m_GameObject: {fileID: 5849173179179646010}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ebcbdc4ad5d0bfc47996c3fcd1332875, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -9589,7 +9589,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5849173180330424284}
-  - component: {fileID: 5849173180330424283}
   m_Layer: 8
   m_Name: Avatar
   m_TagString: avatar
@@ -9614,24 +9613,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5849173180330424283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5849173180330424282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbc49b9346262264caa91e0a9e5c1901, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _avatarAnimators:
-    _items:
-    - {fileID: 5849173179179646011}
-    - {fileID: 5849173178730652985}
-  _animationsQuantity: 0
-  _musicToApply: {fileID: 9100000, guid: ebcbdc4ad5d0bfc47996c3fcd1332875, type: 2}
 --- !u!1 &5849173180339059609
 GameObject:
   m_ObjectHideFlags: 0

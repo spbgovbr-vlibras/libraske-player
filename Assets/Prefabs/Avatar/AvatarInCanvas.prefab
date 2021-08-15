@@ -11504,7 +11504,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2467534261788377367}
-  - component: {fileID: 8291691317751146252}
   m_Layer: 8
   m_Name: Avatar
   m_TagString: avatar
@@ -11529,23 +11528,6 @@ Transform:
   m_Father: {fileID: 8291691317298278430}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8291691317751146252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8291691317751146255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbc49b9346262264caa91e0a9e5c1901, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _avatarAnimators:
-    _items:
-    - {fileID: 8291691316603606298}
-    - {fileID: 8291691317147645099}
-  _musicToApply: {fileID: 0}
 --- !u!1 &8291691317752284830
 GameObject:
   m_ObjectHideFlags: 0
