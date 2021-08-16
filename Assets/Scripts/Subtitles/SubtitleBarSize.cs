@@ -3,15 +3,15 @@
 [RequireComponent(typeof(RectTransform))]
 public partial class SubtitleBar : MonoBehaviour
 {
-    private const int ValuePerUpperCaseCharacter = 86;
-    private const int ValuePerLowerCaseCharacter = 66;
-    private const int ValuePerSpecialCharacter = 40;
+    private const int ValuePerUpperCaseCharacter = 31;
+    private const int ValuePerLowerCaseCharacter = 25;
+    private const int ValuePerSpecialCharacter = 17;
 
-    private const int ValuePerTinyLetterLow = 36; // i, I, l, t, T, 1, j
-    private const int ValuePerLetterRLower = 46;
-    private const int ValuePerLetterMLower = 100;
-    private const int ValuePerLetterWLower = 86;
-    private const int ValuePerLetterWUpper = 110;
+    private const int ValuePerTinyLetterLow = 15; // i, I, l, t, T, 1, j
+    private const int ValuePerLetterRLower = 18;
+    private const int ValuePerLetterMLower = 36;
+    private const int ValuePerLetterWLower = 32;
+    private const int ValuePerLetterWUpper = 39;
 
     public int GetSizeOfBar(char ch)
     {

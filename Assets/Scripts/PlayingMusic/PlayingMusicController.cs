@@ -35,4 +35,10 @@ public class PlayingMusicController : MonoBehaviour
             _sceneManager.LoadScene(_sceneToLoad);
         }
     }
+
+    public void EnableAnimations(bool value)
+    {
+        for (int i = 0; i < _avatarAnimators.Length; i++)
+            _avatarAnimators[i].enabled = value;
+    }
 }

@@ -30,5 +30,15 @@ namespace Lavid.Libraske.UI
 
             _value = value;
         }
+
+        public void SetColor(Color color)
+        {
+            if (_textMeshPro != null)
+                _textMeshPro.color = color;
+            else if (_text != null)
+                _text.color = color;
+            else if (_textMeshProUGUI != null)
+                _textMeshProUGUI.color = color;
+        }
     }
 }

@@ -1,46 +1,60 @@
+using Lavid.Libraske.DataStruct;
+using Lavid.Libraske.UI;
 using UnityEngine;
 
 public class SubtitleHUD : MonoBehaviour
 {
-    private static readonly string FirstPlay = "FirstPlay";
-    private static readonly string ShowSubtitles = "ShowSubtitles";
-    private static readonly string SubtitlesSizePref = "SubtitleSize";
-    private static readonly string SubtitlesColorPref = "SubtitlesColor";
-    private int firstPlayInt;
+    [SerializeField] private GameObject _container;
+    [SerializeField] private TextUI _text;
+    [SerializeField] private Wrapper<SubtitleColor> _colors;
+    [SerializeField] private Wrapper<SubtitleSize> _sizes;
 
-    public GameObject subtitlesPanel;
-
-    private bool showSubtitlesBoolean;
-    private int selectedSubtitlesSize;
-    private int selectedSubtitlesColor;
-
-    void Start()
+    private void OnEnable() => UpdateValues();
+    public void UpdateValues()
     {
-        firstPlayInt = PlayerPrefs.GetInt(FirstPlay);
+        _container.SetActive(SubtitleSettings.CanShowSubtitles());
 
-        if (firstPlayInt == 0)
+        UpdateSize();
+        UpdateColor();
+    }
+    private void UpdateSize()
+    {
+        var size = SubtitleSettings.GetSize();
+
+        for (int i = 0; i < _sizes.Length; i++)
         {
-            ResetSubtitlesSettings();
-            PlayerPrefs.SetInt(FirstPlay, -1);
-        }
-        else
-        {
-            showSubtitlesBoolean = (PlayerPrefs.GetInt(ShowSubtitles) != 0);
-            selectedSubtitlesSize = PlayerPrefs.GetInt(SubtitlesSizePref);
-            selectedSubtitlesColor = PlayerPrefs.GetInt(SubtitlesColorPref);
+            if (size == _sizes[i].sizeEnum)
+            {
+                _container.transform.localScale = new Vector2(_sizes[i].size, _sizes[i].size);
+                return;
+            }
         }
     }
-
-    public void ResetSubtitlesSettings()
+    private void UpdateColor()
     {
-        showSubtitlesBoolean = true;
-        selectedSubtitlesSize = 0;
-        selectedSubtitlesColor = 0;
+        var color = SubtitleSettings.GetColor();
 
-        //SubtitleSettingsManager.ResetSubtitlesSettings(showSubtitlesBoolean, subtitleSize, subtitleColor);
-
-        PlayerPrefs.SetInt(ShowSubtitles, (showSubtitlesBoolean ? 1 : 0));
-        PlayerPrefs.SetInt(SubtitlesSizePref, selectedSubtitlesSize);
-        PlayerPrefs.SetInt(SubtitlesColorPref, selectedSubtitlesColor);
+        for (int i = 0; i < _colors.Length; i++)
+        {
+            if (color == _colors[i].colorEnum)
+            {
+                _text.SetColor(_colors[i].color);
+                return;
+            }
+        }
     }
+}
+
+[System.Serializable]
+internal struct SubtitleColor
+{
+    public SubtitleSettings.Color colorEnum;
+    public Color color;
+}
+
+[System.Serializable]
+internal struct SubtitleSize
+{
+    public SubtitleSettings.Size sizeEnum;
+    public float size;
 }
