@@ -10,26 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16940fe54e0a8e04fb24567393e44a10, type: 3}
-  m_Name: DefaultColors
+  m_Name: Customization Preview
   m_EditorClassIdentifier: 
   _colors:
-    cabelo:
-      _color: {r: 0, g: 0, b: 0, a: 1}
-    corpo:
+    _cabelo:
+      _color: {r: 0.9056604, g: 0.19223925, b: 0.19223925, a: 1}
+    _corpo:
       _color: {r: 0.75686276, g: 0.5176471, b: 0.44313726, a: 1}
-    iris:
-      _color: {r: 0, g: 0, b: 0, a: 1}
-    pupila:
-      _color: {r: 0, g: 0, b: 0, a: 1}
-    olhos:
+    _iris:
+      _color: {r: 0, g: 0, b: 0, a: 0}
+    _pupila:
       _color: {r: 1, g: 1, b: 1, a: 1}
-    dentes:
+    _olhos:
       _color: {r: 1, g: 1, b: 1, a: 1}
-    lingua:
-      _color: {r: 0.62352943, g: 0.039215688, b: 0.039215688, a: 1}
-    camisa:
+    _dentes:
+      _color: {r: 1, g: 1, b: 1, a: 1}
+    _lingua:
+      _color: {r: 0.65882355, g: 0, b: 0, a: 1}
+    _camisa:
       _color: {r: 0.10980392, g: 0.1254902, b: 0.30980393, a: 1}
-    calca:
+    _calca:
       _color: {r: 0.05490196, g: 0.05882353, b: 0.09411765, a: 1}
-    acessorios:
+    _acessorios:
       _color: {r: 1, g: 0.8784314, b: 0, a: 1}

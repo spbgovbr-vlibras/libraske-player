@@ -1,5 +1,98 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2078529878092519037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1406634377032010420}
+  - component: {fileID: 4323493049540564358}
+  m_Layer: 8
+  m_Name: Point Light (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1406634377032010420
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078529878092519037}
+  m_LocalRotation: {x: 0.0749206, y: -0.01495713, z: 0.0011238843, w: 0.9970767}
+  m_LocalPosition: {x: -2.2470841, y: 4.68, z: -6.2}
+  m_LocalScale: {x: 1.9982023, y: 1.9563514, z: 1.0117418}
+  m_Children: []
+  m_Father: {fileID: 5849173180330424284}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &4323493049540564358
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078529878092519037}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &5849173178531024103
 GameObject:
   m_ObjectHideFlags: 0
@@ -1166,16 +1259,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _renderer:
-    cabelo: {fileID: 5849173179127036782}
-    corpo: {fileID: 5849173180406253556}
-    iris: {fileID: 5849173180301000424}
-    pupila: {fileID: 0}
-    olhos: {fileID: 5849173179187302643}
-    dentes: {fileID: 5849173179281917010}
-    lingua: {fileID: 5849173178662954833}
-    camisa: {fileID: 5849173178806658308}
-    calca: {fileID: 5849173179406474328}
-    acessorios: {fileID: 0}
+    _cabelo: {fileID: 5849173179127036782}
+    _corpo: {fileID: 5849173180406253556}
+    _iris: {fileID: 5849173180301000424}
+    _pupila: {fileID: 0}
+    _olhos: {fileID: 5849173179187302643}
+    _dentes: {fileID: 5849173179281917010}
+    _lingua: {fileID: 5849173178662954833}
+    _camisa: {fileID: 5849173178806658308}
+    _calca: {fileID: 5849173179406474328}
+    _acessorios: {fileID: 0}
   _customizationSO: {fileID: 11400000, guid: 64c2ebb0e886c774788cf60c2716e7cf, type: 2}
 --- !u!1 &5849173178753557007
 GameObject:
@@ -2931,16 +3024,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _renderer:
-    cabelo: {fileID: 5849173180666763911}
-    corpo: {fileID: 5849173178702962903}
-    iris: {fileID: 5849173180656679535}
-    pupila: {fileID: 5849173180429821046}
-    olhos: {fileID: 5849173180511665276}
-    dentes: {fileID: 5849173180023586469}
-    lingua: {fileID: 5849173179431452067}
-    camisa: {fileID: 5849173180534277272}
-    calca: {fileID: 5849173179361556275}
-    acessorios: {fileID: 5849173179730837088}
+    _cabelo: {fileID: 5849173180666763911}
+    _corpo: {fileID: 5849173178702962903}
+    _iris: {fileID: 5849173180656679535}
+    _pupila: {fileID: 5849173180429821046}
+    _olhos: {fileID: 5849173180511665276}
+    _dentes: {fileID: 5849173180023586469}
+    _lingua: {fileID: 5849173179431452067}
+    _camisa: {fileID: 5849173180534277272}
+    _calca: {fileID: 5849173179361556275}
+    _acessorios: {fileID: 5849173179730837088}
   _customizationSO: {fileID: 11400000, guid: 64c2ebb0e886c774788cf60c2716e7cf, type: 2}
 --- !u!1 &5849173179187302642
 GameObject:
@@ -9610,6 +9703,7 @@ Transform:
   - {fileID: 5849173179179646014}
   - {fileID: 5849173178730652988}
   - {fileID: 5849173180201051317}
+  - {fileID: 1406634377032010420}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

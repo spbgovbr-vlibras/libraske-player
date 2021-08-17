@@ -1466,12 +1466,12 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
 --- !u!95 &1075161847 stripped
 Animator:
-  m_CorrespondingSourceObject: {fileID: 8291691317147645099, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3950388936809353063, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
   m_PrefabInstance: {fileID: 1075161846}
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &1075161848 stripped
 Animator:
-  m_CorrespondingSourceObject: {fileID: 8291691316603606298, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3950388937400424037, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
   m_PrefabInstance: {fileID: 1075161846}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1273372389

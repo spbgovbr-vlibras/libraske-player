@@ -27,7 +27,10 @@ public class PlayingMusicController : MonoBehaviour
             _animatorController = _musicList.GetControllerAtIndex(index);
 
             for (int i = 0; i < _avatarAnimators.Length; i++)
-                _avatarAnimators[i].runtimeAnimatorController = _animatorController;
+            {
+                if(_avatarAnimators[i] != null)
+                    _avatarAnimators[i].runtimeAnimatorController = _animatorController;
+            }
         }
         catch (Exception err)
         {

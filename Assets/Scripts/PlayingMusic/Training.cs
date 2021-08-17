@@ -27,7 +27,10 @@ public class Training : PlayingMusicController
     public void UpdateAnimatorsValues()
     {
         for (int i = 0; i < _avatarAnimators.Length; i++)
-            _avatarAnimators[i].SetInteger(AnimatorField, _currentAnimation.GetCurrentValue());
+        {
+            if(_avatarAnimators[i] != null)
+                _avatarAnimators[i].SetInteger(AnimatorField, _currentAnimation.GetCurrentValue());
+        }
     }
 
     public void UpdateUI()
