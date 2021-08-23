@@ -1,14 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Linq;
 
 public class SubtitleSettingsManager : MonoBehaviour
 {
-    private static readonly string FirstPlay = "FirstPlay";
-    private static readonly string ShowSubtitles = "ShowSubtitles";
-    private static readonly string SubtitlesSizePref = "SubtitleSize";
-    private static readonly string SubtitlesColorPref = "SubtitlesColor";
-    private int firstPlayInt;
     public Toggle showSubtitlesToggle;
     public ToggleGroup sizeOptions;
     public ToggleGroup colorOptions;
@@ -23,18 +17,15 @@ public class SubtitleSettingsManager : MonoBehaviour
 
     void Start()
     {
-        firstPlayInt = PlayerPrefs.GetInt(FirstPlay);
-
-        if (firstPlayInt == 0)
+        if (!SubtitleSettings.HasSavedSettings())
         {
-            ResetSubtitlesSettings();
-            PlayerPrefs.SetInt(FirstPlay, -1);
+            SubtitleSettings.ResetSettings();
         }
         else
         {
-            showSubtitlesBoolean = (PlayerPrefs.GetInt(ShowSubtitles) != 0);
-            selectedSubtitlesSize = PlayerPrefs.GetInt(SubtitlesSizePref);
-            selectedSubtitlesColor = PlayerPrefs.GetInt(SubtitlesColorPref);
+            showSubtitlesBoolean = SubtitleSettings.CanShowSubtitles();
+            selectedSubtitlesSize = (int) SubtitleSettings.GetSize();
+            selectedSubtitlesColor = (int) SubtitleSettings.GetColor();
 
             showSubtitlesToggle.isOn = showSubtitlesBoolean;
             subtitlesPanel.SetActive(showSubtitlesBoolean);
@@ -46,9 +37,9 @@ public class SubtitleSettingsManager : MonoBehaviour
 
     public void SaveSubtitleSettings()
     {
-        PlayerPrefs.SetInt(ShowSubtitles, (showSubtitlesToggle.isOn ? 1 : 0));
-        PlayerPrefs.SetInt(SubtitlesSizePref, GetSelectedOption(sizeOptions));
-        PlayerPrefs.SetInt(SubtitlesColorPref, GetSelectedOption(colorOptions));
+        SubtitleSettings.EnableSubtitles((SubtitleSettings.Boolean)(showSubtitlesToggle.isOn ? 1 : 0));
+        SubtitleSettings.SetSize((SubtitleSettings.Size)GetSelectedOption(sizeOptions));
+        SubtitleSettings.SetColor((SubtitleSettings.Color)GetSelectedOption(colorOptions));
     }
 
     public void UpdateRender()
@@ -117,8 +108,8 @@ public class SubtitleSettingsManager : MonoBehaviour
         SelectOption(colorOptions, selectedSubtitlesColor);
         SetSubtitlePreview(selectedSubtitlesSize, selectedSubtitlesColor);
 
-        PlayerPrefs.SetInt(ShowSubtitles, (showSubtitlesBoolean ? 1 : 0));
-        PlayerPrefs.SetInt(SubtitlesSizePref, selectedSubtitlesSize);
-        PlayerPrefs.SetInt(SubtitlesColorPref, selectedSubtitlesColor);
+        SubtitleSettings.EnableSubtitles((SubtitleSettings.Boolean)(showSubtitlesToggle.isOn ? 1 : 0));
+        SubtitleSettings.SetSize((SubtitleSettings.Size)GetSelectedOption(sizeOptions));
+        SubtitleSettings.SetColor((SubtitleSettings.Color)GetSelectedOption(colorOptions));
     }
 }
