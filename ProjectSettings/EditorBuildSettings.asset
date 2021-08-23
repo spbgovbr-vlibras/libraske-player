@@ -6,20 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Para Testes/PlayingMusic.unity
-    guid: edb71ddd8ae9b3d4cb1dfd55b54a73c0
-  - enabled: 0
-    path: Assets/Scenes/Para Testes/Subtitle.unity
-    guid: 2fcbed0e95c5d824c8a6a51c3db0b0c6
-  - enabled: 1
-    path: Assets/Scenes/Para Testes/ApiTesting.unity
-    guid: bfd495204c457224e81e75a0eaa86cb0
+    path: Assets/Scenes/TelaTitulo.unity
+    guid: 091a088b071b34f46ad4c0d28b296f05
   - enabled: 1
     path: Assets/Scenes/MinhasMusicas.unity
     guid: b0d82093cd9d7494e9b839ea6e484b53
-  - enabled: 1
-    path: Assets/Scenes/TelaTitulo.unity
-    guid: 091a088b071b34f46ad4c0d28b296f05
   - enabled: 1
     path: Assets/Scenes/TreinoSinais.unity
     guid: 1816b54069c08254d906bb44769f973e
