@@ -21,13 +21,16 @@ namespace Lavid.Libraske.Avatar
             _customizationManager.SelectTab(this);
         }
 
+        public void ApplyCameraClose()
+        {
+            if (_customizationManager != null)
+                _customizationManager.SetCameraClose(_cameraClose);
+        }
+
         public void EnableTab(bool value)
         {
             _whenTabEnabled.SetActive(value);
             _whenTabDisabled.SetActive(!value);
-
-            if (value && _customizationManager != null)
-                _customizationManager.SetCameraClose(_cameraClose);
         }
     }
 }
