@@ -101,7 +101,7 @@ RectTransform:
   m_Children:
   - {fileID: 503356884297875418}
   m_Father: {fileID: 3110529082492168483}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -138,7 +138,7 @@ RectTransform:
   - {fileID: 503356884852512141}
   - {fileID: 503356883644679112}
   m_Father: {fileID: 3110529082492168483}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -299,10 +299,11 @@ GameObject:
   m_Component:
   - component: {fileID: 3110529082492168483}
   - component: {fileID: 3110529082492168480}
-  - component: {fileID: 3110529082492168494}
   - component: {fileID: 3110529082492168495}
+  - component: {fileID: 3110529082492168494}
+  - component: {fileID: 1638042947424722946}
   m_Layer: 5
-  m_Name: PropertyHandlerButton
+  m_Name: PropertyTab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -319,8 +320,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: -0.8000869}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 503356883732121075}
   - {fileID: 503356883805788149}
+  - {fileID: 503356883732121075}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -337,6 +338,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3110529082492168492}
   m_CullTransparentMesh: 0
+--- !u!114 &3110529082492168495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3110529082492168492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f62c1afa4cc06a41a56e8a2af226a01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectToScale: {fileID: 3110529082492168492}
 --- !u!114 &3110529082492168494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -349,20 +363,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ee5e7e89f53c854cad4e199bdf827fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _whenTabEnabled: {fileID: 503356883805788146}
+  _whenTabDisabled: {fileID: 503356883732121072}
+  _customizationManager: {fileID: 0}
+  _avatarProperty: 0
+--- !u!114 &1638042947424722946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3110529082492168492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2456b37919751724d992c1aeb3ef88f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _onClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 503356883805788146}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 3110529082492168494}
+        m_TargetAssemblyTypeName: Lavid.Libraske.Avatar.AvatarCustomizationTab, Assembly-CSharp
+        m_MethodName: SetPropertyOnManager
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
   _onEnter:
     m_PersistentCalls:
@@ -394,17 +424,3 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _avatarProperty: 0
---- !u!114 &3110529082492168495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3110529082492168492}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f62c1afa4cc06a41a56e8a2af226a01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objectToScale: {fileID: 3110529082492168492}
