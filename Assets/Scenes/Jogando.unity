@@ -7408,9 +7408,9 @@ MonoBehaviour:
   _musicHolder: {fileID: 11400000, guid: af5b1cdbed07e0f4399d89ea65025dd1, type: 2}
   _musicList: {fileID: 11400000, guid: 89a534b3ca8229a468bff72df2c3069f, type: 2}
   _avatarAnimators:
-    _items:
-    - {fileID: 101849787}
+    Items:
     - {fileID: 101849788}
+    - {fileID: 101849787}
   _sceneManager: {fileID: 5141918}
   _sceneToLoad: MinhasMusicas
 --- !u!114 &2063128168

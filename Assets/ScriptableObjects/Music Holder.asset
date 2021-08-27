@@ -14,11 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _thumbnail: {fileID: 0}
   _music:
-    _id: 0
-    _singers: Peppa
-    _name: "Rap da fam\xEDlia Pig"
-    _description: "Peppa Pig \xE9 uma s\xE9rie de desenho animado brit\xE2nico destinado
-      a p\xFAblico infantil em faixa et\xE1ria pr\xE9-escolar, produzida pela Astley
-      Baker Davies e Entertainment One. O desenho conta a hist\xF3ria de Pepa. "
-    _subtitle: 
-    _thumbnailURL: https://s2.glbimg.com/o7ABEoUjDKQGEMB5qwI6f9ChoVI=/512x320/smart/e.glbimg.com/og/ed/f/original/2019/06/09/peppa.jpg
+    id: 0
+    singers: dasd
+    thumbnail: dsasd
+    name: dsasddsasd
+    description: dsasd
+    subtitle: dsasd
+    price: 60

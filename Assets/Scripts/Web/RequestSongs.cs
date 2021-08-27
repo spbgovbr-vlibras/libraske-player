@@ -7,7 +7,7 @@ using UnityEngine.Networking;
 public class RequestSongs : MonoBehaviour
 {
     [SerializeField] private MusicMenu _musicMenu;
-    private Wrapper<Music> _songs;
+    [SerializeField] private Wrapper<Music> _songs;
 
     void Start()
     {
@@ -33,6 +33,7 @@ public class RequestSongs : MonoBehaviour
                 break;
             case UnityWebRequest.Result.Success:
                 Debug.Log("[RequestSongs]:  " + ":\nReceived: " + webRequest.downloadHandler.text);
+
                 _songs = JsonArray.FromJson<Music>(webRequest.downloadHandler.text);
                 _musicMenu.SetMusics(_songs);
                 break;

@@ -509,8 +509,6 @@ MonoBehaviour:
   _xOffset: 256
   _quantity: {fileID: 1628156076}
   _quantityAndName: {fileID: 174676810}
-  _songs:
-    _items: []
 --- !u!1001 &238353009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2260,6 +2258,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _musicMenu: {fileID: 220374582}
+  _songs:
+    Items: []
 --- !u!4 &1339540131
 Transform:
   m_ObjectHideFlags: 0
@@ -2287,34 +2287,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _songs:
-    _items:
-    - _id: 0
-      _singers: Peppa
-      _name: "Rap da fam\xEDlia Pig"
-      _description: "Peppa Pig \xE9 uma s\xE9rie de desenho animado brit\xE2nico
-        destinado a p\xFAblico infantil em faixa et\xE1ria pr\xE9-escolar, produzida
-        pela Astley Baker Davies e Entertainment One. O desenho conta a hist\xF3ria
-        de Pepa. "
-      _subtitle: 
-      _thumbnailURL: https://s2.glbimg.com/o7ABEoUjDKQGEMB5qwI6f9ChoVI=/512x320/smart/e.glbimg.com/og/ed/f/original/2019/06/09/peppa.jpg
-    - _id: 1
-      _singers: AC/DC
-      _name: Back in black
-      _description: "Back In Black \xE9 o s\xE9timo \xE1lbum de est\xFAdio da banda
-        australiana AC/DC. Foi lan\xE7ado em 25 de julho de 1980 e, at\xE9 hoje,
-        j\xE1 vendeu 51 milh\xF5es de c\xF3pias, sendo o \xE1lbum de rock mais vendido
-        de todos os tempos."
-      _subtitle: 
-      _thumbnailURL: https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2020/10/ac-dc-power-up-696x696.jpeg
-    - _id: 2
-      _singers: Galinha Pintadinha
-      _name: A galinha pintadinha
-      _description: "Percebendo a possibilidade de sucesso, o projeto seguiu adiante
-        em 2009 com a cria\xE7\xE3o do DVD \"Galinha pintadinha e sua turma\", que
-        contava com anima\xE7\xF5es em 2D com personagens infantis e m\xFAsicas de
-        dom\xEDnio p\xFAblico."
-      _subtitle: 
-      _thumbnailURL: https://i1.sndcdn.com/avatars-000102364285-r5db0p-t500x500.jpg
+    Items:
+    - id: 0
+      singers: aa
+      thumbnail: sdsad
+      name: dsaddsaasd
+      description: dasdsa
+      subtitle: adsd
+      price: 50
+    - id: 1
+      singers: dasd
+      thumbnail: dsasd
+      name: dsasddsasd
+      description: dsasd
+      subtitle: dsasd
+      price: 60
   _musicMenu: {fileID: 220374582}
 --- !u!1 &1411775610
 GameObject:

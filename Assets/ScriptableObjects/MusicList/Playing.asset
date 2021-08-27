@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Playing
   m_EditorClassIdentifier: 
   _musics:
-    _items:
+    Items:
     - _musicController: {fileID: 9100000, guid: 5fc616502759dfd4da579ac74d03933a, type: 2}

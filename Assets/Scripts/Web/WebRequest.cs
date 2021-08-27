@@ -7,7 +7,6 @@ public static class WebRequest
     public static UnityWebRequest GetTexture(string url)
     {
         var request = UnityWebRequestTexture.GetTexture(url);
-        //request.downloadHandler = new DownloadHandlerBuffer();
         return request;
     }
 
@@ -17,6 +16,14 @@ public static class WebRequest
 
         var request = new UnityWebRequest( urlValue, "GET");
         request.downloadHandler = new DownloadHandlerBuffer();
+        request.SetRequestHeader("Content-Type", "application/json");
+        request.SetRequestHeader("Authorization", "Bearer " + AccessSetup.AccessToken);
+
+        /*request.SetRequestHeader("Authorization", "Bearer " + 
+                                                                $"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcGY" +
+                                                                $"iOiIxMzI4MTUzNTA5NyIsImlhdCI6MTYzMDAyMTQyMCwiZX" +
+                                                                $"hwIjoxNjMwMTA3ODIwfQ.gkzdYtOfg2Al8OiMmuLyuSm" +
+                                                                $"EoMrj9jR8L3BAF90LvnE");*/
         return request;
     }
 

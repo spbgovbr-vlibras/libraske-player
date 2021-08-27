@@ -83,12 +83,12 @@ public class AccessSetup : MonoBehaviour
         UserName = name;
         Email = email;
 
-        Debug.Log(
-                    "Refresh Token: " + refreshToken +
-                    " Access Token: " + AccessToken +
-                    " Name: " + name + 
-                    " Email " + email
-                 );
+        //Debug.Log(
+        //            "Refresh Token: " + refreshToken +
+        //            " Access Token: " + AccessToken +
+        //            " Name: " + name + 
+        //            " Email " + email
+        //         );
 
         _onRecieveData?.Invoke();
     }

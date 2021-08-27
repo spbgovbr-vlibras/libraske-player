@@ -251,7 +251,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &551333994
 Transform:
   m_ObjectHideFlags: 0
@@ -294,7 +294,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acessSetup: {fileID: 551333995}
-  userName: 
+  userName: SYSTEM
+  refreshToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcGYiOiIxMjM0NTY3ODkwMCIsImlhdCI6MTYzMDAyMDIxMSwiZXhwIjoxNjMwMTA2NjExfQ.UqrhK7GaYqCCxmEAzbZ2h3E2xcytRSDVrTxSH75JC4A
+  accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcGYiOiIxMjM0NTY3ODkwMCIsImlhdCI6MTYzMDAyMDIxMSwiZXhwIjoxNjMwMTA2NjExfQ.sgoEOTlbm1v-JwMxAcFfPgN7RK88ZvOe1h8EPWOhRVY
+  email: system@libraske.ufpb.br
 --- !u!1 &649770605
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,7 +452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _image: {fileID: 762410026}
-  _url: https://images-na.ssl-images-amazon.com/images/I/71E2t0KXrgL._AC_SX522_.jpg
+  _applyCaseFail: {fileID: 0}
 --- !u!114 &762410026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -667,7 +670,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1152695279
 Transform:
   m_ObjectHideFlags: 0
@@ -711,7 +714,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1206947582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -724,6 +727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3829d200fb2e77e4d806ce37ee874050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _musicMenu: {fileID: 0}
 --- !u!4 &1206947583
 Transform:
   m_ObjectHideFlags: 0

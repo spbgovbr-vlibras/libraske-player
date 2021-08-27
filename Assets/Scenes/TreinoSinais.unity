@@ -1899,7 +1899,7 @@ MonoBehaviour:
   _musicHolder: {fileID: 11400000, guid: af5b1cdbed07e0f4399d89ea65025dd1, type: 2}
   _musicList: {fileID: 11400000, guid: 50ad1bbda238743469a49d8a77b3be71, type: 2}
   _avatarAnimators:
-    _items:
+    Items:
     - {fileID: 1075161848}
     - {fileID: 1075161847}
   _sceneManager: {fileID: 598945711296122907}

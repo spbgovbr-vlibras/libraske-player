@@ -283,19 +283,19 @@ MonoBehaviour:
   _container: {fileID: 5460069673448694865}
   _text: {fileID: 5460069671717660832}
   _colors:
-    _items:
+    Items:
     - colorEnum: 0
-      color: {r: 0.9056604, g: 0.8757565, b: 0.8757565, a: 1}
+      color: {r: 0, g: 0, b: 0, a: 0}
     - colorEnum: 1
-      color: {r: 0.9716981, g: 0.90655583, b: 0.087086126, a: 1}
+      color: {r: 0, g: 0, b: 0, a: 0}
   _sizes:
-    _items:
+    Items:
     - sizeEnum: 0
-      size: 0.6
+      size: 0
     - sizeEnum: 1
-      size: 0.75
+      size: 0
     - sizeEnum: 2
-      size: 0.8
+      size: 0
 --- !u!114 &5460069673359237615
 MonoBehaviour:
   m_ObjectHideFlags: 0

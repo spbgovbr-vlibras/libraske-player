@@ -12,7 +12,7 @@ public class MusicMenu : MonoBehaviour
     [SerializeField] private TextUI _quantity;
     [SerializeField] private TextUI _quantityAndName;
 
-    public Wrapper<Music> _songs;
+    private Wrapper<Music> _songs;
 
     private void UpdateTexts()
     {

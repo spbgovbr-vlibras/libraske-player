@@ -3,27 +3,35 @@
 [System.Serializable]
 public class Music
 {
-    [SerializeField] private string _id;
-    [SerializeField] private string _singers;
-    [SerializeField] private string _name;
-    [SerializeField, TextArea(5, 10)] private string _description;
-    [SerializeField] private string _subtitle;
-    [SerializeField] private string _thumbnailURL;
+    [SerializeField] private string id;
+    [SerializeField] private string singers;
+    [SerializeField] private string thumbnail;
+    [SerializeField] private string name;
+    [SerializeField, TextArea(5, 10)] private string description;
+    [SerializeField] private string subtitle;
+    [SerializeField] private string price;
 
-    public Music(string id, string singers, string name, string description, string subtitle, string thumbnail)
+    public Music(string id, string singers, string thumbnail, string name, string description, string subtitle, string price)
     {
-        _id = id;
-        _singers = singers;
-        _name = name;
-        _description = description;
-        _subtitle = subtitle;
-        _thumbnailURL = thumbnail;
+        this.id = id;
+        this.singers = singers;
+        this.thumbnail = thumbnail;
+        this.name = name;
+        this.description = description;
+        this.subtitle = subtitle;
+        this.price = price;// int.Parse(price);
     }
 
-    public string Id { get => _id;}
-    public string Singers { get => _singers;}
-    public string Name { get => _name;}
-    public string Description { get => _description;}
-    public string Subtitle { get => _subtitle;}
-    public string ThumbnailURL { get => _thumbnailURL;}
+    public string ShowAllData()
+    {
+        return (Id + " " + Singers + " " + ThumbnailURL + " " + Name + " " + Description + " " + Subtitle + " " + Price); 
+    }
+
+    public string Price { get => price;  }
+    public string Id { get => id;}
+    public string Singers { get => singers;}
+    public string Name { get => name;}
+    public string Description { get => description;}
+    public string Subtitle { get => subtitle;}
+    public string ThumbnailURL { get => thumbnail;}
 }

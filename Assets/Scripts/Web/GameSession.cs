@@ -15,25 +15,19 @@ public class GameSession : MonoBehaviour
 
     private class Data
     {
-        public string idSong = "afdf2ebf-a371-45b9-98e6-eb42129e410c";
-        public string idUser = "562e354d-772b-492a-8c28-ce7d29735324";
+        public string idSong = "bd74237d-6c89-4f77-9800-667bc3cc2208";//"afdf2ebf-a371-45b9-98e6-eb42129e410c";
+        //public string idUser = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcGYiOiIxMjM0NTY3ODkwMCIsImlhdCI6MTYzMDAyMDIxMSwiZXhwIjoxNjMwMTA2NjExfQ.sgoEOTlbm1v-JwMxAcFfPgN7RK88ZvOe1h8EPWOhRVY";
     }
 
     private void Start()
     {
-        string songId = "afdf2ebf-a371-45b9-98e6-eb42129e410c";// songId;
-        string userId = "562e354d-772b-492a-8c28-ce7d29735324";//id;
-
-        Setup(songId, userId);
+        Setup();
     }
 
-    public void Setup(string songId, string user)
+    public void Setup()
     {
-        _songId = "afdf2ebf-a371-45b9-98e6-eb42129e410c";// songId;
-        _userId = "562e354d-772b-492a-8c28-ce7d29735324";//id;
-
         StopAllCoroutines();
-        StartCoroutine(SendDataCoroutine(_songId, _userId));
+        StartCoroutine(SendDataCoroutine());
     }
 
     private void SetGameSessionId(DownloadHandler downloadHandler)
@@ -43,7 +37,7 @@ public class GameSession : MonoBehaviour
         _id = str;
     }
 
-    IEnumerator SendDataCoroutine(string songId, string userId)
+    IEnumerator SendDataCoroutine()
     {
         Debug.Log("[GameSession]: Solicitou requisição");
 

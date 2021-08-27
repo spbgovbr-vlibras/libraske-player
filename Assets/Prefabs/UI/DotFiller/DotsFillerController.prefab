@@ -54,7 +54,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dots:
-    _items:
+    Items:
     - {fileID: 759223755919590556}
     - {fileID: 1524075593978367413}
     - {fileID: 1524075594377601812}

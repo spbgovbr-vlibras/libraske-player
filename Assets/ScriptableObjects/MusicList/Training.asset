@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Training
   m_EditorClassIdentifier: 
   _musics:
-    _items:
+    Items:
     - _musicController: {fileID: 9100000, guid: 385833028a09a0445bbe754069ea22af, type: 2}

@@ -306,6 +306,10 @@ PrefabInstance:
       value: 0.895632
       objectReference: {fileID: 0}
     - target: {fileID: 6758365582802536766, guid: ed30f4cd0cd27c24cbca80a8ad923976, type: 3}
+      propertyPath: _avatarColorManager
+      value: 
+      objectReference: {fileID: 651980396}
+    - target: {fileID: 6758365582802536766, guid: ed30f4cd0cd27c24cbca80a8ad923976, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -451,6 +455,10 @@ PrefabInstance:
       propertyPath: _color.r
       value: 0.72667503
       objectReference: {fileID: 0}
+    - target: {fileID: 6758365582802536766, guid: ed30f4cd0cd27c24cbca80a8ad923976, type: 3}
+      propertyPath: _avatarColorManager
+      value: 
+      objectReference: {fileID: 651980396}
     - target: {fileID: 6758365582802536766, guid: ed30f4cd0cd27c24cbca80a8ad923976, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -638,6 +646,46 @@ PrefabInstance:
       propertyPath: _customizationSO
       value: 
       objectReference: {fileID: 11400000, guid: dbaa2cd80fa7f7e4abd37ba9b994531e, type: 2}
+    - target: {fileID: 8291691316918624842, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291691316918624842, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291691316918624842, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291691316918624842, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291691316918624842, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291691316918624842, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291691316918624842, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291691316918624842, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291691316918624842, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291691316918624845, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
+      propertyPath: orthographic size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8291691317147645098, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
       propertyPath: _customizationSO
       value: 
@@ -696,6 +744,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
+--- !u!1 &286330840 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8291691316918624847, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
+  m_PrefabInstance: {fileID: 286330839}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &286330841
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286330840}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e6fc08c1943a3944ca3fd2c1d6e31c46, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &286330842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286330840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d762ed7fe5cba3241aeca13af7bad5d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _anim: {fileID: 286330841}
 --- !u!1 &534928655
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,7 +791,7 @@ GameObject:
   m_Component:
   - component: {fileID: 534928656}
   m_Layer: 0
-  m_Name: Color Manager
+  m_Name: Customization Manager
   m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -737,7 +822,7 @@ GameObject:
   - component: {fileID: 651980395}
   - component: {fileID: 651980396}
   m_Layer: 0
-  m_Name: ColorManager
+  m_Name: CustomizationManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -771,6 +856,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _avatarCustomizationSO: {fileID: 11400000, guid: dbaa2cd80fa7f7e4abd37ba9b994531e, type: 2}
   _currentAvatarCustomizationSO: {fileID: 11400000, guid: 64c2ebb0e886c774788cf60c2716e7cf, type: 2}
+  _customizationTabs:
+    Items:
+    - {fileID: 1999789355}
+    - {fileID: 1194780535}
+    - {fileID: 3302996508863812023}
+    - {fileID: 2021605703}
+    - {fileID: 1369033640}
+  _cameraAnimationController: {fileID: 286330842}
 --- !u!1001 &691021770
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -878,6 +971,10 @@ PrefabInstance:
       propertyPath: _color.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6758365582802536766, guid: ed30f4cd0cd27c24cbca80a8ad923976, type: 3}
+      propertyPath: _avatarColorManager
+      value: 
+      objectReference: {fileID: 651980396}
     - target: {fileID: 6758365582802536766, guid: ed30f4cd0cd27c24cbca80a8ad923976, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -1150,9 +1247,17 @@ PrefabInstance:
       value: Olhos
       objectReference: {fileID: 0}
     - target: {fileID: 3110529082492168494, guid: 39c56110c6bbbb0429efff101c33774a, type: 3}
+      propertyPath: _cameraClose
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3110529082492168494, guid: 39c56110c6bbbb0429efff101c33774a, type: 3}
       propertyPath: _avatarProperty
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3110529082492168494, guid: 39c56110c6bbbb0429efff101c33774a, type: 3}
+      propertyPath: _customizationManager
+      value: 
+      objectReference: {fileID: 651980396}
     - target: {fileID: 3110529082492168494, guid: 39c56110c6bbbb0429efff101c33774a, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.size
       value: 6
@@ -1498,6 +1603,10 @@ PrefabInstance:
       value: 0.029375792
       objectReference: {fileID: 0}
     - target: {fileID: 6758365582802536766, guid: ed30f4cd0cd27c24cbca80a8ad923976, type: 3}
+      propertyPath: _avatarColorManager
+      value: 
+      objectReference: {fileID: 651980396}
+    - target: {fileID: 6758365582802536766, guid: ed30f4cd0cd27c24cbca80a8ad923976, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -1656,9 +1765,17 @@ PrefabInstance:
       value: Calca
       objectReference: {fileID: 0}
     - target: {fileID: 3110529082492168494, guid: 39c56110c6bbbb0429efff101c33774a, type: 3}
+      propertyPath: _cameraClose
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3110529082492168494, guid: 39c56110c6bbbb0429efff101c33774a, type: 3}
       propertyPath: _avatarProperty
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3110529082492168494, guid: 39c56110c6bbbb0429efff101c33774a, type: 3}
+      propertyPath: _customizationManager
+      value: 
+      objectReference: {fileID: 651980396}
     - target: {fileID: 3110529082492168494, guid: 39c56110c6bbbb0429efff101c33774a, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.size
       value: 6
@@ -2207,6 +2324,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3110529082492168494, guid: 39c56110c6bbbb0429efff101c33774a, type: 3}
+      propertyPath: _customizationManager
+      value: 
+      objectReference: {fileID: 651980396}
+    - target: {fileID: 3110529082492168494, guid: 39c56110c6bbbb0429efff101c33774a, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.size
       value: 6
       objectReference: {fileID: 0}
@@ -2501,9 +2622,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3110529082492168494, guid: 39c56110c6bbbb0429efff101c33774a, type: 3}
+      propertyPath: _cameraClose
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3110529082492168494, guid: 39c56110c6bbbb0429efff101c33774a, type: 3}
       propertyPath: _avatarProperty
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3110529082492168494, guid: 39c56110c6bbbb0429efff101c33774a, type: 3}
+      propertyPath: _customizationManager
+      value: 
+      objectReference: {fileID: 651980396}
     - target: {fileID: 3110529082492168494, guid: 39c56110c6bbbb0429efff101c33774a, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.size
       value: 6
@@ -2830,9 +2959,17 @@ PrefabInstance:
       value: Cabelo
       objectReference: {fileID: 0}
     - target: {fileID: 3110529082492168494, guid: 39c56110c6bbbb0429efff101c33774a, type: 3}
+      propertyPath: _cameraClose
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3110529082492168494, guid: 39c56110c6bbbb0429efff101c33774a, type: 3}
       propertyPath: _avatarProperty
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3110529082492168494, guid: 39c56110c6bbbb0429efff101c33774a, type: 3}
+      propertyPath: _customizationManager
+      value: 
+      objectReference: {fileID: 651980396}
     - target: {fileID: 3110529082492168494, guid: 39c56110c6bbbb0429efff101c33774a, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.size
       value: 6
@@ -3386,6 +3523,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6758365582802536766, guid: ed30f4cd0cd27c24cbca80a8ad923976, type: 3}
+      propertyPath: _avatarColorManager
+      value: 
+      objectReference: {fileID: 651980396}
     - target: {fileID: 6758365582802536766, guid: ed30f4cd0cd27c24cbca80a8ad923976, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
