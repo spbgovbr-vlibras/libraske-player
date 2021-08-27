@@ -285,17 +285,17 @@ MonoBehaviour:
   _colors:
     Items:
     - colorEnum: 0
-      color: {r: 0, g: 0, b: 0, a: 0}
+      color: {r: 0.9056604, g: 0.8757565, b: 0.875756, a: 1}
     - colorEnum: 1
-      color: {r: 0, g: 0, b: 0, a: 0}
+      color: {r: 0.9716981, g: 0.90655583, b: 0.087086126, a: 1}
   _sizes:
     Items:
     - sizeEnum: 0
-      size: 0
+      size: 0.6
     - sizeEnum: 1
-      size: 0
+      size: 0.75
     - sizeEnum: 2
-      size: 0
+      size: 0.8
 --- !u!114 &5460069673359237615
 MonoBehaviour:
   m_ObjectHideFlags: 0
