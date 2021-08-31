@@ -34,8 +34,16 @@ public class RequestSongs : MonoBehaviour
             case UnityWebRequest.Result.Success:
                 Debug.Log("[RequestSongs]:  " + ":\nReceived: " + webRequest.downloadHandler.text);
 
-                _songs = JsonArray.FromJson<Music>(webRequest.downloadHandler.text);
-                _musicMenu.SetMusics(_songs);
+                try
+                {
+                    _songs = JsonArray.FromJson<Music>(webRequest.downloadHandler.text);
+                    _musicMenu.SetMusics(_songs);
+                }
+                catch
+                {
+                    Debug.LogError("[RequestSongs]:  Faile to cast Music to Array");
+                }
+
                 break;
         }   
     }
