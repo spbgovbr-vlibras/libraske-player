@@ -1270,6 +1270,7 @@ MonoBehaviour:
     _calca: {fileID: 5849173179406474328}
     _acessorios: {fileID: 0}
   _customizationSO: {fileID: 11400000, guid: 64c2ebb0e886c774788cf60c2716e7cf, type: 2}
+  _avatarName: 
 --- !u!1 &5849173178753557007
 GameObject:
   m_ObjectHideFlags: 0
@@ -3035,6 +3036,7 @@ MonoBehaviour:
     _calca: {fileID: 5849173179361556275}
     _acessorios: {fileID: 5849173179730837088}
   _customizationSO: {fileID: 11400000, guid: 64c2ebb0e886c774788cf60c2716e7cf, type: 2}
+  _avatarName: 
 --- !u!1 &5849173179187302642
 GameObject:
   m_ObjectHideFlags: 0
@@ -9682,6 +9684,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5849173180330424284}
+  - component: {fileID: 919148912349211611}
   m_Layer: 8
   m_Name: Avatar
   m_TagString: avatar
@@ -9707,6 +9710,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &919148912349211611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5849173180330424282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a85f5aa8b0a72408ceb1f60da12aaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _icaro: {fileID: 5849173178730652986}
+  _hozana: {fileID: 5849173179179646012}
 --- !u!1 &5849173180339059609
 GameObject:
   m_ObjectHideFlags: 0

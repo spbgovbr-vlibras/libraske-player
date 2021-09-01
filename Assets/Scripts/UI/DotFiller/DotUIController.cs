@@ -13,6 +13,12 @@ public class DotUIController : MonoBehaviour
 
         UpdateDots();
     }
+	
+	public void SelectId(int id)
+	{
+		_currentSelection = id;
+		UpdateDots();
+	}
 
     public void Increase()
     {

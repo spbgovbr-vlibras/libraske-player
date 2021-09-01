@@ -4,10 +4,12 @@ using UnityEngine;
 namespace Lavid.Libraske.Avatar
 {
     /// <summary> Connect colors to Avatar's renderer materials </summary>
-    public class Avatar : MonoBehaviour, IAvatarCustomizationObserver
+    public class AvatarVLibras : MonoBehaviour, IAvatarCustomizationObserver
     {
         [SerializeField] private AvatarStruct<SkinnedMeshRenderer> _renderer;
         [SerializeField, Tooltip("Avatar Customization Scriptable Object")] private AvatarCustomizationSO _customizationSO;
+
+        [SerializeField] private string _avatarName;
 
         private void OnEnable()
         {
@@ -53,5 +55,7 @@ namespace Lavid.Libraske.Avatar
             if (renderer != null && color != null)
                 renderer.material.color = color;
         }
+
+        public string GetAvatarName() => _avatarName;
     }
 }
