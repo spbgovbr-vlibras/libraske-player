@@ -784,7 +784,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1170298831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1355,7 +1355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _beforeName: "Ol\xE1, "
-  _afterName: ",esse \xE9 o librask\xEA!"
+  _afterName: ", esse \xE9 o librask\xEA!"
   _text: {fileID: 1639482570}
 --- !u!114 &1639482570
 MonoBehaviour:

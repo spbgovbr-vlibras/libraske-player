@@ -19,6 +19,6 @@ public class AcessSetupSimulator : MonoBehaviour
         //string created_at = "2021-06-12T01:51:17.901Z";
         //string updated_at = "2021-06-12T01:51:17.901Z";
         //string accessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcGYiOm51bGwsImlhdCI6MTYyNDQxMTMzNiwiZXhwIjoxNjI0NDk3NzM2fQ.qGh51GOFdTyVLNwjUVoPF1FQc5zTzEsedu7y15iqhnw";
-        acessSetup.ReceiveData(refreshToken, accessToken, name, email);
+        acessSetup.ReceiveData(refreshToken, accessToken, userName, email);
     }
 }

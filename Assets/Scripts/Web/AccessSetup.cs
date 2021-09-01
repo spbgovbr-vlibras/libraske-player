@@ -13,7 +13,7 @@ public class AccessSetup : MonoBehaviour
     /// <returns> Returns true case data is valid, false otherwise. </returns>
     private bool AllDataIsValid()
     {
-        return (
+        return !(
                     RefreshToken == null ||
                     RefreshToken == "" ||
 
