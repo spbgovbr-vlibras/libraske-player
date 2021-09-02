@@ -119,6 +119,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _soundOnClick: {fileID: 8300000, guid: 9cd6daed79f36894a9370e07ba72e884, type: 3}
+  _soundOnEnter: {fileID: 8300000, guid: 7149afffbc0be31448a7ac39520e878e, type: 3}
+  _soundOnExit: {fileID: 0}
+  _audioController: {fileID: 0}
 --- !u!1 &6060443858148324290
 GameObject:
   m_ObjectHideFlags: 0

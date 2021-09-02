@@ -1262,7 +1262,7 @@ MonoBehaviour:
     _cabelo: {fileID: 5849173179127036782}
     _corpo: {fileID: 5849173180406253556}
     _iris: {fileID: 5849173180301000424}
-    _pupila: {fileID: 5849173180301000424}
+    _pupila: {fileID: 0}
     _olhos: {fileID: 5849173179187302643}
     _dentes: {fileID: 5849173179281917010}
     _lingua: {fileID: 5849173178662954833}
