@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _colors:
     _cabelo:
-      _color: {r: 0.9056604, g: 0.19223925, b: 0.19223925, a: 1}
+      _color: {r: 0, g: 0, b: 0, a: 1}
     _corpo:
       _color: {r: 0.75686276, g: 0.5176471, b: 0.44313726, a: 1}
     _iris:
       _color: {r: 0, g: 0, b: 0, a: 0}
     _pupila:
-      _color: {r: 1, g: 1, b: 1, a: 1}
+      _color: {r: 0, g: 0, b: 0, a: 1}
     _olhos:
       _color: {r: 1, g: 1, b: 1, a: 1}
     _dentes:

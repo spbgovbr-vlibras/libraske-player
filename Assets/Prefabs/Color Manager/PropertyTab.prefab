@@ -363,8 +363,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ee5e7e89f53c854cad4e199bdf827fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _whenTabEnabled: {fileID: 503356883805788146}
-  _whenTabDisabled: {fileID: 503356883732121072}
+  _rendererWhenEnabled: {fileID: 503356883805788146}
+  _rendererWhenDisabled: {fileID: 503356883732121072}
+  _containerToTrigger: {fileID: 0}
   _customizationManager: {fileID: 0}
   _cameraClose: 0
   _avatarProperty: 0

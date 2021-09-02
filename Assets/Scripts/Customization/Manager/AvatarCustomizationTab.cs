@@ -5,10 +5,13 @@ namespace Lavid.Libraske.Avatar
     /// <summary> Customiza itens do avatar.  </summary>
     public class AvatarCustomizationTab : MonoBehaviour
     {
-        [SerializeField] GameObject _whenTabEnabled;
-        [SerializeField] GameObject _whenTabDisabled;
-        [SerializeField] AvatarCustomizationManager _customizationManager;
+        [Header("Renderer")]
+        [SerializeField] GameObject _rendererWhenEnabled;
+        [SerializeField] GameObject _rendererWhenDisabled;
 
+        [Header("Tab Settings"), Space(3)]
+        [SerializeField] GameObject _containerToTrigger;
+        [SerializeField] AvatarCustomizationManager _customizationManager;
         [SerializeField, Tooltip("Change close of camera when enable tab")] CameraAnimationCloses _cameraClose;
         [SerializeField] AvatarPropertiesEnum _avatarProperty;
 
@@ -18,7 +21,7 @@ namespace Lavid.Libraske.Avatar
                 return;
 
             _customizationManager.SetProperty(_avatarProperty);
-            _customizationManager.SelectTab(this);
+            _customizationManager.SelectTab(this, _containerToTrigger);
         }
 
         public void ApplyCameraClose()
@@ -29,8 +32,9 @@ namespace Lavid.Libraske.Avatar
 
         public void EnableTab(bool value)
         {
-            _whenTabEnabled.SetActive(value);
-            _whenTabDisabled.SetActive(!value);
+            _rendererWhenEnabled.SetActive(value);
+            _rendererWhenDisabled.SetActive(!value);
+            _containerToTrigger.SetActive(value);
         }
     }
 }

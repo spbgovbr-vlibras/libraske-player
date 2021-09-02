@@ -12,16 +12,33 @@ namespace Lavid.Libraske.Avatar
         [SerializeField] private Wrapper<AvatarCustomizationTab> _customizationTabs;
         [SerializeField] private CameraAnimationController _cameraAnimationController;
 
+        [SerializeField] private GameObject _containerToTrigger;
+
         private Color _color;
         private AvatarPropertiesEnum _avatarProperty;
 
-        private void Start() => _avatarCustomizationSO.SetColors(_currentAvatarCustomizationSO.GetColors());
+        private void Start()
+        {
+            _avatarCustomizationSO.SetColors(_currentAvatarCustomizationSO.GetColors());
 
-        public void SelectTab(AvatarCustomizationTab tab)
+            if (_containerToTrigger != null)
+                _containerToTrigger.SetActive(true);
+        }
+
+        public void SelectTab(AvatarCustomizationTab tab, GameObject containerToTrigger)
         {
             for(int i = 0; i < _customizationTabs.Length; i++)
             {
                 _customizationTabs[i].EnableTab(_customizationTabs[i] == tab);
+            }
+
+            if (_containerToTrigger != null)
+                _containerToTrigger.SetActive(false);
+
+            if(containerToTrigger != null)
+            {
+                _containerToTrigger = containerToTrigger;
+                _containerToTrigger.SetActive(true);
             }
         }
 
