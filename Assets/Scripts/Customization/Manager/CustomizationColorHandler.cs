@@ -1,28 +1,29 @@
-﻿using UnityEngine;
+﻿using Lavid.Libraske.Avatar;
+using UnityEngine;
 using UnityEngine.UI;
 
-namespace Lavid.Libraske.Avatar
+
+public class CustomizationColorHandler : MonoBehaviour
 {
-    [RequireComponent(typeof(Image))]
-    public class CustomizationColorHandler : MonoBehaviour
+    [Header("Color Manager")]
+    [SerializeField] private AvatarCustomizationManager _avatarColorManager;
+    [SerializeField] private Image _colorImage;
+
+    [Header("Lock Container"), Space(2)]
+    [SerializeField] private GameObject _lockContainer;
+
+    public void LockColor(bool lockColor)
     {
-        [SerializeField] private AvatarCustomizationManager _avatarColorManager;
-        [SerializeField] private Color _color;
-        private Image _image;
+        _colorImage.raycastTarget = !lockColor;
+        _lockContainer.SetActive(lockColor);
+    }
 
-        private void OnEnable()
-        {
-            _image = GetComponent<Image>();
-            _image.color = _color;
-        }
+    public void ApplyColorToManager()
+    {
+        if (_avatarColorManager == null)
+            return;
 
-        public void ApplyColorToManager()
-        {
-            if (_avatarColorManager == null)
-                return;
-
-            _avatarColorManager.SetColor(_color);
-            _avatarColorManager.ApplyColorToProperty();
-        }
+        _avatarColorManager.SetColor(_colorImage.color);
+        _avatarColorManager.ApplyColorToProperty();
     }
 }
