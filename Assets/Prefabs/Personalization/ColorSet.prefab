@@ -198,7 +198,8 @@ MonoBehaviour:
     - {fileID: 801248746120978798}
     - {fileID: 801248745197059246}
     - {fileID: 801248745983780723}
-  _startLocked: 0
+  _price: 250
+  _isUnlocked: 0
 --- !u!1001 &928080804563654430
 PrefabInstance:
   m_ObjectHideFlags: 0
