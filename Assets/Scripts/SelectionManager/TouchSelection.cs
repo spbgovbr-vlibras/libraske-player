@@ -7,11 +7,13 @@ public class TouchSelection : MonoBehaviour, ITouchComponent
 {
     [Header("Events")]
     [SerializeField] private UnityEvent _onClick;
+    [SerializeField] private UnityEvent _onPointerDown;
     [SerializeField] private UnityEvent _onEnter;
     [SerializeField] private UnityEvent _onExit;
 
     [Header("Sounds"), Space(2)]
     [SerializeField] private AudioClip _soundOnClick;
+    [SerializeField] private AudioClip _soundOnPointerDown;
     [SerializeField] private AudioClip _soundOnEnter;
     [SerializeField] private AudioClip _soundOnExit;
     [SerializeField] private SoundFxController _audioController;
@@ -21,6 +23,12 @@ public class TouchSelection : MonoBehaviour, ITouchComponent
     {
         _onClick?.Invoke();
         PlaySoundFx(_soundOnClick);
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        _onPointerDown?.Invoke();
+        PlaySoundFx(_soundOnPointerDown);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
