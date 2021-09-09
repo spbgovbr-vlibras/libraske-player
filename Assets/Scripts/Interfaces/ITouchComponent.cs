@@ -2,5 +2,5 @@
 
 namespace Lavid.Libraske.Interfaces
 {
-    public interface ITouchComponent : IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler { }
+    public interface ITouchComponent : IPointerClickHandler, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler { }
 }
