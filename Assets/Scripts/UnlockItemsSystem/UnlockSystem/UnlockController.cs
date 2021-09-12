@@ -13,9 +13,7 @@ namespace Lavid.Libraske.UnlockSystem
 
         private IUnlockable _itemToUnlock;
 
-        public void EnterUnlockRequest(GameObject unlockable) => EnterUnlockRequest(unlockable.GetComponent<IUnlockable>());
-
-        private void EnterUnlockRequest(IUnlockable unlockable)
+        public void EnterUnlockRequest(IUnlockable unlockable)
         {
             _itemToUnlock = unlockable;
             _view.EnterUnlockRequest(unlockable.Price, _moneyHandler.GetCurrentMoneyAmount());

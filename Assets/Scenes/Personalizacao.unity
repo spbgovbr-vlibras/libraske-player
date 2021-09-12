@@ -555,6 +555,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1275420183708852898, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 1576876978332145642, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _avatarColorManager
       value: 
@@ -591,6 +595,10 @@ PrefabInstance:
       propertyPath: _avatarColorManager
       value: 
       objectReference: {fileID: 651980396}
+    - target: {fileID: 2572142391288056829, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 2623809330792431263, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _audioController
       value: 
@@ -823,6 +831,10 @@ PrefabInstance:
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 1991173211}
+    - target: {fileID: 4784867249181971713, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 5230874761125003357, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _audioController
       value: 
@@ -839,6 +851,10 @@ PrefabInstance:
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 1991173211}
+    - target: {fileID: 5383764033740085058, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 5419757860047143883, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _color.b
       value: 0.027450982
@@ -1515,6 +1531,10 @@ PrefabInstance:
       propertyPath: _avatarColorManager
       value: 
       objectReference: {fileID: 651980396}
+    - target: {fileID: 6810915175972882120, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 6818602039203554649, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: m_Color.b
       value: 0.54901963
@@ -1675,6 +1695,10 @@ PrefabInstance:
       propertyPath: _avatarColorManager
       value: 
       objectReference: {fileID: 651980396}
+    - target: {fileID: 8400909042622743717, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 8482900662454461681, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: m_Color.b
       value: 0.6862745
@@ -2231,6 +2255,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1275420183708852898, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
+    - target: {fileID: 1275420183708852898, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _isUnlocked
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1576876978332145642, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _avatarColorManager
       value: 
@@ -2275,6 +2307,14 @@ PrefabInstance:
       propertyPath: _avatarColorManager
       value: 
       objectReference: {fileID: 651980396}
+    - target: {fileID: 2572142391288056829, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
+    - target: {fileID: 2572142391288056829, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _isUnlocked
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2623809330792431263, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _audioController
       value: 
@@ -2507,6 +2547,14 @@ PrefabInstance:
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 1991173211}
+    - target: {fileID: 4784867249181971713, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
+    - target: {fileID: 4784867249181971713, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _isUnlocked
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5230874761125003357, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _audioController
       value: 
@@ -2523,6 +2571,10 @@ PrefabInstance:
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 1991173211}
+    - target: {fileID: 5383764033740085058, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 5419757860047143883, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _color.b
       value: 0.32156864
@@ -3199,6 +3251,10 @@ PrefabInstance:
       propertyPath: _avatarColorManager
       value: 
       objectReference: {fileID: 651980396}
+    - target: {fileID: 6810915175972882120, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 6818602039203554649, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: m_Color.b
       value: 0.8196079
@@ -3355,6 +3411,14 @@ PrefabInstance:
       propertyPath: _avatarColorManager
       value: 
       objectReference: {fileID: 651980396}
+    - target: {fileID: 8400909042622743717, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
+    - target: {fileID: 8400909042622743717, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _isUnlocked
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8482900662454461681, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: m_Color.b
       value: 0.9058824
@@ -3872,6 +3936,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.8431373
       objectReference: {fileID: 0}
+    - target: {fileID: 1275420183708852898, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 1576876978332145642, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _avatarColorManager
       value: 
@@ -3908,6 +3976,10 @@ PrefabInstance:
       propertyPath: _avatarColorManager
       value: 
       objectReference: {fileID: 651980396}
+    - target: {fileID: 2572142391288056829, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 2623809330792431263, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _audioController
       value: 
@@ -4136,6 +4208,10 @@ PrefabInstance:
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 1991173211}
+    - target: {fileID: 4784867249181971713, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 5230874761125003357, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _audioController
       value: 
@@ -4152,6 +4228,10 @@ PrefabInstance:
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 1991173211}
+    - target: {fileID: 5383764033740085058, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 5419757860047143883, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _color.b
       value: 0.32941177
@@ -4828,6 +4908,10 @@ PrefabInstance:
       propertyPath: _avatarColorManager
       value: 
       objectReference: {fileID: 651980396}
+    - target: {fileID: 6810915175972882120, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 6818602039203554649, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: m_Color.b
       value: 0.25490198
@@ -4984,6 +5068,10 @@ PrefabInstance:
       propertyPath: _avatarColorManager
       value: 
       objectReference: {fileID: 651980396}
+    - target: {fileID: 8400909042622743717, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 8482900662454461681, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: m_Color.b
       value: 0.7372549
@@ -5022,11 +5110,6 @@ PrefabInstance:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3174121451115065369, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
   m_PrefabInstance: {fileID: 865251478}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &905759033 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 445395903612557340, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
-  m_PrefabInstance: {fileID: 1595145691}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &928202659
 PrefabInstance:
@@ -5155,6 +5238,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.54509807
       objectReference: {fileID: 0}
+    - target: {fileID: 1275420183708852898, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 1576876978332145642, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _avatarColorManager
       value: 
@@ -5191,6 +5278,10 @@ PrefabInstance:
       propertyPath: _avatarColorManager
       value: 
       objectReference: {fileID: 651980396}
+    - target: {fileID: 2572142391288056829, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 2623809330792431263, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _audioController
       value: 
@@ -5423,6 +5514,10 @@ PrefabInstance:
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 1991173211}
+    - target: {fileID: 4784867249181971713, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 5230874761125003357, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _audioController
       value: 
@@ -5439,6 +5534,10 @@ PrefabInstance:
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 1991173211}
+    - target: {fileID: 5383764033740085058, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 5419757860047143883, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _color.b
       value: 0.15294118
@@ -6115,6 +6214,10 @@ PrefabInstance:
       propertyPath: _avatarColorManager
       value: 
       objectReference: {fileID: 651980396}
+    - target: {fileID: 6810915175972882120, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 6818602039203554649, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: m_Color.b
       value: 0.08627451
@@ -6275,6 +6378,10 @@ PrefabInstance:
       propertyPath: _avatarColorManager
       value: 
       objectReference: {fileID: 651980396}
+    - target: {fileID: 8400909042622743717, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 8482900662454461681, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: m_Color.b
       value: 0.07058824
@@ -6512,6 +6619,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _onPointerDown:
+    m_PersistentCalls:
+      m_Calls: []
   _onEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -6519,6 +6629,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _soundOnClick: {fileID: 8300000, guid: 9cd6daed79f36894a9370e07ba72e884, type: 3}
+  _soundOnPointerDown: {fileID: 0}
   _soundOnEnter: {fileID: 0}
   _soundOnExit: {fileID: 0}
   _audioController: {fileID: 1041269778}
@@ -6561,6 +6672,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _onPointerDown:
+    m_PersistentCalls:
+      m_Calls: []
   _onEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -6568,6 +6682,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _soundOnClick: {fileID: 8300000, guid: 9cd6daed79f36894a9370e07ba72e884, type: 3}
+  _soundOnPointerDown: {fileID: 0}
   _soundOnEnter: {fileID: 0}
   _soundOnExit: {fileID: 0}
   _audioController: {fileID: 1041269778}
@@ -6698,6 +6813,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.427451
       objectReference: {fileID: 0}
+    - target: {fileID: 1275420183708852898, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 1576876978332145642, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _avatarColorManager
       value: 
@@ -6734,6 +6853,10 @@ PrefabInstance:
       propertyPath: _avatarColorManager
       value: 
       objectReference: {fileID: 651980396}
+    - target: {fileID: 2572142391288056829, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 2623809330792431263, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _audioController
       value: 
@@ -6966,6 +7089,10 @@ PrefabInstance:
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 1991173211}
+    - target: {fileID: 4784867249181971713, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 5230874761125003357, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _audioController
       value: 
@@ -6982,6 +7109,10 @@ PrefabInstance:
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 1991173211}
+    - target: {fileID: 5383764033740085058, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 5419757860047143883, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _color.g
       value: 0.04705883
@@ -7618,6 +7749,10 @@ PrefabInstance:
       propertyPath: _avatarColorManager
       value: 
       objectReference: {fileID: 651980396}
+    - target: {fileID: 6810915175972882120, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 6818602039203554649, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: m_Color.b
       value: 0.07058824
@@ -7778,6 +7913,10 @@ PrefabInstance:
       propertyPath: _avatarColorManager
       value: 
       objectReference: {fileID: 651980396}
+    - target: {fileID: 8400909042622743717, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 8482900662454461681, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: m_Color.b
       value: 0.15686275
@@ -8580,6 +8719,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _onPointerDown:
+    m_PersistentCalls:
+      m_Calls: []
   _onEnter:
     m_PersistentCalls:
       m_Calls:
@@ -8611,6 +8753,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _soundOnClick: {fileID: 8300000, guid: 9cd6daed79f36894a9370e07ba72e884, type: 3}
+  _soundOnPointerDown: {fileID: 0}
   _soundOnEnter: {fileID: 8300000, guid: 7149afffbc0be31448a7ac39520e878e, type: 3}
   _soundOnExit: {fileID: 0}
   _audioController: {fileID: 1041269778}
@@ -9273,6 +9416,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _onPointerDown:
+    m_PersistentCalls:
+      m_Calls: []
   _onEnter:
     m_PersistentCalls:
       m_Calls:
@@ -9304,6 +9450,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _soundOnClick: {fileID: 8300000, guid: 9cd6daed79f36894a9370e07ba72e884, type: 3}
+  _soundOnPointerDown: {fileID: 0}
   _soundOnEnter: {fileID: 8300000, guid: 7149afffbc0be31448a7ac39520e878e, type: 3}
   _soundOnExit: {fileID: 0}
   _audioController: {fileID: 1041269778}
@@ -9525,6 +9672,10 @@ PrefabInstance:
       propertyPath: m_Color.g
       value: 0.11764707
       objectReference: {fileID: 0}
+    - target: {fileID: 1275420183708852898, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 1576876978332145642, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _avatarColorManager
       value: 
@@ -9565,6 +9716,14 @@ PrefabInstance:
       propertyPath: _avatarColorManager
       value: 
       objectReference: {fileID: 651980396}
+    - target: {fileID: 2572142391288056829, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
+    - target: {fileID: 2572142391288056829, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _isUnlocked
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2623809330792431263, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _audioController
       value: 
@@ -9797,38 +9956,10 @@ PrefabInstance:
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 1991173211}
-    - target: {fileID: 4645566631003874448, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
-      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4645566631003874448, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
-      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4645566631003874448, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
-      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+    - target: {fileID: 4784867249181971713, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
       value: 
       objectReference: {fileID: 8872509641323270576}
-    - target: {fileID: 4645566631003874448, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
-      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4645566631003874448, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
-      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: EnterUnlockRequest
-      objectReference: {fileID: 0}
-    - target: {fileID: 4645566631003874448, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
-      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Lavid.Libraske.UnlockSystem.UnlockController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4645566631003874448, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
-      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 905759033}
-    - target: {fileID: 4645566631003874448, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
-      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 5230874761125003357, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _audioController
       value: 
@@ -9845,6 +9976,10 @@ PrefabInstance:
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 1991173211}
+    - target: {fileID: 5383764033740085058, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 5419757860047143883, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _color.g
       value: 0
@@ -10489,6 +10624,10 @@ PrefabInstance:
       propertyPath: _avatarColorManager
       value: 
       objectReference: {fileID: 651980396}
+    - target: {fileID: 6810915175972882120, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
     - target: {fileID: 6818602039203554649, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: m_Color.b
       value: 0.2509804
@@ -10637,6 +10776,14 @@ PrefabInstance:
       propertyPath: _avatarColorManager
       value: 
       objectReference: {fileID: 651980396}
+    - target: {fileID: 8400909042622743717, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 8872509641323270576}
+    - target: {fileID: 8400909042622743717, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _isUnlocked
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8482900662454461681, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: m_Color.b
       value: 0.6392157
@@ -10741,6 +10888,9 @@ MonoBehaviour:
   _onClick:
     m_PersistentCalls:
       m_Calls: []
+  _onPointerDown:
+    m_PersistentCalls:
+      m_Calls: []
   _onEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -10748,6 +10898,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _soundOnClick: {fileID: 0}
+  _soundOnPointerDown: {fileID: 0}
   _soundOnEnter: {fileID: 0}
   _soundOnExit: {fileID: 0}
   _audioController: {fileID: 0}
@@ -12554,6 +12705,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _onPointerDown:
+    m_PersistentCalls:
+      m_Calls: []
   _onEnter:
     m_PersistentCalls:
       m_Calls:
@@ -12585,6 +12739,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _soundOnClick: {fileID: 8300000, guid: 9cd6daed79f36894a9370e07ba72e884, type: 3}
+  _soundOnPointerDown: {fileID: 0}
   _soundOnEnter: {fileID: 8300000, guid: 7149afffbc0be31448a7ac39520e878e, type: 3}
   _soundOnExit: {fileID: 0}
   _audioController: {fileID: 1041269778}
@@ -12654,7 +12809,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6774486306525116204
 RectTransform:
   m_ObjectHideFlags: 0
