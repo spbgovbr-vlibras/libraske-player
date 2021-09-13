@@ -299,9 +299,11 @@ GameObject:
   m_Component:
   - component: {fileID: 3110529082492168483}
   - component: {fileID: 3110529082492168480}
-  - component: {fileID: 3110529082492168495}
   - component: {fileID: 3110529082492168494}
   - component: {fileID: 1638042947424722946}
+  - component: {fileID: 3110529082492168495}
+  - component: {fileID: 1410309139119013998}
+  - component: {fileID: 3317955460241993800}
   m_Layer: 5
   m_Name: PropertyTab
   m_TagString: Untagged
@@ -338,19 +340,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3110529082492168492}
   m_CullTransparentMesh: 0
---- !u!114 &3110529082492168495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3110529082492168492}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f62c1afa4cc06a41a56e8a2af226a01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objectToScale: {fileID: 3110529082492168492}
 --- !u!114 &3110529082492168494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,6 +397,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _onPointerDown:
+    m_PersistentCalls:
+      m_Calls: []
   _onEnter:
     m_PersistentCalls:
       m_Calls:
@@ -438,3 +430,74 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3110529082492168495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3110529082492168492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f62c1afa4cc06a41a56e8a2af226a01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectToScale: {fileID: 3110529082492168492}
+--- !u!114 &1410309139119013998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3110529082492168492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccf3cd135bacf3440b48e2fdbe4e6481, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scalerController: {fileID: 3110529082492168495}
+  _scales:
+    onEnable:
+      _enabled: 1
+      _value: 1
+    onClick:
+      _enabled: 0
+      _value: 0
+    onPointerDown:
+      _enabled: 0
+      _value: 0
+    onEnter:
+      _enabled: 1
+      _value: 1.1
+    onExit:
+      _enabled: 1
+      _value: 1
+--- !u!114 &3317955460241993800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3110529082492168492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5274c12891faa74c839970c6346b987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioController: {fileID: 0}
+  _sounds:
+    onEnable:
+      _enabled: 0
+      _value: {fileID: 0}
+    onClick:
+      _enabled: 1
+      _value: {fileID: 8300000, guid: 9cd6daed79f36894a9370e07ba72e884, type: 3}
+    onPointerDown:
+      _enabled: 0
+      _value: {fileID: 0}
+    onEnter:
+      _enabled: 1
+      _value: {fileID: 8300000, guid: 7149afffbc0be31448a7ac39520e878e, type: 3}
+    onExit:
+      _enabled: 0
+      _value: {fileID: 0}

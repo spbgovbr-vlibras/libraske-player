@@ -658,8 +658,10 @@ GameObject:
   - component: {fileID: 8450824742337739168}
   - component: {fileID: 8450824742337739169}
   - component: {fileID: 8450824742337739174}
-  - component: {fileID: 6675218980112082780}
   - component: {fileID: 2439846811958582499}
+  - component: {fileID: 6675218980112082780}
+  - component: {fileID: 1258505659428973992}
+  - component: {fileID: 2837048649989473623}
   m_Layer: 5
   m_Name: MusicDisplay
   m_TagString: Untagged
@@ -720,19 +722,6 @@ MonoBehaviour:
   _filterNameOverflow: 1
   _maxNameCharacters: 15
   _musicHolder: {fileID: 0}
---- !u!114 &6675218980112082780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8450824742337739171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f62c1afa4cc06a41a56e8a2af226a01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objectToScale: {fileID: 8450824742337739171}
 --- !u!114 &2439846811958582499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -748,36 +737,86 @@ MonoBehaviour:
   _onClick:
     m_PersistentCalls:
       m_Calls: []
+  _onPointerDown:
+    m_PersistentCalls:
+      m_Calls: []
   _onEnter:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6675218980112082780}
-        m_TargetAssemblyTypeName: GameObjectScaler, Assembly-CSharp
-        m_MethodName: SetScale
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 1.15
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _onExit:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6675218980112082780}
-        m_TargetAssemblyTypeName: GameObjectScaler, Assembly-CSharp
-        m_MethodName: SetScale
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 1
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &6675218980112082780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8450824742337739171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f62c1afa4cc06a41a56e8a2af226a01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectToScale: {fileID: 8450824742337739171}
+--- !u!114 &1258505659428973992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8450824742337739171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccf3cd135bacf3440b48e2fdbe4e6481, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scalerController: {fileID: 6675218980112082780}
+  _scales:
+    onEnable:
+      _enabled: 1
+      _value: 1
+    onClick:
+      _enabled: 0
+      _value: 0
+    onPointerDown:
+      _enabled: 0
+      _value: 0
+    onEnter:
+      _enabled: 1
+      _value: 1.15
+    onExit:
+      _enabled: 1
+      _value: 1
+--- !u!114 &2837048649989473623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8450824742337739171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5274c12891faa74c839970c6346b987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioController: {fileID: 0}
+  _sounds:
+    onEnable:
+      _enabled: 0
+      _value: {fileID: 0}
+    onClick:
+      _enabled: 1
+      _value: {fileID: 8300000, guid: 9cd6daed79f36894a9370e07ba72e884, type: 3}
+    onPointerDown:
+      _enabled: 0
+      _value: {fileID: 0}
+    onEnter:
+      _enabled: 1
+      _value: {fileID: 8300000, guid: 7149afffbc0be31448a7ac39520e878e, type: 3}
+    onExit:
+      _enabled: 0
+      _value: {fileID: 0}
 --- !u!1 &8450824743268339404
 GameObject:
   m_ObjectHideFlags: 0

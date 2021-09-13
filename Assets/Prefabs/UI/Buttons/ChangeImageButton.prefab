@@ -10,8 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6060443856975492944}
   - component: {fileID: 6060443856975492945}
+  - component: {fileID: 9104512231412011526}
+  - component: {fileID: 4702500389185644020}
   m_Layer: 5
-  m_Name: BotaoVoltar
+  m_Name: ChangeImageButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65,64 +67,77 @@ MonoBehaviour:
           m_StringArgument: MinhasMusicas
           m_BoolArgument: 0
         m_CallState: 2
+  _onPointerDown:
+    m_PersistentCalls:
+      m_Calls: []
   _onEnter:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6060443858148324290}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6060443858741619666}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
   _onExit:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6060443858148324290}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 6060443858741619666}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _soundOnClick: {fileID: 8300000, guid: 9cd6daed79f36894a9370e07ba72e884, type: 3}
-  _soundOnEnter: {fileID: 8300000, guid: 7149afffbc0be31448a7ac39520e878e, type: 3}
+      m_Calls: []
+  _soundOnClick: {fileID: 0}
+  _soundOnPointerDown: {fileID: 0}
+  _soundOnEnter: {fileID: 0}
   _soundOnExit: {fileID: 0}
   _audioController: {fileID: 0}
+--- !u!114 &9104512231412011526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6060443856975492947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5274c12891faa74c839970c6346b987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioController: {fileID: 0}
+  _sounds:
+    onEnable:
+      _enabled: 0
+      _value: {fileID: 0}
+    onClick:
+      _enabled: 1
+      _value: {fileID: 8300000, guid: 9cd6daed79f36894a9370e07ba72e884, type: 3}
+    onPointerDown:
+      _enabled: 0
+      _value: {fileID: 0}
+    onEnter:
+      _enabled: 1
+      _value: {fileID: 8300000, guid: 7149afffbc0be31448a7ac39520e878e, type: 3}
+    onExit:
+      _enabled: 0
+      _value: {fileID: 0}
+--- !u!114 &4702500389185644020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6060443856975492947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b464468f409af9469dff319c61f66d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _images:
+    onEnable:
+      _enabled: 1
+      _value: {fileID: 6060443858148324290}
+    onClick:
+      _enabled: 0
+      _value: {fileID: 0}
+    onPointerDown:
+      _enabled: 0
+      _value: {fileID: 0}
+    onEnter:
+      _enabled: 1
+      _value: {fileID: 6060443858741619666}
+    onExit:
+      _enabled: 1
+      _value: {fileID: 6060443858148324290}
 --- !u!1 &6060443858148324290
 GameObject:
   m_ObjectHideFlags: 0

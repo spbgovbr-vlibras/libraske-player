@@ -235,9 +235,11 @@ GameObject:
   m_Component:
   - component: {fileID: 6758365582802536765}
   - component: {fileID: 6758365582802536760}
-  - component: {fileID: 6758365582802536767}
   - component: {fileID: 5934594196009647684}
   - component: {fileID: 8638959126603220667}
+  - component: {fileID: 6758365582802536767}
+  - component: {fileID: 6967753134802461194}
+  - component: {fileID: 1955374101812209959}
   m_Layer: 5
   m_Name: ColorHandler
   m_TagString: Untagged
@@ -275,19 +277,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6758365582802536764}
   m_CullTransparentMesh: 0
---- !u!114 &6758365582802536767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6758365582802536764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f62c1afa4cc06a41a56e8a2af226a01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objectToScale: {fileID: 6758365582802536764}
 --- !u!114 &5934594196009647684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,40 +304,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _onPointerDown:
+    m_PersistentCalls:
+      m_Calls: []
   _onEnter:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6758365582802536767}
-        m_TargetAssemblyTypeName: GameObjectScaler, Assembly-CSharp
-        m_MethodName: SetScale
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 1.1
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _onExit:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6758365582802536767}
-        m_TargetAssemblyTypeName: GameObjectScaler, Assembly-CSharp
-        m_MethodName: SetScale
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 1
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _soundOnClick: {fileID: 8300000, guid: 1ab1fade32633694e835164e5edfd571, type: 3}
-  _soundOnEnter: {fileID: 8300000, guid: 23ebf6bb49e8e074d93cf1d7392f85f1, type: 3}
-  _soundOnExit: {fileID: 0}
-  _audioController: {fileID: 0}
+      m_Calls: []
 --- !u!114 &8638959126603220667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,3 +328,74 @@ MonoBehaviour:
   _avatarColorManager: {fileID: 0}
   _colorImage: {fileID: 1709362320925357472}
   _lockContainer: {fileID: 4331329756306910437}
+--- !u!114 &6758365582802536767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6758365582802536764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f62c1afa4cc06a41a56e8a2af226a01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectToScale: {fileID: 6758365582802536764}
+--- !u!114 &6967753134802461194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6758365582802536764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccf3cd135bacf3440b48e2fdbe4e6481, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scalerController: {fileID: 6758365582802536767}
+  _scales:
+    onEnable:
+      _enabled: 1
+      _value: 1
+    onClick:
+      _enabled: 0
+      _value: 0
+    onPointerDown:
+      _enabled: 0
+      _value: 0
+    onEnter:
+      _enabled: 1
+      _value: 1.1
+    onExit:
+      _enabled: 1
+      _value: 1
+--- !u!114 &1955374101812209959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6758365582802536764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5274c12891faa74c839970c6346b987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioController: {fileID: 0}
+  _sounds:
+    onEnable:
+      _enabled: 0
+      _value: {fileID: 0}
+    onClick:
+      _enabled: 1
+      _value: {fileID: 8300000, guid: 1ab1fade32633694e835164e5edfd571, type: 3}
+    onPointerDown:
+      _enabled: 0
+      _value: {fileID: 0}
+    onEnter:
+      _enabled: 1
+      _value: {fileID: 8300000, guid: 23ebf6bb49e8e074d93cf1d7392f85f1, type: 3}
+    onExit:
+      _enabled: 0
+      _value: {fileID: 0}

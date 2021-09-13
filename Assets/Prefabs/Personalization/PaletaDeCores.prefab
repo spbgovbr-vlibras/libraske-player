@@ -33,6 +33,7 @@ RectTransform:
   - {fileID: 5267053862334217329}
   - {fileID: 3187809875018553974}
   - {fileID: 1930959141568220114}
+  - {fileID: 5804334086719125672}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -41,6 +42,163 @@ RectTransform:
   m_AnchoredPosition: {x: 285, y: -38}
   m_SizeDelta: {x: 316, y: 316}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &7064083889653851061
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5804334086719125672}
+  - component: {fileID: 4894481227757571709}
+  - component: {fileID: 2693894777261985786}
+  - component: {fileID: 5315530293618231594}
+  m_Layer: 0
+  m_Name: ColorFxAudioSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5804334086719125672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064083889653851061}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 380, y: 38, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 3174121451115065369}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &4894481227757571709
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064083889653851061}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &2693894777261985786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064083889653851061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 969c0dc2119d24f4386a84cbc5689101, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundFxController: {fileID: 4894481227757571709}
+--- !u!114 &5315530293618231594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064083889653851061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08ae42ff37b43fb4cb83c9432a52a61d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneMusic: {fileID: 0}
+  sceneSFX:
+  - {fileID: 4894481227757571709}
 --- !u!1001 &568675535647906544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48,6 +206,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3174121451115065369}
     m_Modifications:
+    - target: {fileID: 1712448616647622201, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 4473054475870150007, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919436195465455, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919436324540146, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919437523194674, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919438199802481, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
     - target: {fileID: 9006395446626521049, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: m_Name
       value: ColorSet1
@@ -150,6 +332,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3174121451115065369}
     m_Modifications:
+    - target: {fileID: 1712448616647622201, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 4473054475870150007, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919436195465455, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919436324540146, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919437523194674, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919438199802481, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
     - target: {fileID: 9006395446626521049, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: m_Name
       value: ColorSet3
@@ -252,6 +458,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3174121451115065369}
     m_Modifications:
+    - target: {fileID: 1712448616647622201, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 4473054475870150007, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919436195465455, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919436324540146, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919437523194674, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919438199802481, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
     - target: {fileID: 9006395446626521049, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: m_Name
       value: ColorSet4
@@ -354,6 +584,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3174121451115065369}
     m_Modifications:
+    - target: {fileID: 1712448616647622201, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 4473054475870150007, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919436195465455, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919436324540146, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919437523194674, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919438199802481, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
     - target: {fileID: 9006395446626521049, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: m_Name
       value: ColorSet5
@@ -460,6 +714,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3174121451115065369}
     m_Modifications:
+    - target: {fileID: 1712448616647622201, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 4473054475870150007, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919436195465455, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919436324540146, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919437523194674, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919438199802481, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
     - target: {fileID: 9006395446626521049, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: m_Name
       value: ColorSet2
@@ -562,6 +840,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3174121451115065369}
     m_Modifications:
+    - target: {fileID: 1712448616647622201, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 4473054475870150007, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919436195465455, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919436324540146, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919437523194674, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
+    - target: {fileID: 7484919438199802481, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 2693894777261985786}
     - target: {fileID: 9006395446626521049, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: m_Name
       value: ColorSet0

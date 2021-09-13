@@ -1,6 +1,6 @@
 ﻿using UnityEngine.EventSystems;
 
-namespace Lavid.Libraske.Interfaces
+namespace Lavid.Libraske.Touch
 {
     public interface ITouchComponent : IPointerClickHandler, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler { }
 }

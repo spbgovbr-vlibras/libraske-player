@@ -49,13 +49,12 @@ public class AudioSettingsUser : MonoBehaviour
 
     public void UpdateSound()
     {
-        if (musicMuteBoolean)
+        if(sceneMusic != null)
         {
-            sceneMusic.volume = 0;
-        }
-        else
-        {
-            sceneMusic.volume = musicFloat;
+            if (musicMuteBoolean)
+                sceneMusic.volume = 0;
+            else
+                sceneMusic.volume = musicFloat;
         }
 
         if (soundEffectsMuteBoolean)

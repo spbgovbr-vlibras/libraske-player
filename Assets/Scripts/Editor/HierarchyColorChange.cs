@@ -1,38 +1,40 @@
 ﻿using UnityEngine;
 using UnityEditor;
 
-// Restyle colors of gameobjects in hierarchy
-
-[InitializeOnLoad]
-public class HierarchyColorChange
+namespace Lavid.Libraske.Editor
 {
-    static HierarchyColorChange() => EditorApplication.hierarchyWindowItemOnGUI += ChangeColors;
-
-    private static void ChangeColors(int instanceID, Rect selectionRect)
+    // Restyle colors of gameobjects in hierarchy
+    [InitializeOnLoad]
+    public class HierarchyColorChange
     {
-        var gameObject = EditorUtility.InstanceIDToObject(instanceID) as GameObject;
+        static HierarchyColorChange() => EditorApplication.hierarchyWindowItemOnGUI += ChangeColors;
 
-        if (gameObject == null)
-            return;
-
-        Color textColor = gameObject.activeSelf ? Color.white : Color.gray;
-
-        if (gameObject.CompareTag("EditorOnly"))
+        private static void ChangeColors(int instanceID, Rect selectionRect)
         {
-            Color black = Color.black;
-            string name = gameObject.name.ToUpperInvariant();
-            
-            Apply(selectionRect, name, black, textColor);
+            var gameObject = EditorUtility.InstanceIDToObject(instanceID) as GameObject;
+
+            if (gameObject == null)
+                return;
+
+            Color textColor = gameObject.activeSelf ? Color.white : Color.gray;
+
+            if (gameObject.CompareTag("EditorOnly"))
+            {
+                Color black = Color.black;
+                string name = gameObject.name.ToUpperInvariant();
+
+                Apply(selectionRect, name, black, textColor);
+            }
         }
-    }
 
-    private static void Apply(Rect selectionRect, string name, Color color, Color textColor)
-    {
-        EditorGUI.DrawRect(selectionRect, color);
-
-        EditorGUI.LabelField(selectionRect, name, new GUIStyle()
+        private static void Apply(Rect selectionRect, string name, Color color, Color textColor)
         {
-            normal = new GUIStyleState() { textColor = textColor }
-        }) ;
+            EditorGUI.DrawRect(selectionRect, color);
+
+            EditorGUI.LabelField(selectionRect, name, new GUIStyle()
+            {
+                normal = new GUIStyleState() { textColor = textColor }
+            });
+        }
     }
 }
