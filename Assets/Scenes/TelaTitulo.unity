@@ -256,6 +256,53 @@ PrefabInstance:
       objectReference: {fileID: 8560372634100480817}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d87267f49aa0874bae515e474b2cc7d, type: 3}
+--- !u!1 &444682127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 444682129}
+  - component: {fileID: 444682128}
+  m_Layer: 0
+  m_Name: ErrorThrower
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &444682128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444682127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98f3d9077c50f0d499279712ecc63ca3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errorToThrow:
+    _code: 55
+    _msg: Rodar Error
+  _throwError: 0
+--- !u!4 &444682129
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444682127}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &588919337
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,7 +353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8048258546961677480, guid: caafec0a95ae7484ca22f985336e3a04, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8048258546961677480, guid: caafec0a95ae7484ca22f985336e3a04, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1305,7 +1352,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1910029095
 GameObject:
@@ -1389,6 +1436,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 641687651345531937, guid: 13f5f338a928e384dafcf237b55e1be6, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -6936900473008736253, guid: 8acea9934d766b146899a031643c9229, type: 2}
+    - target: {fileID: 641687651345531937, guid: 13f5f338a928e384dafcf237b55e1be6, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3613442237960328930, guid: 13f5f338a928e384dafcf237b55e1be6, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1399,7 +1454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3613442237960328930, guid: 13f5f338a928e384dafcf237b55e1be6, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3613442237960328930, guid: 13f5f338a928e384dafcf237b55e1be6, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1475,24 +1530,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3613442237960328934, guid: 13f5f338a928e384dafcf237b55e1be6, type: 3}
       propertyPath: m_Name
-      value: Tela de erro
+      value: ErrorSystem
       objectReference: {fileID: 0}
-    - target: {fileID: 3613442237960328934, guid: 13f5f338a928e384dafcf237b55e1be6, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3613442239778336633, guid: 13f5f338a928e384dafcf237b55e1be6, type: 3}
-      propertyPath: _soundOnClick
-      value: 
-      objectReference: {fileID: 8300000, guid: 9cd6daed79f36894a9370e07ba72e884, type: 3}
-    - target: {fileID: 3613442239778336633, guid: 13f5f338a928e384dafcf237b55e1be6, type: 3}
-      propertyPath: _soundOnEnter
-      value: 
-      objectReference: {fileID: 8300000, guid: 7149afffbc0be31448a7ac39520e878e, type: 3}
-    - target: {fileID: 3613442239778336633, guid: 13f5f338a928e384dafcf237b55e1be6, type: 3}
-      propertyPath: _audioController
-      value: 
-      objectReference: {fileID: 8560372634100480817}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13f5f338a928e384dafcf237b55e1be6, type: 3}
 --- !u!1 &1977945700
