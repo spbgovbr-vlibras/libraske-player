@@ -56,4 +56,13 @@ public static class WebRequest
         request.SetRequestHeader("Content-Type", "application/json");
         return request;
     }
+
+    public static UnityWebRequest Delete(WebConstants.URL url)
+    {
+        string urlValue = WebConstants.GetString(url);
+        var request = new UnityWebRequest(urlValue, "DELETE");
+        request.SetRequestHeader("Content-Type", "application/json");
+        request.SetRequestHeader("Authorization", "Bearer " + AccessSetup.AccessToken);
+        return request;
+    }
 }

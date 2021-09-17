@@ -7,6 +7,7 @@ public class AccessSetup : MonoBehaviour
     public static string AccessToken { get; private set; }
     public static string UserName { get; private set; }
     public static string Email { get; private set; }
+    public static string IsGuest { get; private set; }
 
     [SerializeField] private UnityEvent _onRecieveData;
 
@@ -24,7 +25,10 @@ public class AccessSetup : MonoBehaviour
                     UserName == "" ||
 
                     Email == null ||
-                    Email == ""
+                    Email == "" ||
+
+                    IsGuest == null ||
+                    IsGuest == ""
                );
     }
 
@@ -33,10 +37,11 @@ public class AccessSetup : MonoBehaviour
         if (AllDataIsValid())
         {
               Debug.Log(
-                "Refresh Token: " + RefreshToken +
+                " Refresh Token: " + RefreshToken +
                 " Access Token: " + AccessToken +
                 " Name: " + UserName +
-                " Email " + Email
+                " Email: " + Email +
+                " IsGuest: " + IsGuest
              );
 
             _onRecieveData?.Invoke();
@@ -68,6 +73,13 @@ public class AccessSetup : MonoBehaviour
     {
         Debug.Log("Recebeu: " + data);
         Email = data;
+        RecievedNewData();
+    }
+
+    public void SetIsGuest(string data)
+    {
+        Debug.Log("Recebeu: " + data);
+        IsGuest = data;
         RecievedNewData();
     }
 

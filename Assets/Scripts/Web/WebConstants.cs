@@ -6,6 +6,7 @@ public static class WebConstants
     {
         BaseURL,
         SongsURL,
+        UsersURL,
         CreateSessionURL,
         PontuationURL
     }
@@ -25,6 +26,7 @@ public static class WebConstants
         UrlDictionary = new Dictionary<URL, string>();
         UrlDictionary.Add(URL.BaseURL, "https://libraske-back-dth.vlibras.gov.br");
         UrlDictionary.Add(URL.SongsURL, UrlDictionary[URL.BaseURL] + "/libraske/songs");
+        UrlDictionary.Add(URL.UsersURL, UrlDictionary[URL.BaseURL] + "/libraske/users");
         UrlDictionary.Add(URL.CreateSessionURL, UrlDictionary[URL.BaseURL] + "/libraske/game/pontuation/session");
         UrlDictionary.Add(URL.PontuationURL, UrlDictionary[URL.BaseURL] + "/libraske/game/pontuation/session");
     }
