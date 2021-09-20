@@ -286,8 +286,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _errorToThrow:
-    _code: 55
-    _msg: Rodar Error
+    _code: 808
+    _msg: "Erro Imagin\xE1rio"
   _throwError: 0
 --- !u!4 &444682129
 Transform:

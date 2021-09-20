@@ -12,14 +12,14 @@ public class SubtitleHUD : MonoBehaviour
     private void OnEnable() => UpdateValues();
     public void UpdateValues()
     {
-        _container.SetActive(SubtitleSettings.CanShowSubtitles());
+        _container.SetActive(SubtitleSettingsSaveHandler.CanShowSubtitles());
 
         UpdateSize();
         UpdateColor();
     }
     private void UpdateSize()
     {
-        var size = SubtitleSettings.GetSize();
+        var size = SubtitleSettingsSaveHandler.GetSize();
 
         for (int i = 0; i < _sizes.Length; i++)
         {
@@ -32,7 +32,7 @@ public class SubtitleHUD : MonoBehaviour
     }
     private void UpdateColor()
     {
-        var color = SubtitleSettings.GetColor();
+        var color = SubtitleSettingsSaveHandler.GetColor();
 
         for (int i = 0; i < _colors.Length; i++)
         {
@@ -48,13 +48,13 @@ public class SubtitleHUD : MonoBehaviour
 [System.Serializable]
 internal struct SubtitleColor
 {
-    public SubtitleSettings.Color colorEnum;
+    public SubtitleSettingsSaveHandler.Color colorEnum;
     public Color color;
 }
 
 [System.Serializable]
 internal struct SubtitleSize
 {
-    public SubtitleSettings.Size sizeEnum;
+    public SubtitleSettingsSaveHandler.Size sizeEnum;
     public float size;
 }
