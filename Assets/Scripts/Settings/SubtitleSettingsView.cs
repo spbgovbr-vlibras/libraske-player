@@ -1,18 +1,12 @@
-using Lavid.Libraske.Util;
+using Lavid.Libraske.UI;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class SubtitleSettingsView : MonoBehaviour
 {
-    public Toggle showSubtitlesToggle;
-    public ToggleGroup sizeOptions;
-    public ToggleGroup colorOptions;
-
-    public GameObject subtitlesPanel;
-    public Image subtitleBarPreview;
-    public Text subtitleTextPreview;
-
-    public event System.Action OnUIUpdate; 
+    [SerializeField] private GameObject _subtitlePanelContainer;
+    [SerializeField] private RectTransform _subtitleBarPreview;
+    [SerializeField] TextUI _subtitleTextPreview;
 
     private enum SubtitleFontSize
     {
@@ -25,83 +19,51 @@ public class SubtitleSettingsView : MonoBehaviour
     private static Vector2 MiddleSubtitleRect = new Vector2(569, 38);
     private static Vector2 HighSubtitleRect = new Vector2(718.74f, 48);
 
-    public Boolean ShowSubtitles() => new Boolean(showSubtitlesToggle.isOn);
-    public SubtitleSettingsSaveHandler.Size GetSize() => (SubtitleSettingsSaveHandler.Size)GetSelectedOption(sizeOptions);
-    public SubtitleSettingsSaveHandler.Color GetColor() => (SubtitleSettingsSaveHandler.Color)GetSelectedOption(colorOptions);
-
-    void Start()
+    public void UpdateRender
+    (
+        bool showSubtitles,
+        SubtitleSettingsSaveHandler.Size size,
+        SubtitleSettingsSaveHandler.Color color
+    )
     {
-        if (!SubtitleSettingsSaveHandler.HasSavedSettings())
-            SubtitleSettingsSaveHandler.ResetSettings();
-
-        UpdateValues();
-        SubtitleSettingsSaveHandler.AllowSaving();
+        _subtitlePanelContainer.SetActive(showSubtitles);
+        SetSubtitlePreview(size, color);
     }
 
-    private void UpdateValues()
+    private void SetSubtitlePreview(SubtitleSettingsSaveHandler.Size size, SubtitleSettingsSaveHandler.Color color)
     {
-        showSubtitlesToggle.isOn = SubtitleSettingsSaveHandler.CanShowSubtitles();
-        subtitlesPanel.SetActive(SubtitleSettingsSaveHandler.CanShowSubtitles());
-        SelectOption(sizeOptions, (int)SubtitleSettingsSaveHandler.GetSize());
-        SelectOption(colorOptions, (int)SubtitleSettingsSaveHandler.GetColor());
-        SetSubtitlePreview((int)SubtitleSettingsSaveHandler.GetSize(), (int)SubtitleSettingsSaveHandler.GetColor());
+        SubtitleFontSize m_fontSize = 0;
+        Vector2 m_rectSize = LowSubtitleRect;
+        Color m_color = Color.white;
 
-        UpdateRender();
-    }
-
-    public void SaveSubtitleSettings() => OnUIUpdate?.Invoke();
-
-    public void UpdateRender()
-    {
-        subtitlesPanel.SetActive(showSubtitlesToggle.isOn);
-        SetSubtitlePreview(GetSelectedOption(sizeOptions), GetSelectedOption(colorOptions));
-    }
-
-    public void SelectOption(ToggleGroup group, int id)
-    {
-        var options = group.GetComponentsInChildren<Toggle>();
-        options[id].isOn = true;
-    }
-
-    public int GetSelectedOption(ToggleGroup group)
-    {
-        var options = group.GetComponentsInChildren<Toggle>();
-        for (int i = 0; i < options.Length; i++)
+        switch (size)
         {
-            if (options[i].isOn)
-            {
-                return i;
-            }
-        }
-        return -1;
-    }
-
-    public void SetSubtitlePreview(int sizeID, int colorID)
-    {
-        switch (sizeID)
-        {
-            case 0:
-                subtitleBarPreview.rectTransform.sizeDelta = LowSubtitleRect;
-                subtitleTextPreview.fontSize = (int)SubtitleFontSize.Low;
+            case SubtitleSettingsSaveHandler.Size.Small:
+                m_rectSize = LowSubtitleRect;
+                m_fontSize = SubtitleFontSize.Low;
                 break;
-            case 1:
-                subtitleBarPreview.rectTransform.sizeDelta = MiddleSubtitleRect;
-                subtitleTextPreview.fontSize = (int)SubtitleFontSize.Middle;
+            case SubtitleSettingsSaveHandler.Size.Regular:
+                m_rectSize = MiddleSubtitleRect;
+                m_fontSize = SubtitleFontSize.Middle;
                 break;
-            case 2:
-                subtitleBarPreview.rectTransform.sizeDelta = HighSubtitleRect;
-                subtitleTextPreview.fontSize = (int)SubtitleFontSize.High;
+            case SubtitleSettingsSaveHandler.Size.Big:
+                m_rectSize = HighSubtitleRect;
+                m_fontSize = SubtitleFontSize.High;
                 break;
         }
 
-        switch (colorID)
+        switch (color)
         {
-            case 0:
-                subtitleTextPreview.color = Color.white;
+            case SubtitleSettingsSaveHandler.Color.White:
+                m_color = Color.white;
                 break;
-            case 1:
-                subtitleTextPreview.color = Color.yellow;
+            case SubtitleSettingsSaveHandler.Color.Yellow:
+                m_color = Color.yellow;
                 break;
         }
+
+        _subtitleBarPreview.sizeDelta = m_rectSize;
+        _subtitleTextPreview.SetFontSize((int)m_fontSize);
+        _subtitleTextPreview.SetColor(m_color);
     }
 }

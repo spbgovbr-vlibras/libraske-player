@@ -31,6 +31,16 @@ namespace Lavid.Libraske.UI
             _value = value;
         }
 
+        public void SetFontSize(float value)
+        {
+            if (_textMeshPro != null)
+                _textMeshPro.fontSize = value;
+            else if (_text != null)
+                _text.fontSize = (int) value;
+            else if (_textMeshProUGUI != null)
+                _textMeshProUGUI.fontSize = value;
+        }
+
         public void SetColor(Color color)
         {
             if (_textMeshPro != null)

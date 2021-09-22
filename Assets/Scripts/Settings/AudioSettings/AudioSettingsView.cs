@@ -1,43 +1,23 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class AudioSettingsView : MonoBehaviour
 {
-    public Slider musicSlider, soundEffectsSlider;
-    public Toggle musicToggle, soundEffectsToggle;
+    public Slider _mainVolumeSlider;
+    public Slider _soundFxSlider;
+    public Toggle _musicToggle;
+    public Toggle _soundEffectsToggle;
 
-    public event Action OnUIChangeValue;
+    public Slider MainVolumeSlider => _mainVolumeSlider;
+    public Slider SoundFxSlider => _soundFxSlider;
+    public Toggle MainSoundToggle => _musicToggle;
+    public Toggle SoundFxToggle => _soundEffectsToggle;
 
-    public float MusicVolume { get => musicSlider.value; }
-    public float SoundFxVolume { get => soundEffectsSlider.value; }
-    public bool IsMainVolumeMuted { get => musicToggle.isOn; }
-    public bool IsFxVolumeMuted { get => soundEffectsToggle.isOn; }
-
-    void Start()
+    public void SetValues(float mainVolume, bool muteMainVolume, float fxVolume, bool muteFxVolume)
     {
-        if (!AudioSettingsSaveHandler.HasSavedSettings())
-            AudioSettingsSaveHandler.ResetSettings();
-
-        UpdateValues();
-    }
-
-    private void UpdateValues()
-    {
-        musicSlider.value = AudioSettingsSaveHandler.GetMainVolume();
-        soundEffectsSlider.value = AudioSettingsSaveHandler.GetSoundFxVolume();
-        musicToggle.isOn = AudioSettingsSaveHandler.IsMusicMuted();
-        soundEffectsToggle.isOn = AudioSettingsSaveHandler.IsSoundFxMuted();
-    }
-
-    public void UpdateSound()
-    {
-        if (musicToggle.isOn)
-            musicSlider.value = 0;
-
-        if (soundEffectsToggle.isOn)
-            soundEffectsSlider.value = 0;
-
-        OnUIChangeValue?.Invoke();
+        _mainVolumeSlider.value = mainVolume;
+        _soundFxSlider.value = fxVolume;
+        _musicToggle.isOn = muteMainVolume;
+        _soundEffectsToggle.isOn = muteFxVolume;
     }
 }

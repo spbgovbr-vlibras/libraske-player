@@ -14,7 +14,7 @@
         // Audio
         public static string MainVolume { get => "MainVolume"; }
         public static string SFXVolume { get => "SFXVolume"; }
-        public static string MusicMute { get => "MusicMute"; }
+        public static string MainMute { get => "MusicMute"; }
         public static string SFXMute { get => "SFXMute"; }
     }
 }

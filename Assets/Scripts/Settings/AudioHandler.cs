@@ -9,9 +9,11 @@ public class AudioHandler : MonoBehaviour
 
     private const int DefaultVolume = 1;
 
-    private void OnEnable() => UpdateVolume();
+    private void OnEnable() => SyncVolumeWithSave();
 
-    public void UpdateVolume()
+    public void SetVolume(float volume) => _audioSource.volume = volume;
+
+    public void SyncVolumeWithSave()
     {
         if (!AudioSettingsSaveHandler.HasSavedSettings())
         {
