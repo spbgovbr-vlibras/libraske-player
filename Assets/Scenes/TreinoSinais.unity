@@ -299,11 +299,11 @@ PrefabInstance:
     - target: {fileID: 2883856098152949321, guid: 3d87267f49aa0874bae515e474b2cc7d, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 1580484622}
+      objectReference: {fileID: 0}
     - target: {fileID: 5890771448385880495, guid: 3d87267f49aa0874bae515e474b2cc7d, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 1580484622}
+      objectReference: {fileID: 0}
     - target: {fileID: 7115788723199518411, guid: 3d87267f49aa0874bae515e474b2cc7d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -392,6 +392,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CentralDeAjuda
       objectReference: {fileID: 0}
+    - target: {fileID: 7115788723199518423, guid: 3d87267f49aa0874bae515e474b2cc7d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7115788724939767968, guid: 3d87267f49aa0874bae515e474b2cc7d, type: 3}
       propertyPath: _soundOnClick
       value: 
@@ -403,7 +407,7 @@ PrefabInstance:
     - target: {fileID: 7115788724939767968, guid: 3d87267f49aa0874bae515e474b2cc7d, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 1580484622}
+      objectReference: {fileID: 0}
     - target: {fileID: 7115788724939767968, guid: 3d87267f49aa0874bae515e474b2cc7d, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.size
       value: 4
@@ -463,7 +467,7 @@ PrefabInstance:
     - target: {fileID: 7115788725028991445, guid: 3d87267f49aa0874bae515e474b2cc7d, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 1580484622}
+      objectReference: {fileID: 0}
     - target: {fileID: 7115788725028991445, guid: 3d87267f49aa0874bae515e474b2cc7d, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.size
       value: 4
@@ -659,10 +663,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: btn_jogar
       objectReference: {fileID: 0}
-    - target: {fileID: 7672319191650576200, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
-      propertyPath: _audioController
-      value: 
-      objectReference: {fileID: 1580484622}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
 --- !u!224 &861294430 stripped
@@ -868,10 +868,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: btn_proximo
       objectReference: {fileID: 0}
-    - target: {fileID: 7672319191650576200, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
-      propertyPath: _audioController
-      value: 
-      objectReference: {fileID: 1580484622}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
 --- !u!224 &949231415 stripped
@@ -1967,7 +1963,7 @@ PrefabInstance:
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 1580484622}
+      objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2028,10 +2024,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9104512231412011526, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
-      propertyPath: _audioController
-      value: 
-      objectReference: {fileID: 1580484622}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
 --- !u!224 &1289452374 stripped
@@ -2350,17 +2342,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5c64415f479b0f4c939fb24298a7071, type: 3}
---- !u!114 &1580484622 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8729623715994379593, guid: d5c64415f479b0f4c939fb24298a7071, type: 3}
-  m_PrefabInstance: {fileID: 1580484621}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 969c0dc2119d24f4386a84cbc5689101, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &1952198310 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 759223754814441504, guid: 449d999e42a6ab0479841ddb9209d7b5, type: 3}
@@ -2532,10 +2513,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: btn_anterior
       objectReference: {fileID: 0}
-    - target: {fileID: 7672319191650576200, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
-      propertyPath: _audioController
-      value: 
-      objectReference: {fileID: 1580484622}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
 --- !u!224 &1988828189 stripped
@@ -2827,7 +2804,7 @@ PrefabInstance:
     - target: {fileID: 3613442239778336633, guid: 13f5f338a928e384dafcf237b55e1be6, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 1580484622}
+      objectReference: {fileID: 0}
     - target: {fileID: 3613442239778336633, guid: 13f5f338a928e384dafcf237b55e1be6, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2835,6 +2812,6 @@ PrefabInstance:
     - target: {fileID: 7375178678979222863, guid: 13f5f338a928e384dafcf237b55e1be6, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 1580484622}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13f5f338a928e384dafcf237b55e1be6, type: 3}

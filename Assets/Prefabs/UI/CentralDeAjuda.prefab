@@ -46,9 +46,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3807147809848661490}
-  - component: {fileID: 4620330044218428650}
   - component: {fileID: 1107482348325127503}
-  - component: {fileID: 8799829482131843932}
+  - component: {fileID: 6847137567395216738}
   m_Layer: 5
   m_Name: SoundController
   m_TagString: Untagged
@@ -75,21 +74,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &4620330044218428650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5896229995085741398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08ae42ff37b43fb4cb83c9432a52a61d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneMusic: {fileID: 0}
-  sceneSFX:
-  - {fileID: 1107482348325127503}
 --- !u!82 &1107482348325127503
 AudioSource:
   m_ObjectHideFlags: 0
@@ -186,7 +170,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &8799829482131843932
+--- !u!114 &6847137567395216738
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -195,10 +179,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5896229995085741398}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 969c0dc2119d24f4386a84cbc5689101, type: 3}
+  m_Script: {fileID: 11500000, guid: cd7a1f0bffa54bc4e9b48595e2b5ff0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soundFxController: {fileID: 1107482348325127503}
+  _audioSource: {fileID: 1107482348325127503}
+  _audioType: 1
 --- !u!1 &6695147165680683388
 GameObject:
   m_ObjectHideFlags: 0
@@ -998,7 +983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5274c12891faa74c839970c6346b987, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioController: {fileID: 8799829482131843932}
+  _audioController: {fileID: 6847137567395216738}
   _sounds:
     onEnable:
       _enabled: 0
@@ -1352,10 +1337,6 @@ PrefabInstance:
       propertyPath: _scales.onEnter._value
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7672319191650576200, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
-      propertyPath: _audioController
-      value: 
-      objectReference: {fileID: 8799829482131843932}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
 --- !u!224 &5413244812708794784 stripped
@@ -1550,10 +1531,6 @@ PrefabInstance:
       propertyPath: _scales.onEnter._value
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7672319191650576200, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
-      propertyPath: _audioController
-      value: 
-      objectReference: {fileID: 8799829482131843932}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
 --- !u!224 &6136093476903696541 stripped

@@ -8,7 +8,9 @@ public class AudioSettingsController : MonoBehaviour
     [SerializeField] AudioSettingsModel _model;
     [SerializeField] AudioSettingsView _view;
 
-    void Start()
+    private void Start() => Setup();
+
+    public void Setup()
     {
         if (!AudioSettingsSaveHandler.HasSavedSettings())
             AudioSettingsSaveHandler.ResetSettings();

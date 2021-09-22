@@ -7,7 +7,9 @@ public class SubtitleSettingsController : MonoBehaviour
     [SerializeField] private SubtitleSettingsModel _model;
     [SerializeField] private SubtitleSettingsView _view;
 
-    void Start()
+    private void Start() => Setup();
+
+    public void Setup()
     {
         if (!SubtitleSettingsSaveHandler.HasSavedSettings())
             SubtitleSettingsSaveHandler.ResetSettings();

@@ -12,9 +12,9 @@ namespace Lavid.Libraske.Touch
         [SerializeField] private UnityEvent _onEnter;
         [SerializeField] private UnityEvent _onExit;
 
-        public void OnPointerClick(PointerEventData eventData) => _onClick?.Invoke();
-        public void OnPointerDown(PointerEventData eventData) => _onPointerDown?.Invoke();
-        public void OnPointerEnter(PointerEventData eventData) => _onEnter?.Invoke();
-        public void OnPointerExit(PointerEventData eventData) => _onExit?.Invoke();
+        public virtual void OnPointerClick(PointerEventData eventData) => _onClick?.Invoke();
+        public virtual void OnPointerDown(PointerEventData eventData) => _onPointerDown?.Invoke();
+        public virtual void OnPointerEnter(PointerEventData eventData) => _onEnter?.Invoke();
+        public virtual void OnPointerExit(PointerEventData eventData) => _onExit?.Invoke();
     }
 }

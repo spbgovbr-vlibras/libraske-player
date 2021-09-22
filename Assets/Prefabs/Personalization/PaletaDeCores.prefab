@@ -52,8 +52,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5804334086719125672}
   - component: {fileID: 4894481227757571709}
-  - component: {fileID: 2693894777261985786}
-  - component: {fileID: 5315530293618231594}
+  - component: {fileID: 6636065408049596057}
   m_Layer: 0
   m_Name: ColorFxAudioSource
   m_TagString: Untagged
@@ -171,7 +170,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2693894777261985786
+--- !u!114 &6636065408049596057
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,25 +179,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7064083889653851061}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 969c0dc2119d24f4386a84cbc5689101, type: 3}
+  m_Script: {fileID: 11500000, guid: cd7a1f0bffa54bc4e9b48595e2b5ff0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soundFxController: {fileID: 4894481227757571709}
---- !u!114 &5315530293618231594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7064083889653851061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08ae42ff37b43fb4cb83c9432a52a61d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneMusic: {fileID: 0}
-  sceneSFX:
-  - {fileID: 4894481227757571709}
+  _audioSource: {fileID: 4894481227757571709}
+  _audioType: 1
 --- !u!1001 &568675535647906544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -209,27 +194,27 @@ PrefabInstance:
     - target: {fileID: 1712448616647622201, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 4473054475870150007, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919436195465455, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919436324540146, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919437523194674, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919438199802481, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 9006395446626521049, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: m_Name
       value: ColorSet1
@@ -335,27 +320,27 @@ PrefabInstance:
     - target: {fileID: 1712448616647622201, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 4473054475870150007, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919436195465455, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919436324540146, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919437523194674, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919438199802481, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 9006395446626521049, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: m_Name
       value: ColorSet3
@@ -461,27 +446,27 @@ PrefabInstance:
     - target: {fileID: 1712448616647622201, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 4473054475870150007, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919436195465455, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919436324540146, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919437523194674, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919438199802481, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 9006395446626521049, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: m_Name
       value: ColorSet4
@@ -587,27 +572,27 @@ PrefabInstance:
     - target: {fileID: 1712448616647622201, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 4473054475870150007, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919436195465455, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919436324540146, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919437523194674, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919438199802481, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 9006395446626521049, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: m_Name
       value: ColorSet5
@@ -717,27 +702,27 @@ PrefabInstance:
     - target: {fileID: 1712448616647622201, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 4473054475870150007, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919436195465455, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919436324540146, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919437523194674, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919438199802481, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 9006395446626521049, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: m_Name
       value: ColorSet2
@@ -843,27 +828,27 @@ PrefabInstance:
     - target: {fileID: 1712448616647622201, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 4473054475870150007, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919436195465455, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919436324540146, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919437523194674, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 7484919438199802481, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
-      objectReference: {fileID: 2693894777261985786}
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 9006395446626521049, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: m_Name
       value: ColorSet0

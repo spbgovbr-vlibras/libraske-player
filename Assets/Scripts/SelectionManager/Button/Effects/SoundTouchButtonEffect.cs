@@ -5,13 +5,13 @@ namespace Lavid.Libraske.Touch
 {
     public class SoundTouchButtonEffect : TouchButtonEffect
     {
-        [SerializeField] SoundFxController _audioController;
+        [SerializeField] AudioHandler _audioController;
         [SerializeField] TouchButtonEventStruct<AudioClip> _sounds;
 
         private void PlaySound(AudioClip clip)
         {
             if (_audioController != null)
-                _audioController.PlaySoundFx(clip);
+                _audioController.PlayOneShot(clip);
         }
 
         public override void OnPointerClick(PointerEventData eventData)
