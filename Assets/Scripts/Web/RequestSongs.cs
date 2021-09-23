@@ -18,7 +18,9 @@ public class RequestSongs : MonoBehaviour
     {
         Debug.Log("[RequestSongs]:  Solicitou requisição das músicas");
 
-        var webRequest = WebRequest.Get(url);
+        var webRequest =  WebRequest.Get(url);
+
+        Debug.Log(WebConstants.GetString(url));
  
         yield return webRequest.SendWebRequest();
 
