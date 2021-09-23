@@ -43,4 +43,21 @@ public class AudioSettingsController : MonoBehaviour
         AudioSettingsSaveHandler.MuteMusic(new Boolean(_model.IsMainVolumeMuted));
         AudioSettingsSaveHandler.MuteSoundFx(new Boolean(_model.IsFxVolumeMuted));
     }
+
+    public void RestoreSettings()
+    {
+        AudioSettingsSaveHandler.ResetSettings();
+
+        AudioSettingsSaveHandler.AllowSaving();
+
+        _model.Setup
+        (
+            AudioSettingsSaveHandler.GetMainVolume(),
+            AudioSettingsSaveHandler.IsMainMusicMuted(),
+            AudioSettingsSaveHandler.GetSoundFxVolume(),
+            AudioSettingsSaveHandler.IsSoundFxMuted()
+        );
+
+        _view.SetValues(_model.MainVolume, _model.IsMainVolumeMuted, _model.SoundFxVolume, _model.IsFxVolumeMuted);
+    }
 }

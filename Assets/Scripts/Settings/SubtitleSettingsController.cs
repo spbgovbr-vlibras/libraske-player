@@ -36,4 +36,19 @@ public class SubtitleSettingsController : MonoBehaviour
         SubtitleSettingsSaveHandler.SetSize(_model.GetPreviewSize());
         SubtitleSettingsSaveHandler.SetColor(_model.GetPreviewColor());
     }
+
+    public void RestoreSettings()
+    {
+        SubtitleSettingsSaveHandler.ResetSettings();
+
+        SubtitleSettingsSaveHandler.AllowSaving();
+
+        _model.SelectValues(
+                              SubtitleSettingsSaveHandler.CanShowSubtitles(),
+                              (int)SubtitleSettingsSaveHandler.GetSize(),
+                              (int)SubtitleSettingsSaveHandler.GetColor()
+                            );
+        UpdateView();
+
+    }
 }
