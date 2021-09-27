@@ -15,9 +15,12 @@ MonoBehaviour:
   _thumbnail: {fileID: 0}
   _music:
     id: 0
-    singers: dasd
-    thumbnail: dsasd
-    name: dsasddsasd
-    description: dsasd
-    subtitle: dsasd
-    price: 60
+    singers: Israel & Rodolffo
+    thumbnail: https://libraske-back-dth.vlibras.gov.br/info/bd74237d-6c89-4f77-9800-667bc3cc2208/7f9911af4ddbe799997a-pexels-photo-531321.jpeg
+    name: Musica Teste
+    description: lorem ipsum is simply dummy text of the printing and typesetting
+      industry. lorem ipsum has been the industry's standard dummy text ever since
+      the 1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book.
+    subtitle: https://libraske-back-dth.vlibras.gov.br/info/bd74237d-6c89-4f77-9800-667bc3cc2208/eb69ba0049353eab1c76-subtitle.txt
+    price: 500

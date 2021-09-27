@@ -2,11 +2,26 @@
 using UnityEngine;
 using UnityEngine.Networking;
 
+internal struct RequestKeys
+{
+    public static string Authorization => "Authorization";
+    public static string Bearer => "Bearer";
+
+    public static string Get => "Get";
+    public static string Delete => "DELETE";
+    public static string Post => "POST";
+
+    public static string ContentType => "Content-Type";
+    public static string JsonType => "application/json";
+    public static string PngType = "image/png";
+}
+
 public static class WebRequest
 {
     public static UnityWebRequest GetTexture(string url)
     {
         var request = UnityWebRequestTexture.GetTexture(url);
+        AuthorizeRequest(request);
         return request;
     }
 
@@ -14,23 +29,15 @@ public static class WebRequest
     {
         string urlValue = WebConstants.GetString(url) + addicionalURL;
 
-        var request = new UnityWebRequest( urlValue, "GET");
+        var request = new UnityWebRequest( urlValue, RequestKeys.Get);
         request.downloadHandler = new DownloadHandlerBuffer();
-        request.SetRequestHeader("Content-Type", "application/json");
-        request.SetRequestHeader("Authorization", "Bearer " + AccessSetup.AccessToken);
+        request.SetRequestHeader(RequestKeys.ContentType, RequestKeys.JsonType);
 
-
-
-        /*request.SetRequestHeader("Authorization", "Bearer " + 
-                                                        $"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcGYiOiI0MzM2MTY2MjkxMCIsImlhdCI6MTYzMjQzNDU" +
-                                                        $"5OCwiZXhwIjoxNjMyNTIwOTk4fQ.v" +
-                                                        $"dXud6609mDg4A2Rpic9Xef1p" +
-                                                        $"xm4dxfHJuvj5TtU3QQ");*/
+        AuthorizeRequest(request);
         return request;
     }
 
     public static UnityWebRequest SendFrame(
-                                                WebConstants.URL url,
                                                 int frameId,
                                                 byte[] image,
                                                 string sessionId, 
@@ -42,29 +49,38 @@ public static class WebRequest
         form.AddField(WebConstants.FrameIdField, frameId);
 
         if (image != null)
-            form.AddBinaryData("frame", image, $"{sessionId}-{frameId}.png", "image/png");
+            form.AddBinaryData(WebConstants.FrameField, image, $"{sessionId}-{frameId}.png", RequestKeys.PngType);
 
-        UnityWebRequest www = UnityWebRequest.Post(url + addicionalURL, form);
-        return www;
+        var url = WebConstants.GetString(WebConstants.URL.SendFrame) + addicionalURL;
+        UnityWebRequest request = UnityWebRequest.Post(url, form);
+
+        AuthorizeRequest(request);
+
+        return request;
+    }
+
+    private static void AuthorizeRequest(UnityWebRequest request)
+    {
+        request.SetRequestHeader(RequestKeys.Authorization, $"{RequestKeys.Bearer}  {AccessSetup.AccessToken}");
     }
 
     public static UnityWebRequest Post(WebConstants.URL url, string jsonString, string addicionalURL = "")
     {
         string urlValue = WebConstants.GetString(url) + addicionalURL;
-        var request = new UnityWebRequest(urlValue, "POST");
+        var request = new UnityWebRequest(urlValue, RequestKeys.Post);
         byte[] bytes = Encoding.UTF8.GetBytes(jsonString);
         request.uploadHandler = new UploadHandlerRaw(bytes);
         request.downloadHandler = new DownloadHandlerBuffer();
-        request.SetRequestHeader("Content-Type", "application/json");
+        AuthorizeRequest(request);
         return request;
     }
 
     public static UnityWebRequest Delete(WebConstants.URL url)
     {
         string urlValue = WebConstants.GetString(url);
-        var request = new UnityWebRequest(urlValue, "DELETE");
-        request.SetRequestHeader("Content-Type", "application/json");
-        request.SetRequestHeader("Authorization", "Bearer " + AccessSetup.AccessToken);
+        var request = new UnityWebRequest(urlValue, RequestKeys.Delete);
+        request.SetRequestHeader(RequestKeys.ContentType, RequestKeys.JsonType);
+        AuthorizeRequest(request);
         return request;
     }
 }

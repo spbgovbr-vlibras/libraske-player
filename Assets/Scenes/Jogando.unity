@@ -379,13 +379,14 @@ GameObject:
   m_Component:
   - component: {fileID: 309243080}
   - component: {fileID: 309243081}
+  - component: {fileID: 309243082}
   m_Layer: 5
   m_Name: Webcam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &309243080
 RectTransform:
   m_ObjectHideFlags: 0
@@ -421,6 +422,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _renderer: {fileID: 787395030}
   _showWebCam: 1
+--- !u!114 &309243082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309243079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 646bb5334427e514eadcc44d0a62e975, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _webcam: {fileID: 309243081}
 --- !u!1 &574529014
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,6 +947,82 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &735051900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 735051901}
+  - component: {fileID: 735051903}
+  - component: {fileID: 735051902}
+  m_Layer: 0
+  m_Name: Testing Conection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &735051901
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735051900}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1083.6593, y: -389.2001, z: 37.543934}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2101741493}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &735051902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735051900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e825e814d197cc6479bfb14a8513ca0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acessSetup: {fileID: 735051903}
+  userName: Visita
+  refreshToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcGYiOiIwODIwMzk2NDUwNyIsImlhdCI6MTYzMjc2NTY1NywiZXhwIjoxNjMyODUyMDU3fQ.KPDY4IMitJA_kXhFu4-eJK_xmRqqzkSZy8aic79y-S4
+  accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcGYiOiIwODIwMzk2NDUwNyIsImlhdCI6MTYzMjc2NTY1NywiZXhwIjoxNjMyODUyMDU3fQ.fnqt89hWYiihhRdkWc9J58r-AbUW62iI-awpn67IGIU
+  email: db6163f0-9496-48db-8df0-e9e1af73ef2eVena.Schuppe@yahoo.com
+--- !u!114 &735051903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735051900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55203dbcdfa6ff54cacc1e39e90dd9d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onRecieveData:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2101741492}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &780032019
 GameObject:
   m_ObjectHideFlags: 0
@@ -3071,6 +3161,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2101741492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2101741493}
+  m_Layer: 0
+  m_Name: Login
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2101741493
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101741492}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1083.6593, y: 389.2001, z: -37.543934}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 735051901}
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &550027492944584627
 RectTransform:

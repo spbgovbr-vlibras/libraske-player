@@ -8,16 +8,17 @@ public static class WebConstants
         SongsURL,
         UsersURL,
         CreateSessionURL,
-        PontuationURL
+        PontuationURL,
+        SendFrame
     }
 
     // Game session
-    public static string SongIdField = "idSongId";
-    public static string UserIdField = "idUser";
+    public static readonly string SongIdField = "idSongId";
+    public static readonly string UserIdField = "idUser";
 
     // Sending frames
-    public static string FrameField = "frame";
-    public static string FrameIdField = "idFrame";
+    public static readonly string FrameField = "frame";
+    public static readonly string FrameIdField = "idFrame";
 
     private static Dictionary<URL, string> UrlDictionary;
 
@@ -29,6 +30,7 @@ public static class WebConstants
         UrlDictionary.Add(URL.UsersURL, UrlDictionary[URL.BaseURL] + "/libraske/users");
         UrlDictionary.Add(URL.CreateSessionURL, UrlDictionary[URL.BaseURL] + "/libraske/game/pontuation/session");
         UrlDictionary.Add(URL.PontuationURL, UrlDictionary[URL.BaseURL] + "/libraske/game/pontuation/session");
+        UrlDictionary.Add(URL.SendFrame, UrlDictionary[URL.BaseURL] + "/libraske/game/frame");
     }
 
     public static string GetString(URL url)
