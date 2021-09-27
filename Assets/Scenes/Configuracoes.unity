@@ -562,6 +562,10 @@ PrefabInstance:
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 479140069}
+    - target: {fileID: 3989556764182093896, guid: 1ceb81b81ef2c7d4a95ac2424ec52817, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3989556764182093902, guid: 1ceb81b81ef2c7d4a95ac2424ec52817, type: 3}
       propertyPath: _fxPreviews.Items.Array.data[0]
       value: 
