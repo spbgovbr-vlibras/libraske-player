@@ -1,4 +1,5 @@
 using Lavid.Libraske.UI;
+using Lavid.Libraske.Web;
 using UnityEngine;
 
 public class UserNameHandler : MonoBehaviour
@@ -12,6 +13,6 @@ public class UserNameHandler : MonoBehaviour
     public void UpdateText()
     {
         if (_text != null)
-            _text.SetText(_beforeName + AccessSetup.UserName + _afterName);
+            _text.SetText(_beforeName + AccessData.UserName + _afterName);
     }
 }

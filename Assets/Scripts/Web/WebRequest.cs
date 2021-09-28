@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using Lavid.Libraske.Web;
+using System.Text;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -61,7 +62,7 @@ public static class WebRequest
 
     private static void AuthorizeRequest(UnityWebRequest request)
     {
-        request.SetRequestHeader(RequestKeys.Authorization, $"{RequestKeys.Bearer}  {AccessSetup.AccessToken}");
+        request.SetRequestHeader(RequestKeys.Authorization, $"{RequestKeys.Bearer}  {AccessData.AccessToken}");
     }
 
     public static UnityWebRequest Post(WebConstants.URL url, string jsonString, string addicionalURL = "")

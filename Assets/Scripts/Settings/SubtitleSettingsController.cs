@@ -26,7 +26,7 @@ public class SubtitleSettingsController : MonoBehaviour
 
     public void UpdateView()
     {
-        _view.UpdateRender(_model.ShowSubtitlesPreview().Value, _model.GetPreviewSize(), _model.GetPreviewColor());
+        _view.UpdateRender(_model.ShowSubtitlesPreview(), _model.GetPreviewSize(), _model.GetPreviewColor());
     }
 
     /// <summary> Called on canvas to save data on file. /// </summary>

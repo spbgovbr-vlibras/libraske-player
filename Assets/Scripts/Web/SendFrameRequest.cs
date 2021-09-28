@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Lavid.Libraske.Web;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -29,7 +30,7 @@ public class SendFrameRequest : MonoBehaviour
 
         var image = _webcam.GetImageInBytes();
 
-        var www = WebRequest.SendFrame(_currentRequest, image, _idSession.ToString(), "/" + AccessSetup.AccessToken);
+        var www = WebRequest.SendFrame(_currentRequest, image, _idSession.ToString(), "/" + AccessData.AccessToken);
 
         yield return www.SendWebRequest();
 
