@@ -12,11 +12,13 @@ namespace Lavid.Libraske.Web
 
         [SerializeField] private UnityEvent _onRecieveData;
 
+        public AccessDataStruct GetReceivedData() => _receivedData;
+
         private void OnReceiveNewData()
         {
             if (AllDataIsValid())
             {
-                Debug.Log("All data was validated.");
+                Debug.Log("All data was validated.\n");
                 ApplyData();
                 Debug.Log(AccessData.ToString());
                 _onRecieveData?.Invoke();
@@ -33,7 +35,7 @@ namespace Lavid.Libraske.Web
 
         public void SetRefreshToken(string data)
         {
-            LogReceivedData(data);
+            LogReceivedData(data, "refresh token");
 
             if (IsDataValid(data))
             {
@@ -43,7 +45,7 @@ namespace Lavid.Libraske.Web
         }
         public void SetAccessToken(string data)
         {
-            LogReceivedData(data);
+            LogReceivedData(data, "access token");
 
             if (IsDataValid(data))
             {
@@ -53,7 +55,7 @@ namespace Lavid.Libraske.Web
         }
         public void SetName(string data)
         {
-            LogReceivedData(data);
+            LogReceivedData(data, "name");
 
             if (IsDataValid(data))
             {
@@ -63,7 +65,7 @@ namespace Lavid.Libraske.Web
         }
         public void SetEmail(string data)
         {
-            LogReceivedData(data);
+            LogReceivedData(data, "email");
 
             if (IsDataValid(data))
             {
@@ -73,7 +75,7 @@ namespace Lavid.Libraske.Web
         }
         public void SetIsGuest(string data)
         {
-            LogReceivedData(data);
+            LogReceivedData(data, "is guest");
 
             if (IsDataValid(data))
             {
@@ -83,7 +85,10 @@ namespace Lavid.Libraske.Web
         }
 
         private bool IsDataValid(string data) => data != null && data != "";
-        private void LogReceivedData(string data) => Debug.Log($"Receivied: {data}. Is Valid: {IsDataValid(data)}");
+        private void LogReceivedData(string data, string fieldName)
+        {
+            Debug.Log($"Received: {data} in \"{fieldName}\". Is Valid: {IsDataValid(data)}");
+        }
         private bool AllDataIsValid()
         {
             return (

@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Para Testes/ApiTesting.unity
+    path: Assets/Scenes/Acesso.unity
     guid: bfd495204c457224e81e75a0eaa86cb0
   - enabled: 1
     path: Assets/Scenes/TelaTitulo.unity

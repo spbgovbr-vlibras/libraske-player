@@ -21,6 +21,8 @@ namespace Lavid.Libraske.Util
         public Boolean(int value) => _value = value != 0;
         public Boolean(string value) => _value = value.ToUpper() != false.ToString().ToUpper();
 
+        public bool IsEquals(Boolean boolean) => _value == boolean._value;
+
         public int ToInt() => _value == false ? 0 : 1;
     }
 }

@@ -3,7 +3,7 @@
 namespace Lavid.Libraske.Web
 {
     [System.Serializable]
-    internal struct AccessDataStruct
+    public struct AccessDataStruct
     {
         public string userName;
         public string email;
