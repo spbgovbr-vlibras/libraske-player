@@ -21,7 +21,7 @@ public class ErrorSystem : MonoBehaviour
             if (err.HasCode())
                 codeText = $"Erro {err.Code}";
 
-            _erroMsgText.SetText(codeText);
+            _erroCodeText.SetText(codeText);
         }
     }
 }

@@ -991,11 +991,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e825e814d197cc6479bfb14a8513ca0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acessSetup: {fileID: 735051903}
-  userName: Visita
-  refreshToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcGYiOiIwODIwMzk2NDUwNyIsImlhdCI6MTYzMjc2NTY1NywiZXhwIjoxNjMyODUyMDU3fQ.KPDY4IMitJA_kXhFu4-eJK_xmRqqzkSZy8aic79y-S4
-  accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcGYiOiIwODIwMzk2NDUwNyIsImlhdCI6MTYzMjc2NTY1NywiZXhwIjoxNjMyODUyMDU3fQ.fnqt89hWYiihhRdkWc9J58r-AbUW62iI-awpn67IGIU
-  email: db6163f0-9496-48db-8df0-e9e1af73ef2eVena.Schuppe@yahoo.com
+  _currentData:
+    userName: 
+    email: 
+    accessToken: 
+    refreshToken: 
+    isGuest:
+      _value: 0
+  _toApply:
+    userName: 
+    email: 
+    accessToken: 
+    refreshToken: 
+    isGuest:
+      _value: 0
+  _applyInspectorData: 0
 --- !u!114 &735051903
 MonoBehaviour:
   m_ObjectHideFlags: 0

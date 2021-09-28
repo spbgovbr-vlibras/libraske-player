@@ -28,10 +28,12 @@ public class RequestSongs : MonoBehaviour
         {
             case UnityWebRequest.Result.ConnectionError:
             case UnityWebRequest.Result.DataProcessingError:
-                Debug.LogError("[RequestSongs]:  " + ": Error: " + webRequest.error + " at " + url);
+                FindObjectOfType<ErrorSystem>().ThrowError(ErrorList.DefaultError);
+                Debug.LogError("[RequestSongs]:  " + webRequest.error + " at " + url);
                 break;
             case UnityWebRequest.Result.ProtocolError:
-                Debug.LogError("[RequestSongs]:  " + ": HTTP Error: " + webRequest.error);
+                FindObjectOfType<ErrorSystem>(true).ThrowError(new InGameError(webRequest.error));
+                //Debug.LogError("[RequestSongs]:  " + webRequest.error);
                 break;
             case UnityWebRequest.Result.Success:
                 Debug.Log("[RequestSongs]:  " + ":\nReceived: " + webRequest.downloadHandler.text);
