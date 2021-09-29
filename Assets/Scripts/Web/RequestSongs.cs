@@ -28,7 +28,7 @@ public class RequestSongs : MonoBehaviour
         {
             case UnityWebRequest.Result.ConnectionError:
             case UnityWebRequest.Result.DataProcessingError:
-                FindObjectOfType<ErrorSystem>().ThrowError(ErrorList.DefaultError);
+                FindObjectOfType<ErrorSystem>(true).ThrowError(ErrorList.DefaultError);
                 Debug.LogError("[RequestSongs]:  " + webRequest.error + " at " + url);
                 break;
             case UnityWebRequest.Result.ProtocolError:
