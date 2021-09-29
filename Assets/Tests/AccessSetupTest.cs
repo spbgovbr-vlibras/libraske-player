@@ -6,16 +6,15 @@ using UnityEngine;
 public class AccessSetupTest
 {
     private const int StringSize = 8;
-    private readonly string PrefabFolder = "Prefabs/Web/AccessSetup";
     private readonly string IsGuestValue = "true"; //"false"
 
     // A Test behaves as an ordinary method
     [Test]
     public void AccessSetupTestSimplePasses()
     {
-    #if UNITY_EDITOR
         // Use the Assert class to test conditions
-        GameObject obj = MonoBehaviour.Instantiate(Resources.Load<GameObject>(PrefabFolder));
+        GameObject obj = GameObject.Instantiate(new GameObject());
+        obj.AddComponent<AccessSetup>();
         AccessSetup setup = obj.GetComponent<AccessSetup>();
 
         string rToken = StringGenerator.GenerateString(StringSize);
@@ -44,6 +43,5 @@ public class AccessSetupTest
         Assert.AreSame(AccessData.UserName, setup.GetReceivedData().userName);
         Assert.AreSame(AccessData.Email, setup.GetReceivedData().email);
         Assert.IsTrue(AccessData.IsGuest.IsEquals(setup.GetReceivedData().isGuest));
-    #endif
     }
 }
