@@ -10,10 +10,21 @@ namespace Lavid.Libraske.Web
         [SerializeField] private AccessDataStruct _toApply;
         [SerializeField] private bool _applyInspectorData;
 
-        private void OnEnable() => enabled = Application.isEditor;
+        private void OnEnable() => enabled = IsInEditor();
+
+        private bool IsInEditor()
+        {
+            bool isInEditor = Application.platform == RuntimePlatform.OSXEditor;
+            isInEditor |= Application.platform == RuntimePlatform.WindowsEditor;
+            isInEditor |= Application.platform == RuntimePlatform.LinuxEditor;
+            return isInEditor;
+        }
 
         private void LateUpdate()
         {
+            if (!IsInEditor())
+                enabled = false;
+
             if (_applyInspectorData)
             {
                 ApplyInspectorData();

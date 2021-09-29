@@ -13,6 +13,7 @@ public class AccessSetupTest
     [Test]
     public void AccessSetupTestSimplePasses()
     {
+    #if UNITY_EDITOR
         // Use the Assert class to test conditions
         GameObject obj = MonoBehaviour.Instantiate(Resources.Load<GameObject>(PrefabFolder));
         AccessSetup setup = obj.GetComponent<AccessSetup>();
@@ -43,5 +44,6 @@ public class AccessSetupTest
         Assert.AreSame(AccessData.UserName, setup.GetReceivedData().userName);
         Assert.AreSame(AccessData.Email, setup.GetReceivedData().email);
         Assert.IsTrue(AccessData.IsGuest.IsEquals(setup.GetReceivedData().isGuest));
+    #endif
     }
 }
