@@ -3,11 +3,18 @@ using UnityEditor;
 
 namespace Lavid.Libraske.Editor
 {
+    internal static class Tags
+    {
+        internal const string EditorOnly = "EditorOnly";
+        internal const string Web = "Web";
+    }
+
     // Restyle colors of gameobjects in hierarchy
     [InitializeOnLoad]
     public class HierarchyColorChange
     {
         static HierarchyColorChange() => EditorApplication.hierarchyWindowItemOnGUI += ChangeColors;
+        static readonly int WidthFill = 12;
 
         private static void ChangeColors(int instanceID, Rect selectionRect)
         {
@@ -16,24 +23,31 @@ namespace Lavid.Libraske.Editor
             if (gameObject == null)
                 return;
 
-            Color textColor = gameObject.activeSelf ? Color.white : Color.gray;
-
-            if (gameObject.CompareTag("EditorOnly"))
+            if (gameObject.CompareTag(Tags.EditorOnly))
             {
-                Color black = Color.black;
+                Color textColor = gameObject.activeSelf ? Color.white : Color.gray;
                 string name = gameObject.name.ToUpperInvariant();
+                Apply(selectionRect, name, Color.black, textColor, TextAnchor.MiddleCenter);
+            }
 
-                Apply(selectionRect, name, black, textColor);
+            if (gameObject.CompareTag(Tags.Web))
+            {
+                Color textColor = gameObject.activeSelf ? Color.white : Color.gray;
+                Color color = gameObject.activeSelf ? new Color(0.6f, 0.2f, 0.2f) : new Color(0.3f, 0.1f, 0.1f);
+                Apply(selectionRect, gameObject.name, color, textColor, TextAnchor.MiddleRight);
             }
         }
 
-        private static void Apply(Rect selectionRect, string name, Color color, Color textColor)
+        private static void Apply(Rect selectionRect, string name, Color color, Color textColor, TextAnchor align)
         {
+            selectionRect.width += WidthFill;
+
             EditorGUI.DrawRect(selectionRect, color);
 
             EditorGUI.LabelField(selectionRect, name, new GUIStyle()
             {
-                normal = new GUIStyleState() { textColor = textColor }
+                normal = new GUIStyleState() { textColor = textColor },
+                alignment = align
             });
         }
     }

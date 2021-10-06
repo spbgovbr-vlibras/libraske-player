@@ -20,6 +20,12 @@ public class WebCamHandler : MonoBehaviour
         _renderer.enabled = _showWebCam;
     }
 
+    private void OnDestroy()
+    {
+        if (_webcam != null)
+            _webcam.Stop();
+    }
+
     private void LateUpdate()
     {
         if(_showWebCamLastValue != _showWebCam)

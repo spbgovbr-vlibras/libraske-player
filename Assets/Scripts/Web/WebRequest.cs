@@ -19,6 +19,11 @@ internal struct RequestKeys
 
 public static class WebRequest
 {
+    private static void AuthorizeRequest(UnityWebRequest request)
+    {
+        request.SetRequestHeader(RequestKeys.Authorization, $"{RequestKeys.Bearer} {AccessData.AccessToken}");
+    }
+
     public static UnityWebRequest GetTexture(string url)
     {
         var request = UnityWebRequestTexture.GetTexture(url);
@@ -26,13 +31,24 @@ public static class WebRequest
         return request;
     }
 
+    public static UnityWebRequest GetPontuation(string gameSessionId)
+    {
+        string urlValue = WebConstants.FormatPontuationUrl(gameSessionId);
+
+        var request = new UnityWebRequest(urlValue, RequestKeys.Get);
+        request.downloadHandler = new DownloadHandlerBuffer();
+
+        AuthorizeRequest(request);
+        return request;
+    }
+
     public static UnityWebRequest Get(WebConstants.URL url, string addicionalURL = "")
     {
-        string urlValue = WebConstants.GetString(url) + addicionalURL;
+        string urlValue = WebConstants.GetURLFrom(url) + addicionalURL;
 
         var request = new UnityWebRequest( urlValue, RequestKeys.Get);
         request.downloadHandler = new DownloadHandlerBuffer();
-        request.SetRequestHeader(RequestKeys.ContentType, RequestKeys.JsonType);
+        //request.SetRequestHeader(RequestKeys.ContentType, RequestKeys.JsonType);
 
         AuthorizeRequest(request);
         return request;
@@ -52,7 +68,7 @@ public static class WebRequest
         if (image != null)
             form.AddBinaryData(WebConstants.FrameField, image, $"{sessionId}-{frameId}.png", RequestKeys.PngType);
 
-        var url = WebConstants.GetString(WebConstants.URL.SendFrame) + addicionalURL;
+        var url = WebConstants.GetURLFrom(WebConstants.URL.SendFrame) + addicionalURL;
         UnityWebRequest request = UnityWebRequest.Post(url, form);
 
         AuthorizeRequest(request);
@@ -60,25 +76,31 @@ public static class WebRequest
         return request;
     }
 
-    private static void AuthorizeRequest(UnityWebRequest request)
+    public static UnityWebRequest EmptyPost(WebConstants.URL url, string addicionalURL = "")
     {
-        request.SetRequestHeader(RequestKeys.Authorization, $"{RequestKeys.Bearer}  {AccessData.AccessToken}");
+        string urlValue = WebConstants.GetURLFrom(url) + addicionalURL;
+        var request = new UnityWebRequest(urlValue, RequestKeys.Post);
+        request.downloadHandler = new DownloadHandlerBuffer();
+        request.SetRequestHeader(RequestKeys.ContentType, RequestKeys.JsonType);
+        AuthorizeRequest(request);
+        return request;
     }
 
-    public static UnityWebRequest Post(WebConstants.URL url, string jsonString, string addicionalURL = "")
+    public static UnityWebRequest Post(WebConstants.URL url, string data, string addicionalURL = "")
     {
-        string urlValue = WebConstants.GetString(url) + addicionalURL;
+        string urlValue = WebConstants.GetURLFrom(url) + addicionalURL;
         var request = new UnityWebRequest(urlValue, RequestKeys.Post);
-        byte[] bytes = Encoding.UTF8.GetBytes(jsonString);
+        byte[] bytes = Encoding.UTF8.GetBytes(data);
         request.uploadHandler = new UploadHandlerRaw(bytes);
         request.downloadHandler = new DownloadHandlerBuffer();
+        request.SetRequestHeader(RequestKeys.ContentType, RequestKeys.JsonType);
         AuthorizeRequest(request);
         return request;
     }
 
     public static UnityWebRequest Delete(WebConstants.URL url)
     {
-        string urlValue = WebConstants.GetString(url);
+        string urlValue = WebConstants.GetURLFrom(url);
         var request = new UnityWebRequest(urlValue, RequestKeys.Delete);
         request.SetRequestHeader(RequestKeys.ContentType, RequestKeys.JsonType);
         AuthorizeRequest(request);

@@ -3372,7 +3372,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339540129}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3829d200fb2e77e4d806ce37ee874050, type: 3}
   m_Name: 
@@ -3711,30 +3711,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1452410022}
-  - component: {fileID: 1452410021}
   - component: {fileID: 1452410023}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: AccessDebugger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1452410021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1452410020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55203dbcdfa6ff54cacc1e39e90dd9d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _onRecieveData:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!4 &1452410022
 Transform:
   m_ObjectHideFlags: 0
@@ -4529,12 +4513,12 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1847877916}
-        m_TargetAssemblyTypeName: MusicDisplay, Assembly-CSharp
+        m_TargetAssemblyTypeName: MusicDisplay, GameAssembly
         m_MethodName: SetDataFromHolder
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: af5b1cdbed07e0f4399d89ea65025dd1, type: 2}
-          m_ObjectArgumentAssemblyTypeName: MusicHolderSO, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: MusicHolderSO, GameAssembly
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4885,27 +4869,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1969639413}
   m_CullTransparentMesh: 1
---- !u!1 &1974824087 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3613442237960328934, guid: 13f5f338a928e384dafcf237b55e1be6, type: 3}
-  m_PrefabInstance: {fileID: 1827503503}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1974824093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1974824087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98f3d9077c50f0d499279712ecc63ca3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _errorToThrow:
-    _code: 0
-    _msg: 
-  _throwError: 0
 --- !u!1 &1977945700
 GameObject:
   m_ObjectHideFlags: 0

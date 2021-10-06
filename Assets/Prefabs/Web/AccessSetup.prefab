@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 178404198820601135}
   m_Layer: 0
   m_Name: AccessSetup
-  m_TagString: Untagged
+  m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

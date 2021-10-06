@@ -3,66 +3,62 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class GameSession : MonoBehaviour
+[Serializable]
+internal struct MusicWebData
 {
-    private string _id;
+    public string idSong;
+}
 
-    private string _userId;
-    private string _songId;
-    private int _pontuation;
+[Serializable]
+internal struct GameSessionWebData 
+{
+    public int idGameSession;
+}
+
+
+public class GameSession : MonoBehaviour, ILoggable
+{
+    [SerializeField] private MusicHolderSO _musicHolder;
 
     public event Action OnSetupFinished;
 
-    private class Data
-    {
-        public string idSong = "bd74237d-6c89-4f77-9800-667bc3cc2208";//"afdf2ebf-a371-45b9-98e6-eb42129e410c";
-        //public string idUser = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcGYiOiIxMjM0NTY3ODkwMCIsImlhdCI6MTYzMDAyMDIxMSwiZXhwIjoxNjMwMTA2NjExfQ.sgoEOTlbm1v-JwMxAcFfPgN7RK88ZvOe1h8EPWOhRVY";
-    }
+    private GameSessionWebData _data;
+    private MusicWebData _song;
+
+    public string Id { get => _data.idGameSession.ToString(); }
+    public string SongId { get => _song.idSong; }
+    public string InLogName { get => "GameSession"; }
 
     private void Start()
     {
-        Setup();
-    }
-
-    public void Setup()
-    {
         StopAllCoroutines();
-        StartCoroutine(SendDataCoroutine());
+        StartCoroutine(CreateSessionCoroutine());
     }
 
-    private void SetGameSessionId(DownloadHandler downloadHandler)
+    IEnumerator CreateSessionCoroutine()
     {
-        string str = downloadHandler.text.Split(':')[1];
-        str = str.Substring(1, str.Length - 3);
-        _id = str;
-    }
+        Logger.Log(this, "Solicitou requisição");
 
-    IEnumerator SendDataCoroutine()
-    {
-        Debug.Log("[GameSession]: Solicitou requisição");
+        _song.idSong = _musicHolder.GetMusicID();
+        string songJson = JsonUtility.ToJson(_song);
 
-        string json = JsonUtility.ToJson(new Data());
-
-        var request = WebRequest.Post(WebConstants.URL.CreateSessionURL, json);
+        var request = WebRequest.Post(WebConstants.URL.CreateSessionURL, songJson);
 
         yield return request.SendWebRequest();
 
-        string status = request.result == UnityWebRequest.Result.Success ? "Session Created" : request.error;
-
         if(request.result == UnityWebRequest.Result.Success)
         {
-            Debug.Log("[GameSession]: " + "Session Created");
-            SetGameSessionId(request.downloadHandler);
+            _data = JsonUtility.FromJson<GameSessionWebData>(request.downloadHandler.text);
+            Logger.Log(this, "Session Created");
+            Logger.Log(this, $"Now session with id {_data.idGameSession} is playing song with id {_song.idSong}");
             OnSetupFinished?.Invoke();
         }
         else
         {
-            Debug.Log("[GameSession]: " + request.error);
+            Logger.Log(this, request.error);
+
+            if (FindObjectOfType<ErrorSystem>() is ErrorSystem errorSystem)
+                errorSystem.ThrowError(new InGameError(request.error));
         }
     }
-
-    public string UserId { get => _userId;}
-    public string SongId { get => _songId;}
-    public int Pontuation { get => _pontuation;}
-    public string Id { get => _id;}
 }

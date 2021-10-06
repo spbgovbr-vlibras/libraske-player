@@ -19,7 +19,8 @@ public class PlayingMusicController : MonoBehaviour
 
     public virtual void Setup()
     {
-        int index = int.Parse(_musicHolder.GetMusic().Id);
+        // TODO: Get Music By ID on database
+        int index = 0;// int.Parse(_musicHolder.GetMusic().Id);
         _animatorController = null;
 
         try

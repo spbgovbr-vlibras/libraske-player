@@ -1,7 +1,7 @@
 using Lavid.Libraske.DataStruct;
 using UnityEngine;
 
-public class RequestSongsSimulator : MonoBehaviour
+public class RequestMusicsSimulator : MonoBehaviour
 {
     public Wrapper<Music> _songs;
     public MusicMenu _musicMenu;

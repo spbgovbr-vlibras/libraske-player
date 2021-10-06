@@ -33,6 +33,15 @@ namespace Lavid.Libraske.Web
             AccessData.SetUserName(_receivedData.userName);
         }
 
+        public void SetData(FakeLoginData data)
+        {
+            SetAccessToken(data.accessToken);
+            SetRefreshToken(data.refreshToken);
+            SetName(data.name);
+            SetEmail(data.email);
+            SetIsGuest(data.isGuest.ToString());
+        }
+
         public void SetRefreshToken(string data)
         {
             LogReceivedData(data, "refresh token");

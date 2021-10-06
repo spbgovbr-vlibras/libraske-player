@@ -10,6 +10,8 @@ public class MusicHolderSO : ScriptableObject
     public Music GetMusic() => _music;
     public void SetMusic(Music music) => _music = music;
 
+    public string GetMusicID() => _music.Id;
+
     public Texture GetThumbnail() => _thumbnail.texture;
     public void SetThumbnail(RawImage rawImage) => _thumbnail = rawImage;
 }

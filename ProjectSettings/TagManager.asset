@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Icaro
   - Hozana
+  - avatar
+  - Web
   layers:
   - Default
   - TransparentFX

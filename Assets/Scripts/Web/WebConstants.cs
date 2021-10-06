@@ -9,7 +9,8 @@ public static class WebConstants
         UsersURL,
         CreateSessionURL,
         PontuationURL,
-        SendFrame
+        SendFrame,
+        FakeLogin
     }
 
     // Game session
@@ -20,6 +21,9 @@ public static class WebConstants
     public static readonly string FrameField = "frame";
     public static readonly string FrameIdField = "idFrame";
 
+    // Request pontuation
+    public static readonly string PontuationTab = "pontuation";
+
     private static Dictionary<URL, string> UrlDictionary;
 
     private static void SetupDictionary()
@@ -29,11 +33,20 @@ public static class WebConstants
         UrlDictionary.Add(URL.SongsURL, UrlDictionary[URL.BaseURL] + "/libraske/songs");
         UrlDictionary.Add(URL.UsersURL, UrlDictionary[URL.BaseURL] + "/libraske/users");
         UrlDictionary.Add(URL.CreateSessionURL, UrlDictionary[URL.BaseURL] + "/libraske/game/pontuation/session");
-        UrlDictionary.Add(URL.PontuationURL, UrlDictionary[URL.BaseURL] + "/libraske/game/pontuation/session");
+        UrlDictionary.Add(URL.PontuationURL, UrlDictionary[URL.BaseURL] + "/libraske/game");
         UrlDictionary.Add(URL.SendFrame, UrlDictionary[URL.BaseURL] + "/libraske/game/frame");
+        UrlDictionary.Add(URL.FakeLogin, UrlDictionary[URL.BaseURL] + "/libraske/auth/fake-login");
     }
 
-    public static string GetString(URL url)
+    public static string FormatPontuationUrl(string gameSessionId)
+    {
+        if (UrlDictionary == null)
+            SetupDictionary();
+
+        return UrlDictionary[URL.PontuationURL] + $"/{gameSessionId}/{PontuationTab}";
+    }
+
+    public static string GetURLFrom(URL url)
     {
         if (UrlDictionary == null)
             SetupDictionary();
