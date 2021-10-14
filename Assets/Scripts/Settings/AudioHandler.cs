@@ -9,6 +9,8 @@ public class AudioHandler : MonoBehaviour, IPauseObserver
 
     private const int DefaultVolume = 1;
 
+    private bool _gameIsPaused;
+
     private void Awake()
     {
         if(FindObjectOfType<PauseSystem>() is PauseSystem ps)
@@ -51,6 +53,8 @@ public class AudioHandler : MonoBehaviour, IPauseObserver
 
     public void UpdatePauseStatus(bool isPaused)
     {
+        _gameIsPaused = isPaused;
+
         if (_audioSource == null)
             return;
 
@@ -61,4 +65,7 @@ public class AudioHandler : MonoBehaviour, IPauseObserver
 
         SyncVolumeWithSave();
     }
+
+    public float CurrentTime => _audioSource.time;
+    public bool AudioClipEnded => !_audioSource.isPlaying && !_gameIsPaused;
 }

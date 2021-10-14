@@ -1,17 +1,19 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
+using System;
 
 public struct PontuationWebData
 {
-    int sessionScore;
-    int[] pontuations;
+    public int sessionScore;
+    public int[] pontuations;
 }
 
 public class PontuationController : MonoBehaviour, IPauseObserver, ILoggable
 {
     [SerializeField] private GameSession _gameSession;
     [SerializeField, Tooltip("Time between requests")] private float _clockTime = 2;
+    [SerializeField] PontuationFeedback _pontuationFeedback;
 
     private bool _gameSessionStarted;
 
@@ -46,15 +48,16 @@ public class PontuationController : MonoBehaviour, IPauseObserver, ILoggable
     {
         while (true)
         {
-            var webRequest = WebRequest.GetPontuation(_gameSession.Id);
-            Logger.Log(this, $"Requisitou pontuação em {WebConstants.FormatPontuationUrl(_gameSession.Id)}");
+            var webRequest = WebRequest.GetPontuation(CurrentGameSession.ID);
+            Logger.Log(this, $"Requisitou pontuação em {WebConstants.FormatPontuationUrl(CurrentGameSession.ID)}");
 
             yield return webRequest.SendWebRequest();    
 
             if(webRequest.result == UnityWebRequest.Result.Success)
             {
-                string pontuation = webRequest.downloadHandler.text;
-                Logger.Log(this, $"Pontuação pega: " + pontuation);
+                Logger.Log(this, $"Pontuação pega: " + webRequest.downloadHandler.text);
+                var pontuation = JsonUtility.FromJson<PontuationWebData>(webRequest.downloadHandler.text);
+                _pontuationFeedback.ProcessPontuation(pontuation);
             }
             else
             {

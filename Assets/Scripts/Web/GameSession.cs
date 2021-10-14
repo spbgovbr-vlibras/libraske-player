@@ -12,7 +12,33 @@ internal struct MusicWebData
 [Serializable]
 internal struct GameSessionWebData 
 {
-    public int idGameSession;
+    public string idGameSession;
+}
+
+public static class CurrentGameSession
+{
+    public enum Fields
+    {
+        ID,
+        Name,
+        Pontuation
+    }
+
+    private static GameSessionWebData data;
+    private static PontuationWebData pontuation;
+
+    public static string ID { get => data.idGameSession; set => data.idGameSession = value; }
+    public static string MusicName { get; set; }
+
+    public static void SetPontuation(PontuationWebData data)
+    {
+        pontuation = data;
+    }
+
+    public static int GetPontuation()
+    {
+        return pontuation.sessionScore;
+    }
 }
 
 
@@ -21,11 +47,8 @@ public class GameSession : MonoBehaviour, ILoggable
     [SerializeField] private MusicHolderSO _musicHolder;
 
     public event Action OnSetupFinished;
-
-    private GameSessionWebData _data;
     private MusicWebData _song;
 
-    public string Id { get => _data.idGameSession.ToString(); }
     public string SongId { get => _song.idSong; }
     public string InLogName { get => "GameSession"; }
 
@@ -48,9 +71,12 @@ public class GameSession : MonoBehaviour, ILoggable
 
         if(request.result == UnityWebRequest.Result.Success)
         {
-            _data = JsonUtility.FromJson<GameSessionWebData>(request.downloadHandler.text);
+            GameSessionWebData data = JsonUtility.FromJson<GameSessionWebData>(request.downloadHandler.text);
+            CurrentGameSession.ID = data.idGameSession;
+            CurrentGameSession.MusicName = _musicHolder.GetMusic().Name;
+
             Logger.Log(this, "Session Created");
-            Logger.Log(this, $"Now session with id {_data.idGameSession} is playing song with id {_song.idSong}");
+            Logger.Log(this, $"Now session with id {data.idGameSession} is playing song with id {_song.idSong}");
             OnSetupFinished?.Invoke();
         }
         else
@@ -60,5 +86,10 @@ public class GameSession : MonoBehaviour, ILoggable
             if (FindObjectOfType<ErrorSystem>() is ErrorSystem errorSystem)
                 errorSystem.ThrowError(new InGameError(request.error));
         }
+    }
+
+    public IEnumerator EndSessionCoroutine()
+    {
+        yield return null;
     }
 }

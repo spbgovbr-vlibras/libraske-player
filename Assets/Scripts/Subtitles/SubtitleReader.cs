@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SubtitleReader : MonoBehaviour
 {
-    [SerializeField] private AudioSource _audio;
+    [SerializeField] private AudioHandler _audio;
     [SerializeField] private Subtitle _subs;
     [SerializeField] private SubtitleBar _subtitleBar;
     [SerializeField] private TextUI _text;
@@ -33,7 +33,7 @@ public class SubtitleReader : MonoBehaviour
             _setup = true;
         }
 
-        _timeCurrent = _audio.time;
+        _timeCurrent = _audio.CurrentTime;
 
         var nextLineInterval = _nextLine.GetInterval();
 

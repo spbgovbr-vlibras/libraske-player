@@ -9685,6 +9685,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5849173180330424284}
   - component: {fileID: 919148912349211611}
+  - component: {fileID: 2950242859480183317}
   m_Layer: 8
   m_Name: Avatar
   m_TagString: avatar
@@ -9724,6 +9725,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _icaro: {fileID: 5849173178730652986}
   _hozana: {fileID: 5849173179179646012}
+--- !u!114 &2950242859480183317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5849173180330424282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33dcf7519f130f24583fb2cbc7210330, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _avatarAnimators:
+    Items:
+    - {fileID: 5849173178730652985}
+    - {fileID: 5849173179179646011}
 --- !u!1 &5849173180339059609
 GameObject:
   m_ObjectHideFlags: 0

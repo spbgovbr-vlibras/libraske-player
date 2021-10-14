@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 
+// TODO: Fix Dispose Error
 public class SendFrameRequest : MonoBehaviour, ILoggable, IPauseObserver
 {
     public string InLogName => "SendFrameRequest";
@@ -15,7 +16,8 @@ public class SendFrameRequest : MonoBehaviour, ILoggable, IPauseObserver
 
     private void Awake()
     {
-        _gameSession.OnSetupFinished += Enable;
+        if(_gameSession != null)
+            _gameSession.OnSetupFinished += Enable;
 
         if (FindObjectOfType<PauseSystem>() is PauseSystem ps)
             ps.AddObserver(this);
@@ -45,26 +47,32 @@ public class SendFrameRequest : MonoBehaviour, ILoggable, IPauseObserver
         {
             Logger.Log(this, "Solicitou requisição");
 
-            var image = _webcam.GetImageInBytes();
+            byte[] image = _webcam.GetImageInBytes();
 
-            var www = WebRequest.SendFrame(_currentRequest, image, _idSession.ToString(), "/" + AccessData.AccessToken);
-
-            yield return www.SendWebRequest();
-
-            if (www.result == UnityWebRequest.Result.Success)
+            if(image != null)
             {
-                _currentRequest++;
-                Logger.Log(this, "Form upload complete!");
-            }
-            else
-            {
-                Logger.Log(this, www.error);
+                var www = WebRequest.SendFrame(_currentRequest, image, _idSession.ToString(), "/" + AccessData.AccessToken);
 
-                if (FindObjectOfType<ErrorSystem>() is ErrorSystem es)
-                    es.ThrowError(new InGameError(www.error));
+                yield return www.SendWebRequest();
+
+                if (www.result == UnityWebRequest.Result.Success)
+                {
+                    _currentRequest++;
+                    Logger.Log(this, "Form upload complete!");
+                }
+                else
+                {
+                    Logger.Log(this, www.error);
+
+                    if (FindObjectOfType<ErrorSystem>() is ErrorSystem es)
+                        es.ThrowError(new InGameError(www.error));
+                }
+
+                Logger.Log(this, $"Next request in {_clockTime}");
+
+                www.Dispose();
             }
 
-            Logger.Log(this, $"Next request in {_clockTime}");
             yield return new WaitForSeconds(_clockTime);
         }
 

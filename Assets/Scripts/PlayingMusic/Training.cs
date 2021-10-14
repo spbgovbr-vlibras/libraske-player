@@ -1,8 +1,15 @@
 using Lavid.Libraske.DataStruct;
+using Lavid.Libraske.Util;
+using System;
 using UnityEngine;
 
-public class Training : PlayingMusicController
+public class Training : MonoBehaviour
 {
+    [Header("Controller")]
+    [SerializeField] private MusicHolderSO _musicHolder;
+    [SerializeField] private MusicListSO _musicList;
+    [SerializeField] private AvatarAnimationController _avatarAnimator;
+
     [Header("UI")]
     [SerializeField] private GameObject _buttonNext;
     [SerializeField] private GameObject _buttonPrevious;
@@ -12,26 +19,31 @@ public class Training : PlayingMusicController
 
     private const string AnimatorField = "CurrentIndex";
 
-    public override void Setup()
+    private void Awake() => Setup();
+
+    public void Setup()
     {
+        int index = 0;// TODO: Fix this
+
         try
         {
-            base.Setup();
-            _quantityOfAnimations = _animatorController.animationClips.Length - 1;
+            RuntimeAnimatorController animatorController = _musicList.GetControllerAtIndex(index);
+
+            _avatarAnimator.SetController(animatorController);
+
+            _quantityOfAnimations = animatorController.animationClips.Length - 1;
             _currentAnimation = new IntClampedValue(0, 0, _quantityOfAnimations);
             UpdateUI();
         }
-        catch {}
-    }
-
-    public void UpdateAnimatorsValues()
-    {
-        for (int i = 0; i < _avatarAnimators.Length; i++)
+        catch (Exception err)
         {
-            if(_avatarAnimators[i] != null)
-                _avatarAnimators[i].SetInteger(AnimatorField, _currentAnimation.GetCurrentValue());
+            Debug.LogException(err);
+            if (FindObjectOfType<ErrorSystem>() is ErrorSystem es)
+                es.ThrowError(new InGameError("Failed to load music"));
         }
     }
+
+    public void UpdateAnimatorsValues() => _avatarAnimator.SetInteger(AnimatorField, _currentAnimation.GetCurrentValue());
 
     public void UpdateUI()
     {

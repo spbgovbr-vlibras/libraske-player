@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PerfilApagado.unity
     guid: bc0c5f612bcd5ba4b962e3fa3c6f41ac
+  - enabled: 1
+    path: Assets/Scenes/Resultados.unity
+    guid: d5bd8336f39fa3140bed906874e02def
   m_configObjects: {}

@@ -1829,16 +1829,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
---- !u!95 &1075161847 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3950388936809353063, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
-  m_PrefabInstance: {fileID: 1075161846}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1075161848 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3950388937400424037, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
-  m_PrefabInstance: {fileID: 1075161846}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1273372389
 GameObject:
   m_ObjectHideFlags: 0
@@ -2263,12 +2253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _musicHolder: {fileID: 11400000, guid: af5b1cdbed07e0f4399d89ea65025dd1, type: 2}
   _musicList: {fileID: 11400000, guid: 50ad1bbda238743469a49d8a77b3be71, type: 2}
-  _avatarAnimators:
-    Items:
-    - {fileID: 1075161848}
-    - {fileID: 1075161847}
-  _sceneManager: {fileID: 598945711296122907}
-  _sceneToLoad: MinhasMusicas
+  _avatarAnimator: {fileID: 2015356704}
   _buttonNext: {fileID: 949231416}
   _buttonPrevious: {fileID: 1988828190}
 --- !u!4 &1580461338
@@ -2525,6 +2510,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4647309153656527326, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
   m_PrefabInstance: {fileID: 1988828188}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2015356704 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5696974317425711179, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
+  m_PrefabInstance: {fileID: 1075161846}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33dcf7519f130f24583fb2cbc7210330, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &598945711296122906
 PrefabInstance:
   m_ObjectHideFlags: 0
