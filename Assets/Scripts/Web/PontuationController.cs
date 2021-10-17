@@ -9,11 +9,13 @@ public struct PontuationWebData
     public int[] pontuations;
 }
 
+[RequireComponent(typeof(Timer))]
 public class PontuationController : MonoBehaviour, IPauseObserver, ILoggable
 {
     [SerializeField] private GameSession _gameSession;
     [SerializeField, Tooltip("Time between requests")] private float _clockTime = 2;
     [SerializeField] PontuationFeedback _pontuationFeedback;
+    [SerializeField] Timer _timer;
 
     private bool _gameSessionStarted;
 
@@ -25,11 +27,14 @@ public class PontuationController : MonoBehaviour, IPauseObserver, ILoggable
 
         if (FindObjectOfType<PauseSystem>() is PauseSystem ps)
             ps.AddObserver(this);
+
+        _timer.FreezeTime();
     }
 
     public void OnDestroy()
     {
-        StopAllCoroutines();
+        if (_timer != null)
+            _timer.OnReachTime -= OnReachTime;
 
         if (_gameSession != null)
             _gameSession.OnSetupFinished -= Enable;
@@ -41,39 +46,43 @@ public class PontuationController : MonoBehaviour, IPauseObserver, ILoggable
     private void Enable()
     {
         _gameSessionStarted = true;
+        _timer.OnReachTime += OnReachTime;
+        _timer.Setup(_clockTime, true);
+    }
+
+    private void OnReachTime()
+    {
+        StopAllCoroutines();
         StartCoroutine(GetRequestCoroutine());
     }
 
     IEnumerator GetRequestCoroutine()
     {
-        while (true)
+        var webRequest = WebRequest.GetPontuation(CurrentGameSession.ID);
+        Logger.Log(this, $"Requisitou pontuação em {WebConstants.FormatPontuationUrl(CurrentGameSession.ID)}");
+
+        yield return webRequest.SendWebRequest();    
+
+        if(webRequest.result == UnityWebRequest.Result.Success)
         {
-            var webRequest = WebRequest.GetPontuation(CurrentGameSession.ID);
-            Logger.Log(this, $"Requisitou pontuação em {WebConstants.FormatPontuationUrl(CurrentGameSession.ID)}");
-
-            yield return webRequest.SendWebRequest();    
-
-            if(webRequest.result == UnityWebRequest.Result.Success)
-            {
-                Logger.Log(this, $"Pontuação pega: " + webRequest.downloadHandler.text);
-                var pontuation = JsonUtility.FromJson<PontuationWebData>(webRequest.downloadHandler.text);
-                _pontuationFeedback.ProcessPontuation(pontuation);
-            }
-            else
-            {
-                Logger.Log(this, webRequest.error);
-            }
-
-            Logger.Log(this, $"Next request in {_clockTime}");
-            yield return new WaitForSeconds(_clockTime);
+            Logger.Log(this, $"Pontuação pega: " + webRequest.downloadHandler.text);
+            var pontuation = JsonUtility.FromJson<PontuationWebData>(webRequest.downloadHandler.text);
+            _pontuationFeedback.ProcessPontuation(pontuation);
         }
+        else
+        {
+            Logger.Log(this, webRequest.error);
+        }
+
+        Logger.Log(this, $"Next request in {_clockTime}");
+        yield return new WaitForSeconds(_clockTime);   
     }
 
     public void UpdatePauseStatus(bool isPaused)
     {
         if (isPaused)
-            StopAllCoroutines();
-        else if (_gameSessionStarted && gameObject.activeInHierarchy)
-            StartCoroutine(GetRequestCoroutine());
+            _timer.FreezeTime(true);
+        else if (_gameSessionStarted)
+            _timer.FreezeTime(false);
     }
 }

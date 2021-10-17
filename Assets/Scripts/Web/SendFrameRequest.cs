@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 
-// TODO: Fix Dispose Error
+[RequireComponent(typeof(Timer))]
 public class SendFrameRequest : MonoBehaviour, ILoggable, IPauseObserver
 {
     public string InLogName => "SendFrameRequest";
@@ -11,8 +11,8 @@ public class SendFrameRequest : MonoBehaviour, ILoggable, IPauseObserver
     [SerializeField] private WebCamHandler _webcam;
     [SerializeField] private GameSession _gameSession;
     [SerializeField, Tooltip("Time between requests")] private float _clockTime = 2;
+    [SerializeField] Timer _timer;
     private bool _gameSessionStarted;
-
 
     private void Awake()
     {
@@ -21,6 +21,8 @@ public class SendFrameRequest : MonoBehaviour, ILoggable, IPauseObserver
 
         if (FindObjectOfType<PauseSystem>() is PauseSystem ps)
             ps.AddObserver(this);
+
+        _timer.FreezeTime();
     }
     public void OnDestroy()
     {
@@ -31,58 +33,62 @@ public class SendFrameRequest : MonoBehaviour, ILoggable, IPauseObserver
 
         if (FindObjectOfType<PauseSystem>() is PauseSystem ps)
             ps.RemoveObserver(this);
+
+        if (_timer != null)
+            _timer.OnReachTime -= OnReachTime;
     }
+
     private void Enable()
     {
         _gameSessionStarted = true;
-        StartCoroutine(SendFrameCoroutine());
+        _timer.OnReachTime += OnReachTime;
+        _timer.Setup(_clockTime, true);
     }
 
     private int _currentRequest;
     private int _idSession = 10;
 
+    private void OnReachTime()
+    {
+        StopAllCoroutines();
+        StartCoroutine(SendFrameCoroutine());
+    }
+
     IEnumerator SendFrameCoroutine()
     {
-        while (true)
+        Logger.Log(this, "Solicitou requisição");
+
+        byte[] image = _webcam.GetImageInBytes(); // TODO: Fix Dispose Error
+
+        if (image != null)
         {
-            Logger.Log(this, "Solicitou requisição");
+            var www = WebRequest.SendFrame(_currentRequest, image, _idSession.ToString(), "/" + AccessData.AccessToken);
 
-            byte[] image = _webcam.GetImageInBytes();
+            yield return www.SendWebRequest();
 
-            if(image != null)
+            if (www.result == UnityWebRequest.Result.Success)
             {
-                var www = WebRequest.SendFrame(_currentRequest, image, _idSession.ToString(), "/" + AccessData.AccessToken);
+                _currentRequest++;
+                Logger.Log(this, "Form upload complete!");
+            }
+            else
+            {
+                Logger.Log(this, www.error);
 
-                yield return www.SendWebRequest();
-
-                if (www.result == UnityWebRequest.Result.Success)
-                {
-                    _currentRequest++;
-                    Logger.Log(this, "Form upload complete!");
-                }
-                else
-                {
-                    Logger.Log(this, www.error);
-
-                    if (FindObjectOfType<ErrorSystem>() is ErrorSystem es)
-                        es.ThrowError(new InGameError(www.error));
-                }
-
-                Logger.Log(this, $"Next request in {_clockTime}");
-
-                www.Dispose();
+                if (FindObjectOfType<ErrorSystem>() is ErrorSystem es)
+                    es.ThrowError(new InGameError(www.error));
             }
 
-            yield return new WaitForSeconds(_clockTime);
+            www.Dispose();
+            Logger.Log(this, $"Next request in {_clockTime}");
         }
-
     }
 
     public void UpdatePauseStatus(bool isPaused)
     {
         if (isPaused)
-            StopAllCoroutines();
-        else if (_gameSessionStarted && gameObject.activeInHierarchy)
-            StartCoroutine(SendFrameCoroutine());
+            _timer.FreezeTime(true);
+        else if (_gameSessionStarted)
+            _timer.FreezeTime(false);
     }
 }

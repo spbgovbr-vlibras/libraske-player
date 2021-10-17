@@ -48,8 +48,14 @@ public static class WebRequest
 
         var request = new UnityWebRequest( urlValue, RequestKeys.Get);
         request.downloadHandler = new DownloadHandlerBuffer();
-        //request.SetRequestHeader(RequestKeys.ContentType, RequestKeys.JsonType);
 
+        AuthorizeRequest(request);
+        return request;
+    }
+
+    public static UnityWebRequest GetBundle(string url)
+    {
+        var request = UnityWebRequestAssetBundle.GetAssetBundle(url);
         AuthorizeRequest(request);
         return request;
     }

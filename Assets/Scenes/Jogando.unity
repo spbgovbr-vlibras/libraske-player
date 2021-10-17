@@ -514,7 +514,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _renderer: {fileID: 787395030}
-  _showWebCam: 1
 --- !u!1 &550324551
 GameObject:
   m_ObjectHideFlags: 0
@@ -2227,6 +2226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1556398404}
   - component: {fileID: 1556398402}
+  - component: {fileID: 1556398403}
   m_Layer: 0
   m_Name: SendWebcamFrame
   m_TagString: Web
@@ -2249,6 +2249,19 @@ MonoBehaviour:
   _webcam: {fileID: 309243081}
   _gameSession: {fileID: 983456377}
   _clockTime: 2
+  _timer: {fileID: 1556398403}
+--- !u!114 &1556398403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556398401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3703ae9d6f19db84397b7c6866559f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1556398404
 Transform:
   m_ObjectHideFlags: 0
@@ -3356,6 +3369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2063128169}
   - component: {fileID: 2063128167}
+  - component: {fileID: 2063128168}
   m_Layer: 0
   m_Name: PlayingController
   m_TagString: Untagged
@@ -3376,13 +3390,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _musicHolder: {fileID: 11400000, guid: af5b1cdbed07e0f4399d89ea65025dd1, type: 2}
-  _musicList: {fileID: 11400000, guid: 89a534b3ca8229a468bff72df2c3069f, type: 2}
-  _avatarAnimation: {fileID: 101849787}
+  _avatarAnimators: {fileID: 101849787}
+  _bundleRequest: {fileID: 2063128168}
   _sceneManager: {fileID: 5141918}
   _loadOnFail: MinhasMusicas
   _loadOnMusicEnd: Resultados
   _gameSession: {fileID: 983456377}
   _audio: {fileID: 55546491}
+--- !u!114 &2063128168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063128166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78afbad4f0183ce4cbe8224aed08aef3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2063128169
 Transform:
   m_ObjectHideFlags: 0

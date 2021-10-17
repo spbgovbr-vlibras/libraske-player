@@ -1,15 +1,9 @@
-﻿using Lavid.Libraske.DataStruct;
-using Lavid.Libraske.Util;
-using System;
+﻿using Lavid.Libraske.Util;
 using System.Collections;
 using UnityEngine;
 
-public class PlayingMusicController : MonoBehaviour, IPauseObserver
+public class PlayingMusicController : InGameController, IPauseObserver, ILoggable
 {
-    [SerializeField] private MusicHolderSO _musicHolder;
-    [SerializeField] private MusicListSO _musicList;
-    [SerializeField] private AvatarAnimationController _avatarAnimation;
-
     [Header("Loading scenes")]
     [SerializeField] private LoadSceneManager _sceneManager;
     [SerializeField] private string _loadOnFail;
@@ -20,42 +14,51 @@ public class PlayingMusicController : MonoBehaviour, IPauseObserver
     [SerializeField] private AudioHandler _audio;
     private bool _musicHasEnded;
 
+    private bool _setupReady;
+    public string InLogName => "PlayingMusicController";
+    private bool ShouldEndMusic => _setupReady && _audio.AudioClipEnded;
+
     private void Awake()
     {
+        _audio.Stop();
+
         if (FindObjectOfType<PauseSystem>() is PauseSystem pauseSystem)
             pauseSystem.AddObserver(this);
 
-        Setup();
+        StartCoroutine(SetupAnimations());
     }
 
-    public virtual void Setup()
+    public override IEnumerator SetupAnimations()
     {
-        // TODO: Get Music By ID on database
-        int index = 0;// int.Parse(_musicHolder.GetMusic().Id);
+        Music music = this._musicHolder.GetMusic();
+        yield return StartCoroutine(_bundleRequest.SendRequest(music.URLFullMusic));
+        AnimationClip clip = _bundleRequest.TryGetFirstClip(_bundleRequest.GetLastRequest());
 
-        try
+        if (clip != null)
         {
-            RuntimeAnimatorController animatorController = _musicList.GetControllerAtIndex(index);
-            _avatarAnimation.SetController(animatorController);
+            Logger.Log(this, $"Clip {clip.name} received");
+            _avatarAnimators.AddClip(clip);
+            _avatarAnimators.PlayAll();
+            _audio.Play();
+            _setupReady = true;
         }
-        catch (Exception err)
+        else
         {
-            Debug.LogException(err);
+            Logger.Log(this, "Clip received is null");
+
             if (FindObjectOfType<ErrorSystem>() is ErrorSystem es)
                 es.ThrowError(new InGameError("Failed to load music"));
-
-            _sceneManager.LoadScene(_loadOnFail);
         }
     }
 
     public void UpdatePauseStatus(bool isPaused)
     {
-        _avatarAnimation.EnableAnimations(!isPaused);
+        _avatarAnimators.EnableAnimations(!isPaused);
     }
 
     private void Update()
     {
-        if (!_musicHasEnded && _audio.AudioClipEnded)
+        if (ShouldEndMusic && !_musicHasEnded)
         {
             _musicHasEnded = true;
             CloseSession();
@@ -64,7 +67,7 @@ public class PlayingMusicController : MonoBehaviour, IPauseObserver
 
     private void CloseSession()
     {
-        //yield return _gameSession.EndSessionCoroutine();
+        //yield return StartCoroutine(_gameSession.EndSessionCoroutine());
         _sceneManager.LoadScene(_loadOnMusicEnd);
     }
 }

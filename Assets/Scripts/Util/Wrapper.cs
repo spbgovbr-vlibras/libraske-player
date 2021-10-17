@@ -28,6 +28,7 @@ namespace Lavid.Libraske.DataStruct
         public void Remove(T obj) => Items.Remove(obj);
         public bool Contains(T obj) => Items.Contains(obj);
         public int Length { get => Items.Count; }
+        public void Clear() => Items.Clear();
 
 
         /// <returns> Returns element in a required index position </returns>

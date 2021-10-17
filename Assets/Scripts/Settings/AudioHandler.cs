@@ -31,6 +31,9 @@ public class AudioHandler : MonoBehaviour, IPauseObserver
 
     public void SetVolume(float volume) => _audioSource.volume = volume;
 
+    public void Stop() => _audioSource.Stop();
+    public void Play() => _audioSource.Play();
+
     public void PlayOneShot(AudioClip clip)
     {
         if(clip != null && _audioSource != null)
@@ -67,5 +70,5 @@ public class AudioHandler : MonoBehaviour, IPauseObserver
     }
 
     public float CurrentTime => _audioSource.time;
-    public bool AudioClipEnded => !_audioSource.isPlaying && !_gameIsPaused;
+    public bool AudioClipEnded => Mathf.Approximately(_audioSource.clip.length, _audioSource.time);
 }

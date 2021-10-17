@@ -3,37 +3,37 @@ using UnityEngine;
 
 public class AvatarAnimationController : MonoBehaviour
 {
-    [SerializeField] protected Wrapper<Animator> _avatarAnimators;
+    [SerializeField] private Wrapper<AvatarAnimator> _animators;
 
-    public void SetInteger(string key, int value)
+    public void AddClip(AnimationClip clip)
     {
-        for (int i = 0; i < _avatarAnimators.Length; i++)
+        for (int i = 0; i < _animators.Length; i++)
         {
-            if (_avatarAnimators[i] != null)
-                _avatarAnimators[i].SetInteger(key, value);
+            _animators[i].AddClip(clip);
+        }
+    }
+
+    public void PlayAll()
+    {
+        for (int i = 0; i < _animators.Length; i++)
+        {
+            if (_animators[i] != null)
+                _animators[i].PlayAll();
+        }
+    }
+
+    public void PlayAt(int index)
+    {
+        for (int i = 0; i < _animators.Length; i++)
+        {
+            if (_animators[i] != null)
+                _animators[i].PlayAt(index);
         }
     }
 
     public void EnableAnimations(bool value)
     {
-        for (int i = 0; i < _avatarAnimators.Length; i++)
-            _avatarAnimators[i].enabled = value;
-    }
-
-    public void SetController(RuntimeAnimatorController newController)
-    {
-        if (newController != null)
-        {
-            for (int i = 0; i < _avatarAnimators.Length; i++)
-            {
-                if (_avatarAnimators[i] != null)
-                    _avatarAnimators[i].runtimeAnimatorController = newController;
-            }
-        }
-        else
-        {
-            if (FindObjectOfType<ErrorSystem>() is ErrorSystem es)
-                es.ThrowError(new InGameError("Houve um erro ao iniciar os avatares"));
-        }
+        for (int i = 0; i < _animators.Length; i++)
+            _animators[i].SetPaused(value);
     }
 }

@@ -34,4 +34,23 @@ public class Music
     public string Description { get => description;}
     public string Subtitle { get => subtitle;}
     public string ThumbnailURL { get => thumbnail;}
+
+    public string GetTrainingURL(int index)
+    {
+        return index switch
+        {
+            0 => URLTreino0,
+            1 => URLTreino1,
+            2 => URLTreino3,
+            3 => URLTreino4,
+            4 => URLTreino5,
+            _ => null
+        };
+    }
+    private string URLTreino0 { get; }
+    private string URLTreino1 { get; }
+    private string URLTreino3 { get; }
+    private string URLTreino4 { get; }
+    private string URLTreino5 { get; }
+    public string URLFullMusic { get; }
 }
