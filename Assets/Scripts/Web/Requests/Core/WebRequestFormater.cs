@@ -17,7 +17,7 @@ internal struct RequestKeys
     public static string PngType = "image/png";
 }
 
-public static class WebRequest
+public static class WebRequestFormater
 {
     private static void AuthorizeRequest(UnityWebRequest request)
     {
@@ -42,6 +42,15 @@ public static class WebRequest
         return request;
     }
 
+    public static UnityWebRequest Get(string url)
+    {
+        var request = new UnityWebRequest(url, RequestKeys.Get);
+        request.downloadHandler = new DownloadHandlerBuffer();
+
+        AuthorizeRequest(request);
+        return request;
+    }
+
     public static UnityWebRequest Get(WebConstants.URL url, string addicionalURL = "")
     {
         string urlValue = WebConstants.GetURLFrom(url) + addicionalURL;
@@ -49,6 +58,13 @@ public static class WebRequest
         var request = new UnityWebRequest( urlValue, RequestKeys.Get);
         request.downloadHandler = new DownloadHandlerBuffer();
 
+        AuthorizeRequest(request);
+        return request;
+    }
+
+    public static UnityWebRequest GetAudioClip(string url, AudioType type=AudioType.MPEG)
+    {
+        var request = UnityWebRequestMultimedia.GetAudioClip(url, type);
         AuthorizeRequest(request);
         return request;
     }

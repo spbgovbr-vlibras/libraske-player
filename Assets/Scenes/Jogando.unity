@@ -285,12 +285,32 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5210862670978442590, guid: d5c64415f479b0f4c939fb24298a7071, type: 3}
   m_PrefabInstance: {fileID: 55546489}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 55546492}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cd7a1f0bffa54bc4e9b48595e2b5ff0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &55546492 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8560372634023006467, guid: d5c64415f479b0f4c939fb24298a7071, type: 3}
+  m_PrefabInstance: {fileID: 55546489}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &55546493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55546492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61bfa6c27124d454abde86894e096d04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _musicHolder: {fileID: 11400000, guid: af5b1cdbed07e0f4399d89ea65025dd1, type: 2}
+  _audioHandler: {fileID: 55546491}
+  _debugUrl: https://drive.google.com/uc?id=1QKCOWdcRtY5KMT8pxQonXOj-26mI5xv9&export=download
 --- !u!1001 &101849785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2893,6 +2913,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1647328657}
   - component: {fileID: 1647328656}
+  - component: {fileID: 1647328658}
   m_Layer: 0
   m_Name: PontuationController
   m_TagString: Web
@@ -2915,6 +2936,7 @@ MonoBehaviour:
   _gameSession: {fileID: 983456377}
   _clockTime: 4
   _pontuationFeedback: {fileID: 1480743598}
+  _timer: {fileID: 0}
 --- !u!4 &1647328657
 Transform:
   m_ObjectHideFlags: 0
@@ -2929,6 +2951,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1647328658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647328655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3703ae9d6f19db84397b7c6866559f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1895600537
 PrefabInstance:
   m_ObjectHideFlags: 0

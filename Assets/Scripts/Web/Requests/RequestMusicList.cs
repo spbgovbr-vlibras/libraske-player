@@ -5,7 +5,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class RequestMusics : MonoBehaviour, ILoggable
+public class RequestMusicList : MonoBehaviour, ILoggable
 {
     [SerializeField] private MusicMenu _musicMenu;
     [SerializeField] private Wrapper<Music> _songs;
@@ -23,7 +23,7 @@ public class RequestMusics : MonoBehaviour, ILoggable
     {
         Logger.Log(this, "Solicitou requisição das músicas");
 
-        var webRequest =  WebRequest.Get(WebConstants.URL.SongsURL);
+        var webRequest =  WebRequestFormater.Get(WebConstants.URL.SongsURL);
  
         yield return webRequest.SendWebRequest();
 

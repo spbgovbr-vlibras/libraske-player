@@ -32,7 +32,7 @@ public class RequestUserCredit : MonoBehaviour
 
     IEnumerator RequestCreditCoroutine(WebConstants.URL url)
     {
-        var webRequest = WebRequest.Get(url);
+        var webRequest = WebRequestFormater.Get(url);
 
         yield return webRequest.SendWebRequest();
 

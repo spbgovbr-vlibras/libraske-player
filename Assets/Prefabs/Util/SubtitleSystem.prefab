@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2617176114565455579}
-  - component: {fileID: 2617176114565455572}
   - component: {fileID: 2617176114565455573}
+  - component: {fileID: 3834028991065286237}
   m_Layer: 0
   m_Name: SubtitleSystem
   m_TagString: Untagged
@@ -33,20 +33,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2617176114565455572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2617176114565455574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf449d9e29d5c46408b599bc059761fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _folderName: Subtitles
-  _fileName: teste
 --- !u!114 &2617176114565455573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,9 +46,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audio: {fileID: 0}
-  _subs: {fileID: 2617176114565455572}
   _subtitleBar: {fileID: 2617176114510101286}
   _text: {fileID: 2617176114580878835}
+--- !u!114 &3834028991065286237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2617176114565455574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85b5490779a267c4da0ad77427a22907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  urlDebug: 
+  _musicHolder: {fileID: 11400000, guid: af5b1cdbed07e0f4399d89ea65025dd1, type: 2}
+  _subtitleReader: {fileID: 2617176114565455573}
 --- !u!1001 &8040055355241635155
 PrefabInstance:
   m_ObjectHideFlags: 0

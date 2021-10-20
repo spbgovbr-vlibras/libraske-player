@@ -18,7 +18,7 @@ public class GetBundleRequest : MonoBehaviour
 
     public IEnumerator SendRequest(string url)
     {
-        var request = WebRequest.GetBundle(url);
+        var request = WebRequestFormater.GetBundle(url);
 
         yield return request.SendWebRequest();
 

@@ -29,6 +29,8 @@ public class AudioHandler : MonoBehaviour, IPauseObserver
 
     private void OnEnable() => SyncVolumeWithSave();
 
+    public void SetClip(AudioClip clip) => _audioSource.clip = clip;
+
     public void SetVolume(float volume) => _audioSource.volume = volume;
 
     public void Stop() => _audioSource.Stop();

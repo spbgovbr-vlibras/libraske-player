@@ -6,7 +6,7 @@ using UnityEngine.UI;
 namespace Lavid.Libraske.UI
 {
     [RequireComponent(typeof(RawImage))]
-    public class URLImage : MonoBehaviour
+    public class RequestImageFromURL : MonoBehaviour
     {
         [SerializeField] private RawImage _image;
         [SerializeField, Tooltip("Texture to apply case fail to get image from url")] private Texture _applyCaseFail;
@@ -22,7 +22,7 @@ namespace Lavid.Libraske.UI
 
         private IEnumerator DownloadImage(string url)
         {
-            var request = WebRequest.GetTexture(url);
+            var request = WebRequestFormater.GetTexture(url);
 
             yield return request.SendWebRequest();
 

@@ -11,7 +11,7 @@ public class DeleteUserRequest : MonoBehaviour
 
     IEnumerator DeleteUserCoroutine(WebConstants.URL url)
     {
-        var webRequest = WebRequest.Delete(url);
+        var webRequest = WebRequestFormater.Delete(url);
  
         yield return webRequest.SendWebRequest();
     }

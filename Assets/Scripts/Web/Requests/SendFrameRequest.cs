@@ -9,7 +9,7 @@ public class SendFrameRequest : MonoBehaviour, ILoggable, IPauseObserver
     public string InLogName => "SendFrameRequest";
 
     [SerializeField] private WebCamHandler _webcam;
-    [SerializeField] private GameSession _gameSession;
+    [SerializeField] private CreateGameSessionRequest _gameSession;
     [SerializeField, Tooltip("Time between requests")] private float _clockTime = 2;
     [SerializeField] Timer _timer;
     private bool _gameSessionStarted;
@@ -62,7 +62,7 @@ public class SendFrameRequest : MonoBehaviour, ILoggable, IPauseObserver
 
         if (image != null)
         {
-            var www = WebRequest.SendFrame(_currentRequest, image, _idSession.ToString(), "/" + AccessData.AccessToken);
+            var www = WebRequestFormater.SendFrame(_currentRequest, image, _idSession.ToString(), "/" + AccessData.AccessToken);
 
             yield return www.SendWebRequest();
 

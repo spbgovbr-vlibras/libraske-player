@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class MusicDisplay : MonoBehaviour
 {
-    [SerializeField] private URLImage _image;
+    [SerializeField] private RequestImageFromURL _image;
     [SerializeField] private TextUI _name;
     [SerializeField] private TextUI _singers;
     [SerializeField] private TextUI _description;

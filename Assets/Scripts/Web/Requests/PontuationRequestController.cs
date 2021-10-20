@@ -10,9 +10,9 @@ public struct PontuationWebData
 }
 
 [RequireComponent(typeof(Timer))]
-public class PontuationController : MonoBehaviour, IPauseObserver, ILoggable
+public class PontuationRequestController : MonoBehaviour, IPauseObserver, ILoggable
 {
-    [SerializeField] private GameSession _gameSession;
+    [SerializeField] private CreateGameSessionRequest _gameSession;
     [SerializeField, Tooltip("Time between requests")] private float _clockTime = 2;
     [SerializeField] PontuationFeedback _pontuationFeedback;
     [SerializeField] Timer _timer;
@@ -58,7 +58,7 @@ public class PontuationController : MonoBehaviour, IPauseObserver, ILoggable
 
     IEnumerator GetRequestCoroutine()
     {
-        var webRequest = WebRequest.GetPontuation(CurrentGameSession.ID);
+        var webRequest = WebRequestFormater.GetPontuation(CurrentGameSession.ID);
         Logger.Log(this, $"Requisitou pontuação em {WebConstants.FormatPontuationUrl(CurrentGameSession.ID)}");
 
         yield return webRequest.SendWebRequest();    

@@ -10,7 +10,7 @@ public class PlayingMusicController : InGameController, IPauseObserver, ILoggabl
     [SerializeField] private string _loadOnMusicEnd;
 
     [Header("Process Music End")]
-    [SerializeField] private GameSession _gameSession;
+    [SerializeField] private CreateGameSessionRequest _gameSession;
     [SerializeField] private AudioHandler _audio;
     private bool _musicHasEnded;
 

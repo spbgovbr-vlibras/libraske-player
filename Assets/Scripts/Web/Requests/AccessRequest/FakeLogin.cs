@@ -35,7 +35,7 @@ public class FakeLogin : MonoBehaviour
 
     private IEnumerator LoginCoroutine()
     {
-        var request = WebRequest.EmptyPost(WebConstants.URL.FakeLogin);
+        var request = WebRequestFormater.EmptyPost(WebConstants.URL.FakeLogin);
         yield return request.SendWebRequest();
 
         if (request.isDone && request.result == UnityWebRequest.Result.Success)
