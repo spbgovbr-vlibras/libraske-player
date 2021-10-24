@@ -31,6 +31,8 @@ public class GetBundleRequest : MonoBehaviour
         {
             Debug.Log(request.error);
             Debug.Log(request.downloadHandler.error);
+            if (FindObjectOfType<ErrorSystem>() is ErrorSystem es)
+                es.ThrowError(ErrorList.CastError);
         }
     }
 

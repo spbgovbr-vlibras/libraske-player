@@ -30,7 +30,7 @@ public class PlayingMusicController : InGameController, IPauseObserver, ILoggabl
 
     public override IEnumerator SetupAnimations()
     {
-        Music music = this._musicHolder.GetMusic();
+        Music music = this._musicHolder.GetMusicData();
         yield return StartCoroutine(_bundleRequest.SendRequest(music.URLFullMusic));
         AnimationClip clip = _bundleRequest.TryGetFirstClip(_bundleRequest.GetLastRequest());
 

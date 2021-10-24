@@ -23,7 +23,7 @@ public class CreateGameSessionRequest : MonoBehaviour, ILoggable
     {
         Logger.Log(this, "Solicitou requisição");
 
-        _song.idSong = _musicHolder.GetMusicID();
+        _song.idSong = _musicHolder.GetMusicData().Id;
         string songJson = JsonUtility.ToJson(_song);
 
         var request = WebRequestFormater.Post(WebConstants.URL.CreateSessionURL, songJson);
@@ -34,7 +34,7 @@ public class CreateGameSessionRequest : MonoBehaviour, ILoggable
         {
             GameSessionWebData data = JsonUtility.FromJson<GameSessionWebData>(request.downloadHandler.text);
             CurrentGameSession.ID = data.idGameSession;
-            CurrentGameSession.MusicName = _musicHolder.GetMusic().Name;
+            CurrentGameSession.MusicName = _musicHolder.GetMusicData().Name;
 
             Logger.Log(this, "Session Created");
             Logger.Log(this, $"Now session with id {data.idGameSession} is playing song with id {_song.idSong}");

@@ -3,9 +3,9 @@
 [System.Serializable]
 public struct AvatarAnimation 
 {
-    private AnimationClip _clip;
-    private float _defaultSpeed;
-    private string _name;
+    [SerializeField] private AnimationClip _clip;
+    [SerializeField] private float _defaultSpeed;
+    [SerializeField] private string _name;
 
     public readonly AnimationClip Clip => _clip;
     public readonly float DefaultSpeed => _defaultSpeed;

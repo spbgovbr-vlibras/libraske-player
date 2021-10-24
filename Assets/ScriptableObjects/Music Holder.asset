@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aa59fef662daf74e8acd395016393cf, type: 3}
   m_Name: Music Holder
   m_EditorClassIdentifier: 
-  _thumbnail: {fileID: 0}
   _music:
     id: 0
     singers: Israel & Rodolffo
@@ -24,3 +23,16 @@ MonoBehaviour:
       make a type specimen book.
     subtitle: https://libraske-back-dth.vlibras.gov.br/info/bd74237d-6c89-4f77-9800-667bc3cc2208/eb69ba0049353eab1c76-subtitle.txt
     price: 500
+  _musicMedia:
+    _musicAnimation:
+      _enabled: 0
+      _value:
+        _clip: {fileID: 0}
+        _defaultSpeed: 0
+        _name: 
+    _trainingAnimations:
+      _enabled: 0
+      _value: []
+    _subtitle:
+      _enabled: 0
+    _thumbnail: {fileID: 0}

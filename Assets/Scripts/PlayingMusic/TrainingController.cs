@@ -47,7 +47,7 @@ public class TrainingController : InGameController
 
     public override IEnumerator SetupAnimations()
     {
-        Music music = _musicHolder.GetMusic();
+        Music music = _musicHolder.GetMusicData();
         AnimationClip clip;
 
         //string[] url = new string[5];

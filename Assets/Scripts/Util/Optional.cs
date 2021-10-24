@@ -9,6 +9,12 @@ public struct Optional<T>
     public bool IsEnabled => _enabled;
     public T Value => _value;
 
+    public void DiscardValue()
+    {
+        _value = default;
+        _enabled = false;
+    }
+
     public Optional(T value)
     {
         _value = value;

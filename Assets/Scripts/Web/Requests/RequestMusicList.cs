@@ -49,7 +49,8 @@ public class RequestMusicList : MonoBehaviour, ILoggable
         catch
         {
             Logger.Log(this, "Faile to cast Music to Wrapper");
-            FindObjectOfType<ErrorSystem>().ThrowError(ErrorList.CastError);
+            if (FindObjectOfType<ErrorSystem>() is ErrorSystem es)
+                es.ThrowError(ErrorList.BundleDownloadError);
         }
     }
 }

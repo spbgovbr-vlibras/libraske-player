@@ -1,17 +1,14 @@
 using UnityEngine;
-using UnityEngine.UI;
+
 
 [CreateAssetMenu(fileName = "New Music Holder", menuName = "Libraske/Music/MusicHolder")]
 public class MusicHolderSO : ScriptableObject
 {
-    [SerializeField] private RawImage _thumbnail;
     [SerializeField] private Music _music;
+    [SerializeField] private MusicMedia _musicMedia;
 
-    public Music GetMusic() => _music;
-    public void SetMusic(Music music) => _music = music;
+    public Music GetMusicData() => _music;
+    public void SetMusicData(Music music) => _music = music;
 
-    public string GetMusicID() => _music.Id;
-
-    public Texture GetThumbnail() => _thumbnail.texture;
-    public void SetThumbnail(RawImage rawImage) => _thumbnail = rawImage;
+    public MusicMedia Media => _musicMedia;
 }

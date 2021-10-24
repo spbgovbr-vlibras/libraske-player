@@ -1,4 +1,4 @@
-﻿using Lavid.Libraske.Subtitle;
+﻿using Lavid.Libraske.Subtitles;
 using Lavid.Libraske.UI;
 using UnityEngine;
 

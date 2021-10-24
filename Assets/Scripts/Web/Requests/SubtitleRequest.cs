@@ -1,12 +1,8 @@
-﻿using Lavid.Libraske.Subtitle;
-using System;
+﻿using Lavid.Libraske.Subtitles;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
-
-
-
 
 public class SubtitleRequest : MonoBehaviour, ILoggable
 {

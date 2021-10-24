@@ -1,4 +1,4 @@
-﻿using Lavid.Libraske.Subtitle;
+﻿using Lavid.Libraske.Subtitles;
 using System.Collections.Generic;
 
 [System.Serializable]
