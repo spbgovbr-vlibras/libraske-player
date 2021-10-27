@@ -8,15 +8,8 @@ public class RequestMusicFromURL : MonoBehaviour, ILoggable
 
     [SerializeField] MusicHolderSO _musicHolder;
     [SerializeField] AudioHandler _audioHandler;
-    [SerializeField] string _debugUrl;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        StartCoroutine(DownloadMusic(_debugUrl));
-    }
-
-    private IEnumerator DownloadMusic(string url)
+    public IEnumerator DownloadMusic(string url)
     {
         var request = WebRequestFormater.GetAudioClip(url);
         yield return request.SendWebRequest();

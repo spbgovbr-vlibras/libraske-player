@@ -47,23 +47,28 @@ public class SendFrameRequest : MonoBehaviour, ILoggable, IPauseObserver
 
     private int _currentRequest;
     private int _idSession = 10;
+    private bool _isSendingFrame;
 
     private void OnReachTime()
     {
+        if (_isSendingFrame)
+            return;
+
         StopAllCoroutines();
         StartCoroutine(SendFrameCoroutine());
     }
 
+    public bool v = true;
+
     IEnumerator SendFrameCoroutine()
     {
         Logger.Log(this, "Solicitou requisição");
+        _isSendingFrame = true;
 
         byte[] image = _webcam.GetImageInBytes(); // TODO: Fix Dispose Error
 
-        if (image != null)
+        using (UnityWebRequest www = WebRequestFormater.SendFrame(_currentRequest, image, _idSession.ToString(), "/" + AccessData.AccessToken))
         {
-            var www = WebRequestFormater.SendFrame(_currentRequest, image, _idSession.ToString(), "/" + AccessData.AccessToken);
-
             yield return www.SendWebRequest();
 
             if (www.result == UnityWebRequest.Result.Success)
@@ -79,9 +84,14 @@ public class SendFrameRequest : MonoBehaviour, ILoggable, IPauseObserver
                     es.ThrowError(new InGameError(www.error));
             }
 
-            www.Dispose();
             Logger.Log(this, $"Next request in {_clockTime}");
+            www.disposeCertificateHandlerOnDispose = true;
+            www.disposeUploadHandlerOnDispose = true;
+            www.disposeDownloadHandlerOnDispose = true;
+            www.Dispose();
         }
+
+        _isSendingFrame = false;
     }
 
     public void UpdatePauseStatus(bool isPaused)

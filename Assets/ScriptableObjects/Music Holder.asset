@@ -14,15 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _music:
     id: 0
-    singers: Israel & Rodolffo
-    thumbnail: https://libraske-back-dth.vlibras.gov.br/info/bd74237d-6c89-4f77-9800-667bc3cc2208/7f9911af4ddbe799997a-pexels-photo-531321.jpeg
-    name: Musica Teste
-    description: lorem ipsum is simply dummy text of the printing and typesetting
-      industry. lorem ipsum has been the industry's standard dummy text ever since
-      the 1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book.
-    subtitle: https://libraske-back-dth.vlibras.gov.br/info/bd74237d-6c89-4f77-9800-667bc3cc2208/eb69ba0049353eab1c76-subtitle.txt
-    price: 500
+    singers: Galinha Pintadinha
+    name: "\xCDNDIOZINHOS"
+    description: "M\xFAsica de dom\xEDnio p\xFAblico gravada em 2018 pela Galinha
+      Pintadinha atrav\xE9s da Bromelia Produ\xE7\xF5es."
+    price: 0
+    thumbnail: http://localhost:8080/info/songs/0/5ec20cf0557d3a82c6e8-thumbnail.indio.png
+    subtitle: http://localhost:8080/info/songs/0/9e442c8e30c480b9e35c-subtitle.indio.txt
+    song: http://localhost:8080/info/songs/0/b1b1657d2514c57a79c5-song.indio.mp3
+    animation: http://localhost:8080/info/songs/0/5a13437a03a57468fcbe-animation.INDIOS
+    trainingAnimation1: http://localhost:8080/info/songs/0/302b849baca178e10dcd-trainingAnimation1.1_123_INDIOZINHOS
+    trainingAnimation2: http://localhost:8080/info/songs/0/8eac492e21496d3f386b-trainingAnimation2.2_IAM_NAVEGANDO_RIO_ABAIXO
+    trainingAnimation3: http://localhost:8080/info/songs/0/455b03540d626efd22bd-trainingAnimation3.3_QUANDO_O_JACARE_SE_APROXIMOU
+    trainingAnimation4: http://localhost:8080/info/songs/0/d7dfbd032cc6bdce317a-trainingAnimation4.4_E_O_INDIOZINHO_OLHOU_PARA_BAIXO
+    trainingAnimation5: http://localhost:8080/info/songs/0/77e73fb8759dd32940a5-trainingAnimation5.5_E_O_BOTE_QUASE_VIROU
   _musicMedia:
     _musicAnimation:
       _enabled: 0

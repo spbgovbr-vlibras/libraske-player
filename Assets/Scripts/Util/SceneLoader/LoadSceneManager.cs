@@ -13,6 +13,8 @@ namespace Lavid.Libraske.Util
         /// <summary> Load the current scene. </summary>
         public void ReloadScene() => LoadScene(SceneManager.GetActiveScene().name);
 
+        public void LoadScene(SceneNames name) => LoadScene(name.ToString());
+
         public void LoadScene(string sceneName)
         {
             if (_progressMenu != null)

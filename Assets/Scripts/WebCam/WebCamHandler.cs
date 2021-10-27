@@ -41,7 +41,17 @@ public class WebCamHandler : MonoBehaviour
     {
         UpdateCurrentTexture();
 
-        byte[] pngPhoto = _currentTexture.EncodeToPNG();
+        byte[] pngPhoto = null;
+
+        try
+        {
+            pngPhoto = _currentTexture.EncodeToPNG();
+        }
+        catch 
+        {
+            Debug.LogWarning("Erro ao codificar imagem");
+        }
+        
         return pngPhoto;
     }
 }

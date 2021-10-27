@@ -50,18 +50,12 @@ public class TrainingController : InGameController
         Music music = _musicHolder.GetMusicData();
         AnimationClip clip;
 
-        //string[] url = new string[5];
-        //url[0] = "https://dicionario2.vlibras.gov.br/2018.3.1/ANDROID/" + "1S_AVISAR_3P"; 
-        //url[1] = "https://dicionario2.vlibras.gov.br/2018.3.1/ANDROID/" + "1S_ACONSELHAR_2P";
-        //url[2] = "https://dicionario2.vlibras.gov.br/2018.3.1/ANDROID/" + "1S_PEDIR_3P";
-        //url[3] = "https://dicionario2.vlibras.gov.br/2018.3.1/ANDROID/" + "1S_CHOCAR_1S";
-        //url[4] = "https://dicionario2.vlibras.gov.br/2018.3.1/ANDROID/" + "1S_ENGANAR_1S";
-
         for (int i = 0; i < TrainingSteps; i++)
         {
-            yield return StartCoroutine(_bundleRequest.SendRequest(music.GetTrainingURL(i)));
-            clip = _bundleRequest.TryGetFirstClip(_bundleRequest.GetLastRequest());
+            yield return StartCoroutine(_bundleRequest.SendRequest(music.GetTrainingAnimationURL(i)));
+            clip = _bundleRequest.GetClipOnBundle(_bundleRequest.GetLastRequest());
             _avatarAnimators.AddClip(clip);
+            _bundlesDownloadeds.Add(_bundleRequest.GetLastBundle());
         }
 
         UpdateUI();

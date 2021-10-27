@@ -10,13 +10,17 @@ public class PlayingMusicController : InGameController, IPauseObserver, ILoggabl
     [SerializeField] private string _loadOnMusicEnd;
 
     [Header("Process Music End")]
+    [SerializeField] private RequestMusicFromURL _musicMediaRequest;
     [SerializeField] private CreateGameSessionRequest _gameSession;
     [SerializeField] private AudioHandler _audio;
     private bool _musicHasEnded;
 
-    private bool _setupReady;
+    private bool _animationSetupReady;
+    private bool _musicSetupReady;
+    private bool _gameIsPaused;
+
     public string InLogName => "PlayingMusicController";
-    private bool ShouldEndMusic => _setupReady && _audio.AudioClipEnded;
+    private bool ShouldEndMusic => _animationSetupReady && _musicSetupReady && !_audio.IsPlaying && !_gameIsPaused;
 
     private void Awake()
     {
@@ -26,21 +30,31 @@ public class PlayingMusicController : InGameController, IPauseObserver, ILoggabl
             pauseSystem.AddObserver(this);
 
         StartCoroutine(SetupAnimations());
+        StartCoroutine(SetupMusicMedia());
+    }
+
+    private IEnumerator SetupMusicMedia()
+    {
+        string url = _musicHolder.GetMusicData().MusicMediaURL;
+        yield return StartCoroutine(_musicMediaRequest.DownloadMusic(url));
+
+        _audio.Play();
+        _musicSetupReady = true;
     }
 
     public override IEnumerator SetupAnimations()
     {
         Music music = this._musicHolder.GetMusicData();
-        yield return StartCoroutine(_bundleRequest.SendRequest(music.URLFullMusic));
-        AnimationClip clip = _bundleRequest.TryGetFirstClip(_bundleRequest.GetLastRequest());
+        yield return StartCoroutine(_bundleRequest.SendRequest(music.FullAnimationURL));
+        AnimationClip clip = _bundleRequest.GetClipOnBundle(_bundleRequest.GetLastRequest());
+        _bundlesDownloadeds.Add(_bundleRequest.GetLastBundle());
 
         if (clip != null)
         {
             Logger.Log(this, $"Clip {clip.name} received");
             _avatarAnimators.AddClip(clip);
             _avatarAnimators.PlayAll();
-            _audio.Play();
-            _setupReady = true;
+            _animationSetupReady = true;
         }
         else
         {
@@ -53,7 +67,8 @@ public class PlayingMusicController : InGameController, IPauseObserver, ILoggabl
 
     public void UpdatePauseStatus(bool isPaused)
     {
-        _avatarAnimators.EnableAnimations(!isPaused);
+        _avatarAnimators.EnableAnimations(isPaused);
+        _gameIsPaused = isPaused;
     }
 
     private void Update()

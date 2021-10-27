@@ -6,7 +6,6 @@ using UnityEngine.Networking;
 
 public class SubtitleRequest : MonoBehaviour, ILoggable
 {
-    public string urlDebug;
     [SerializeField] MusicHolderSO _musicHolder;
     [SerializeField] SubtitleReader _subtitleReader;
     public string InLogName => "SubtitleRequest";
@@ -15,7 +14,7 @@ public class SubtitleRequest : MonoBehaviour, ILoggable
 
     private IEnumerator ReadFromWeb()
     {
-        var url = urlDebug;// _musicHolder.GetMusic().Subtitle;
+        var url = _musicHolder.GetMusicData().SubtitleURL;
         var request = WebRequestFormater.Get(url);
         yield return request.SendWebRequest();
 
