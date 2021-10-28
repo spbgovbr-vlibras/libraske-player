@@ -12,11 +12,6 @@ public class AudioSettingsController : MonoBehaviour
 
     public void Setup()
     {
-        if (!AudioSettingsSaveHandler.HasSavedSettings())
-            AudioSettingsSaveHandler.ResetSettings();
-
-        AudioSettingsSaveHandler.AllowSaving();
-
         _model.Setup
         (
             AudioSettingsSaveHandler.GetMainVolume(),
@@ -38,17 +33,16 @@ public class AudioSettingsController : MonoBehaviour
     /// <summary> Called on canvas to save data on file. /// </summary>
     public void SaveData()
     {
-        AudioSettingsSaveHandler.SetMusicVolume(_model.MainVolume);
+        AudioSettingsSaveHandler.SetMainVolume(_model.MainVolume);
         AudioSettingsSaveHandler.SetSoundFxVolume(_model.SoundFxVolume);
         AudioSettingsSaveHandler.MuteMusic(new Boolean(_model.IsMainVolumeMuted));
         AudioSettingsSaveHandler.MuteSoundFx(new Boolean(_model.IsFxVolumeMuted));
+        AudioSettingsSaveHandler.SaveData();
     }
 
     public void RestoreSettings()
     {
         AudioSettingsSaveHandler.ResetSettings();
-
-        AudioSettingsSaveHandler.AllowSaving();
 
         _model.Setup
         (

@@ -7,10 +7,6 @@ public class AudioHandler : MonoBehaviour, IPauseObserver
     [SerializeField] AudioSource _audioSource;
     [SerializeField] AudioType _audioType;
 
-    private const int DefaultVolume = 1;
-
-    private bool _gameIsPaused;
-
     private void Awake()
     {
         if (FindObjectOfType<PauseSystem>() is PauseSystem ps)
@@ -44,12 +40,6 @@ public class AudioHandler : MonoBehaviour, IPauseObserver
 
     public void SyncVolumeWithSave()
     {
-        if (!AudioSettingsSaveHandler.HasSavedSettings())
-        {
-            _audioSource.volume = DefaultVolume;
-            return;
-        }
-
         if (_audioType == AudioType.Main)
             _audioSource.volume = AudioSettingsSaveHandler.GetMainVolume();
         else
@@ -58,8 +48,6 @@ public class AudioHandler : MonoBehaviour, IPauseObserver
 
     public void UpdatePauseStatus(bool isPaused)
     {
-        _gameIsPaused = isPaused;
-
         if (_audioSource == null)
             return;
 

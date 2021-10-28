@@ -142,6 +142,10 @@ PrefabInstance:
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6695147165680683388, guid: 3d87267f49aa0874bae515e474b2cc7d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7115788723199518411, guid: 3d87267f49aa0874bae515e474b2cc7d, type: 3}
       propertyPath: m_Pivot.x
       value: 0

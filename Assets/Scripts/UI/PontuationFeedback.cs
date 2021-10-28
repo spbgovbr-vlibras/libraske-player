@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PontuationFeedback : MonoBehaviour, ILoggable
 {
     private const string GoodPontuation = "GoodPontuation";
     private const string BadPontuation = "BadPontuation";
+    private const int GoodFeedbackMinValue = 40;
 
     [SerializeField] Animator _anim;
 
@@ -13,19 +12,16 @@ public class PontuationFeedback : MonoBehaviour, ILoggable
 
     public void ProcessPontuation(PontuationWebData pontuation)
     {
-        //Logger.Log(this, pontuation.pontuations);
-        //Logger.Log(this, pontuation.sessionScore);
+        Logger.Log(this, "Session score " + pontuation.sessionScore);
 
         if(pontuation.pontuations != null && pontuation.pontuations.Length > 0)
         {
             int last = pontuation.pontuations.Length - 1;
             int currentValue = pontuation.pontuations[last];
-            Logger.Log(this, "got " + currentValue);
+            Logger.Log(this, "Last pontuation got " + currentValue);
 
-            if (currentValue >= 40)
-                _anim.Play(GoodPontuation);
-            else
-                _anim.Play(BadPontuation);
+            string animToPlay = currentValue >= GoodFeedbackMinValue ? GoodPontuation : BadPontuation;
+            _anim.Play(animToPlay);
         }
     }
 }

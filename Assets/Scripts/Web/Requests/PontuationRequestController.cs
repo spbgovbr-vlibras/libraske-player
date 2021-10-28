@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
-using System;
 
 public struct PontuationWebData
 {
@@ -68,6 +67,7 @@ public class PontuationRequestController : MonoBehaviour, IPauseObserver, ILogga
             Logger.Log(this, $"Pontuação pega: " + webRequest.downloadHandler.text);
             var pontuation = JsonUtility.FromJson<PontuationWebData>(webRequest.downloadHandler.text);
             _pontuationFeedback.ProcessPontuation(pontuation);
+            CurrentGameSession.SetPontuation(pontuation);
         }
         else
         {
