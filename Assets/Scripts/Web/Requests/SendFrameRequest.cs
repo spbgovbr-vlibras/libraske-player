@@ -54,42 +54,39 @@ public class SendFrameRequest : MonoBehaviour, ILoggable, IPauseObserver
         if (_isSendingFrame)
             return;
 
-        StopAllCoroutines();
         StartCoroutine(SendFrameCoroutine());
     }
 
-    public bool v = true;
-
     IEnumerator SendFrameCoroutine()
     {
+		_isSendingFrame = true;
         Logger.Log(this, "Solicitou requisição");
-        _isSendingFrame = true;
 
         byte[] image = _webcam.GetImageInBytes(); // TODO: Fix Dispose Error
 
-        using (UnityWebRequest www = WebRequestFormater.SendFrame(_currentRequest, image, _idSession.ToString(), "/" + AccessData.AccessToken))
-        {
-            yield return www.SendWebRequest();
+		if(image != null)
+		{
+			var www = WebRequestFormater.SendFrame(_currentRequest, image, _idSession.ToString(), "/" + AccessData.AccessToken);
 
-            if (www.result == UnityWebRequest.Result.Success)
-            {
-                _currentRequest++;
-                Logger.Log(this, "Form upload complete!");
-            }
-            else
-            {
-                Logger.Log(this, www.error);
+			yield return www.SendWebRequest();
 
-                if (FindObjectOfType<ErrorSystem>() is ErrorSystem es)
-                    es.ThrowError(new InGameError(www.error));
-            }
+			if (www.result == UnityWebRequest.Result.Success)
+			{
+				_currentRequest++;
+				Logger.Log(this, "Form upload complete!");
+			}
+			else
+			{
+				Logger.Log(this, www.error);
 
-            Logger.Log(this, $"Next request in {_clockTime}");
-            www.disposeCertificateHandlerOnDispose = true;
-            www.disposeUploadHandlerOnDispose = true;
-            www.disposeDownloadHandlerOnDispose = true;
-            www.Dispose();
-        }
+				if (FindObjectOfType<ErrorSystem>() is ErrorSystem es)
+					es.ThrowError(new InGameError(www.error));
+			}
+
+			Logger.Log(this, $"Next request in {_clockTime}");
+
+			www.Dispose();
+		}
 
         _isSendingFrame = false;
     }

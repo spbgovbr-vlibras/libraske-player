@@ -15,6 +15,7 @@ internal struct RequestKeys
     public static string ContentType => "Content-Type";
     public static string JsonType => "application/json";
     public static string PngType = "image/png";
+    public static string MultiFormData => "multipart/form-data";
 }
 
 public static class WebRequestFormater

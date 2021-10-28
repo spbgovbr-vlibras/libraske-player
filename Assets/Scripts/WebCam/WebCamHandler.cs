@@ -39,7 +39,13 @@ public class WebCamHandler : MonoBehaviour
 
     public byte[] GetImageInBytes()
     {
-        UpdateCurrentTexture();
+		Texture2D photo = new Texture2D(_webcam.width, _webcam.height);
+        photo.SetPixels(_webcam.GetPixels());
+        photo.Apply();
+		return photo.EncodeToPNG();
+		
+        /*UpdateCurrentTexture();
+		
 
         byte[] pngPhoto = null;
 
@@ -52,6 +58,6 @@ public class WebCamHandler : MonoBehaviour
             Debug.LogWarning("Erro ao codificar imagem");
         }
         
-        return pngPhoto;
+        return pngPhoto;*/
     }
 }
