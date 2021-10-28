@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class MusicDisplay : MonoBehaviour
 {
-    [SerializeField] private URLImage _image;
+    [SerializeField] private RequestImageFromURL _image;
     [SerializeField] private TextUI _name;
     [SerializeField] private TextUI _singers;
     [SerializeField] private TextUI _description;
@@ -21,8 +21,8 @@ public class MusicDisplay : MonoBehaviour
 
     public void SetDataFromHolder(MusicHolderSO holder)
     {
-        Music music = holder.GetMusic();
-        SetData(music.Name, music.Singers, music.Description, holder.GetThumbnail());
+        Music music = holder.GetMusicData();
+        SetData(music.Name, music.Singers, music.Description, holder.Media.Thumbnail);
     }
 
     public void SetDataFromMusic(Music music) 
@@ -35,8 +35,8 @@ public class MusicDisplay : MonoBehaviour
     {
         if (_musicHolder != null)
         {
-            _musicHolder.SetMusic(_myMusic);
-            _musicHolder.SetThumbnail(_image.GetRawImage());
+            _musicHolder.SetMusicData(_myMusic);
+            _musicHolder.Media.SetThumbnail(_image.GetRawImage());
         }
     }
 

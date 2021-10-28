@@ -218,7 +218,11 @@ PrefabInstance:
     - target: {fileID: 8560372634023006469, guid: d5c64415f479b0f4c939fb24298a7071, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 981467835523e9b4db21d29a9da9abe6, type: 3}
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560372634023006469, guid: d5c64415f479b0f4c939fb24298a7071, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8560372634156862360, guid: d5c64415f479b0f4c939fb24298a7071, type: 3}
       propertyPath: m_Name
       value: AudioController
@@ -514,7 +518,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _renderer: {fileID: 787395030}
-  _showWebCam: 1
 --- !u!1 &550324551
 GameObject:
   m_ObjectHideFlags: 0
@@ -2227,6 +2230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1556398404}
   - component: {fileID: 1556398402}
+  - component: {fileID: 1556398403}
   m_Layer: 0
   m_Name: SendWebcamFrame
   m_TagString: Web
@@ -2248,7 +2252,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _webcam: {fileID: 309243081}
   _gameSession: {fileID: 983456377}
-  _clockTime: 2
+  _clockTime: 3
+  _timer: {fileID: 1556398403}
+  v: 1
+--- !u!114 &1556398403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556398401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3703ae9d6f19db84397b7c6866559f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1556398404
 Transform:
   m_ObjectHideFlags: 0
@@ -2880,6 +2898,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1647328657}
   - component: {fileID: 1647328656}
+  - component: {fileID: 1647328658}
   m_Layer: 0
   m_Name: PontuationController
   m_TagString: Web
@@ -2902,6 +2921,7 @@ MonoBehaviour:
   _gameSession: {fileID: 983456377}
   _clockTime: 4
   _pontuationFeedback: {fileID: 1480743598}
+  _timer: {fileID: 1647328658}
 --- !u!4 &1647328657
 Transform:
   m_ObjectHideFlags: 0
@@ -2916,6 +2936,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1647328658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647328655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3703ae9d6f19db84397b7c6866559f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1895600537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3268,6 +3300,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: ErrorSystem
       objectReference: {fileID: 0}
+    - target: {fileID: 7375178678979222863, guid: 13f5f338a928e384dafcf237b55e1be6, type: 3}
+      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7375178678979222863, guid: 13f5f338a928e384dafcf237b55e1be6, type: 3}
+      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 7375178678979222863, guid: 13f5f338a928e384dafcf237b55e1be6, type: 3}
+      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Lavid.Libraske.Util.LoadSceneManager, GameAssembly
+      objectReference: {fileID: 0}
+    - target: {fileID: 7375178678979222863, guid: 13f5f338a928e384dafcf237b55e1be6, type: 3}
+      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: MinhasMusicas
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13f5f338a928e384dafcf237b55e1be6, type: 3}
 --- !u!1 &2018018897
@@ -3356,6 +3404,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2063128169}
   - component: {fileID: 2063128167}
+  - component: {fileID: 2063128168}
+  - component: {fileID: 2063128170}
   m_Layer: 0
   m_Name: PlayingController
   m_TagString: Untagged
@@ -3376,13 +3426,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _musicHolder: {fileID: 11400000, guid: af5b1cdbed07e0f4399d89ea65025dd1, type: 2}
-  _musicList: {fileID: 11400000, guid: 89a534b3ca8229a468bff72df2c3069f, type: 2}
-  _avatarAnimation: {fileID: 101849787}
+  _avatarAnimators: {fileID: 101849787}
+  _bundleRequest: {fileID: 2063128168}
+  _bundlesDownloadeds:
+    Items: []
   _sceneManager: {fileID: 5141918}
   _loadOnFail: MinhasMusicas
   _loadOnMusicEnd: Resultados
+  _musicMediaRequest: {fileID: 2063128170}
   _gameSession: {fileID: 983456377}
   _audio: {fileID: 55546491}
+--- !u!114 &2063128168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063128166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78afbad4f0183ce4cbe8224aed08aef3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2063128169
 Transform:
   m_ObjectHideFlags: 0
@@ -3397,6 +3462,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2063128170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063128166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61bfa6c27124d454abde86894e096d04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _musicHolder: {fileID: 11400000, guid: af5b1cdbed07e0f4399d89ea65025dd1, type: 2}
+  _audioHandler: {fileID: 55546491}
 --- !u!1 &2101741492
 GameObject:
   m_ObjectHideFlags: 0

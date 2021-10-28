@@ -16,7 +16,7 @@ public class MusicMenu : MonoBehaviour
 
     private void UpdateTexts()
     {
-        int quantUnlocked = 3;
+        int quantUnlocked = 1;
         int quantMax = _songs.Length;
         _quantity.SetText($"{quantUnlocked}/{quantMax}");
         _quantityAndName.SetText($"Minhas Músicas ({quantUnlocked})");

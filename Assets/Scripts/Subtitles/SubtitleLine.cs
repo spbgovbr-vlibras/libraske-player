@@ -1,4 +1,4 @@
-﻿namespace Lavid.Libraske.Subtitle
+﻿namespace Lavid.Libraske.Subtitles
 {
     public class SubtitleLine
     {

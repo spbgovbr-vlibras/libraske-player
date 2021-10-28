@@ -1,6 +1,6 @@
 ﻿using Lavid.Libraske.Util;
 
-namespace Lavid.Libraske.Subtitle
+namespace Lavid.Libraske.Subtitles
 {
 
     [System.Serializable]

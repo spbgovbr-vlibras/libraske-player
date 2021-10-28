@@ -7,7 +7,7 @@ public class GuestSettingsDisabler : MonoBehaviour
 
     void Start()
     {
-        if(AccessData.IsGuest){
+        if(AccessData.IsGuest != null && AccessData.IsGuest){
             accountSettingsPanel.SetActive(false);
         }
     }

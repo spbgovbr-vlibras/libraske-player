@@ -13,7 +13,7 @@ public class AudioHandler : MonoBehaviour, IPauseObserver
 
     private void Awake()
     {
-        if(FindObjectOfType<PauseSystem>() is PauseSystem ps)
+        if (FindObjectOfType<PauseSystem>() is PauseSystem ps)
         {
             ps.AddObserver(this);
         }
@@ -29,11 +29,16 @@ public class AudioHandler : MonoBehaviour, IPauseObserver
 
     private void OnEnable() => SyncVolumeWithSave();
 
+    public void SetClip(AudioClip clip) => _audioSource.clip = clip;
+
     public void SetVolume(float volume) => _audioSource.volume = volume;
+
+    public void Stop() => _audioSource.Stop();
+    public void Play() => _audioSource.Play();
 
     public void PlayOneShot(AudioClip clip)
     {
-        if(clip != null && _audioSource != null)
+        if (clip != null && _audioSource != null)
             _audioSource.PlayOneShot(clip);
     }
 
@@ -42,7 +47,7 @@ public class AudioHandler : MonoBehaviour, IPauseObserver
         if (!AudioSettingsSaveHandler.HasSavedSettings())
         {
             _audioSource.volume = DefaultVolume;
-            return;   
+            return;
         }
 
         if (_audioType == AudioType.Main)
@@ -67,5 +72,5 @@ public class AudioHandler : MonoBehaviour, IPauseObserver
     }
 
     public float CurrentTime => _audioSource.time;
-    public bool AudioClipEnded => !_audioSource.isPlaying && !_gameIsPaused;
+    public bool IsPlaying => _audioSource.isPlaying;
 }

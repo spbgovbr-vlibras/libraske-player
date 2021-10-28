@@ -1,61 +1,79 @@
-﻿using Lavid.Libraske.DataStruct;
-using Lavid.Libraske.Util;
-using System;
+﻿using Lavid.Libraske.Util;
 using System.Collections;
 using UnityEngine;
 
-public class PlayingMusicController : MonoBehaviour, IPauseObserver
+public class PlayingMusicController : InGameController, IPauseObserver, ILoggable
 {
-    [SerializeField] private MusicHolderSO _musicHolder;
-    [SerializeField] private MusicListSO _musicList;
-    [SerializeField] private AvatarAnimationController _avatarAnimation;
-
     [Header("Loading scenes")]
     [SerializeField] private LoadSceneManager _sceneManager;
     [SerializeField] private string _loadOnFail;
     [SerializeField] private string _loadOnMusicEnd;
 
     [Header("Process Music End")]
-    [SerializeField] private GameSession _gameSession;
+    [SerializeField] private RequestMusicFromURL _musicMediaRequest;
+    [SerializeField] private CreateGameSessionRequest _gameSession;
     [SerializeField] private AudioHandler _audio;
     private bool _musicHasEnded;
 
+    private bool _animationSetupReady;
+    private bool _musicSetupReady;
+    private bool _gameIsPaused;
+
+    public string InLogName => "PlayingMusicController";
+    private bool ShouldEndMusic => _animationSetupReady && _musicSetupReady && !_audio.IsPlaying && !_gameIsPaused;
+
     private void Awake()
     {
+        _audio.Stop();
+
         if (FindObjectOfType<PauseSystem>() is PauseSystem pauseSystem)
             pauseSystem.AddObserver(this);
 
-        Setup();
+        StartCoroutine(SetupAnimations());
+        StartCoroutine(SetupMusicMedia());
     }
 
-    public virtual void Setup()
+    private IEnumerator SetupMusicMedia()
     {
-        // TODO: Get Music By ID on database
-        int index = 0;// int.Parse(_musicHolder.GetMusic().Id);
+        string url = _musicHolder.GetMusicData().MusicMediaURL;
+        yield return StartCoroutine(_musicMediaRequest.DownloadMusic(url));
 
-        try
+        _audio.Play();
+        _musicSetupReady = true;
+    }
+
+    public override IEnumerator SetupAnimations()
+    {
+        Music music = this._musicHolder.GetMusicData();
+        yield return StartCoroutine(_bundleRequest.SendRequest(music.FullAnimationURL));
+        AnimationClip clip = _bundleRequest.GetClipOnBundle(_bundleRequest.GetLastRequest());
+        _bundlesDownloadeds.Add(_bundleRequest.GetLastBundle());
+
+        if (clip != null)
         {
-            RuntimeAnimatorController animatorController = _musicList.GetControllerAtIndex(index);
-            _avatarAnimation.SetController(animatorController);
+            Logger.Log(this, $"Clip {clip.name} received");
+            _avatarAnimators.AddClip(clip);
+            _avatarAnimators.PlayAll();
+            _animationSetupReady = true;
         }
-        catch (Exception err)
+        else
         {
-            Debug.LogException(err);
+            Logger.Log(this, "Clip received is null");
+
             if (FindObjectOfType<ErrorSystem>() is ErrorSystem es)
                 es.ThrowError(new InGameError("Failed to load music"));
-
-            _sceneManager.LoadScene(_loadOnFail);
         }
     }
 
     public void UpdatePauseStatus(bool isPaused)
     {
-        _avatarAnimation.EnableAnimations(!isPaused);
+        _avatarAnimators.EnableAnimations(isPaused);
+        _gameIsPaused = isPaused;
     }
 
     private void Update()
     {
-        if (!_musicHasEnded && _audio.AudioClipEnded)
+        if (ShouldEndMusic && !_musicHasEnded)
         {
             _musicHasEnded = true;
             CloseSession();
@@ -64,7 +82,7 @@ public class PlayingMusicController : MonoBehaviour, IPauseObserver
 
     private void CloseSession()
     {
-        //yield return _gameSession.EndSessionCoroutine();
+        //yield return StartCoroutine(_gameSession.EndSessionCoroutine());
         _sceneManager.LoadScene(_loadOnMusicEnd);
     }
 }

@@ -7,7 +7,7 @@ public class PhotoExporter : MonoBehaviour
 {
     public WebCamHandler _webCamHandler;
 
-    public bool a;
+    public bool _export;
     public int id;
 
     IEnumerator TakePhotos()
@@ -15,7 +15,7 @@ public class PhotoExporter : MonoBehaviour
         yield return new WaitForSeconds(2f);
         while (id != 10)
         {
-            File.WriteAllBytes(Application.dataPath + $"/{id}.png", _webCamHandler.GetImageInBytes());
+            File.WriteAllBytes(Application.dataPath + $"/PhotosExporteds/{id}.png", _webCamHandler.GetImageInBytes());
             yield return new WaitForSeconds(1f);
             id++;
         }
@@ -24,11 +24,11 @@ public class PhotoExporter : MonoBehaviour
 
     private void Update()
     {
-        if (a)
+        if (_export)
         {
             StartCoroutine(TakePhotos());
             Debug.Log("exportado");
-            a = false;
+            _export = false;
         }
     }
 
