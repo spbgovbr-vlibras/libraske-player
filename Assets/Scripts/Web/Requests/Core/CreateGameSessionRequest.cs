@@ -11,7 +11,7 @@ public class CreateGameSessionRequest : MonoBehaviour, ILoggable
     public event Action OnSetupFinished;
     private MusicWebData _song;
 
-    public string InLogName { get => "GameSession"; }
+    public string InLogName { get => "CreateGameSessionRequest"; }
 
     private void Start()
     {
@@ -47,10 +47,5 @@ public class CreateGameSessionRequest : MonoBehaviour, ILoggable
             if (FindObjectOfType<ErrorSystem>() is ErrorSystem errorSystem)
                 errorSystem.ThrowError(new InGameError(request.error));
         }
-    }
-
-    public IEnumerator EndSessionCoroutine()
-    {
-        yield return null;
     }
 }

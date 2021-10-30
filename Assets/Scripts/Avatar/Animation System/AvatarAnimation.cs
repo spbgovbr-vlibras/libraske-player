@@ -11,6 +11,13 @@ public struct AvatarAnimation
     public readonly float DefaultSpeed => _defaultSpeed;
     public readonly string Name => _name;
 
+    public AvatarAnimation(AnimationClip clip)
+    {
+        _clip = clip;
+        _name = clip.name;
+        _defaultSpeed = 1;
+
+    }
     public AvatarAnimation(AnimationClip clip, string name)
     {
         _clip = clip;

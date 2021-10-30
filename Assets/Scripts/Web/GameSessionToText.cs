@@ -7,7 +7,8 @@ public class GameSessionToText : MonoBehaviour
     [SerializeField] CurrentGameSession.Fields _field;
     [SerializeField] private TextUI _text;
 
-    private void Start() => _text.SetText(GetInField());
+    private void Start() => UpdateText();
+    public void UpdateText() => _text.SetText(GetInField());
 
     private string GetInField()
     {

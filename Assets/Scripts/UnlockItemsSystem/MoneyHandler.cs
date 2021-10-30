@@ -4,6 +4,7 @@ namespace Lavid.Libraske.UnlockSystem
 {
     public class MoneyHandler : MonoBehaviour
     {
+        [SerializeField] private RequestUserCredit _creditRequest;
         [SerializeField] private int _money;
 
         public void TryUnlockItem(IUnlockable item)
@@ -28,7 +29,7 @@ namespace Lavid.Libraske.UnlockSystem
         // TODO: Get on web
         public int GetCurrentMoneyAmount()
         {
-            return _money;
+            return _creditRequest.ReturnCredit();
         }
     }
 }

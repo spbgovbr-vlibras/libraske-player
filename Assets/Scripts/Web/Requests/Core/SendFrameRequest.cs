@@ -62,7 +62,7 @@ public class SendFrameRequest : MonoBehaviour, ILoggable, IPauseObserver
 		_isSendingFrame = true;
         Logger.Log(this, "Solicitou requisição");
 
-        byte[] image = _webcam.GetImageInBytes(); // TODO: Fix Dispose Error
+        byte[] image = _webcam.GetImageInBytes(); 
 
 		if(image != null)
 		{

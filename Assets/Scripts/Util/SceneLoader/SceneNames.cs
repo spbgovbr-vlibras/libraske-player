@@ -13,5 +13,6 @@ public enum SceneNames
 	Configuracoes,
 	Personalizacao,
 	PerfilApagado,
-	Resultados
+	Resultados,
+	TreinoSinais2
 }

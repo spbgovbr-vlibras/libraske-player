@@ -11,6 +11,7 @@ internal struct RequestKeys
     public static string Get => "Get";
     public static string Delete => "DELETE";
     public static string Post => "POST";
+    public static string Patch => "PATCH";
 
     public static string ContentType => "Content-Type";
     public static string JsonType => "application/json";
@@ -66,6 +67,16 @@ public static class WebRequestFormater
     public static UnityWebRequest GetAudioClip(string url, AudioType type=AudioType.MPEG)
     {
         var request = UnityWebRequestMultimedia.GetAudioClip(url, type);
+        AuthorizeRequest(request);
+        return request;
+    }
+
+    public static UnityWebRequest Patch(WebConstants.URL url, string addicionalURL = "")
+    {
+        byte[] formData = null;
+        string m_url = WebConstants.GetURLFrom(url) + addicionalURL;
+        var request = UnityWebRequest.Put(m_url, formData);
+        request.method = RequestKeys.Patch;
         AuthorizeRequest(request);
         return request;
     }
