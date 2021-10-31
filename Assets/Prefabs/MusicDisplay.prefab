@@ -864,7 +864,8 @@ MonoBehaviour:
   _description: {fileID: 0}
   _filterNameOverflow: 1
   _maxNameCharacters: 15
-  _musicHolder: {fileID: 0}
+  _dataHolder: {fileID: 11400000, guid: af5b1cdbed07e0f4399d89ea65025dd1, type: 2}
+  _mediaHolder: {fileID: 11400000, guid: e87d625c71f63b6418f95e37074cb8cc, type: 2}
 --- !u!114 &2439846811958582499
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -5,6 +5,15 @@ public class AvatarAnimationController : MonoBehaviour
 {
     [SerializeField] private Wrapper<AvatarAnimator> _animators;
 
+    public void AddAnimation(AvatarAnimation anim)
+    {
+        for (int i = 0; i < _animators.Length; i++)
+        {
+            _animators[i].AddAnimation(anim);
+        }
+    }
+
+
     public void AddClip(AnimationClip clip)
     {
         for (int i = 0; i < _animators.Length; i++)

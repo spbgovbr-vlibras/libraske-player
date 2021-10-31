@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4aa59fef662daf74e8acd395016393cf, type: 3}
-  m_Name: Music Holder
+  m_Name: Music Data Holder
   m_EditorClassIdentifier: 
   _music:
     id: 0

@@ -12,6 +12,15 @@ public class AvatarAnimator : MonoBehaviour
     private const float DefaultAnimationStateSpeed = 1;
     private const float PausedAnimationStateSpeed = 0;
 
+    public void AddAnimation(AvatarAnimation animation)
+    {
+        if (_animations == null)
+            _animations = new Wrapper<AvatarAnimation>();
+
+        _controller.AddClip(animation.Clip, animation.Name);
+        _animations.Add(animation);
+    }
+
     public void AddClip(AnimationClip clip)
     {
         if (_animations == null)

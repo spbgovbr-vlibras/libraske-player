@@ -15,7 +15,7 @@ public class SubtitleReader : MonoBehaviour
     private SubtitleLine _nextLine;
     private Subtitle _subs;
 
-    public void StartReading(Subtitle subtitle)
+    public void ReadSubtitle(Subtitle subtitle)
     {
         _subs = subtitle;
         CanStartReading = true;

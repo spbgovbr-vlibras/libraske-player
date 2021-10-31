@@ -6,7 +6,7 @@ public class RequestTrainingMedia : WebRequest
 {
     private const int TrainingSteps = 5;
 
-    [SerializeField] private MusicHolderSO _musicDataHolder;
+    [SerializeField] private MusicDataHolderSO _musicDataHolder;
     [SerializeField] private MusicMediaHolderSO _musicMediaHolder;
     [SerializeField] private BundleManager _bundleManager;
 

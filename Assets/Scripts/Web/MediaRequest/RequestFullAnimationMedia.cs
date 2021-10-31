@@ -4,7 +4,7 @@ using UnityEngine.Networking;
 
 public class RequestFullAnimationMedia : WebRequest
 {
-    [SerializeField] private MusicHolderSO _musicDataHolder;
+    [SerializeField] private MusicDataHolderSO _musicDataHolder;
     [SerializeField] private MusicMediaHolderSO _musicMediaHolder;   
     [SerializeField] private BundleManager _bundleManager;
 

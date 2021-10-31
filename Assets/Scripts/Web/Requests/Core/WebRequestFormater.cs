@@ -91,8 +91,7 @@ public static class WebRequestFormater
     public static UnityWebRequest SendFrame(
                                                 int frameId,
                                                 byte[] image,
-                                                string sessionId, 
-                                                string addicionalURL = ""
+                                                string sessionId
                                             )
     {
         WWWForm form = new WWWForm();
@@ -102,7 +101,8 @@ public static class WebRequestFormater
         if (image != null)
             form.AddBinaryData(WebConstants.FrameField, image, $"{sessionId}-{frameId}.png", RequestKeys.PngType);
 
-        var url = WebConstants.GetURLFrom(WebConstants.URL.SendFrame) + addicionalURL;
+        string url = WebConstants.GetURLFrom(WebConstants.URL.SendFrame) + $"/{frameId}";
+        Debug.Log(url);
         UnityWebRequest request = UnityWebRequest.Post(url, form);
 
         AuthorizeRequest(request);

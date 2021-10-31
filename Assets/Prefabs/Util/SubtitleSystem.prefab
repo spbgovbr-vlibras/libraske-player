@@ -9,8 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2617176114565455579}
-  - component: {fileID: 2617176114565455573}
-  - component: {fileID: 3834028991065286237}
   m_Layer: 0
   m_Name: SubtitleSystem
   m_TagString: Untagged
@@ -30,16 +28,48 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2617176114020383808}
+  - {fileID: 4784325257866645116}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2617176114565455573
+--- !u!1 &5098631274685150982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4784325257866645116}
+  - component: {fileID: 8416078773853357205}
+  m_Layer: 0
+  m_Name: SubtitleReader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4784325257866645116
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5098631274685150982}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2617176114565455579}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8416078773853357205
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2617176114565455574}
+  m_GameObject: {fileID: 5098631274685150982}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be78a7a73a78639e4955f057fd30e785, type: 3}
@@ -48,21 +78,6 @@ MonoBehaviour:
   _audio: {fileID: 0}
   _subtitleBar: {fileID: 2617176114510101286}
   _text: {fileID: 2617176114580878835}
---- !u!114 &3834028991065286237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2617176114565455574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85b5490779a267c4da0ad77427a22907, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  urlDebug: 
-  _musicHolder: {fileID: 11400000, guid: af5b1cdbed07e0f4399d89ea65025dd1, type: 2}
-  _subtitleReader: {fileID: 2617176114565455573}
 --- !u!1001 &8040055355241635155
 PrefabInstance:
   m_ObjectHideFlags: 0

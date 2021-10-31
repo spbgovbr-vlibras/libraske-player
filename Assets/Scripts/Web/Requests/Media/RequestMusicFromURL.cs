@@ -6,7 +6,7 @@ public class RequestMusicFromURL : MonoBehaviour, ILoggable
 {
     public string InLogName => "RequestMusicFromURL";
 
-    [SerializeField] MusicHolderSO _musicHolder;
+    [SerializeField] MusicDataHolderSO _musicHolder;
     [SerializeField] AudioHandler _audioHandler;
 
     public IEnumerator DownloadMusic(string url)

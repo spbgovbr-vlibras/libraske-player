@@ -219,7 +219,7 @@ RectTransform:
   - {fileID: 1263073071}
   - {fileID: 1927055552}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -322,7 +322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1703552967632203831, guid: 6c691b1fbbdf21c48898c28eaef7290b, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1703552967632203831, guid: 6c691b1fbbdf21c48898c28eaef7290b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -471,49 +471,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263073070}
   m_CullTransparentMesh: 1
---- !u!1 &1547480952
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1547480954}
-  - component: {fileID: 1547480953}
-  m_Layer: 0
-  m_Name: GameSession
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1547480953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1547480952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d192ef636bd9f440ba521423fc1cff0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1547480954
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1547480952}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 298.1721, y: 199.48508, z: 54.910553}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1911879623
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,7 +483,7 @@ GameObject:
   - component: {fileID: 1911879624}
   m_Layer: 0
   m_Name: FakeLogin
-  m_TagString: Web
+  m_TagString: Debug
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -556,7 +513,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1927055551
 GameObject:
@@ -643,7 +600,7 @@ PrefabInstance:
       objectReference: {fileID: 927573611}
     - target: {fileID: 178404198820601129, guid: 9ffca648b2db60c4ebddc10e58f21ed9, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 178404198820601129, guid: 9ffca648b2db60c4ebddc10e58f21ed9, type: 3}
       propertyPath: m_LocalPosition.x

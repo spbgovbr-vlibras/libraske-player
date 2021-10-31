@@ -6,7 +6,7 @@ namespace Lavid.Libraske.Web
     {
         [SerializeField] private AccessDataStruct _currentData;
 
-        [Space(8), Header("Data To Apply")]
+        [Space(5), Header("Data To Apply")]
         [SerializeField] private AccessDataStruct _toApply;
         [SerializeField] private bool _applyInspectorData;
 

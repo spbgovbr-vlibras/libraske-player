@@ -6,7 +6,7 @@ using UnityEngine.Networking;
 
 public class CreateGameSessionRequest : MonoBehaviour, ILoggable
 {
-    [SerializeField] private MusicHolderSO _musicHolder;
+    [SerializeField] private MusicDataHolderSO _musicHolder;
 
     public event Action OnSetupFinished;
     private MusicWebData _song;
@@ -47,5 +47,7 @@ public class CreateGameSessionRequest : MonoBehaviour, ILoggable
             if (FindObjectOfType<ErrorSystem>() is ErrorSystem errorSystem)
                 errorSystem.ThrowError(new InGameError(request.error));
         }
+
+        request.Dispose();
     }
 }

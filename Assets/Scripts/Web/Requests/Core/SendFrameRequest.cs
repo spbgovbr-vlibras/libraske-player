@@ -46,7 +46,6 @@ public class SendFrameRequest : MonoBehaviour, ILoggable, IPauseObserver
     }
 
     private int _currentRequest;
-    private int _idSession = 10;
     private bool _isSendingFrame;
 
     private void OnReachTime()
@@ -66,7 +65,7 @@ public class SendFrameRequest : MonoBehaviour, ILoggable, IPauseObserver
 
 		if(image != null)
 		{
-			var www = WebRequestFormater.SendFrame(_currentRequest, image, _idSession.ToString(), "/" + AccessData.AccessToken);
+			var www = WebRequestFormater.SendFrame(_currentRequest, image, CurrentGameSession.ID);
 
 			yield return www.SendWebRequest();
 
@@ -79,8 +78,8 @@ public class SendFrameRequest : MonoBehaviour, ILoggable, IPauseObserver
 			{
 				Logger.Log(this, www.error);
 
-				if (FindObjectOfType<ErrorSystem>() is ErrorSystem es)
-					es.ThrowError(new InGameError(www.error));
+				//if (FindObjectOfType<ErrorSystem>() is ErrorSystem es)
+					//es.ThrowError(new InGameError(www.error));
 			}
 
 			Logger.Log(this, $"Next request in {_clockTime}");

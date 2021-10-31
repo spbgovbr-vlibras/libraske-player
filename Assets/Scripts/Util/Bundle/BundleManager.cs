@@ -44,7 +44,7 @@ public class BundleManager : MonoBehaviour
         {
             for (int i = _bundles.Count - 1; i >= 0; i--)
             {
-                _bundles[i].Unload(true);
+                _bundles[i].Unload(false);
             }
 
             _bundles = null;

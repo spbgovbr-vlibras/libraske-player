@@ -6,7 +6,7 @@ using UnityEngine.Networking;
 
 public class SubtitleRequest : MonoBehaviour, ILoggable
 {
-    [SerializeField] MusicHolderSO _musicHolder;
+    [SerializeField] MusicDataHolderSO _musicHolder;
     [SerializeField] SubtitleReader _subtitleReader;
     public string InLogName => "SubtitleRequest";
 
@@ -35,7 +35,7 @@ public class SubtitleRequest : MonoBehaviour, ILoggable
             Queue<SubtitleLine> lineQueue = StringToSubtitleLines(data);
             Subtitle subs = new Subtitle(lineQueue);
 
-            _subtitleReader.StartReading(subs);
+            _subtitleReader.ReadSubtitle(subs);
         }
     }
 

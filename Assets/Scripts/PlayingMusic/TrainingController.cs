@@ -1,32 +1,28 @@
 ﻿using Lavid.Libraske.DataStruct;
-using System.Collections;
 using UnityEngine;
 
-public class TrainingController : InGameController 
+public class TrainingController : MonoBehaviour
 {
-    private const int TrainingSteps = 5;
+    [SerializeField] MusicMediaHolderSO _mediaHolderSO;
+    [SerializeField] AvatarAnimationController _avatarsController;
 
     [Header("UI")]
     [SerializeField] private GameObject _buttonNext;
     [SerializeField] private GameObject _buttonPrevious;
 
-    private IntClampedValue _currentAnimation;
+    private IntClampedValue _animationClamp;
 
-    private void Awake()
-    {
-        _currentAnimation = new IntClampedValue(0, 0, TrainingSteps - 1);
-        StartCoroutine(SetupAnimations());
-    }
+    private void Start() => SetupAnimations();
 
-    public void UpdateAnimatorsValues() => _avatarAnimators.PlayAt(_currentAnimation.GetCurrentValue());
+    public void UpdateAnimatorsValues() => _avatarsController.PlayAt(_animationClamp.GetCurrentValue());
 
     public void UpdateUI()
     {
         if (_buttonPrevious == null || _buttonNext == null)
             return;
 
-        bool enablePrevious = _currentAnimation.GetCurrentValue() > 0;
-        bool enableNext = _currentAnimation.GetCurrentValue() < TrainingSteps -1;
+        bool enablePrevious = _animationClamp.GetCurrentValue() > 0;
+        bool enableNext = _animationClamp.GetCurrentValue() < _animationClamp.GetMaxValue();
 
         _buttonNext.SetActive(enableNext);
         _buttonPrevious.SetActive(enablePrevious);
@@ -34,28 +30,25 @@ public class TrainingController : InGameController
 
     public void NextStep()
     {
-        _currentAnimation.Add(1);
+        _animationClamp.Add(1);
         UpdateAnimatorsValues();
         UpdateUI();
     }
     public void PreviousStep()
     {
-        _currentAnimation.Add(-1);
+        _animationClamp.Add(-1);
         UpdateAnimatorsValues();
         UpdateUI();
     }
 
-    public override IEnumerator SetupAnimations()
+    public void SetupAnimations()
     {
-        Music music = _musicHolder.GetMusicData();
-        AnimationClip clip;
+        AvatarAnimation[] animations = _mediaHolderSO.TrainingAnimations;
+        _animationClamp = new IntClampedValue(0, 0, animations.Length - 1);
 
-        for (int i = 0; i < TrainingSteps; i++)
+        for (int i = 0; i < animations.Length; i++)
         {
-            yield return StartCoroutine(_bundleRequest.SendRequest(music.GetTrainingAnimationURL(i)));
-            clip = _bundleRequest.GetClipOnBundle(_bundleRequest.GetLastRequest());
-            _avatarAnimators.AddClip(clip);
-            _bundlesDownloadeds.Add(_bundleRequest.GetLastBundle());
+            _avatarsController.AddAnimation(animations[i]);
         }
 
         UpdateUI();

@@ -15,10 +15,13 @@ EditorBuildSettings:
     path: Assets/Scenes/MinhasMusicas.unity
     guid: b0d82093cd9d7494e9b839ea6e484b53
   - enabled: 1
-    path: Assets/Scenes/TreinoSinais.unity
+    path: Assets/Scenes/Gameplay/BaixarMedia.unity
+    guid: 16b4aa9616cb80349bdbf82b63b7abb8
+  - enabled: 1
+    path: Assets/Scenes/Gameplay/TreinoSinais.unity
     guid: 1816b54069c08254d906bb44769f973e
   - enabled: 1
-    path: Assets/Scenes/Jogando.unity
+    path: Assets/Scenes/Gameplay/Jogando.unity
     guid: 5fd89b23d1c7ed1418b15032b1523ee4
   - enabled: 1
     path: Assets/Scenes/Configuracoes.unity

@@ -13,17 +13,9 @@ MonoBehaviour:
   m_Name: Music Media Holder
   m_EditorClassIdentifier: 
   _musicAnimation:
-    _enabled: 1
-    _value:
-      _clip: {fileID: 0}
-      _defaultSpeed: 1
-      _name: 1S_AVISAR_3P
-  _trainingAnimations:
-    _enabled: 0
-    _value: []
-  _subtitle:
-    _enabled: 0
-  _musicAudio:
-    _enabled: 0
-    _value: {fileID: 0}
+    _clip: {fileID: 0}
+    _defaultSpeed: 1
+    _name: 1S_AVISAR_3P
+  _trainingAnimations: []
+  _musicAudio: {fileID: 0}
   _thumbnail: {fileID: 0}

@@ -10,10 +10,14 @@ public class MusicMediaHolderSO : ScriptableObject
     [SerializeField] private AudioClip _musicAudio;
     [SerializeField] private RawImage _thumbnail;
 
+    private void OnEnable()
+    {
+        hideFlags = HideFlags.DontUnloadUnusedAsset;
+    }
 
     public AvatarAnimation MusicAnimation { get => _musicAnimation; set => _musicAnimation = value; }
     public AvatarAnimation[] TrainingAnimations { get => _trainingAnimations; set => _trainingAnimations = value; }
-    public Subtitle Subtitle { get => _subtitle; set => _subtitle = value; }
+    public Subtitle Subtitle { get => new Subtitle(_subtitle); set => _subtitle = value; }
     public AudioClip MusicAudio { get => _musicAudio; set => _musicAudio = value; }
 
 

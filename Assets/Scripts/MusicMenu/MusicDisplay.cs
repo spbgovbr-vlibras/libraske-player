@@ -14,15 +14,15 @@ public class MusicDisplay : MonoBehaviour
 
     [Header("Selected Music"), Space(5)]
     [Tooltip("Apply music to ScrpitableObject to pass informations to others scenes.")]
-    [SerializeField] 
-    private MusicHolderSO _musicHolder;
+    [SerializeField] private MusicDataHolderSO _dataHolder;
+    [SerializeField] private MusicMediaHolderSO _mediaHolder;
 
     private Music _myMusic; // Music that this display shows
 
-    public void SetDataFromHolder(MusicHolderSO holder)
+    public void SetDataFromHolder(MusicDataHolderSO holder)
     {
         Music music = holder.GetMusicData();
-        SetData(music.Name, music.Singers, music.Description, holder.Media.Thumbnail);
+        SetData(music.Name, music.Singers, music.Description, _mediaHolder.Thumbnail);
     }
 
     public void SetDataFromMusic(Music music) 
@@ -33,10 +33,10 @@ public class MusicDisplay : MonoBehaviour
 
     public void ApplyMyDataOnMusicHolder()
     {
-        if (_musicHolder != null)
+        if (_dataHolder != null)
         {
-            _musicHolder.SetMusicData(_myMusic);
-            _musicHolder.Media.SetThumbnail(_image.GetRawImage());
+            _dataHolder.SetMusicData(_myMusic);
+            _mediaHolder.SetThumbnail(_image.GetRawImage());
         }
     }
 

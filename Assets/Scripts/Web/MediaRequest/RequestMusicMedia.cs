@@ -4,7 +4,7 @@ using UnityEngine.Networking;
 
 public class RequestMusicMedia : WebRequest
 {
-    [SerializeField] private MusicHolderSO _musicDataHolder;
+    [SerializeField] private MusicDataHolderSO _musicDataHolder;
     [SerializeField] private MusicMediaHolderSO _musicMediaHolder;
 
     public override string GetLogName() => "RequestMusicMedia";
