@@ -1,13 +1,13 @@
-﻿using System.Collections;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class RequestMusicMedia : WebRequest
+public class RequestSubtitleMedia : WebRequest
 {
     [SerializeField] private MusicDataHolderSO _musicDataHolder;
     [SerializeField] private MusicMediaHolderSO _musicMediaHolder;
 
-    public override string GetLogName() => "RequestMusicMedia";
+    public override string GetLogName() => "RequestSubtitleMedia";
 
     private void Start() => StartCoroutine(SendRequest());
 
@@ -16,29 +16,25 @@ public class RequestMusicMedia : WebRequest
         PrintFailText(request);
 
         if (FindObjectOfType<ErrorSystem>() is ErrorSystem es)
-        {
-            es.ThrowError(ErrorList.MusicDownloadError);
-        }
+            es.ThrowError(ErrorList.DownloadSubtitleError);
 
         InvokeOnErrorEvent();
     }
 
     protected override void OnRequestSuccess(UnityWebRequest request)
     {
-        _requestWasSuccess = true;
-        AudioClip clip = DownloadHandlerAudioClip.GetContent(request);
-        _musicMediaHolder.MusicAudio = clip;
+        Subtitle subtitle = SubtitleConversor.FromRequestToSubtitle(request);
+        _musicMediaHolder.Subtitle = subtitle;
         PrintSuccessText(request);
+        _requestWasSuccess = true;
         InvokeOnSuccessEvent();
     }
 
     protected override IEnumerator SendRequest()
     {
-        string url = _musicDataHolder.GetMusicData().MusicMediaURL;
-        var request = WebRequestFormater.GetAudioClip(url);
-
+        string url = _musicDataHolder.GetMusicData().SubtitleURL;
+        var request = WebRequestFormater.Get(url);
         yield return request.SendWebRequest();
-
         VerifyRequest(request);
     }
 }

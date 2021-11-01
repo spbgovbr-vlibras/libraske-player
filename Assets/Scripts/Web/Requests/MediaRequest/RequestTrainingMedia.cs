@@ -21,7 +21,7 @@ public class RequestTrainingMedia : WebRequest
         PrintFailText(request);
 
         if (FindObjectOfType<ErrorSystem>() is ErrorSystem es)
-            es.ThrowError(ErrorList.CastError);
+            es.ThrowError(ErrorList.CastMusicListError);
 
         InvokeOnErrorEvent();
     }
