@@ -23,6 +23,13 @@ public class Music
     [SerializeField] private string trainingAnimation4;
     [SerializeField] private string trainingAnimation5;
 
+    [Header("Training Descriptions")]
+    [SerializeField] private string trainingDescription1;
+    [SerializeField] private string trainingDescription2;
+    [SerializeField] private string trainingDescription3;
+    [SerializeField] private string trainingDescription4;
+    [SerializeField] private string trainingDescription5;
+
     public Music 
     (
         string id, 
@@ -69,6 +76,21 @@ public class Music
     public string Name { get => name;}
     public string Description { get => description;}
 
+    // TODO: MAKE RETURN STRUCT VALUE WHEN SYNC WITH API
+    public string GetTrainingDescription(int index)
+    {
+        return index switch
+        {
+            0 => "trainingDescription1",
+            1 => "trainingDescription2",
+            2 => "trainingDescription3",
+            3 => "trainingDescription4",
+            4 => "trainingDescription5",
+            _ => null
+        };
+    }
+
+    #region URLs
     public string MusicMediaURL { get => song;  }
     public string SubtitleURL { get => subtitle;}
     public string ThumbnailURL { get => thumbnail;}
@@ -85,4 +107,5 @@ public class Music
             _ => null
         };
     }
+    #endregion
 }

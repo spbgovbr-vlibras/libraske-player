@@ -57,7 +57,7 @@ public class RequestTrainingMedia : WebRequest
             if (request.result != UnityWebRequest.Result.Success)
             {
                 OnRequestError(request);
-                StopCoroutine(SendRequest());
+                yield break;
             }           
 
             AnimationClip clip = GetClip(url, request);

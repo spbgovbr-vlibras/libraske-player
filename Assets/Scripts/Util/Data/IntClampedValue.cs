@@ -11,9 +11,9 @@ namespace Lavid.Libraske.DataStruct
 
         public IntClampedValue(int min, int currentValue, int max) => (_min, _currentValue, _max) = (min, currentValue, max);
 
-        public float GetMinValue() => _min;
+        public int GetMinValue() => _min;
         public int GetCurrentValue() => _currentValue;
-        public float GetMaxValue() => _max;
+        public int GetMaxValue() => _max;
 
         public void Add(int value)
         {

@@ -6,11 +6,26 @@ public class SubtitleHUD : MonoBehaviour
 {
     [SerializeField] private GameObject _container;
     [SerializeField] private TextUI _text;
+    [SerializeField] private SubtitleBar _subtitleBar;
+
+    [Space(6), Header("Default Settings")]
     [SerializeField] private Wrapper<SubtitleColor> _colors;
     [SerializeField] private Wrapper<SubtitleSize> _sizes;
 
-    private void OnEnable() => UpdateValues();
-    public void UpdateValues()
+    private void OnEnable() => UpdateConfigurations();
+
+    public void ApplyText(string text)
+    {
+        _text.SetText(text);
+        _subtitleBar.SetSize(text);
+    }
+    public void ResetText()
+    {
+        _text.ResetText();
+        _subtitleBar.Disable();
+    }
+
+    public void UpdateConfigurations()
     {
         _container.SetActive(SubtitleSettingsSaveHandler.CanShowSubtitles());
 

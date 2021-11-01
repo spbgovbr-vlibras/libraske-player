@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2617176114565455579}
+  - component: {fileID: 5372517059450989340}
   m_Layer: 0
   m_Name: SubtitleSystem
   m_TagString: Untagged
@@ -32,6 +33,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5372517059450989340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2617176114565455574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3512125f964339a4282f84fe23a1c6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onPause:
+    m_PersistentCalls:
+      m_Calls: []
+  _onResume:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2617176114020383811}
+        m_TargetAssemblyTypeName: SubtitleHUD, GameAssembly
+        m_MethodName: UpdateConfigurations
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5098631274685150982
 GameObject:
   m_ObjectHideFlags: 0
@@ -76,8 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audio: {fileID: 0}
-  _subtitleBar: {fileID: 2617176114510101286}
-  _text: {fileID: 2617176114580878835}
+  _subtitleHUD: {fileID: 2617176114020383811}
 --- !u!1001 &8040055355241635155
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -171,34 +201,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5460069673359237614, guid: 9103a57c35ff0f541a5982dc8bff4b59, type: 3}
       propertyPath: m_Name
-      value: SubtitleCanvas
+      value: SubtitleHUD
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5460069673359237615, guid: 9103a57c35ff0f541a5982dc8bff4b59, type: 3}
+      propertyPath: _onResume.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateConfigurations
+      objectReference: {fileID: 0}
+    - target: {fileID: 5460069673359237615, guid: 9103a57c35ff0f541a5982dc8bff4b59, type: 3}
+      propertyPath: _onResume.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SubtitleHUD, GameAssembly
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5460069673359237615, guid: 9103a57c35ff0f541a5982dc8bff4b59, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9103a57c35ff0f541a5982dc8bff4b59, type: 3}
 --- !u!224 &2617176114020383808 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5460069673359237395, guid: 9103a57c35ff0f541a5982dc8bff4b59, type: 3}
   m_PrefabInstance: {fileID: 8040055355241635155}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2617176114510101286 stripped
+--- !u!114 &2617176114020383811 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5460069671785293429, guid: 9103a57c35ff0f541a5982dc8bff4b59, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5460069673359237392, guid: 9103a57c35ff0f541a5982dc8bff4b59, type: 3}
   m_PrefabInstance: {fileID: 8040055355241635155}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12162b5fbf6c8e442a3a6b477518502a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2617176114580878835 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5460069671717660832, guid: 9103a57c35ff0f541a5982dc8bff4b59, type: 3}
-  m_PrefabInstance: {fileID: 8040055355241635155}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a95522d5e786094fb075c8d90b0aa2f, type: 3}
+  m_Script: {fileID: 11500000, guid: 07d345c00d8b8b748a6a692cb31830c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

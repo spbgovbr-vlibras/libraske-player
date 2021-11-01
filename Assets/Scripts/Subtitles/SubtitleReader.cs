@@ -1,12 +1,10 @@
 ﻿using Lavid.Libraske.Subtitles;
-using Lavid.Libraske.UI;
 using UnityEngine;
 
 public class SubtitleReader : MonoBehaviour
 {
     [SerializeField] private AudioHandler _audio;
-    [SerializeField] private SubtitleBar _subtitleBar;
-    [SerializeField] private TextUI _text;
+    [SerializeField] private SubtitleHUD _subtitleHUD;
 
     private double _timeCurrent;  
     private bool _setup;
@@ -23,10 +21,7 @@ public class SubtitleReader : MonoBehaviour
 
     private bool CanStartReading { get; set; }
 
-    private void Awake()
-    {
-        _text.ResetText();
-    }
+    private void Awake() => _subtitleHUD.ResetText();
 
     private void Update()
     {
@@ -47,14 +42,12 @@ public class SubtitleReader : MonoBehaviour
         if(_timeCurrent >= nextLineInterval.GetExitTime())
         {
             _setup = false;
-            _text.ResetText();
-            _subtitleBar.Disable();
+            _subtitleHUD.ResetText();
         }            
         else if(_timeCurrent >= nextLineInterval.GetEnterTime() && !_isDisplayingText)
         {
             string nextLine = _nextLine.GetText();
-            _text.SetText(nextLine);
-            _subtitleBar.SetSize(nextLine);
+            _subtitleHUD.ApplyText(nextLine);
             _isDisplayingText = true;
         }
     }
