@@ -618,6 +618,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6447437866039810205, guid: 81c1e82ec0e63b546b543304264e4ec8, type: 3}
+      propertyPath: startingFile
+      value: alertaApagarPerfil.mp4
+      objectReference: {fileID: 0}
     - target: {fileID: 6660599522516228804, guid: 81c1e82ec0e63b546b543304264e4ec8, type: 3}
       propertyPath: m_Looping
       value: 0

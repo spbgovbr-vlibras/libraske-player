@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667192191705718331}
   - component: {fileID: 6660599522516228804}
+  - component: {fileID: 6447437866039810205}
   m_Layer: 0
   m_Name: Video Player
   m_TagString: Untagged
@@ -39,7 +40,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2680429885856883764}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: d60fce427af38d34bb4f06c6f50ba8b1, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 67e3d9599606f2942ad9722e3e065efc, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -54,7 +55,7 @@ VideoPlayer:
   m_AudioOutputMode: 2
   m_TargetAudioSources: []
   m_DirectAudioVolumes: []
-  m_Url: 
+  m_Url: https://gdurl.com/PmSQ
   m_EnabledAudioTracks: 
   m_DirectAudioMutes: 
   m_ControlledAudioTrackCount: 0
@@ -64,6 +65,20 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &6447437866039810205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2680429885856883764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d283011d1049a4c4687aee701b6cc41a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoPlayer: {fileID: 6660599522516228804}
+  startingFile: musicas.mp4
 --- !u!1 &5245235956774873356
 GameObject:
   m_ObjectHideFlags: 0

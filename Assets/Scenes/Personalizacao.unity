@@ -4428,7 +4428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4647309153656527324, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4647309153656527324, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -4440,7 +4440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4647309153656527324, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4647309153656527324, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -4457,7 +4457,7 @@ PrefabInstance:
     - target: {fileID: 4647309153656527324, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1558723430}
+      objectReference: {fileID: 423032291}
     - target: {fileID: 4647309153656527324, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -4488,7 +4488,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4647309153656527324, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_clip
+      value: PlayVideo
       objectReference: {fileID: 0}
     - target: {fileID: 4647309153656527324, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -4504,7 +4504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4647309153656527324, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.Video.VideoPlayer, UnityEngine
+      value: VideoController, GameAssembly
       objectReference: {fileID: 0}
     - target: {fileID: 4647309153656527324, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -4513,7 +4513,11 @@ PrefabInstance:
     - target: {fileID: 4647309153656527324, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 32900000, guid: c7058da5c0b786b428b3ef7aba468478, type: 3}
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647309153656527324, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
+      propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: desbloquear.mp4
+      objectReference: {fileID: 0}
     - target: {fileID: 4647309153656527324, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
@@ -4524,7 +4528,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4647309153656527324, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Video.VideoClip, UnityEngine
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4647309153656527324, guid: 0154dde005738fa4dad3a51cd6e07f3b, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -4660,6 +4664,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6447437866039810205, guid: 81c1e82ec0e63b546b543304264e4ec8, type: 3}
+      propertyPath: startingFile
+      value: desbloquearCor.mp4
+      objectReference: {fileID: 0}
     - target: {fileID: 6660599522516228804, guid: 81c1e82ec0e63b546b543304264e4ec8, type: 3}
       propertyPath: m_VideoClip
       value: 
@@ -4739,6 +4747,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8291691317298278430, guid: 81c1e82ec0e63b546b543304264e4ec8, type: 3}
   m_PrefabInstance: {fileID: 423032289}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &423032291 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6447437866039810205, guid: 81c1e82ec0e63b546b543304264e4ec8, type: 3}
+  m_PrefabInstance: {fileID: 423032289}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d283011d1049a4c4687aee701b6cc41a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &460006574
 GameObject:
   m_ObjectHideFlags: 0

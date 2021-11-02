@@ -575,6 +575,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1161558388 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6447437866039810205, guid: 81c1e82ec0e63b546b543304264e4ec8, type: 3}
+  m_PrefabInstance: {fileID: 1634465655}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d283011d1049a4c4687aee701b6cc41a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1257437101
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,11 +745,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -751,7 +762,7 @@ PrefabInstance:
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1634465656}
+      objectReference: {fileID: 1161558388}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -770,7 +781,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_clip
+      value: PlayVideo
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -778,7 +789,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.Video.VideoPlayer, UnityEngine
+      value: VideoController, GameAssembly
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -791,10 +802,14 @@ PrefabInstance:
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 32900000, guid: 93d3c0d48b020d84d8d517f80c6a5048, type: 3}
+      objectReference: {fileID: 0}
+    - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
+      propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: configuracoes.mp4
+      objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Video.VideoClip, UnityEngine
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -932,11 +947,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -949,7 +964,7 @@ PrefabInstance:
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1634465656}
+      objectReference: {fileID: 1161558388}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -968,7 +983,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_clip
+      value: PlayVideo
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -976,7 +991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.Video.VideoPlayer, UnityEngine
+      value: VideoController, GameAssembly
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -989,10 +1004,14 @@ PrefabInstance:
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 32900000, guid: dc180632bba0408448c391df0c2492a2, type: 3}
+      objectReference: {fileID: 0}
+    - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
+      propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: personalizacao.mp4
+      objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Video.VideoClip, UnityEngine
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1086,6 +1105,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6660599522516228804, guid: 81c1e82ec0e63b546b543304264e4ec8, type: 3}
       propertyPath: m_DataSource
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660599522516228804, guid: 81c1e82ec0e63b546b543304264e4ec8, type: 3}
+      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7042877203276256713, guid: 81c1e82ec0e63b546b543304264e4ec8, type: 3}
@@ -1431,7 +1454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -1452,7 +1475,7 @@ PrefabInstance:
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1161558388}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -1479,11 +1502,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_url
+      value: PlayVideo
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Prepare
+      value: Play
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -1491,7 +1514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.Video.VideoPlayer, UnityEngine
+      value: VideoController, GameAssembly
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -1507,7 +1530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: https://gdurl.com/PmSQ
+      value: musicas.mp4
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
