@@ -24,11 +24,11 @@ public class Music
     [SerializeField] private string trainingAnimation5;
 
     [Header("Training Descriptions")]
-    [SerializeField] private string trainingDescription1;
-    [SerializeField] private string trainingDescription2;
-    [SerializeField] private string trainingDescription3;
-    [SerializeField] private string trainingDescription4;
-    [SerializeField] private string trainingDescription5;
+    [SerializeField] private string trainingPhrase1;
+    [SerializeField] private string trainingPhrase2;
+    [SerializeField] private string trainingPhrase3;
+    [SerializeField] private string trainingPhrase4;
+    [SerializeField] private string trainingPhrase5;
 
     public Music 
     (
@@ -42,6 +42,11 @@ public class Music
         string trainingAnimation3,
         string trainingAnimation4,
         string trainingAnimation5,
+		string trainingPhrase1,
+		string trainingPhrase2,
+		string trainingPhrase3,
+		string trainingPhrase4,
+		string trainingPhrase5,
         string name, 
         string description, 
         string subtitle, 
@@ -58,11 +63,18 @@ public class Music
 
         this.animation = animation;
         this.song = song;
+		
         this.trainingAnimation1 = trainingAnimation1;
         this.trainingAnimation2 = trainingAnimation2;
         this.trainingAnimation3 = trainingAnimation3;
         this.trainingAnimation4 = trainingAnimation4;
         this.trainingAnimation5 = trainingAnimation5;
+		
+		this.trainingPhrase1 = trainingPhrase1;
+		this.trainingPhrase2 = trainingPhrase2;
+		this.trainingPhrase3 = trainingPhrase3;
+		this.trainingPhrase4 = trainingPhrase4;
+		this.trainingPhrase5 = trainingPhrase5;
     }
 
     public string ShowAllData()
@@ -76,16 +88,15 @@ public class Music
     public string Name { get => name;}
     public string Description { get => description;}
 
-    // TODO: MAKE RETURN STRUCT VALUE WHEN SYNC WITH API
     public string GetTrainingDescription(int index)
     {
         return index switch
         {
-            0 => "trainingDescription1",
-            1 => "trainingDescription2",
-            2 => "trainingDescription3",
-            3 => "trainingDescription4",
-            4 => "trainingDescription5",
+            0 => trainingPhrase1,
+            1 => trainingPhrase2,
+            2 => trainingPhrase3,
+            3 => trainingPhrase4,
+            4 => trainingPhrase5,
             _ => null
         };
     }

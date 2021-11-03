@@ -3,7 +3,12 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 
-internal struct CloseGameSessionWebData { public int credit; }
+internal struct CloseGameSessionWebData 
+{
+	public int credit; // Quantidade atualizada dos creditos do usuario
+	public int sessionScore; // Media da pontuacao da partida
+	public int bonus; // Quantidade de bonus dada ao jogador
+}
 
 public class CloseGameSessionRequest : MonoBehaviour, ILoggable
 {
@@ -24,7 +29,7 @@ public class CloseGameSessionRequest : MonoBehaviour, ILoggable
         if (request.result == UnityWebRequest.Result.Success)
         {
             var data = JsonUtility.FromJson<CloseGameSessionWebData>(request.downloadHandler.text);
-            int delta = data.credit - CurrentGameSession.GetPontuation();
+            int delta = data.sessionScore + data.bonus;
             _creditText.SetText(delta.ToString());
             Logger.Log(this, "Total points: " + request.downloadHandler.text);
         }
