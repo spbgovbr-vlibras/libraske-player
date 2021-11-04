@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 32
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -28,16 +28,8 @@ MonoBehaviour:
     trainingAnimation3: https://dicionario2.vlibras.gov.br/2018.3.1/ANDROID/1S_PEDIR_3P
     trainingAnimation4: https://dicionario2.vlibras.gov.br/2018.3.1/ANDROID/1S_CHOCAR_1S
     trainingAnimation5: https://dicionario2.vlibras.gov.br/2018.3.1/ANDROID/1S_ENGANAR_1S
-  _musicMedia:
-    _musicAnimation:
-      _enabled: 0
-      _value:
-        _clip: {fileID: 0}
-        _defaultSpeed: 0
-        _name: 
-    _trainingAnimations:
-      _enabled: 0
-      _value: []
-    _subtitle:
-      _enabled: 0
-    _thumbnail: {fileID: 0}
+    trainingPhrase1: 
+    trainingPhrase2: 
+    trainingPhrase3: 
+    trainingPhrase4: 
+    trainingPhrase5: 

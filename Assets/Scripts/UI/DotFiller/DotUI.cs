@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class DotUI : MonoBehaviour
 {
-	private enum FillMode { HigherOrEquals, Equals }
+	private enum FillMode { HigherOrEquals, Equals, Boolean }
 			
     [SerializeField] private Image _renderer;
     [SerializeField] private Sprite _whenFilled;
@@ -12,6 +12,12 @@ public class DotUI : MonoBehaviour
     
     private int _id;
     public void SetId(int value) => _id = value;
+
+	public void UpdateSelectionBoolean(bool value)
+    {
+		if(_fillMode == FillMode.Boolean)
+			_renderer.sprite = value ? _whenFilled : _whenNotFilled;
+	}
 
     public void UpdateSelectionNumber(int number)
 	{

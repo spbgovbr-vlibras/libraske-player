@@ -9,7 +9,8 @@ namespace Lavid.Libraske.Avatar
         [SerializeField] private AvatarStruct<SkinnedMeshRenderer> _renderer;
         [SerializeField, Tooltip("Avatar Customization Scriptable Object")] private AvatarCustomizationSO _customizationSO;
 
-        [SerializeField] private string _avatarName;
+        [SerializeField] private AvatarNameEnum _avatarName;
+        public AvatarNameEnum AvatarName { get => _avatarName; }
 
         private void OnEnable()
         {
@@ -55,7 +56,5 @@ namespace Lavid.Libraske.Avatar
             if (renderer != null && color != null)
                 renderer.material.color = color;
         }
-
-        public string GetAvatarName() => _avatarName;
     }
 }
