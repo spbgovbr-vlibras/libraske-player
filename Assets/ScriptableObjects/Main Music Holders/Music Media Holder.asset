@@ -15,7 +15,19 @@ MonoBehaviour:
   _musicAnimation:
     _clip: {fileID: 0}
     _defaultSpeed: 1
-    _name: 
-  _trainingAnimations: []
+    _name: PEIXE_VIVO
+  _trainingAnimations:
+  - _clip: {fileID: 0}
+    _defaultSpeed: 1
+    _name: 123_INDIOZINHOS
+  - _clip: {fileID: 0}
+    _defaultSpeed: 1
+    _name: IAM_NAVEGANDO_RIO_ABAIXO
+  - _clip: {fileID: 0}
+    _defaultSpeed: 1
+    _name: QUANDO_O_JACARE_SE_APROXIMOU
+  - _clip: {fileID: 0}
+    _defaultSpeed: 1
+    _name: E_O_INDIOZINHO_OLHOU_PARA_BAIXO
   _musicAudio: {fileID: 0}
   _thumbnail: {fileID: 0}

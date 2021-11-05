@@ -36,7 +36,6 @@ public class RequestMusicList : WebRequest
             Logger.LogError(this, "Houve um problema no cast de variáveis");
         }
     }
-
     protected override void OnRequestError(UnityWebRequest request)
     {
         PrintFailText(request);
@@ -45,7 +44,7 @@ public class RequestMusicList : WebRequest
             es.ThrowError(ErrorList.DownloadMusicListError);
     }
 
-    protected override IEnumerator SendRequest()
+    public override IEnumerator SendRequest()
     {
         Logger.Log(this, "Solicitou requisição das músicas");
         var webRequest = WebRequestFormater.Get(WebConstants.URL.SongsURL);

@@ -14,6 +14,8 @@ public class TrainingController : MonoBehaviour
 
     private IntClampedValue _animationClamp;
 
+    public const int TrainingStepsQuantity = 4;
+
     private void Start() => SetupAnimations();
     public void SetupAnimations()
     {

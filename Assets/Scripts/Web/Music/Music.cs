@@ -21,14 +21,12 @@ public class Music
     [SerializeField] private string trainingAnimation2;
     [SerializeField] private string trainingAnimation3;
     [SerializeField] private string trainingAnimation4;
-    [SerializeField] private string trainingAnimation5;
 
     [Header("Training Descriptions")]
     [SerializeField] private string trainingPhrase1;
     [SerializeField] private string trainingPhrase2;
     [SerializeField] private string trainingPhrase3;
     [SerializeField] private string trainingPhrase4;
-    [SerializeField] private string trainingPhrase5;
 
     public Music 
     (
@@ -41,12 +39,10 @@ public class Music
         string trainingAnimation2,
         string trainingAnimation3,
         string trainingAnimation4,
-        string trainingAnimation5,
 		string trainingPhrase1,
 		string trainingPhrase2,
 		string trainingPhrase3,
 		string trainingPhrase4,
-		string trainingPhrase5,
         string name, 
         string description, 
         string subtitle, 
@@ -68,13 +64,11 @@ public class Music
         this.trainingAnimation2 = trainingAnimation2;
         this.trainingAnimation3 = trainingAnimation3;
         this.trainingAnimation4 = trainingAnimation4;
-        this.trainingAnimation5 = trainingAnimation5;
 		
 		this.trainingPhrase1 = trainingPhrase1;
 		this.trainingPhrase2 = trainingPhrase2;
 		this.trainingPhrase3 = trainingPhrase3;
 		this.trainingPhrase4 = trainingPhrase4;
-		this.trainingPhrase5 = trainingPhrase5;
     }
 
     public string ShowAllData()
@@ -96,7 +90,6 @@ public class Music
             1 => trainingPhrase2,
             2 => trainingPhrase3,
             3 => trainingPhrase4,
-            4 => trainingPhrase5,
             _ => null
         };
     }
@@ -114,7 +107,6 @@ public class Music
             1 => trainingAnimation2,
             2 => trainingAnimation3,
             3 => trainingAnimation4,
-            4 => trainingAnimation5,
             _ => null
         };
     }

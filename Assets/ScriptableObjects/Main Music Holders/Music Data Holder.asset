@@ -13,23 +13,21 @@ MonoBehaviour:
   m_Name: Music Data Holder
   m_EditorClassIdentifier: 
   _music:
-    id: 0
-    singers: Galinha Pintadinha
-    name: "\xCDNDIOZINHOS"
-    description: "M\xFAsica de dom\xEDnio p\xFAblico gravada em 2018 pela Galinha
-      Pintadinha atrav\xE9s da Bromelia Produ\xE7\xF5es."
-    price: 0
-    thumbnail: http://localhost:8080/info/songs/0/5ec20cf0557d3a82c6e8-thumbnail.indio.png
-    subtitle: https://libraske-back-dth.vlibras.gov.br/info/songs/0/666103e32b290f41ef65-subtitle.indio.txt
-    song: https://drive.google.com/u/3/uc?id=1QKCOWdcRtY5KMT8pxQonXOj-26mI5xv9&export=download
-    animation: https://dicionario2.vlibras.gov.br/2018.3.1/ANDROID/1S_AVISAR_3P
-    trainingAnimation1: https://dicionario2.vlibras.gov.br/2018.3.1/ANDROID/1S_AVISAR_3P
-    trainingAnimation2: https://dicionario2.vlibras.gov.br/2018.3.1/ANDROID/1S_ACONSELHAR_2P
-    trainingAnimation3: https://dicionario2.vlibras.gov.br/2018.3.1/ANDROID/1S_PEDIR_3P
-    trainingAnimation4: https://dicionario2.vlibras.gov.br/2018.3.1/ANDROID/1S_CHOCAR_1S
-    trainingAnimation5: https://dicionario2.vlibras.gov.br/2018.3.1/ANDROID/1S_ENGANAR_1S
-    trainingPhrase1: 
-    trainingPhrase2: 
-    trainingPhrase3: 
-    trainingPhrase4: 
-    trainingPhrase5: 
+    id: 4
+    singers: Bob Zoom
+    name: Peixe Vivo
+    description: "M\xFAsica de dom\xEDnio p\xFAblico gravada em 2017 pelo Canal Infantil
+      Bob Zoom."
+    price: 200
+    thumbnail: https://libraske-back-dth.vlibras.gov.br/info/songs/4/f7658eda6034f73ae1b4-thumbnail.6_thumb_peixevivo.png
+    subtitle: https://libraske-back-dth.vlibras.gov.br/info/songs/4/738963fbfe74012f011f-subtitle.6_letra_PeixeVivo.txt
+    song: https://libraske-back-dth.vlibras.gov.br/info/songs/4/255f7ba88679766de7d2-song.6_audio_PeixeVivo.mp3
+    animation: https://libraske-back-dth.vlibras.gov.br/info/songs/4/b4ef1dcf9aefe8bffdcc-animation.PEIXE_VIVO
+    trainingAnimation1: https://libraske-back-dth.vlibras.gov.br/info/songs/4/3301356c8731b499e1ac-trainingAnimation1.COMO_PODE_UM_PEIXE_VIVO
+    trainingAnimation2: https://libraske-back-dth.vlibras.gov.br/info/songs/4/c6efda9dd0888721d717-trainingAnimation2.VIVER_FORA_DA_AGUA_FRIA
+    trainingAnimation3: https://libraske-back-dth.vlibras.gov.br/info/songs/4/df919c856678c3ffe334-trainingAnimation3.COMO_PODE_UM_PEIXE_VIVO
+    trainingAnimation4: https://libraske-back-dth.vlibras.gov.br/info/songs/4/b49887d95f46b871a985-trainingAnimation4.VIVER_FORA_DA_AGUA_FRIA
+    trainingPhrase1: Como pode um peixe vivo
+    trainingPhrase2: "Viver fora da \xE1gua fria?"
+    trainingPhrase3: Como pode um peixe vivo
+    trainingPhrase4: "Viver fora da \xE1gua fria?"

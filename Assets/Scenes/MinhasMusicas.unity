@@ -3852,6 +3852,7 @@ GameObject:
   - component: {fileID: 1339540131}
   - component: {fileID: 1339540130}
   - component: {fileID: 1339540132}
+  - component: {fileID: 1339540133}
   m_Layer: 0
   m_Name: RequestSongs
   m_TagString: Untagged
@@ -3871,6 +3872,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3829d200fb2e77e4d806ce37ee874050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _requestResender:
+    _enabled: 1
+    _value: {fileID: 1339540133}
   _musicMenu: {fileID: 220374582}
   _songs:
     Items: []
@@ -3915,12 +3919,10 @@ MonoBehaviour:
       trainingAnimation2: 
       trainingAnimation3: 
       trainingAnimation4: 
-      trainingAnimation5: 
-      trainingDescription1: 
-      trainingDescription2: 
-      trainingDescription3: 
-      trainingDescription4: 
-      trainingDescription5: 
+      trainingPhrase1: 
+      trainingPhrase2: 
+      trainingPhrase3: 
+      trainingPhrase4: 
     - id: 1
       singers: dasd
       name: dsasddsasd
@@ -3934,13 +3936,25 @@ MonoBehaviour:
       trainingAnimation2: 
       trainingAnimation3: 
       trainingAnimation4: 
-      trainingAnimation5: 
-      trainingDescription1: 
-      trainingDescription2: 
-      trainingDescription3: 
-      trainingDescription4: 
-      trainingDescription5: 
+      trainingPhrase1: 
+      trainingPhrase2: 
+      trainingPhrase3: 
+      trainingPhrase4: 
   _musicMenu: {fileID: 220374582}
+--- !u!114 &1339540133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339540129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6391bf6d35d3cb54fac8fac44f9c5a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxRequestsToSend: 3
+  _request: {fileID: 1339540130}
 --- !u!1 &1399096415
 GameObject:
   m_ObjectHideFlags: 0
@@ -4861,6 +4875,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75aa1f4ec2f06f4abfaea880ac9677b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _requestResender:
+    _enabled: 0
+    _value: {fileID: 0}
   _image: {fileID: 1843360314}
   _applyCaseFail: {fileID: 0}
 --- !u!114 &1843360314
@@ -6670,6 +6687,10 @@ PrefabInstance:
     - target: {fileID: 8450824742337739171, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: m_Name
       value: MusicDisplay
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450824742337739171, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8450824742337739174, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _musicHolder

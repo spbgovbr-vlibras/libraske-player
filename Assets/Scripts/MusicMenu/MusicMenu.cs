@@ -27,13 +27,15 @@ public class MusicMenu : MonoBehaviour
         _songs = songs;
         float x = _initialPosition.x;
 
-        _displayToInstance.transform.GetComponent<MusicDisplay>().SetDataFromMusic(songs[0]);
+        //_displayToInstance.transform.GetComponent<MusicDisplay>().SetDataFromMusic(songs[0]);
+        //_displayToInstance.gameObject.SetActive(true);
 
-        for (int i = 1; i < _songs.Length; i++)
+        for (int i = 0; i < _songs.Length; i++)
         {
             x += i * _xOffset;
             var obj = Instantiate(_displayToInstance, transform);
             obj.transform.localPosition = _initialPosition + new Vector2(i * _xOffset, 0);
+            obj.gameObject.SetActive(true);
             obj.transform.GetComponent<MusicDisplay>().SetDataFromMusic(songs[i]);
         }
 

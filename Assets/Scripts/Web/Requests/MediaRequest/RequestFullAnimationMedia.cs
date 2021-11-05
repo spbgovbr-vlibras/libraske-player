@@ -49,7 +49,7 @@ public class RequestFullAnimationMedia : WebRequest
         InvokeOnSuccessEvent();
     }
 
-    protected override IEnumerator SendRequest()
+    public override IEnumerator SendRequest()
     {
         string url = _musicDataHolder.GetMusicData().FullAnimationURL;
         var request = WebRequestFormater.GetBundle(url);
