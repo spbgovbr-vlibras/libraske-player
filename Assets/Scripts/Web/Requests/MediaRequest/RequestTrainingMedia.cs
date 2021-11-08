@@ -4,8 +4,6 @@ using UnityEngine.Networking;
 
 public class RequestTrainingMedia : WebRequest
 {
-    private const int TrainingSteps = 5;
-
     [SerializeField] private MusicDataHolderSO _musicDataHolder;
     [SerializeField] private MusicMediaHolderSO _musicMediaHolder;
     [SerializeField] private BundleManager _bundleManager;
@@ -43,12 +41,14 @@ public class RequestTrainingMedia : WebRequest
         return clip;
     }
 
-    protected override IEnumerator SendRequest()
+    public override IEnumerator SendRequest()
     {
-        _trainingAnimations = new AvatarAnimation[TrainingSteps];
+        int trainingSteps = TrainingController.TrainingStepsQuantity;
+
+        _trainingAnimations = new AvatarAnimation[trainingSteps];
         UnityWebRequest request = null;
 
-        for (int i = 0; i < TrainingSteps; i++)
+        for (int i = 0; i < trainingSteps; i++)
         {
             string url = _musicDataHolder.GetMusicData().GetTrainingAnimationURL(i);
             request = WebRequestFormater.GetBundle(url);
@@ -56,7 +56,7 @@ public class RequestTrainingMedia : WebRequest
 
             if (request.result != UnityWebRequest.Result.Success)
             {
-                OnRequestError(request);
+                TryResendFailedRequest(request);
                 yield break;
             }           
 

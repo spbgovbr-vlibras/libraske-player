@@ -41,6 +41,15 @@ namespace Lavid.Libraske.UI
 
         protected override void OnRequestError(UnityWebRequest request)
         {
+            if (_requestResender.IsEnabled)
+            {
+                if (_requestResender.Value.ShouldResendRequest())
+                {
+                    _requestResender.Value.ResendRequest(request);
+                    return;
+                }
+            }
+
             PrintFailText(request);
 
             if (_applyCaseFail != null)
@@ -49,7 +58,7 @@ namespace Lavid.Libraske.UI
             InvokeOnErrorEvent();
         }
 
-        protected override IEnumerator SendRequest()
+        public override IEnumerator SendRequest()
         {
             var request = WebRequestFormater.GetTexture(_url);
             yield return request.SendWebRequest();

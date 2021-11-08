@@ -23,6 +23,7 @@ public class RequestSubtitleMedia : WebRequest
 
     protected override void OnRequestSuccess(UnityWebRequest request)
     {
+        Debug.Log(request.downloadHandler.text);
         Subtitle subtitle = SubtitleConversor.FromRequestToSubtitle(request);
         _musicMediaHolder.Subtitle = subtitle;
         PrintSuccessText(request);
@@ -30,7 +31,7 @@ public class RequestSubtitleMedia : WebRequest
         InvokeOnSuccessEvent();
     }
 
-    protected override IEnumerator SendRequest()
+    public override IEnumerator SendRequest()
     {
         string url = _musicDataHolder.GetMusicData().SubtitleURL;
         var request = WebRequestFormater.Get(url);

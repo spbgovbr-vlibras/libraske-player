@@ -32,7 +32,7 @@ public class RequestMusicMedia : WebRequest
         InvokeOnSuccessEvent();
     }
 
-    protected override IEnumerator SendRequest()
+    public override IEnumerator SendRequest()
     {
         string url = _musicDataHolder.GetMusicData().MusicMediaURL;
         var request = WebRequestFormater.GetAudioClip(url);
