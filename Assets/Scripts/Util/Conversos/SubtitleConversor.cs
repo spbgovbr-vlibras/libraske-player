@@ -19,6 +19,7 @@ public static class SubtitleConversor
         {
             if (linesString[i].Contains("#"))
             {
+                UnityEngine.Debug.Log(linesString[i]);
                 var subtitleLine = new SubtitleLine(new SubtitleInterval(linesString[i]), null);
                 string sentence = linesString[++i]; // line after time interval
                 subtitleLine.SetText(sentence);

@@ -30,8 +30,8 @@ public static class WebConstants
     private static void SetupDictionary()
     {
         UrlDictionary = new Dictionary<URL, string>();
-        UrlDictionary.Add(URL.BaseURL, "https://libraske-back-dth.vlibras.gov.br");
-        //UrlDictionary.Add(URL.BaseURL, "http://localhost:8080");
+        //UrlDictionary.Add(URL.BaseURL, "https://libraske-back-dth.vlibras.gov.br");
+        UrlDictionary.Add(URL.BaseURL, "http://localhost:8080");
         UrlDictionary.Add(URL.SongsURL, UrlDictionary[URL.BaseURL] + "/libraske/songs");
         UrlDictionary.Add(URL.UsersURL, UrlDictionary[URL.BaseURL] + "/libraske/users");
         UrlDictionary.Add(URL.CreateSessionURL, UrlDictionary[URL.BaseURL] + "/libraske/game/pontuation/session");
