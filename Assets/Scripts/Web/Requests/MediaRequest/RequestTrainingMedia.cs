@@ -36,7 +36,7 @@ public class RequestTrainingMedia : WebRequest
     {
         AnimationClip clip = _bundleManager.HasStoraged(url)
                             ? _bundleManager.GetStoragedAnimation(url)
-                            : BundleConversor.FromRequestToAnimationClip(request);
+                            : BundleConversor.FromRequestToAnimationClip(request, _bundleManager);
 
         return clip;
     }
@@ -61,11 +61,11 @@ public class RequestTrainingMedia : WebRequest
             }           
 
             AnimationClip clip = GetClip(url, request);
-            Debug.Log(clip);
+            Logger.Log(this, "got " + clip);
             _trainingAnimations[i] = new AvatarAnimation(clip);
 
             if(!_bundleManager.HasStoraged(url))
-                _bundleManager.StorageBundle(request.url, BundleConversor.FromRequestToBundle(request), clip);
+                _bundleManager.StorageBundle(request.url, BundleConversor.FromRequestToBundle(request, _bundleManager), clip);
         }
 
         OnRequestSuccess(request);

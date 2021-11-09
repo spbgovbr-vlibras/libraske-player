@@ -26,7 +26,7 @@ public class RequestFullAnimationMedia : WebRequest
     {
         AnimationClip clip = _bundleManager.HasStoraged(url)
                             ? _bundleManager.GetStoragedAnimation(url)
-                            : BundleConversor.FromRequestToAnimationClip(request);
+                            : BundleConversor.FromRequestToAnimationClip(request, _bundleManager);
 
         return clip;
     }
@@ -44,7 +44,7 @@ public class RequestFullAnimationMedia : WebRequest
         _musicMediaHolder.MusicAnimation = anim;
 
         if(!_bundleManager.HasStoraged(url))
-            _bundleManager.StorageBundle(url, BundleConversor.FromRequestToBundle(request), clip);
+            _bundleManager.StorageBundle(url, BundleConversor.FromRequestToBundle(request, _bundleManager), clip);
 
         InvokeOnSuccessEvent();
     }

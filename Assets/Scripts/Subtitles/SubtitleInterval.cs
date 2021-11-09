@@ -23,14 +23,10 @@ namespace Lavid.Libraske.Subtitles
         private float GetInSeconds(string time)
         {
             string[] _ = time.Split(':');
-            //UnityEngine.Debug.LogWarning(_[0] + "-" + _[1] + "-" + _[2] + "-");
 
             int.TryParse(_[0], out int hours);
             int.TryParse(_[1], out int minutes);
             float.TryParse(_[2], out float ml);
-
-            //UnityEngine.Debug.LogWarning(hours + "-" + minutes + "-" + ml + "-");
-            //throw new System.Exception("após converter");
 
             return TimeConversor.ToSeconds(hours, minutes, ml);
         }

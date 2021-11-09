@@ -3851,8 +3851,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1339540131}
   - component: {fileID: 1339540130}
-  - component: {fileID: 1339540132}
   - component: {fileID: 1339540133}
+  - component: {fileID: 1339540132}
   m_Layer: 0
   m_Name: RequestSongs
   m_TagString: Untagged
@@ -4471,7 +4471,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 3/10
+  m_Text: 0/0
 --- !u!222 &1628156078
 CanvasRenderer:
   m_ObjectHideFlags: 0
