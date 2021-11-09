@@ -6,7 +6,10 @@ public class WebCamHandler : MonoBehaviour
     [SerializeField, Tooltip("The renderer to handle the webcam's texture.")] private Image _renderer;
     private WebCamTexture _webcam;
 
-    private void Awake()
+    private void Awake() => EnableWebcam();
+    private void OnDestroy() => DisableWebcam();
+
+    public void EnableWebcam()
     {
         _webcam = new WebCamTexture();
         _webcam.Play();
@@ -14,7 +17,7 @@ public class WebCamHandler : MonoBehaviour
         _renderer.enabled = true;
     }
 
-    private void OnDestroy()
+    public void DisableWebcam()
     {
         if (_webcam != null)
             _webcam.Stop();

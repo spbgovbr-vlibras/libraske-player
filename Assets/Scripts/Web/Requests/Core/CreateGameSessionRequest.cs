@@ -6,6 +6,7 @@ using UnityEngine.Networking;
 
 public class CreateGameSessionRequest : MonoBehaviour, ILoggable
 {
+    [SerializeField] private PlayingMusicController _playingMusicController;
     [SerializeField] private MusicDataHolderSO _musicHolder;
 
     public event Action OnSetupFinished;
@@ -46,6 +47,8 @@ public class CreateGameSessionRequest : MonoBehaviour, ILoggable
 
             if (FindObjectOfType<ErrorSystem>() is ErrorSystem errorSystem)
                 errorSystem.ThrowError(new InGameError(request.error));
+
+            _playingMusicController.StopGameplay();
         }
 
         request.Dispose();

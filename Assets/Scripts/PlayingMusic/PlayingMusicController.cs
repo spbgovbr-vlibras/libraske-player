@@ -9,6 +9,7 @@ public class PlayingMusicController : MonoBehaviour, IPauseObserver, IBarrier
     [SerializeField] private SubtitleReader _subtitleReader;
     [SerializeField] private AudioHandler _audio;
     [SerializeField] private AvatarAnimationController _avatarAnimators;
+    [SerializeField] private WebCamHandler _webCamHandler;
 
     [Header("Process Music End")]
     private bool _gameIsPaused;
@@ -37,6 +38,14 @@ public class PlayingMusicController : MonoBehaviour, IPauseObserver, IBarrier
         _audio.Play();
         _avatarAnimators.PlayAll();
         _setupReady = true;
+    }
+
+    public void StopGameplay()
+    {
+        _audio.Stop();
+        _subtitleReader.enabled = false;
+        _avatarAnimators.EnableAnimations(false);
+        _webCamHandler.DisableWebcam();
     }
 
     public void UpdatePauseStatus(bool isPaused)

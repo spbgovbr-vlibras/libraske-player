@@ -1784,6 +1784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d192ef636bd9f440ba521423fc1cff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playingMusicController: {fileID: 2063128167}
   _musicHolder: {fileID: 11400000, guid: af5b1cdbed07e0f4399d89ea65025dd1, type: 2}
 --- !u!4 &983456378
 Transform:
@@ -3472,6 +3473,7 @@ MonoBehaviour:
   _subtitleReader: {fileID: 2617176113873510084}
   _audio: {fileID: 55546491}
   _avatarAnimators: {fileID: 101849787}
+  _webCamHandler: {fileID: 309243081}
 --- !u!4 &2063128169
 Transform:
   m_ObjectHideFlags: 0
