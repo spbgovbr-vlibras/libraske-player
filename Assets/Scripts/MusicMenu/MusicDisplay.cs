@@ -1,6 +1,7 @@
 using Lavid.Libraske.UI;
 using UnityEngine;
 
+[RequireComponent(typeof(TextOverflowHandler))]
 public class MusicDisplay : MonoBehaviour
 {
     [SerializeField] private RequestImageFromURL _image;
@@ -8,16 +9,26 @@ public class MusicDisplay : MonoBehaviour
     [SerializeField] private TextUI _singers;
     [SerializeField] private TextUI _description;
 
-    [Header("Overflow Handler")]
-    [SerializeField] private bool _filterNameOverflow;
-    [SerializeField, Range(0, 18)] private int _maxNameCharacters = 15;
-
     [Header("Selected Music"), Space(5)]
     [Tooltip("Apply music to ScrpitableObject to pass informations to others scenes.")]
     [SerializeField] private MusicDataHolderSO _dataHolder;
     [SerializeField] private MusicMediaHolderSO _mediaHolder;
 
+    [Header("When Outside View")]
+    [SerializeField] private GameObject _outsideScreenHover;
+    [SerializeField] private CanvasGroup _canvasGroup;
+    [SerializeField] private float _opacityWhenOnScreen;
+    [SerializeField] private float _opacityOutsideScreen;
+
     private Music _myMusic; // Music that this display shows
+
+    public void IsInteractable(bool canInteract)
+    {
+        _outsideScreenHover.SetActive(!canInteract);
+        _canvasGroup.blocksRaycasts = canInteract;
+        _canvasGroup.interactable = canInteract;
+        _canvasGroup.alpha = canInteract ? _opacityWhenOnScreen : _opacityOutsideScreen;
+    }
 
     public void SetDataFromHolder(MusicDataHolderSO holder)
     {
@@ -48,14 +59,9 @@ public class MusicDisplay : MonoBehaviour
         }          
 
         if(_name != null)
-        {
-            if(_filterNameOverflow)
-                _name.SetText(OverflowFilter(name));
-            else
-                _name.SetText(name);
-        }
-            
-        if(_singers != null)
+            _name.SetText(name);
+
+        if (_singers != null)
             _singers.SetText(singers);
 
         if(_description != null)
@@ -69,31 +75,12 @@ public class MusicDisplay : MonoBehaviour
         }
 
         if (_name != null)
-        {
-            if (_filterNameOverflow)
-                _name.SetText(OverflowFilter(name));
-            else
-                _name.SetText(name);
-        }
+            _name.SetText(name);
 
         if (_singers != null)
             _singers.SetText(singers);
 
         if (_description != null)
             _description.SetText(description);
-    }
-
-    /// <returns> Returns wrapped text with ellipsis.</returns>
-    private string OverflowFilter(string input)
-    {
-        var output = input;
-
-        if (input.Length >= _maxNameCharacters)
-        {
-            output = output.Remove(_maxNameCharacters - 1);
-            output += "...";
-        }
-
-        return output;
     }
 }

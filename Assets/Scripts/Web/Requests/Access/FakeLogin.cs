@@ -22,15 +22,21 @@ public struct FakeLoginData
 public class FakeLogin : MonoBehaviour
 {
     [SerializeField] AccessSetup _accessSetup;
+    [SerializeField] RuntimePlatform[] _debugPlatforms;
+
     FakeLoginData _data;
 
     // Start is called before the first frame update
     void Start()
     {
-        if (!Application.isEditor)
-            return;
-
-        StartCoroutine(LoginCoroutine());
+        for(int i = 0; i < _debugPlatforms.Length; i++)
+        {
+            if(Application.platform == _debugPlatforms[i])
+            {
+                StartCoroutine(LoginCoroutine());
+                break;
+            }
+        }
     }
 
     private IEnumerator LoginCoroutine()

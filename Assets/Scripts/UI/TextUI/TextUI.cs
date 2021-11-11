@@ -11,6 +11,9 @@ namespace Lavid.Libraske.UI
         [Tooltip("Assign the right text type and let the other as null.")] [SerializeField] private TextMeshProUGUI _textMeshProUGUI;
         [Tooltip("Assign the right text type and let the other as null.")] [SerializeField] private Text _text;
 
+        [Header("Effects")]
+        [Tooltip("Assign the right text type and let the other as null.")] [SerializeField] private TextUIEffect[] _effects;
+
         private string _value;
 
         public void ResetText() => SetText("");
@@ -19,8 +22,20 @@ namespace Lavid.Libraske.UI
 
         public void AddLetter(char letter) => SetText(_value + letter);
 
+        public string ApplyEffects(string value)
+        {
+            for (int i = 0; i < _effects.Length; i++)
+            {
+                value = _effects[i].HandleText(value);
+            }
+
+            return value;
+        }
+
         public void SetText(string value)
         {
+            value = ApplyEffects(value);
+
             if (_textMeshPro != null)
                 _textMeshPro.text = value;
             else if (_text != null)

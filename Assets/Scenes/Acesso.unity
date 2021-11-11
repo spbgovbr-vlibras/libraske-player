@@ -501,6 +501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _accessSetup: {fileID: 1020887295}
+  _debugPlatforms: 000000000700000010000000
 --- !u!4 &1911879625
 Transform:
   m_ObjectHideFlags: 0
