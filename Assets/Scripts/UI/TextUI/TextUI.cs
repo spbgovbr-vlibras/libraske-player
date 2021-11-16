@@ -24,11 +24,14 @@ namespace Lavid.Libraske.UI
 
         public string ApplyEffects(string value)
         {
-            for (int i = 0; i < _effects.Length; i++)
-            {
-                value = _effects[i].HandleText(value);
-            }
-
+            if(_effects != null)
+			{
+				for (int i = 0; i < _effects.Length; i++)
+				{
+					value = _effects[i].HandleText(value);
+				}
+			}
+			
             return value;
         }
 

@@ -24,9 +24,9 @@ namespace Lavid.Libraske.Subtitles
         {
             string[] _ = time.Split(':');
 
-            int.TryParse(_[0], out int hours);
-            int.TryParse(_[1], out int minutes);
-            float.TryParse(_[2], out float ml);
+            int hours = int.Parse(_[0], System.Globalization.CultureInfo.InvariantCulture);
+            int minutes = int.Parse(_[1], System.Globalization.CultureInfo.InvariantCulture);
+            float ml = float.Parse(_[2], System.Globalization.CultureInfo.InvariantCulture);
 
             return TimeConversor.ToSeconds(hours, minutes, ml);
         }
