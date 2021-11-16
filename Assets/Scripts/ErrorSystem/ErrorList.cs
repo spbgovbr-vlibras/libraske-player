@@ -13,6 +13,8 @@
     #region Local Errors
     public static readonly InGameError DefaultError = NewError("Houve um problema no carregamento do jogo.");
     public static readonly InGameError CastMusicListError = NewError("Houve um problema ao tratar as músicas.");
+    public static readonly InGameError CastPersonalizationColorError = NewError("Houve um problema ao adquirir as cores.");
+    public static readonly InGameError CastPersonalizationGroupError = NewError("Houve um problema ao adquirir os grupos de cores.");
     #endregion
 
     #region Donwload Errors
@@ -20,5 +22,7 @@
     public static readonly InGameError DownloadSubtitleError = NewError("Houve um problema ao baixar as legendas.");
     public static readonly InGameError DownloadMusicError = NewError("Houve um problema ao baixar a música.");
     public static readonly InGameError DownloadBundleError = NewError("Houve um problema ao baixar as animações.");
+    public static readonly InGameError DownloadPersonalizationColorsError = NewError("Houve um problema ao baixar as paletas de cores.");
+    public static readonly InGameError DownloadPersonalizationGroupsError = NewError("Houve um problema ao baixar os grupos de cores.");
     #endregion
 }

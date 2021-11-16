@@ -11,7 +11,9 @@ public static class WebConstants
         PontuationURL,
         SendFrame,
         FakeLogin,
-        CloseSessionURL
+        CloseSessionURL,
+        PersonalizationsColors,
+        PersonalizationsGroups
     }
 
     // Game session
@@ -30,9 +32,10 @@ public static class WebConstants
     private static void SetupDictionary()
     {
         UrlDictionary = new Dictionary<URL, string>();
+
         //UrlDictionary.Add(URL.BaseURL, "https://libraske-back-dth.vlibras.gov.br");
         //UrlDictionary.Add(URL.BaseURL, "http://localhost:8080");
-		UrlDictionary.Add(URL.BaseURL, "http://150.165.204.122:49157");
+        UrlDictionary.Add(URL.BaseURL, "http://150.165.204.122:49157");
 		
         UrlDictionary.Add(URL.SongsURL, UrlDictionary[URL.BaseURL] + "/libraske/songs");
         UrlDictionary.Add(URL.UsersURL, UrlDictionary[URL.BaseURL] + "/libraske/users");
@@ -41,6 +44,9 @@ public static class WebConstants
         UrlDictionary.Add(URL.SendFrame, UrlDictionary[URL.BaseURL] + "/libraske/game/frame");
         UrlDictionary.Add(URL.FakeLogin, UrlDictionary[URL.BaseURL] + "/libraske/auth/fake-login");
         UrlDictionary.Add(URL.CloseSessionURL, UrlDictionary[URL.BaseURL] + "/libraske/game/pontuation/session");
+
+        UrlDictionary.Add(URL.PersonalizationsColors, UrlDictionary[URL.BaseURL] + "/libraske/personalizations-color");
+        UrlDictionary.Add(URL.PersonalizationsGroups, UrlDictionary[URL.BaseURL] + "/libraske/personalizations-group");
     }
 
     public static string FormatPontuationUrl(string gameSessionId)
