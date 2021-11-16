@@ -5,6 +5,7 @@ using UnityEngine.Networking;
 
 public class RequestPersonalizationGroup : WebRequest
 {
+    [SerializeField] PersonalizationHolderSO _personalizationHolder;
     [SerializeField] Wrapper<PersonalizationGroup> _groups;
 
     void OnEnable() => StartCoroutine(SendRequest());
@@ -33,6 +34,7 @@ public class RequestPersonalizationGroup : WebRequest
         try
         {
             _groups = PersonalizationConversor.FromRequestToGroupWrapper(request);
+            _personalizationHolder.SetGroups(_groups);
             PrintSuccessText(request);
             InvokeOnSuccessEvent();
         }

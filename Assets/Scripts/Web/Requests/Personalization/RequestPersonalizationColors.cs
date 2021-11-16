@@ -5,6 +5,7 @@ using UnityEngine.Networking;
 
 public class RequestPersonalizationColors : WebRequest
 {
+    [SerializeField] PersonalizationHolderSO _personalizationHolder;
     [SerializeField] Wrapper<PersonalizationColor> _colors;
 
     void OnEnable() => StartCoroutine(SendRequest());
@@ -33,6 +34,7 @@ public class RequestPersonalizationColors : WebRequest
         try
         {
             _colors = PersonalizationConversor.FromRequestToColorWrapper(request);
+            _personalizationHolder.SetColors(_colors);
             PrintSuccessText(request);
             InvokeOnSuccessEvent();
         }
