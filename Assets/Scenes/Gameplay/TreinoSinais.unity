@@ -1039,6 +1039,10 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 2.9
       objectReference: {fileID: 0}
+    - target: {fileID: 3950388936809353062, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4185299404569697215, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
       propertyPath: m_Animations.Array.size
       value: 0
@@ -1063,9 +1067,17 @@ PrefabInstance:
       propertyPath: m_Animations.Array.data[4]
       value: 
       objectReference: {fileID: 7400000, guid: b10a39137561187439070600dabc36fd, type: 2}
+    - target: {fileID: 4764495103656450710, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.45
+      objectReference: {fileID: 0}
     - target: {fileID: 5245235956774873355, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5284186505197617196, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6628959792836673496, guid: 6f559357bc7c75c4ca250adc32aeabad, type: 3}
       propertyPath: m_Intensity
