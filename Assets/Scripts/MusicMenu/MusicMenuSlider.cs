@@ -36,10 +36,13 @@ public class MusicMenuSlider : MonoBehaviour
 
         _displays.Add(display);
         _lastDisplayOnScreenIndex = _minQuantityOnScreen;
+
+        UpdateInteractables();
+        UpdateButtons();
     }
 
     private bool IsShowingFirstSong() => _lastDisplayOnScreenIndex - _minQuantityOnScreen <= 0;
-    private bool IsShowingLastSong() => _lastDisplayOnScreenIndex >= _displays.Length;
+    private bool IsShowingLastSong() => _displays != null && _lastDisplayOnScreenIndex >= _displays.Length;
     
     private void UpdateButtons()
     {

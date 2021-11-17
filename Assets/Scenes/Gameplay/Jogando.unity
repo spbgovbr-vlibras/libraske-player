@@ -306,6 +306,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2729193226003804360, guid: ec8e88b6f57b75c4c95cced81b92e565, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3363021703850207858, guid: ec8e88b6f57b75c4c95cced81b92e565, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849173178730652984, guid: ec8e88b6f57b75c4c95cced81b92e565, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849173179179646010, guid: ec8e88b6f57b75c4c95cced81b92e565, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5849173180330424282, guid: ec8e88b6f57b75c4c95cced81b92e565, type: 3}
       propertyPath: m_Name
       value: Avatar
@@ -332,7 +348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5849173180330424284, guid: ec8e88b6f57b75c4c95cced81b92e565, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.8
+      value: -3.3
       objectReference: {fileID: 0}
     - target: {fileID: 5849173180330424284, guid: ec8e88b6f57b75c4c95cced81b92e565, type: 3}
       propertyPath: m_LocalPosition.z

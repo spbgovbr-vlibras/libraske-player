@@ -22,11 +22,15 @@ namespace Lavid.Libraske.Subtitles
 
         private float GetInSeconds(string time)
         {
-            string[] _ = time.Split(':');
+            string[] _ = time.Split(":".ToCharArray());
 
-            int hours = int.Parse(_[0], System.Globalization.CultureInfo.InvariantCulture);
-            int minutes = int.Parse(_[1], System.Globalization.CultureInfo.InvariantCulture);
-            float ml = float.Parse(_[2], System.Globalization.CultureInfo.InvariantCulture);
+            _[0] = SubtitleStringFilter.ToNumberString(_[0]);
+            _[1] = SubtitleStringFilter.ToNumberString(_[1]);
+            _[2] = SubtitleStringFilter.ToNumberString(_[2]);
+
+            int hours = int.Parse(_[0], System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
+            int minutes = int.Parse(_[1], System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
+            float ml = float.Parse(_[2], System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
 
             return TimeConversor.ToSeconds(hours, minutes, ml);
         }
