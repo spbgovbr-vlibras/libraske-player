@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 813569376}
   - component: {fileID: 813569375}
+  - component: {fileID: 813569377}
   m_Layer: 0
   m_Name: PantRequest
   m_TagString: Web
@@ -153,8 +154,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _requestResender:
-    _enabled: 0
-    _value: {fileID: 0}
+    _enabled: 1
+    _value: {fileID: 813569377}
   _personalizationHolder: {fileID: 11400000, guid: 773fb85ef7496c94ebe275da3a3cf8d1, type: 2}
   _colors:
     Items: []
@@ -173,6 +174,20 @@ Transform:
   m_Father: {fileID: 2097035919}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &813569377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813569374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6391bf6d35d3cb54fac8fac44f9c5a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxRequestsToSend: 3
+  _request: {fileID: 813569375}
 --- !u!1001 &836376705
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -296,6 +311,7 @@ GameObject:
   m_Component:
   - component: {fileID: 838731188}
   - component: {fileID: 838731187}
+  - component: {fileID: 838731189}
   m_Layer: 0
   m_Name: SkinRequest
   m_TagString: Web
@@ -316,8 +332,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _requestResender:
-    _enabled: 0
-    _value: {fileID: 0}
+    _enabled: 1
+    _value: {fileID: 838731189}
   _personalizationHolder: {fileID: 11400000, guid: 773fb85ef7496c94ebe275da3a3cf8d1, type: 2}
   _colors:
     Items: []
@@ -336,6 +352,20 @@ Transform:
   m_Father: {fileID: 2097035919}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &838731189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838731186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6391bf6d35d3cb54fac8fac44f9c5a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxRequestsToSend: 3
+  _request: {fileID: 838731187}
 --- !u!1 &912343749
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,6 +518,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1129599686}
   - component: {fileID: 1129599685}
+  - component: {fileID: 1129599687}
   m_Layer: 0
   m_Name: HairRequest
   m_TagString: Web
@@ -508,8 +539,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _requestResender:
-    _enabled: 0
-    _value: {fileID: 0}
+    _enabled: 1
+    _value: {fileID: 1129599687}
   _personalizationHolder: {fileID: 11400000, guid: 773fb85ef7496c94ebe275da3a3cf8d1, type: 2}
   _colors:
     Items: []
@@ -528,6 +559,20 @@ Transform:
   m_Father: {fileID: 2097035919}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1129599687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129599684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6391bf6d35d3cb54fac8fac44f9c5a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxRequestsToSend: 3
+  _request: {fileID: 1129599685}
 --- !u!1 &1216915964
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,6 +583,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1216915966}
   - component: {fileID: 1216915965}
+  - component: {fileID: 1216915967}
   m_Layer: 0
   m_Name: ShirtRequest
   m_TagString: Web
@@ -558,8 +604,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _requestResender:
-    _enabled: 0
-    _value: {fileID: 0}
+    _enabled: 1
+    _value: {fileID: 1216915967}
   _personalizationHolder: {fileID: 11400000, guid: 773fb85ef7496c94ebe275da3a3cf8d1, type: 2}
   _colors:
     Items: []
@@ -578,6 +624,20 @@ Transform:
   m_Father: {fileID: 2097035919}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1216915967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216915964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6391bf6d35d3cb54fac8fac44f9c5a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxRequestsToSend: 3
+  _request: {fileID: 1216915965}
 --- !u!1 &1392276855
 GameObject:
   m_ObjectHideFlags: 0
@@ -671,6 +731,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1538601456}
   - component: {fileID: 1538601455}
+  - component: {fileID: 1538601457}
   m_Layer: 0
   m_Name: EyesRequest
   m_TagString: Web
@@ -691,8 +752,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _requestResender:
-    _enabled: 0
-    _value: {fileID: 0}
+    _enabled: 1
+    _value: {fileID: 1538601457}
   _personalizationHolder: {fileID: 11400000, guid: 773fb85ef7496c94ebe275da3a3cf8d1, type: 2}
   _colors:
     Items: []
@@ -711,6 +772,20 @@ Transform:
   m_Father: {fileID: 2097035919}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1538601457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538601454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6391bf6d35d3cb54fac8fac44f9c5a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxRequestsToSend: 3
+  _request: {fileID: 1538601455}
 --- !u!1 &1569542428
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,8 +1066,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1917492029}
   - component: {fileID: 1917492028}
+  - component: {fileID: 1917492030}
   m_Layer: 0
-  m_Name: CustomizationGroupsRequest
+  m_Name: GroupsRequest
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1011,8 +1087,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _requestResender:
-    _enabled: 0
-    _value: {fileID: 0}
+    _enabled: 1
+    _value: {fileID: 1917492030}
   _personalizationHolder: {fileID: 11400000, guid: 773fb85ef7496c94ebe275da3a3cf8d1, type: 2}
   _groups:
     Items: []
@@ -1030,6 +1106,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1917492030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917492027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6391bf6d35d3cb54fac8fac44f9c5a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxRequestsToSend: 3
+  _request: {fileID: 1917492028}
 --- !u!1 &2097035918
 GameObject:
   m_ObjectHideFlags: 0
@@ -1040,7 +1130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2097035919}
   m_Layer: 0
-  m_Name: CustomizationColorsRequests
+  m_Name: ColorsRequests
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -16,6 +16,7 @@ public static class WebConstants
         PersonalizationsColors,
         PersonalizationsGroups,
 
+        SongStoreURL,
         BuyColorSet
     }
 
@@ -51,6 +52,7 @@ public static class WebConstants
         UrlDictionary.Add(URL.PersonalizationsColors, UrlDictionary[URL.BaseURL] + "/libraske/personalizations-color");
         UrlDictionary.Add(URL.PersonalizationsGroups, UrlDictionary[URL.BaseURL] + "/libraske/personalizations-group");
 
+        UrlDictionary.Add(URL.SongStoreURL, UrlDictionary[URL.BaseURL] + "/libraske/store/song/");
         UrlDictionary.Add(URL.BuyColorSet, UrlDictionary[URL.BaseURL] + "/libraske/store/personalizations-group");
     }
 
