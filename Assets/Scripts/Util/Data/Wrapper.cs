@@ -41,5 +41,15 @@ namespace Lavid.Libraske.DataStruct
         [Obsolete("At(index) is deprecated, please use object[index] instead.")]
         public T At(int index) => Items[index];
         public void SetValue(int index, T value) => Items[index] = value;
+
+        public override string ToString()
+        {
+            string value = "[Wrapper of " + typeof(T).ToString() + "]: \n";
+
+            for (int i = 0; i < Length; i++)
+                value += Items[i].ToString();
+
+            return value;
+        }
     }
 }

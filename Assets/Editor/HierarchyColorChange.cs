@@ -33,15 +33,15 @@ namespace Lavid.Libraske.Editor
 
             if (gameObject.CompareTag(Tags.Web))
             {
-                Color textColor = gameObject.activeSelf ? Color.white : Color.gray;
-                Color color = gameObject.activeSelf ? new Color(0.6f, 0.2f, 0.2f) : new Color(0.3f, 0.1f, 0.1f);
+                Color textColor = gameObject.activeInHierarchy ? Color.white : Color.gray;
+                Color color = gameObject.activeInHierarchy ? new Color(0.6f, 0.2f, 0.2f) : new Color(0.3f, 0.1f, 0.1f);
                 Apply(selectionRect, gameObject.name, color, textColor, TextAnchor.MiddleRight);
             }
 
             if (gameObject.CompareTag(Tags.Debug))
             {
-                Color textColor = gameObject.activeSelf ? Color.white : Color.gray;
-                Color color = gameObject.activeSelf ? new Color(0.2f, 0.2f, 0.6f) : new Color(0.1f, 0.1f, 0.3f);
+                Color textColor = gameObject.activeInHierarchy ? Color.white : Color.gray;
+                Color color = gameObject.activeInHierarchy ? new Color(0.2f, 0.2f, 0.6f) : new Color(0.1f, 0.1f, 0.3f);
                 Apply(selectionRect, gameObject.name, color, textColor, TextAnchor.MiddleRight);
             }
         }

@@ -1,12 +1,13 @@
 using Lavid.Libraske.DataStruct;
+using Lavid.Libraske.Json;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class RequestPersonalizationGroup : WebRequest
+public class RequestCustomizationGroup : WebRequest
 {
-    [SerializeField] PersonalizationHolderSO _personalizationHolder;
-    [SerializeField] Wrapper<PersonalizationGroup> _groups;
+    [SerializeField] CustomizationHolderSO _personalizationHolder;
+    [SerializeField] Wrapper<CustomizationGroup> _groups;
 
     void OnEnable() => StartCoroutine(SendRequest());
     public override string GetLogName() => "RequestPersonalizationGroup";
@@ -33,7 +34,7 @@ public class RequestPersonalizationGroup : WebRequest
 
         try
         {
-            _groups = PersonalizationConversor.FromRequestToGroupWrapper(request);
+            _groups = CustomizationConversor.FromRequestToGroupWrapper(request);
             _personalizationHolder.SetGroups(_groups);
             PrintSuccessText(request);
             InvokeOnSuccessEvent();

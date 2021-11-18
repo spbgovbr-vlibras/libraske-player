@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace Lavid.Libraske.UnlockSystem
@@ -9,31 +10,36 @@ namespace Lavid.Libraske.UnlockSystem
         [SerializeField] private UnlockView _view;
 
         [Header("Money system")]
-        [SerializeField] MoneyHandler _moneyHandler;
+        //[SerializeField] MoneyHandler _moneyHandler;
+        [SerializeField] RequestUserCredit _requestCredit;
+        [SerializeField] UnlockColorSetRequest _unlockColorSetRequest;
 
         private IUnlockable _itemToUnlock;
 
         public void EnterUnlockRequest(IUnlockable unlockable)
         {
             _itemToUnlock = unlockable;
-            _view.EnterUnlockRequest(unlockable.Price, _moneyHandler.GetCurrentMoneyAmount());
+            StartCoroutine(EnterUICoroutine(unlockable));
+        }
+
+        IEnumerator EnterUICoroutine(IUnlockable unlockable)
+        {
+            yield return StartCoroutine(_requestCredit.RequestCreditCoroutine());
+            _view.EnterUnlockRequest(unlockable.Price, _requestCredit.ReturnCredit());
         }
 
         public void SendUnlockRequest()
         {
-            if (_itemToUnlock == null || _moneyHandler == null)
+            if (_itemToUnlock == null )
                 return;
 
-            try
-            {
-                _moneyHandler.TryUnlockItem(_itemToUnlock);
-            }
-            catch { }
+            _unlockColorSetRequest.TryUnlock(_itemToUnlock);
         }
 
-        public void CloseUnlockRequest(IUnlockable unlockable)
+        public void OnRequestSuccess(IUnlockable item)
         {
-            _view.CloseUnlockRequest(unlockable);
+            item.Unlock();
+            _view.CloseUnlockRequest(item);
         }
     }
 }
