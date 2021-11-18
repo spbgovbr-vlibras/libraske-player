@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 9045712360475001165}
   - component: {fileID: 7332808374844645009}
   - component: {fileID: 1096538681306426332}
+  - component: {fileID: 6957188728774746471}
   m_Layer: 5
   m_Name: price
   m_TagString: Untagged
@@ -175,6 +176,22 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 500
+--- !u!114 &6957188728774746471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39104044685764981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a95522d5e786094fb075c8d90b0aa2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textMeshPro: {fileID: 0}
+  _textMeshProUGUI: {fileID: 0}
+  _text: {fileID: 1096538681306426332}
+  _effects: []
 --- !u!1 &174675062058468814
 GameObject:
   m_ObjectHideFlags: 0
@@ -972,6 +989,8 @@ MonoBehaviour:
   _name: {fileID: 8450824743268339394}
   _singers: {fileID: 168549924}
   _description: {fileID: 0}
+  _price: {fileID: 6957188728774746471}
+  _lockedHud: {fileID: 7995454892268433181}
   _dataHolder: {fileID: 11400000, guid: af5b1cdbed07e0f4399d89ea65025dd1, type: 2}
   _mediaHolder: {fileID: 11400000, guid: e87d625c71f63b6418f95e37074cb8cc, type: 2}
   _outsideScreenHover: {fileID: 8401159363796922242}
