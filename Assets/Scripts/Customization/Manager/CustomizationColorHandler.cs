@@ -12,6 +12,8 @@ public class CustomizationColorHandler : MonoBehaviour
     [Header("Lock Container"), Space(2)]
     [SerializeField] private GameObject _lockContainer;
 
+    public void SetColor(Color color) => _colorImage.color = color;
+
     public void LockColor(bool lockColor)
     {
         _colorImage.raycastTarget = !lockColor;

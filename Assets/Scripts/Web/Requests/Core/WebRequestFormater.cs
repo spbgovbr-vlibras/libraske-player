@@ -33,6 +33,16 @@ public static class WebRequestFormater
         return request;
     }
 
+    public static UnityWebRequest GetColors(CustomizationGroups.Groups group)
+    {
+        string url = WebConstants.FormatPersonalizationColorUrl(group);
+        var request = new UnityWebRequest(url, RequestKeys.Get);
+        request.downloadHandler = new DownloadHandlerBuffer();
+
+        AuthorizeRequest(request);
+        return request;
+    }
+
     public static UnityWebRequest GetPontuation(string gameSessionId)
     {
         string urlValue = WebConstants.FormatPontuationUrl(gameSessionId);
@@ -110,12 +120,15 @@ public static class WebRequestFormater
         return request;
     }
 
-    public static UnityWebRequest EmptyPost(WebConstants.URL url, string addicionalURL = "")
+    public static UnityWebRequest EmptyPost(WebConstants.URL url, string addicionalURL = "", bool jsonType=true)
     {
         string urlValue = WebConstants.GetURLFrom(url) + addicionalURL;
         var request = new UnityWebRequest(urlValue, RequestKeys.Post);
         request.downloadHandler = new DownloadHandlerBuffer();
-        request.SetRequestHeader(RequestKeys.ContentType, RequestKeys.JsonType);
+
+        if(jsonType)
+            request.SetRequestHeader(RequestKeys.ContentType, RequestKeys.JsonType);
+
         AuthorizeRequest(request);
         return request;
     }

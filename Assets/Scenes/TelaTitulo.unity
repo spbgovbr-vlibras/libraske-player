@@ -1065,7 +1065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Personalizacao
+      value: BaixarPersonalizacao
       objectReference: {fileID: 0}
     - target: {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument

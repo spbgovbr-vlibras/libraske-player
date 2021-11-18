@@ -4503,7 +4503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3545891282942088618, guid: 75b6ad03bea2a77419bde67218b4e159, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Personalizacao
+      value: BaixarPersonalizacao
       objectReference: {fileID: 0}
     - target: {fileID: 3545891282942088619, guid: 75b6ad03bea2a77419bde67218b4e159, type: 3}
       propertyPath: m_Pivot.x

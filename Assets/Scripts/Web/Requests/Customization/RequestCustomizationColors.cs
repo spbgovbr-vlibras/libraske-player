@@ -1,12 +1,14 @@
 using Lavid.Libraske.DataStruct;
+using Lavid.Libraske.Json;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class RequestPersonalizationColors : WebRequest
+public class RequestCustomizationColors : WebRequest
 {
-    [SerializeField] PersonalizationHolderSO _personalizationHolder;
-    [SerializeField] Wrapper<PersonalizationColor> _colors;
+    [SerializeField] CustomizationHolderSO _personalizationHolder;
+    [SerializeField] Wrapper<CustomizationColor> _colors;
+    [SerializeField] CustomizationGroups.Groups _groupToRequest;
 
     void OnEnable() => StartCoroutine(SendRequest());
     public override string GetLogName() => "RequestPersonalizationColors";
@@ -14,7 +16,7 @@ public class RequestPersonalizationColors : WebRequest
     public override IEnumerator SendRequest()
     {
         Logger.Log(this, "Solicitou requisição de cores");
-        var webRequest = WebRequestFormater.Get(WebConstants.URL.PersonalizationsColors);
+        var webRequest = WebRequestFormater.GetColors(_groupToRequest);// Get(WebConstants.URL.PersonalizationsColors);
         yield return webRequest.SendWebRequest();
         VerifyRequest(webRequest);
     }
@@ -30,11 +32,13 @@ public class RequestPersonalizationColors : WebRequest
     protected override void OnRequestSuccess(UnityWebRequest request)
     {
         _requestWasSuccess = true;
+		
+		Logger.Log(this, request.downloadHandler.text);
 
         try
         {
-            _colors = PersonalizationConversor.FromRequestToColorWrapper(request);
-            _personalizationHolder.SetColors(_colors);
+            _colors = CustomizationConversor.FromRequestToColorWrapper(request);
+            _personalizationHolder.SetColors(_colors, _groupToRequest);
             PrintSuccessText(request);
             InvokeOnSuccessEvent();
         }
