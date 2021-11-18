@@ -13,7 +13,8 @@ public static class WebConstants
         FakeLogin,
         CloseSessionURL,
         PersonalizationsColors,
-        PersonalizationsGroups
+        PersonalizationsGroups,
+        SongStoreURL
     }
 
     // Game session
@@ -47,6 +48,7 @@ public static class WebConstants
 
         UrlDictionary.Add(URL.PersonalizationsColors, UrlDictionary[URL.BaseURL] + "/libraske/personalizations-color");
         UrlDictionary.Add(URL.PersonalizationsGroups, UrlDictionary[URL.BaseURL] + "/libraske/personalizations-group");
+        UrlDictionary.Add(URL.SongStoreURL, UrlDictionary[URL.BaseURL] + "/libraske/store/song/");
     }
 
     public static string FormatPontuationUrl(string gameSessionId)

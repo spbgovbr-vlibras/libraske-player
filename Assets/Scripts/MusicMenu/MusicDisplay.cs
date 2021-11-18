@@ -37,7 +37,7 @@ public class MusicDisplay : MonoBehaviour
     public void SetDataFromHolder(MusicDataHolderSO holder)
     {
         Music music = holder.GetMusicData();
-        SetData(music.Name, music.Singers, music.Description, _mediaHolder.Thumbnail);
+        SetData(music.Name, music.Singers, music.Description, _mediaHolder.Thumbnail, music.Price);
     }
 
     public void SetDataFromMusic(Music music) 
@@ -86,7 +86,7 @@ public class MusicDisplay : MonoBehaviour
         if(!isUnlocked)
             _lockedHud.SetActive(true);
     }
-    private void SetData(string name, string singers, string description, Texture texture)
+    private void SetData(string name, string singers, string description, Texture texture, string price)
     {
         if (_image != null)
         {
@@ -101,5 +101,8 @@ public class MusicDisplay : MonoBehaviour
 
         if (_description != null)
             _description.SetText(description);
+
+        if(_price != null)
+            _price.SetText(price);
     }
 }

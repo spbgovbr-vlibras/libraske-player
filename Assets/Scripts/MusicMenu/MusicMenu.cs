@@ -1,6 +1,7 @@
 using Lavid.Libraske.DataStruct;
 using Lavid.Libraske.UI;
 using UnityEngine;
+using System;
 
 public class MusicMenu : MonoBehaviour
 {
@@ -20,10 +21,17 @@ public class MusicMenu : MonoBehaviour
 
     private void UpdateTexts()
     {
-        int quantUnlocked = 1;
+        int quantUnlocked = 0;
+        for (int i = 0; i < _songs.Length; i++)
+        {
+            Music song = _songs[i];
+            if (song.IsUnlocked)
+                quantUnlocked++;
+        }
+
         int quantMax = _songs.Length;
         _quantity.SetText($"{quantUnlocked}/{quantMax}");
-        _quantityAndName.SetText($"Minhas Músicas ({quantUnlocked})");
+        _quantityAndName.SetText($"Minhas MÃºsicas ({quantUnlocked})");
     }
 
     public void SetMusics(Wrapper<Music> songs)
