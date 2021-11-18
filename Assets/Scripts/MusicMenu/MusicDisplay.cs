@@ -8,6 +8,10 @@ public class MusicDisplay : MonoBehaviour
     [SerializeField] private TextUI _name;
     [SerializeField] private TextUI _singers;
     [SerializeField] private TextUI _description;
+    [SerializeField] private TextUI _price;
+    [SerializeField] private GameObject _lockedHud;
+    [SerializeField] private GameObject _descriptionHud;
+    [SerializeField] private GameObject _unlockHud;
 
     [Header("Selected Music"), Space(5)]
     [Tooltip("Apply music to ScrpitableObject to pass informations to others scenes.")]
@@ -39,7 +43,7 @@ public class MusicDisplay : MonoBehaviour
     public void SetDataFromMusic(Music music) 
     {
         _myMusic = music;
-        SetData(music.Name, music.Singers, music.Description, music.ThumbnailURL);
+        SetData(music.Name, music.Singers, music.Description, music.ThumbnailURL, music.Price, music.IsUnlocked);
     }
 
     public void ApplyMyDataOnMusicHolder()
@@ -51,7 +55,16 @@ public class MusicDisplay : MonoBehaviour
         }
     }
 
-    private void SetData(string name, string singers, string description, string imageURL)
+    public void HandleClick()
+    {
+        if(_lockedHud.activeSelf){
+            _unlockHud.SetActive(true);
+        }else{
+            _descriptionHud.SetActive(true);
+        }
+    }
+
+    private void SetData(string name, string singers, string description, string imageURL, string price, bool isUnlocked)
     {
         if (_image != null)
         {
@@ -66,6 +79,12 @@ public class MusicDisplay : MonoBehaviour
 
         if(_description != null)
             _description.SetText(description);
+
+        if(_price != null)
+            _price.SetText(price);
+
+        if(!isUnlocked)
+            _lockedHud.SetActive(true);
     }
     private void SetData(string name, string singers, string description, Texture texture)
     {

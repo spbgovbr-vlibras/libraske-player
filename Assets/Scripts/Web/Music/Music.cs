@@ -9,6 +9,7 @@ public class Music
     [SerializeField] private string name;
     [SerializeField, TextArea(5, 10)] private string description;
     [SerializeField] private string price;
+    [SerializeField] private bool isUnlocked;
 
     [Header("Media")]
     [SerializeField] private string thumbnail;
@@ -46,7 +47,8 @@ public class Music
         string name, 
         string description, 
         string subtitle, 
-        string price
+        string price,
+        bool isUnlocked
     )
     {
         this.id = id;
@@ -56,6 +58,7 @@ public class Music
         this.description = description;
         this.subtitle = subtitle;
         this.price = price;// int.Parse(price);
+        this.isUnlocked = isUnlocked;
 
         this.animation = animation;
         this.song = song;
@@ -81,6 +84,7 @@ public class Music
     public string Singers { get => singers;}
     public string Name { get => name;}
     public string Description { get => description;}
+    public bool IsUnlocked { get => isUnlocked;}
 
     public string GetTrainingDescription(int index)
     {

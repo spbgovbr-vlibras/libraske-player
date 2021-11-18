@@ -4754,6 +4754,7 @@ MonoBehaviour:
       name: dsaddsaasd
       description: dasdsa
       price: 50
+      isUnlocked: 0
       thumbnail: https://s2.glbimg.com/o7ABEoUjDKQGEMB5qwI6f9ChoVI=/512x320/smart/e.glbimg.com/og/ed/f/original/2019/06/09/peppa.jpg
       subtitle: adsd
       song: 
@@ -4771,6 +4772,7 @@ MonoBehaviour:
       name: dsasddsasd
       description: dsasd
       price: 60
+      isUnlocked: 0
       thumbnail: https://midia.gruposinos.com.br/_midias/jpg/2020/05/11/galinha_pintadinha-18990626.jpg
       subtitle: dsasd
       song: 
@@ -4788,6 +4790,7 @@ MonoBehaviour:
       name: dsasddsasdkkkkkkkkkkkk
       description: dsasd
       price: 60
+      isUnlocked: 0
       thumbnail: https://midia.gruposinos.com.br/_midias/jpg/2020/05/11/galinha_pintadinha-18990626.jpg
       subtitle: dsasd
       song: 
@@ -4805,6 +4808,7 @@ MonoBehaviour:
       name: dsasddsasd
       description: dsasd
       price: 60
+      isUnlocked: 0
       thumbnail: https://midia.gruposinos.com.br/_midias/jpg/2020/05/11/galinha_pintadinha-18990626.jpg
       subtitle: dsasd
       song: 
@@ -4822,6 +4826,7 @@ MonoBehaviour:
       name: dsasddsasd
       description: dsasd
       price: 60
+      isUnlocked: 0
       thumbnail: https://midia.gruposinos.com.br/_midias/jpg/2020/05/11/galinha_pintadinha-18990626.jpg
       subtitle: dsasd
       song: 
@@ -4839,6 +4844,7 @@ MonoBehaviour:
       name: dsasddsasd
       description: dsasd
       price: 60
+      isUnlocked: 0
       thumbnail: https://midia.gruposinos.com.br/_midias/jpg/2020/05/11/galinha_pintadinha-18990626.jpg
       subtitle: dsasd
       song: 
@@ -4856,6 +4862,7 @@ MonoBehaviour:
       name: dsasddsasd
       description: dsasd
       price: 60
+      isUnlocked: 0
       thumbnail: https://midia.gruposinos.com.br/_midias/jpg/2020/05/11/galinha_pintadinha-18990626.jpg
       subtitle: dsasd
       song: 
@@ -4873,6 +4880,7 @@ MonoBehaviour:
       name: dsasddsasd
       description: dsasd
       price: 60
+      isUnlocked: 0
       thumbnail: https://midia.gruposinos.com.br/_midias/jpg/2020/05/11/galinha_pintadinha-18990626.jpg
       subtitle: dsasd
       song: 
@@ -4890,6 +4898,7 @@ MonoBehaviour:
       name: dsasddsasd
       description: dsasd
       price: 60
+      isUnlocked: 0
       thumbnail: https://midia.gruposinos.com.br/_midias/jpg/2020/05/11/galinha_pintadinha-18990626.jpg
       subtitle: dsasd
       song: 
@@ -6241,6 +6250,10 @@ MonoBehaviour:
   _name: {fileID: 1901930560}
   _singers: {fileID: 0}
   _description: {fileID: 1685100237}
+  _price: {fileID: 0}
+  _lockedHud: {fileID: 0}
+  _descriptionHud: {fileID: 0}
+  _unlockHud: {fileID: 0}
   _dataHolder: {fileID: 11400000, guid: af5b1cdbed07e0f4399d89ea65025dd1, type: 2}
   _mediaHolder: {fileID: 11400000, guid: e87d625c71f63b6418f95e37074cb8cc, type: 2}
   _outsideScreenHover: {fileID: 0}
@@ -7654,7 +7667,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
@@ -7667,7 +7680,7 @@ PrefabInstance:
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1847877909}
+      objectReference: {fileID: 8450824742431604638}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -7690,7 +7703,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetActive
+      value: HandleClick
       objectReference: {fileID: 0}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -7702,7 +7715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
+      value: MusicDisplay, GameAssembly
       objectReference: {fileID: 0}
     - target: {fileID: 2439846811958582499, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -7837,9 +7850,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8450824742337739174, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
+      propertyPath: _unlockHud
+      value: 
+      objectReference: {fileID: 1031349125}
+    - target: {fileID: 8450824742337739174, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
       propertyPath: _musicHolder
       value: 
       objectReference: {fileID: 11400000, guid: af5b1cdbed07e0f4399d89ea65025dd1, type: 2}
+    - target: {fileID: 8450824742337739174, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
+      propertyPath: _descriptionHud
+      value: 
+      objectReference: {fileID: 1847877909}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dc5e839c142d7c4ba58f34d41181d56, type: 3}
 --- !u!1 &8450824742431604635 stripped
