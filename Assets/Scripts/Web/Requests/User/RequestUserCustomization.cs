@@ -60,7 +60,7 @@ public class RequestUserCustomization : WebRequest
             colors.SetProperty(AvatarPropertiesEnum.CORPO, new SerializableColor(loaded.pele));
 
         if (IsValid(loaded.olhos))
-            colors.SetProperty(AvatarPropertiesEnum.OLHOS, new SerializableColor(loaded.olhos));
+            colors.SetProperty(AvatarPropertiesEnum.IRIS, new SerializableColor(loaded.olhos));
 
         if (IsValid(loaded.camisa))
             colors.SetProperty(AvatarPropertiesEnum.CAMISA, new SerializableColor(loaded.camisa));

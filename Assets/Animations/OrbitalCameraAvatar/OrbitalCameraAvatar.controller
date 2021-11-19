@@ -65,7 +65,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: closeBySide
+    m_ConditionEvent: closeInBottom
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: closeInFace
@@ -124,7 +124,7 @@ AnimatorStateTransition:
     m_ConditionEvent: closeInFront
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: closeBySide
+    m_ConditionEvent: closeInBottom
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2532706074320993174}
@@ -175,7 +175,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Side
+  m_Name: Bottom
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -239,7 +239,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: closeBySide
+  - m_Name: closeInBottom
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -276,7 +276,7 @@ AnimatorStateTransition:
     m_ConditionEvent: closeInFront
     m_EventTreshold: 0
   - m_ConditionMode: 1
-    m_ConditionEvent: closeBySide
+    m_ConditionEvent: closeInBottom
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2818012700663902142}
@@ -301,7 +301,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: closeBySide
+    m_ConditionEvent: closeInBottom
     m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: closeInFace
