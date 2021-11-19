@@ -15,6 +15,7 @@
     public static readonly InGameError CastMusicListError = NewError("Houve um problema ao tratar as músicas.");
     public static readonly InGameError CastPersonalizationColorError = NewError("Houve um problema ao adquirir as cores.");
     public static readonly InGameError CastPersonalizationGroupError = NewError("Houve um problema ao adquirir os grupos de cores.");
+    public static readonly InGameError SelectColorError = NewError("Houve um problema ao selecionar cor.");
     #endregion
 
     #region Download Errors

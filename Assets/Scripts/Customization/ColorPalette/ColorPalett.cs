@@ -11,7 +11,7 @@ public class ColorPalett : MonoBehaviour
     {
         for(int i = 0; i < _colorSets.Length; i++)
         {
-            int personalizationID = _colorSets[i].PersonalizationID;
+            int personalizationID = _colorSets[i].Id;
             var colors = _customizationHolder.GetColorsWithPersonalizationId(personalizationID);
             _colorSets[i].SetupChildColors(colors);
         }

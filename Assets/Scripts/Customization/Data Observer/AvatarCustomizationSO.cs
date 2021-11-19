@@ -7,6 +7,11 @@ public class AvatarCustomizationSO : AvatarCustomizationSubject
 {
     [SerializeField] private AvatarStruct<SerializableColor> _colors;
 
+    private void OnEnable()
+    {
+        hideFlags = HideFlags.DontUnloadUnusedAsset;
+    }
+
     public AvatarStruct<SerializableColor> GetColors() => _colors;
     public void SetColors(AvatarStruct<SerializableColor> colors)
     {

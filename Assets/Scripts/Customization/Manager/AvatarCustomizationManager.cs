@@ -14,6 +14,10 @@ namespace Lavid.Libraske.Avatar
 
         [SerializeField] private GameObject _containerToTrigger;
 
+        [Header("Initial Selection")]
+        [SerializeField] private AvatarCustomizationTab _initialTab;
+
+
         private Color _color;
         private AvatarPropertiesEnum _avatarProperty;
 
@@ -21,8 +25,8 @@ namespace Lavid.Libraske.Avatar
         {
             _avatarCustomizationSO.SetColors(_currentAvatarCustomizationSO.GetColors());
 
-            if (_containerToTrigger != null)
-                _containerToTrigger.SetActive(true);
+            if (_initialTab != null)
+                _initialTab.SetPropertyOnManager();
         }
 
         public void SelectTab(AvatarCustomizationTab tab, GameObject containerToTrigger)

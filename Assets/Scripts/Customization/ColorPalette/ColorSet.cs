@@ -10,8 +10,7 @@ public class ColorSet : MonoBehaviour, IUnlockable
     [SerializeField] private Wrapper<CustomizationColorHandler> _colorHandlers;
 
     private int _personalizationID;
-    public int PersonalizationID { get => _personalizationID; }
-    public int Id => PersonalizationID;
+    public int Id { get => _personalizationID; set => _personalizationID = value; }
 
     #region UnlockSystem
     [SerializeField] private int _price;
@@ -43,8 +42,8 @@ public class ColorSet : MonoBehaviour, IUnlockable
 
         for (int i = 0; i < _colorHandlers.Length; i++)
         {
-            bool isLocked = !colors[i].IsUnlocked && !colors[i].IsDefault;
-            _colorHandlers[i].SetColor(colors[i].GetColor());
+            bool isLocked = !colors[i].IsUnlocked;
+            _colorHandlers[i].SetColor(colors[i]);
             _colorHandlers[i].LockColor(isLocked);
             enableLockContainer |= isLocked;
         }

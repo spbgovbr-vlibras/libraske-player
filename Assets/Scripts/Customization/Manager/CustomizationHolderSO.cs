@@ -1,7 +1,7 @@
 using Lavid.Libraske.DataStruct;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Personalization Holder", menuName = "Libraske/Personalization/Personalization Holder")]
+[CreateAssetMenu(fileName = "New Personalization Holder", menuName = "Libraske/Customization/Customization Holder")]
 public class CustomizationHolderSO : ScriptableObject
 {
     [SerializeField] Wrapper<CustomizationColor> _colors;

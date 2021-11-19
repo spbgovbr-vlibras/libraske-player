@@ -56,6 +56,14 @@ public static class WebConstants
         UrlDictionary.Add(URL.BuyColorSet, UrlDictionary[URL.BaseURL] + "/libraske/store/personalizations-group");
     }
 
+    public static string FormatActivateColorUrl(int itemId)
+    {
+        if (UrlDictionary == null)
+            SetupDictionary();
+
+        return UrlDictionary[URL.PersonalizationsColors] + $"/{itemId}/activate";
+    }
+
     public static string FormatPersonalizationColorUrl(CustomizationGroups.Groups group)
     {
         if (UrlDictionary == null)

@@ -120,6 +120,18 @@ public static class WebRequestFormater
         return request;
     }
 
+    public static UnityWebRequest EmptyPost(string url, bool jsonType = true)
+    {
+        var request = new UnityWebRequest(url, RequestKeys.Post);
+        request.downloadHandler = new DownloadHandlerBuffer();
+
+        if (jsonType)
+            request.SetRequestHeader(RequestKeys.ContentType, RequestKeys.JsonType);
+
+        AuthorizeRequest(request);
+        return request;
+    }
+
     public static UnityWebRequest EmptyPost(WebConstants.URL url, string addicionalURL = "", bool jsonType=true)
     {
         string urlValue = WebConstants.GetURLFrom(url) + addicionalURL;

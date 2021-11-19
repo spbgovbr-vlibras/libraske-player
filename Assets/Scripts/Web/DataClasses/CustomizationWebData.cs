@@ -13,6 +13,7 @@ public struct CustomizationColor
     public bool IsDefault => bool.Parse(isDefault);
 
     public int PersonalizationId => int.Parse(personalization_group_id);
+    public int Id => int.Parse(id);
 
     public override string ToString()
     {

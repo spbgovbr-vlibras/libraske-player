@@ -27,6 +27,8 @@ public class RequestCustomizationColors : WebRequest
 
         if (FindObjectOfType<ErrorSystem>() is ErrorSystem es)
             es.ThrowError(ErrorList.DownloadPersonalizationColorsError);
+
+        InvokeOnErrorEvent();
     }
 
     protected override void OnRequestSuccess(UnityWebRequest request)
