@@ -1,6 +1,6 @@
 ﻿public enum CameraAnimationCloses
 {
     CloseInFront,
-    CloseBySide,
+    CloseInBottom,
     CloseInFace
 }
