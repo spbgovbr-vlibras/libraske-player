@@ -21,6 +21,9 @@ ModelImporter:
   - first:
       74: -8270989380684537887
     second: Iris|padrao
+  - first:
+      74: 925759858291397242
+    second: Armature.001|BRIEFING
   externalObjects: {}
   materials:
     materialImportMode: 2
