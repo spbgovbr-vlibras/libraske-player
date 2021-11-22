@@ -5,6 +5,17 @@ public class AvatarAnimationController : MonoBehaviour
 {
     [SerializeField] private Wrapper<AvatarAnimator> _animators;
 
+    public bool IsPlaying()
+    {
+        for (int i = 0; i < _animators.Length; i++)
+        {
+            if (_animators[i].IsPlaying())
+                return true;
+        }
+
+        return false;
+    }
+
     public void AddAnimation(AvatarAnimation anim)
     {
         for (int i = 0; i < _animators.Length; i++)
@@ -12,7 +23,6 @@ public class AvatarAnimationController : MonoBehaviour
             _animators[i].AddAnimation(anim);
         }
     }
-
 
     public void AddClip(AnimationClip clip)
     {

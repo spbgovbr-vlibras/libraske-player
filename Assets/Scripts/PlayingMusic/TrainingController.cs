@@ -30,6 +30,8 @@ public class TrainingController : MonoBehaviour
         UpdateValues();
     }
 
+    public void RepeatLastAnimation() => UpdateAnimatorsValues(_animationClamp.GetCurrentValue());
+
     public void NextStep() => UpdateValues(1);
     public void PreviousStep() => UpdateValues(-1);
     public void UpdateValues(int valueToIncrease = 0)

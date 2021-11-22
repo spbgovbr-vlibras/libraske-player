@@ -411,7 +411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f4dba32a6090f74bbfdc4aedf583a51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _beforeName: "Ol\xE1 "
+  _beforeName: "Ol\xE1, "
   _afterName: '!'
   _text: {fileID: 2023686739764798500}
 --- !u!1 &8926323764742013317
