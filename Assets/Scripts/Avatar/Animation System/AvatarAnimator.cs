@@ -12,6 +12,8 @@ public class AvatarAnimator : MonoBehaviour
     private const float DefaultAnimationStateSpeed = 1;
     private const float PausedAnimationStateSpeed = 0;
 
+    public bool IsPlaying() => _controller.isActiveAndEnabled && _controller.isPlaying;
+
     public void AddAnimation(AvatarAnimation animation)
     {
         if (_animations == null)
