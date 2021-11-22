@@ -10,13 +10,36 @@ namespace Lavid.Libraske.Util
         [SerializeField] private GameObject _progressMenu;
         [SerializeField] private Image _progressBar;
 
+        private static string LastSceneLoaded;
+
+        private string CurrentScene => SceneManager.GetActiveScene().name;
+
         /// <summary> Load the current scene. </summary>
-        public void ReloadScene() => LoadScene(SceneManager.GetActiveScene().name);
+        public void ReloadScene() => LoadScene(CurrentScene);
 
         public void LoadScene(SceneNames name) => LoadScene(name.ToString());
 
+        public void LoadLastScene()
+        {
+            bool isLastSceneValid = LastSceneLoaded != null && LastSceneLoaded != "";
+            string sceneToLoad = isLastSceneValid ? LastSceneLoaded : CurrentScene;
+            LoadScene(sceneToLoad);
+        }
+
+        private bool IsASetupScene(string nextScene)
+        {
+            bool isASetupScene = nextScene == SceneNames.Acesso.ToString();
+            isASetupScene |= nextScene == SceneNames.BaixarMedia.ToString();
+            isASetupScene |= nextScene == SceneNames.BaixarPersonalizacao.ToString();
+
+            return isASetupScene;
+        }
+
         public void LoadScene(string sceneName)
         {
+            if(!IsASetupScene(CurrentScene))
+                LastSceneLoaded = CurrentScene;
+
             if (_progressMenu != null)
                 _progressMenu.SetActive(true);
 
