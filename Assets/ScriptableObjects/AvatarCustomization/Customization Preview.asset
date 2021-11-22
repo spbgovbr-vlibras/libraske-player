@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16940fe54e0a8e04fb24567393e44a10, type: 3}
+  m_Name: Customization Preview
+  m_EditorClassIdentifier: 
+  _colors:
+    _cabelo:
+      _color: {r: 0, g: 0, b: 0, a: 1}
+    _corpo:
+      _color: {r: 0.75686276, g: 0.5176471, b: 0.44313726, a: 1}
+    _iris:
+      _color: {r: 0, g: 0, b: 0, a: 0}
+    _pupila:
+      _color: {r: 0, g: 0, b: 0, a: 1}
+    _olhos:
+      _color: {r: 1, g: 1, b: 1, a: 1}
+    _dentes:
+      _color: {r: 1, g: 1, b: 1, a: 1}
+    _lingua:
+      _color: {r: 0.65882355, g: 0, b: 0, a: 1}
+    _camisa:
+      _color: {r: 0.10980392, g: 0.1254902, b: 0.30980393, a: 1}
+    _calca:
+      _color: {r: 0.05490196, g: 0.05882353, b: 0.09411765, a: 1}
+    _acessorios:
+      _color: {r: 1, g: 0.8784314, b: 0, a: 1}

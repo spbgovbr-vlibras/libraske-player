@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 32
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aa59fef662daf74e8acd395016393cf, type: 3}
+  m_Name: Music Data Holder
+  m_EditorClassIdentifier: 
+  _music:
+    id: 4
+    singers: Bob Zoom
+    name: Peixe Vivo
+    description: "M\xFAsica de dom\xEDnio p\xFAblico gravada em 2017 pelo Canal Infantil
+      Bob Zoom."
+    price: 200
+    thumbnail: https://libraske-back-dth.vlibras.gov.br/info/songs/4/f7658eda6034f73ae1b4-thumbnail.6_thumb_peixevivo.png
+    subtitle: https://libraske-back-dth.vlibras.gov.br/info/songs/4/738963fbfe74012f011f-subtitle.6_letra_PeixeVivo.txt
+    song: https://libraske-back-dth.vlibras.gov.br/info/songs/4/255f7ba88679766de7d2-song.6_audio_PeixeVivo.mp3
+    animation: https://libraske-back-dth.vlibras.gov.br/info/songs/4/b4ef1dcf9aefe8bffdcc-animation.PEIXE_VIVO
+    trainingAnimation1: https://libraske-back-dth.vlibras.gov.br/info/songs/4/3301356c8731b499e1ac-trainingAnimation1.COMO_PODE_UM_PEIXE_VIVO
+    trainingAnimation2: https://libraske-back-dth.vlibras.gov.br/info/songs/4/c6efda9dd0888721d717-trainingAnimation2.VIVER_FORA_DA_AGUA_FRIA
+    trainingAnimation3: https://libraske-back-dth.vlibras.gov.br/info/songs/4/df919c856678c3ffe334-trainingAnimation3.COMO_PODE_UM_PEIXE_VIVO
+    trainingAnimation4: https://libraske-back-dth.vlibras.gov.br/info/songs/4/b49887d95f46b871a985-trainingAnimation4.VIVER_FORA_DA_AGUA_FRIA
+    trainingPhrase1: Como pode um peixe vivo
+    trainingPhrase2: "Viver fora da \xE1gua fria?"
+    trainingPhrase3: Como pode um peixe vivo
+    trainingPhrase4: "Viver fora da \xE1gua fria?"

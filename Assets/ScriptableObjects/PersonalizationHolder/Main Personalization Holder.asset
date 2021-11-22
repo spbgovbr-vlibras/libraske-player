@@ -1,0 +1,1652 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 32
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd56a79c624337a4091ff0f1d154dad6, type: 3}
+  m_Name: Main Personalization Holder
+  m_EditorClassIdentifier: 
+  _colors:
+    Items: []
+  _groups:
+    Items:
+    - id: 1
+      name: Grupo Pele 1
+      personalization_id: 1
+      price: 0
+    - id: 2
+      name: Grupo Pele 2
+      personalization_id: 1
+      price: 0
+    - id: 3
+      name: Grupo Pele 3
+      personalization_id: 1
+      price: 0
+    - id: 4
+      name: Grupo Pele 4
+      personalization_id: 1
+      price: 0
+    - id: 5
+      name: Grupo Pele 5
+      personalization_id: 1
+      price: 0
+    - id: 6
+      name: Grupo Pele 6
+      personalization_id: 1
+      price: 0
+    - id: 7
+      name: Grupo Pele 7
+      personalization_id: 1
+      price: 0
+    - id: 8
+      name: Grupo Pele 8
+      personalization_id: 1
+      price: 0
+    - id: 9
+      name: Grupo Pele 9
+      personalization_id: 1
+      price: 0
+    - id: 10
+      name: Grupo Pele 10
+      personalization_id: 1
+      price: 0
+    - id: 11
+      name: Grupo Olhos 1
+      personalization_id: 2
+      price: 0
+    - id: 12
+      name: Grupo Olhos 2
+      personalization_id: 2
+      price: 0
+    - id: 13
+      name: Grupo Olhos 3
+      personalization_id: 2
+      price: 0
+    - id: 14
+      name: Grupo Olhos 4
+      personalization_id: 2
+      price: 0
+    - id: 15
+      name: Grupo Olhos 5
+      personalization_id: 2
+      price: 0
+    - id: 16
+      name: Grupo Olhos 6
+      personalization_id: 2
+      price: 0
+    - id: 17
+      name: Grupo Olhos 7
+      personalization_id: 2
+      price: 0
+    - id: 18
+      name: Grupo Olhos 8
+      personalization_id: 2
+      price: 0
+    - id: 19
+      name: Grupo Olhos 9
+      personalization_id: 2
+      price: 0
+    - id: 20
+      name: Grupo Olhos 10
+      personalization_id: 2
+      price: 0
+    - id: 21
+      name: Grupo Cabelo 1
+      personalization_id: 3
+      price: 25
+    - id: 22
+      name: Grupo Cabelo 2
+      personalization_id: 3
+      price: 25
+    - id: 23
+      name: Grupo Cabelo 3
+      personalization_id: 3
+      price: 25
+    - id: 24
+      name: Grupo Cabelo 4
+      personalization_id: 3
+      price: 25
+    - id: 25
+      name: Grupo Cabelo 5
+      personalization_id: 3
+      price: 25
+    - id: 26
+      name: Grupo Cabelo 6
+      personalization_id: 3
+      price: 25
+    - id: 27
+      name: Grupo Cabelo 7
+      personalization_id: 3
+      price: 25
+    - id: 28
+      name: Grupo Cabelo 8
+      personalization_id: 3
+      price: 25
+    - id: 29
+      name: Grupo Cabelo 9
+      personalization_id: 3
+      price: 25
+    - id: 30
+      name: Grupo Cabelo 10
+      personalization_id: 3
+      price: 25
+    - id: 31
+      name: Grupo Cabelo 11
+      personalization_id: 3
+      price: 25
+    - id: 32
+      name: Grupo Cabelo 12
+      personalization_id: 3
+      price: 25
+    - id: 33
+      name: Grupo Camisa 1
+      personalization_id: 4
+      price: 25
+    - id: 34
+      name: Grupo Camisa 2
+      personalization_id: 4
+      price: 25
+    - id: 35
+      name: Grupo Camisa 3
+      personalization_id: 4
+      price: 25
+    - id: 36
+      name: Grupo Camisa 4
+      personalization_id: 4
+      price: 25
+    - id: 37
+      name: Grupo Camisa 5
+      personalization_id: 4
+      price: 25
+    - id: 38
+      name: Grupo Camisa 6
+      personalization_id: 4
+      price: 25
+    - id: 39
+      name: Grupo Camisa 7
+      personalization_id: 4
+      price: 25
+    - id: 40
+      name: Grupo Camisa 8
+      personalization_id: 4
+      price: 25
+    - id: 41
+      name: Grupo Camisa 9
+      personalization_id: 4
+      price: 25
+    - id: 42
+      name: Grupo Camisa 10
+      personalization_id: 4
+      price: 25
+    - id: 43
+      name: Grupo Camisa 11
+      personalization_id: 4
+      price: 25
+    - id: 44
+      name: Grupo Camisa 12
+      personalization_id: 4
+      price: 25
+    - id: 45
+      name: "Grupo Cal\xE7a 1"
+      personalization_id: 5
+      price: 25
+    - id: 46
+      name: "Grupo Cal\xE7a 2"
+      personalization_id: 5
+      price: 25
+    - id: 47
+      name: "Grupo Cal\xE7a 3"
+      personalization_id: 5
+      price: 25
+    - id: 48
+      name: "Grupo Cal\xE7a 4"
+      personalization_id: 5
+      price: 25
+    - id: 49
+      name: "Grupo Cal\xE7a 5"
+      personalization_id: 5
+      price: 25
+    - id: 50
+      name: "Grupo Cal\xE7a 6"
+      personalization_id: 5
+      price: 25
+    - id: 51
+      name: "Grupo Cal\xE7a 7"
+      personalization_id: 5
+      price: 25
+    - id: 52
+      name: "Grupo Cal\xE7a 8"
+      personalization_id: 5
+      price: 25
+    - id: 53
+      name: "Grupo Cal\xE7a 9"
+      personalization_id: 5
+      price: 25
+    - id: 54
+      name: "Grupo Cal\xE7a 10"
+      personalization_id: 5
+      price: 25
+    - id: 55
+      name: "Grupo Cal\xE7a 11"
+      personalization_id: 5
+      price: 25
+    - id: 56
+      name: "Grupo Cal\xE7a 12"
+      personalization_id: 5
+      price: 25
+  _skinColors:
+    Items:
+    - id: 1
+      code: '#FFF4E1'
+      isDefault: false
+      personalization_group_id: 1
+      isUnlocked: true
+    - id: 2
+      code: '#E5CFAB'
+      isDefault: false
+      personalization_group_id: 1
+      isUnlocked: true
+    - id: 3
+      code: '#D7BD91'
+      isDefault: true
+      personalization_group_id: 1
+      isUnlocked: true
+    - id: 4
+      code: '#DFB56F'
+      isDefault: false
+      personalization_group_id: 1
+      isUnlocked: true
+    - id: 5
+      code: '#A98954'
+      isDefault: false
+      personalization_group_id: 1
+      isUnlocked: true
+    - id: 6
+      code: '#F0DAC4'
+      isDefault: false
+      personalization_group_id: 2
+      isUnlocked: true
+    - id: 7
+      code: '#E5C8AB'
+      isDefault: false
+      personalization_group_id: 2
+      isUnlocked: true
+    - id: 8
+      code: '#D7B491'
+      isDefault: true
+      personalization_group_id: 2
+      isUnlocked: true
+    - id: 9
+      code: '#DFA66F'
+      isDefault: false
+      personalization_group_id: 2
+      isUnlocked: true
+    - id: 10
+      code: '#A97E54'
+      isDefault: false
+      personalization_group_id: 2
+      isUnlocked: true
+    - id: 11
+      code: '#EBCCBC'
+      isDefault: false
+      personalization_group_id: 3
+      isUnlocked: true
+    - id: 12
+      code: '#E5BEAB'
+      isDefault: false
+      personalization_group_id: 3
+      isUnlocked: true
+    - id: 13
+      code: '#D7A891'
+      isDefault: true
+      personalization_group_id: 3
+      isUnlocked: true
+    - id: 14
+      code: '#DF946F'
+      isDefault: false
+      personalization_group_id: 3
+      isUnlocked: true
+    - id: 15
+      code: '#A97054'
+      isDefault: false
+      personalization_group_id: 3
+      isUnlocked: true
+    - id: 16
+      code: '#CDA262'
+      isDefault: false
+      personalization_group_id: 4
+      isUnlocked: true
+    - id: 17
+      code: '#9A7741'
+      isDefault: false
+      personalization_group_id: 4
+      isUnlocked: true
+    - id: 18
+      code: '#8B6A38'
+      isDefault: true
+      personalization_group_id: 4
+      isUnlocked: true
+    - id: 19
+      code: '#725427'
+      isDefault: false
+      personalization_group_id: 4
+      isUnlocked: true
+    - id: 20
+      code: '#614927'
+      isDefault: false
+      personalization_group_id: 4
+      isUnlocked: true
+    - id: 21
+      code: '#CD9162'
+      isDefault: false
+      personalization_group_id: 5
+      isUnlocked: true
+    - id: 22
+      code: '#9A6841'
+      isDefault: false
+      personalization_group_id: 5
+      isUnlocked: true
+    - id: 23
+      code: '#8B5C38'
+      isDefault: true
+      personalization_group_id: 5
+      isUnlocked: true
+    - id: 24
+      code: '#724827'
+      isDefault: false
+      personalization_group_id: 5
+      isUnlocked: true
+    - id: 25
+      code: '#614027'
+      isDefault: false
+      personalization_group_id: 5
+      isUnlocked: true
+    - id: 26
+      code: '#CD7F62'
+      isDefault: false
+      personalization_group_id: 6
+      isUnlocked: true
+    - id: 27
+      code: '#9A5A41'
+      isDefault: false
+      personalization_group_id: 6
+      isUnlocked: true
+    - id: 28
+      code: '#8B4E38'
+      isDefault: true
+      personalization_group_id: 6
+      isUnlocked: true
+    - id: 29
+      code: '#724827'
+      isDefault: false
+      personalization_group_id: 6
+      isUnlocked: true
+    - id: 30
+      code: '#613627'
+      isDefault: false
+      personalization_group_id: 6
+      isUnlocked: true
+    - id: 31
+      code: '#513512'
+      isDefault: false
+      personalization_group_id: 7
+      isUnlocked: true
+    - id: 32
+      code: '#483216'
+      isDefault: false
+      personalization_group_id: 7
+      isUnlocked: true
+    - id: 33
+      code: '#372610'
+      isDefault: true
+      personalization_group_id: 7
+      isUnlocked: true
+    - id: 34
+      code: '#312412'
+      isDefault: false
+      personalization_group_id: 7
+      isUnlocked: true
+    - id: 35
+      code: '#281E11'
+      isDefault: false
+      personalization_group_id: 7
+      isUnlocked: true
+    - id: 36
+      code: '#512E12'
+      isDefault: false
+      personalization_group_id: 8
+      isUnlocked: true
+    - id: 37
+      code: '#482C16'
+      isDefault: false
+      personalization_group_id: 8
+      isUnlocked: true
+    - id: 38
+      code: '#372110'
+      isDefault: true
+      personalization_group_id: 8
+      isUnlocked: true
+    - id: 39
+      code: '#312012'
+      isDefault: false
+      personalization_group_id: 8
+      isUnlocked: true
+    - id: 40
+      code: '#281B11'
+      isDefault: false
+      personalization_group_id: 8
+      isUnlocked: true
+    - id: 41
+      code: '#512312'
+      isDefault: false
+      personalization_group_id: 9
+      isUnlocked: true
+    - id: 42
+      code: '#482416'
+      isDefault: false
+      personalization_group_id: 9
+      isUnlocked: true
+    - id: 43
+      code: '#371B10'
+      isDefault: true
+      personalization_group_id: 9
+      isUnlocked: true
+    - id: 44
+      code: '#311B12'
+      isDefault: false
+      personalization_group_id: 9
+      isUnlocked: true
+    - id: 45
+      code: '#281811'
+      isDefault: false
+      personalization_group_id: 9
+      isUnlocked: true
+    - id: 46
+      code: '#31140B'
+      isDefault: false
+      personalization_group_id: 10
+      isUnlocked: true
+    - id: 47
+      code: '#2B140D'
+      isDefault: false
+      personalization_group_id: 10
+      isUnlocked: true
+    - id: 48
+      code: '#210F0A'
+      isDefault: true
+      personalization_group_id: 10
+      isUnlocked: true
+    - id: 49
+      code: '#1D100B'
+      isDefault: false
+      personalization_group_id: 10
+      isUnlocked: true
+    - id: 50
+      code: '#180E0B'
+      isDefault: false
+      personalization_group_id: 10
+      isUnlocked: true
+  _eyesColors:
+    Items:
+    - id: 51
+      code: '#B77C28'
+      isDefault: false
+      personalization_group_id: 11
+      isUnlocked: true
+    - id: 52
+      code: '#935D12'
+      isDefault: false
+      personalization_group_id: 11
+      isUnlocked: true
+    - id: 53
+      code: '#6D3900'
+      isDefault: true
+      personalization_group_id: 11
+      isUnlocked: true
+    - id: 54
+      code: '#4B2200'
+      isDefault: false
+      personalization_group_id: 11
+      isUnlocked: true
+    - id: 55
+      code: '#2F0C00'
+      isDefault: false
+      personalization_group_id: 11
+      isUnlocked: true
+    - id: 56
+      code: '#66411D'
+      isDefault: false
+      personalization_group_id: 12
+      isUnlocked: true
+    - id: 57
+      code: '#4E2D0E'
+      isDefault: false
+      personalization_group_id: 12
+      isUnlocked: true
+    - id: 58
+      code: '#361700'
+      isDefault: true
+      personalization_group_id: 12
+      isUnlocked: true
+    - id: 59
+      code: '#260D00'
+      isDefault: false
+      personalization_group_id: 12
+      isUnlocked: true
+    - id: 60
+      code: '#170400'
+      isDefault: false
+      personalization_group_id: 12
+      isUnlocked: true
+    - id: 61
+      code: '#B7A228'
+      isDefault: false
+      personalization_group_id: 13
+      isUnlocked: true
+    - id: 62
+      code: '#937F12'
+      isDefault: false
+      personalization_group_id: 13
+      isUnlocked: true
+    - id: 63
+      code: '#6D5600'
+      isDefault: true
+      personalization_group_id: 13
+      isUnlocked: true
+    - id: 64
+      code: '#4B3600'
+      isDefault: false
+      personalization_group_id: 13
+      isUnlocked: true
+    - id: 65
+      code: '#2F1900'
+      isDefault: false
+      personalization_group_id: 13
+      isUnlocked: true
+    - id: 66
+      code: '#8EB728'
+      isDefault: false
+      personalization_group_id: 14
+      isUnlocked: true
+    - id: 67
+      code: '#6E9312'
+      isDefault: false
+      personalization_group_id: 14
+      isUnlocked: true
+    - id: 68
+      code: '#556D00'
+      isDefault: true
+      personalization_group_id: 14
+      isUnlocked: true
+    - id: 69
+      code: '#404B00'
+      isDefault: false
+      personalization_group_id: 14
+      isUnlocked: true
+    - id: 70
+      code: '#2F2D00'
+      isDefault: false
+      personalization_group_id: 14
+      isUnlocked: true
+    - id: 71
+      code: '#45B728'
+      isDefault: false
+      personalization_group_id: 15
+      isUnlocked: true
+    - id: 72
+      code: '#2C9312'
+      isDefault: false
+      personalization_group_id: 15
+      isUnlocked: true
+    - id: 73
+      code: '#1C6D00'
+      isDefault: true
+      personalization_group_id: 15
+      isUnlocked: true
+    - id: 74
+      code: '#194B00'
+      isDefault: false
+      personalization_group_id: 15
+      isUnlocked: true
+    - id: 75
+      code: '#182F00'
+      isDefault: false
+      personalization_group_id: 15
+      isUnlocked: true
+    - id: 76
+      code: '#28B76B'
+      isDefault: false
+      personalization_group_id: 16
+      isUnlocked: true
+    - id: 77
+      code: '#12934E'
+      isDefault: false
+      personalization_group_id: 16
+      isUnlocked: true
+    - id: 78
+      code: '#006D2C'
+      isDefault: true
+      personalization_group_id: 16
+      isUnlocked: true
+    - id: 79
+      code: '#004B19'
+      isDefault: false
+      personalization_group_id: 16
+      isUnlocked: true
+    - id: 80
+      code: '#002F07'
+      isDefault: false
+      personalization_group_id: 16
+      isUnlocked: true
+    - id: 81
+      code: '#28B7AB'
+      isDefault: false
+      personalization_group_id: 17
+      isUnlocked: true
+    - id: 82
+      code: '#129388'
+      isDefault: false
+      personalization_group_id: 17
+      isUnlocked: true
+    - id: 83
+      code: '#006D5D'
+      isDefault: true
+      personalization_group_id: 17
+      isUnlocked: true
+    - id: 84
+      code: '#004B3B'
+      isDefault: false
+      personalization_group_id: 17
+      isUnlocked: true
+    - id: 85
+      code: '#002F1C'
+      isDefault: false
+      personalization_group_id: 17
+      isUnlocked: true
+    - id: 86
+      code: '#2774AF'
+      isDefault: false
+      personalization_group_id: 18
+      isUnlocked: true
+    - id: 87
+      code: '#11578C'
+      isDefault: false
+      personalization_group_id: 18
+      isUnlocked: true
+    - id: 88
+      code: '#004168'
+      isDefault: true
+      personalization_group_id: 18
+      isUnlocked: true
+    - id: 89
+      code: '#003248'
+      isDefault: false
+      personalization_group_id: 18
+      isUnlocked: true
+    - id: 90
+      code: '#00272C'
+      isDefault: false
+      personalization_group_id: 18
+      isUnlocked: true
+    - id: 91
+      code: '#2730AF'
+      isDefault: false
+      personalization_group_id: 19
+      isUnlocked: true
+    - id: 92
+      code: '#111A8C'
+      isDefault: false
+      personalization_group_id: 19
+      isUnlocked: true
+    - id: 93
+      code: '#000D68'
+      isDefault: true
+      personalization_group_id: 19
+      isUnlocked: true
+    - id: 94
+      code: '#000E48'
+      isDefault: false
+      personalization_group_id: 19
+      isUnlocked: true
+    - id: 95
+      code: '#00112C'
+      isDefault: false
+      personalization_group_id: 19
+      isUnlocked: true
+    - id: 96
+      code: '#4D4D4D'
+      isDefault: false
+      personalization_group_id: 20
+      isUnlocked: true
+    - id: 97
+      code: '#3C3C3C'
+      isDefault: false
+      personalization_group_id: 20
+      isUnlocked: true
+    - id: 98
+      code: '#292929'
+      isDefault: true
+      personalization_group_id: 20
+      isUnlocked: true
+    - id: 99
+      code: '#1A1A1A'
+      isDefault: false
+      personalization_group_id: 20
+      isUnlocked: true
+    - id: 100
+      code: '#000000'
+      isDefault: false
+      personalization_group_id: 20
+      isUnlocked: true
+  _hairColors:
+    Items:
+    - id: 101
+      code: '#FFC3C6'
+      isDefault: false
+      personalization_group_id: 21
+      isUnlocked: false
+    - id: 102
+      code: '#FF434C'
+      isDefault: false
+      personalization_group_id: 21
+      isUnlocked: false
+    - id: 103
+      code: '#FF1E1E'
+      isDefault: true
+      personalization_group_id: 21
+      isUnlocked: false
+    - id: 104
+      code: '#B10000'
+      isDefault: false
+      personalization_group_id: 21
+      isUnlocked: false
+    - id: 105
+      code: '#52500'
+      isDefault: false
+      personalization_group_id: 21
+      isUnlocked: false
+    - id: 106
+      code: '#FFD6C3'
+      isDefault: false
+      personalization_group_id: 22
+      isUnlocked: false
+    - id: 107
+      code: '#FF7F43'
+      isDefault: false
+      personalization_group_id: 22
+      isUnlocked: false
+    - id: 108
+      code: '#FF5100'
+      isDefault: true
+      personalization_group_id: 22
+      isUnlocked: false
+    - id: 109
+      code: '#B14100'
+      isDefault: false
+      personalization_group_id: 22
+      isUnlocked: false
+    - id: 110
+      code: '#551F00'
+      isDefault: false
+      personalization_group_id: 22
+      isUnlocked: false
+    - id: 111
+      code: '#EAD1A3'
+      isDefault: false
+      personalization_group_id: 23
+      isUnlocked: false
+    - id: 112
+      code: '#F8B840'
+      isDefault: false
+      personalization_group_id: 23
+      isUnlocked: false
+    - id: 113
+      code: '#F7A100'
+      isDefault: true
+      personalization_group_id: 23
+      isUnlocked: false
+    - id: 114
+      code: '#AC7800'
+      isDefault: false
+      personalization_group_id: 23
+      isUnlocked: false
+    - id: 115
+      code: '#523A00'
+      isDefault: false
+      personalization_group_id: 23
+      isUnlocked: false
+    - id: 116
+      code: '#CBDB84'
+      isDefault: false
+      personalization_group_id: 24
+      isUnlocked: false
+    - id: 117
+      code: '#D6F840'
+      isDefault: false
+      personalization_group_id: 24
+      isUnlocked: false
+    - id: 118
+      code: '#C9F700'
+      isDefault: true
+      personalization_group_id: 24
+      isUnlocked: false
+    - id: 119
+      code: '#84AC00'
+      isDefault: false
+      personalization_group_id: 24
+      isUnlocked: false
+    - id: 120
+      code: '#3F5200'
+      isDefault: false
+      personalization_group_id: 24
+      isUnlocked: false
+    - id: 121
+      code: '#B6EDA9'
+      isDefault: false
+      personalization_group_id: 25
+      isUnlocked: false
+    - id: 122
+      code: '#62F840'
+      isDefault: false
+      personalization_group_id: 25
+      isUnlocked: false
+    - id: 123
+      code: '#2DF700'
+      isDefault: true
+      personalization_group_id: 25
+      isUnlocked: false
+    - id: 124
+      code: '#17AC00'
+      isDefault: false
+      personalization_group_id: 25
+      isUnlocked: false
+    - id: 125
+      code: '#0B5200'
+      isDefault: false
+      personalization_group_id: 25
+      isUnlocked: false
+    - id: 126
+      code: '#9EE7C4'
+      isDefault: false
+      personalization_group_id: 26
+      isUnlocked: false
+    - id: 127
+      code: '#73FFBC'
+      isDefault: false
+      personalization_group_id: 26
+      isUnlocked: false
+    - id: 128
+      code: '#00F781'
+      isDefault: true
+      personalization_group_id: 26
+      isUnlocked: false
+    - id: 129
+      code: '#00AC61'
+      isDefault: false
+      personalization_group_id: 26
+      isUnlocked: false
+    - id: 130
+      code: '#00522F'
+      isDefault: false
+      personalization_group_id: 26
+      isUnlocked: false
+    - id: 131
+      code: '#AFDDE1'
+      isDefault: false
+      personalization_group_id: 27
+      isUnlocked: false
+    - id: 132
+      code: '#40E8F8'
+      isDefault: false
+      personalization_group_id: 27
+      isUnlocked: false
+    - id: 133
+      code: '#00E2F7'
+      isDefault: true
+      personalization_group_id: 27
+      isUnlocked: false
+    - id: 134
+      code: '#0095AC'
+      isDefault: false
+      personalization_group_id: 27
+      isUnlocked: false
+    - id: 135
+      code: '#004752'
+      isDefault: false
+      personalization_group_id: 27
+      isUnlocked: false
+    - id: 136
+      code: '#A1ABE1'
+      isDefault: false
+      personalization_group_id: 28
+      isUnlocked: false
+    - id: 137
+      code: '#405EF8'
+      isDefault: false
+      personalization_group_id: 28
+      isUnlocked: false
+    - id: 138
+      code: '#0029F7'
+      isDefault: true
+      personalization_group_id: 28
+      isUnlocked: false
+    - id: 139
+      code: '#0014AC'
+      isDefault: false
+      personalization_group_id: 28
+      isUnlocked: false
+    - id: 140
+      code: '#000A52'
+      isDefault: false
+      personalization_group_id: 28
+      isUnlocked: false
+    - id: 141
+      code: '#CDA6E7'
+      isDefault: false
+      personalization_group_id: 29
+      isUnlocked: false
+    - id: 142
+      code: '#AF40F8'
+      isDefault: false
+      personalization_group_id: 29
+      isUnlocked: false
+    - id: 143
+      code: '#925F7'
+      isDefault: true
+      personalization_group_id: 29
+      isUnlocked: false
+    - id: 144
+      code: '#7000AC'
+      isDefault: false
+      personalization_group_id: 29
+      isUnlocked: false
+    - id: 145
+      code: '#360052'
+      isDefault: false
+      personalization_group_id: 29
+      isUnlocked: false
+    - id: 146
+      code: '#F0BEE2'
+      isDefault: false
+      personalization_group_id: 30
+      isUnlocked: false
+    - id: 147
+      code: '#FF5ED1'
+      isDefault: false
+      personalization_group_id: 30
+      isUnlocked: false
+    - id: 148
+      code: '#F700B1'
+      isDefault: true
+      personalization_group_id: 30
+      isUnlocked: false
+    - id: 149
+      code: '#AC0072'
+      isDefault: false
+      personalization_group_id: 30
+      isUnlocked: false
+    - id: 150
+      code: '#520037'
+      isDefault: false
+      personalization_group_id: 30
+      isUnlocked: false
+    - id: 151
+      code: '#F6BACD'
+      isDefault: false
+      personalization_group_id: 31
+      isUnlocked: false
+    - id: 152
+      code: '#F63F79'
+      isDefault: false
+      personalization_group_id: 31
+      isUnlocked: false
+    - id: 153
+      code: '#F254D'
+      isDefault: true
+      personalization_group_id: 31
+      isUnlocked: false
+    - id: 154
+      code: '#AA002D'
+      isDefault: false
+      personalization_group_id: 31
+      isUnlocked: false
+    - id: 155
+      code: '#520016'
+      isDefault: false
+      personalization_group_id: 31
+      isUnlocked: false
+    - id: 156
+      code: '#DBDBDB'
+      isDefault: false
+      personalization_group_id: 32
+      isUnlocked: false
+    - id: 157
+      code: '#9C9C9C'
+      isDefault: false
+      personalization_group_id: 32
+      isUnlocked: false
+    - id: 158
+      code: '#676767'
+      isDefault: true
+      personalization_group_id: 32
+      isUnlocked: false
+    - id: 159
+      code: '#3D3D3D'
+      isDefault: false
+      personalization_group_id: 32
+      isUnlocked: false
+    - id: 160
+      code: '#191919'
+      isDefault: false
+      personalization_group_id: 32
+      isUnlocked: false
+  _shirtColors:
+    Items:
+    - id: 161
+      code: '#FFC3C6'
+      isDefault: false
+      personalization_group_id: 33
+      isUnlocked: false
+    - id: 162
+      code: '#FF434C'
+      isDefault: false
+      personalization_group_id: 33
+      isUnlocked: false
+    - id: 163
+      code: '#FF1E1E'
+      isDefault: true
+      personalization_group_id: 33
+      isUnlocked: false
+    - id: 164
+      code: '#B10000'
+      isDefault: false
+      personalization_group_id: 33
+      isUnlocked: false
+    - id: 165
+      code: '#52500'
+      isDefault: false
+      personalization_group_id: 33
+      isUnlocked: false
+    - id: 166
+      code: '#FFD6C3'
+      isDefault: false
+      personalization_group_id: 34
+      isUnlocked: false
+    - id: 167
+      code: '#FF7F43'
+      isDefault: false
+      personalization_group_id: 34
+      isUnlocked: false
+    - id: 168
+      code: '#FF5100'
+      isDefault: true
+      personalization_group_id: 34
+      isUnlocked: false
+    - id: 169
+      code: '#B14100'
+      isDefault: false
+      personalization_group_id: 34
+      isUnlocked: false
+    - id: 170
+      code: '#551F00'
+      isDefault: false
+      personalization_group_id: 34
+      isUnlocked: false
+    - id: 171
+      code: '#EAD1A3'
+      isDefault: false
+      personalization_group_id: 35
+      isUnlocked: false
+    - id: 172
+      code: '#F8B840'
+      isDefault: false
+      personalization_group_id: 35
+      isUnlocked: false
+    - id: 173
+      code: '#F7A100'
+      isDefault: true
+      personalization_group_id: 35
+      isUnlocked: false
+    - id: 174
+      code: '#AC7800'
+      isDefault: false
+      personalization_group_id: 35
+      isUnlocked: false
+    - id: 175
+      code: '#523A00'
+      isDefault: false
+      personalization_group_id: 35
+      isUnlocked: false
+    - id: 176
+      code: '#CBDB84'
+      isDefault: false
+      personalization_group_id: 36
+      isUnlocked: false
+    - id: 177
+      code: '#D6F840'
+      isDefault: false
+      personalization_group_id: 36
+      isUnlocked: false
+    - id: 178
+      code: '#C9F700'
+      isDefault: true
+      personalization_group_id: 36
+      isUnlocked: false
+    - id: 179
+      code: '#84AC00'
+      isDefault: false
+      personalization_group_id: 36
+      isUnlocked: false
+    - id: 180
+      code: '#3F5200'
+      isDefault: false
+      personalization_group_id: 36
+      isUnlocked: false
+    - id: 181
+      code: '#B6EDA9'
+      isDefault: false
+      personalization_group_id: 37
+      isUnlocked: false
+    - id: 182
+      code: '#62F840'
+      isDefault: false
+      personalization_group_id: 37
+      isUnlocked: false
+    - id: 183
+      code: '#2DF700'
+      isDefault: true
+      personalization_group_id: 37
+      isUnlocked: false
+    - id: 184
+      code: '#17AC00'
+      isDefault: false
+      personalization_group_id: 37
+      isUnlocked: false
+    - id: 185
+      code: '#0B5200'
+      isDefault: false
+      personalization_group_id: 37
+      isUnlocked: false
+    - id: 186
+      code: '#9EE7C4'
+      isDefault: false
+      personalization_group_id: 38
+      isUnlocked: false
+    - id: 187
+      code: '#73FFBC'
+      isDefault: false
+      personalization_group_id: 38
+      isUnlocked: false
+    - id: 188
+      code: '#00F781'
+      isDefault: true
+      personalization_group_id: 38
+      isUnlocked: false
+    - id: 189
+      code: '#00AC61'
+      isDefault: false
+      personalization_group_id: 38
+      isUnlocked: false
+    - id: 190
+      code: '#00522F'
+      isDefault: false
+      personalization_group_id: 38
+      isUnlocked: false
+    - id: 191
+      code: '#AFDDE1'
+      isDefault: false
+      personalization_group_id: 39
+      isUnlocked: false
+    - id: 192
+      code: '#40E8F8'
+      isDefault: false
+      personalization_group_id: 39
+      isUnlocked: false
+    - id: 193
+      code: '#00E2F7'
+      isDefault: true
+      personalization_group_id: 39
+      isUnlocked: false
+    - id: 194
+      code: '#0095AC'
+      isDefault: false
+      personalization_group_id: 39
+      isUnlocked: false
+    - id: 195
+      code: '#004752'
+      isDefault: false
+      personalization_group_id: 39
+      isUnlocked: false
+    - id: 196
+      code: '#A1ABE1'
+      isDefault: false
+      personalization_group_id: 40
+      isUnlocked: false
+    - id: 197
+      code: '#405EF8'
+      isDefault: false
+      personalization_group_id: 40
+      isUnlocked: false
+    - id: 198
+      code: '#0029F7'
+      isDefault: true
+      personalization_group_id: 40
+      isUnlocked: false
+    - id: 199
+      code: '#0014AC'
+      isDefault: false
+      personalization_group_id: 40
+      isUnlocked: false
+    - id: 200
+      code: '#000A52'
+      isDefault: false
+      personalization_group_id: 40
+      isUnlocked: false
+    - id: 201
+      code: '#CDA6E7'
+      isDefault: false
+      personalization_group_id: 41
+      isUnlocked: false
+    - id: 202
+      code: '#AF41F8'
+      isDefault: false
+      personalization_group_id: 41
+      isUnlocked: false
+    - id: 203
+      code: '#925F7'
+      isDefault: true
+      personalization_group_id: 41
+      isUnlocked: false
+    - id: 204
+      code: '#7000AC'
+      isDefault: false
+      personalization_group_id: 41
+      isUnlocked: false
+    - id: 205
+      code: '#360052'
+      isDefault: false
+      personalization_group_id: 41
+      isUnlocked: false
+    - id: 206
+      code: '#F0BEE2'
+      isDefault: false
+      personalization_group_id: 42
+      isUnlocked: false
+    - id: 207
+      code: '#FF5ED1'
+      isDefault: false
+      personalization_group_id: 42
+      isUnlocked: false
+    - id: 208
+      code: '#F700B1'
+      isDefault: true
+      personalization_group_id: 42
+      isUnlocked: false
+    - id: 209
+      code: '#AC0072'
+      isDefault: false
+      personalization_group_id: 42
+      isUnlocked: false
+    - id: 210
+      code: '#520037'
+      isDefault: false
+      personalization_group_id: 42
+      isUnlocked: false
+    - id: 211
+      code: '#F6BACD'
+      isDefault: false
+      personalization_group_id: 43
+      isUnlocked: false
+    - id: 212
+      code: '#F63F79'
+      isDefault: false
+      personalization_group_id: 43
+      isUnlocked: false
+    - id: 213
+      code: '#F254D'
+      isDefault: true
+      personalization_group_id: 43
+      isUnlocked: false
+    - id: 214
+      code: '#AA002D'
+      isDefault: false
+      personalization_group_id: 43
+      isUnlocked: false
+    - id: 215
+      code: '#520016'
+      isDefault: false
+      personalization_group_id: 43
+      isUnlocked: false
+    - id: 216
+      code: '#DBDBDB'
+      isDefault: false
+      personalization_group_id: 44
+      isUnlocked: false
+    - id: 217
+      code: '#9C9C9C'
+      isDefault: false
+      personalization_group_id: 44
+      isUnlocked: false
+    - id: 218
+      code: '#676767'
+      isDefault: true
+      personalization_group_id: 44
+      isUnlocked: false
+    - id: 219
+      code: '#3D3D3D'
+      isDefault: false
+      personalization_group_id: 44
+      isUnlocked: false
+    - id: 220
+      code: '#191919'
+      isDefault: false
+      personalization_group_id: 44
+      isUnlocked: false
+  _pantColors:
+    Items:
+    - id: 221
+      code: '#FFC3C6'
+      isDefault: false
+      personalization_group_id: 45
+      isUnlocked: false
+    - id: 222
+      code: '#FF434C'
+      isDefault: false
+      personalization_group_id: 45
+      isUnlocked: false
+    - id: 223
+      code: '#FF1E1E'
+      isDefault: true
+      personalization_group_id: 45
+      isUnlocked: false
+    - id: 224
+      code: '#B10000'
+      isDefault: false
+      personalization_group_id: 45
+      isUnlocked: false
+    - id: 225
+      code: '#52500'
+      isDefault: false
+      personalization_group_id: 45
+      isUnlocked: false
+    - id: 226
+      code: '#FFD6C3'
+      isDefault: false
+      personalization_group_id: 46
+      isUnlocked: false
+    - id: 227
+      code: '#FF7F43'
+      isDefault: false
+      personalization_group_id: 46
+      isUnlocked: false
+    - id: 228
+      code: '#FF5100'
+      isDefault: true
+      personalization_group_id: 46
+      isUnlocked: false
+    - id: 229
+      code: '#B14100'
+      isDefault: false
+      personalization_group_id: 46
+      isUnlocked: false
+    - id: 230
+      code: '#551F00'
+      isDefault: false
+      personalization_group_id: 46
+      isUnlocked: false
+    - id: 231
+      code: '#EAD1A3'
+      isDefault: false
+      personalization_group_id: 47
+      isUnlocked: false
+    - id: 232
+      code: '#F8B840'
+      isDefault: false
+      personalization_group_id: 47
+      isUnlocked: false
+    - id: 233
+      code: '#F7A100'
+      isDefault: true
+      personalization_group_id: 47
+      isUnlocked: false
+    - id: 234
+      code: '#AC7800'
+      isDefault: false
+      personalization_group_id: 47
+      isUnlocked: false
+    - id: 235
+      code: '#523A00'
+      isDefault: false
+      personalization_group_id: 47
+      isUnlocked: false
+    - id: 236
+      code: '#CBDB84'
+      isDefault: false
+      personalization_group_id: 48
+      isUnlocked: false
+    - id: 237
+      code: '#D6F840'
+      isDefault: false
+      personalization_group_id: 48
+      isUnlocked: false
+    - id: 238
+      code: '#C9F700'
+      isDefault: true
+      personalization_group_id: 48
+      isUnlocked: false
+    - id: 239
+      code: '#84AC00'
+      isDefault: false
+      personalization_group_id: 48
+      isUnlocked: false
+    - id: 240
+      code: '#3F5200'
+      isDefault: false
+      personalization_group_id: 48
+      isUnlocked: false
+    - id: 241
+      code: '#B6EDA9'
+      isDefault: false
+      personalization_group_id: 49
+      isUnlocked: false
+    - id: 242
+      code: '#62F840'
+      isDefault: false
+      personalization_group_id: 49
+      isUnlocked: false
+    - id: 243
+      code: '#2DF700'
+      isDefault: true
+      personalization_group_id: 49
+      isUnlocked: false
+    - id: 244
+      code: '#17AC00'
+      isDefault: false
+      personalization_group_id: 49
+      isUnlocked: false
+    - id: 245
+      code: '#0B5200'
+      isDefault: false
+      personalization_group_id: 49
+      isUnlocked: false
+    - id: 246
+      code: '#9EE7C4'
+      isDefault: false
+      personalization_group_id: 50
+      isUnlocked: false
+    - id: 247
+      code: '#73FFBC'
+      isDefault: false
+      personalization_group_id: 50
+      isUnlocked: false
+    - id: 248
+      code: '#00F781'
+      isDefault: true
+      personalization_group_id: 50
+      isUnlocked: false
+    - id: 249
+      code: '#00AC61'
+      isDefault: false
+      personalization_group_id: 50
+      isUnlocked: false
+    - id: 250
+      code: '#00522F'
+      isDefault: false
+      personalization_group_id: 50
+      isUnlocked: false
+    - id: 251
+      code: '#AFDDE1'
+      isDefault: false
+      personalization_group_id: 51
+      isUnlocked: false
+    - id: 252
+      code: '#40E8F8'
+      isDefault: false
+      personalization_group_id: 51
+      isUnlocked: false
+    - id: 253
+      code: '#00E2F7'
+      isDefault: true
+      personalization_group_id: 51
+      isUnlocked: false
+    - id: 254
+      code: '#0095AC'
+      isDefault: false
+      personalization_group_id: 51
+      isUnlocked: false
+    - id: 255
+      code: '#004752'
+      isDefault: false
+      personalization_group_id: 51
+      isUnlocked: false
+    - id: 256
+      code: '#A1ABE1'
+      isDefault: false
+      personalization_group_id: 52
+      isUnlocked: false
+    - id: 257
+      code: '#405EF8'
+      isDefault: false
+      personalization_group_id: 52
+      isUnlocked: false
+    - id: 258
+      code: '#0029F7'
+      isDefault: true
+      personalization_group_id: 52
+      isUnlocked: false
+    - id: 259
+      code: '#0014AC'
+      isDefault: false
+      personalization_group_id: 52
+      isUnlocked: false
+    - id: 260
+      code: '#000A52'
+      isDefault: false
+      personalization_group_id: 52
+      isUnlocked: false
+    - id: 261
+      code: '#CDA6E7'
+      isDefault: false
+      personalization_group_id: 53
+      isUnlocked: false
+    - id: 262
+      code: '#AF40F8'
+      isDefault: false
+      personalization_group_id: 53
+      isUnlocked: false
+    - id: 263
+      code: '#925F7'
+      isDefault: true
+      personalization_group_id: 53
+      isUnlocked: false
+    - id: 264
+      code: '#7000AC'
+      isDefault: false
+      personalization_group_id: 53
+      isUnlocked: false
+    - id: 265
+      code: '#360052'
+      isDefault: false
+      personalization_group_id: 53
+      isUnlocked: false
+    - id: 266
+      code: '#F0BEE2'
+      isDefault: false
+      personalization_group_id: 54
+      isUnlocked: false
+    - id: 267
+      code: '#FF5ED1'
+      isDefault: false
+      personalization_group_id: 54
+      isUnlocked: false
+    - id: 268
+      code: '#F700B1'
+      isDefault: true
+      personalization_group_id: 54
+      isUnlocked: false
+    - id: 269
+      code: '#AC0072'
+      isDefault: false
+      personalization_group_id: 54
+      isUnlocked: false
+    - id: 270
+      code: '#520037'
+      isDefault: false
+      personalization_group_id: 54
+      isUnlocked: false
+    - id: 271
+      code: '#F6BACD'
+      isDefault: false
+      personalization_group_id: 55
+      isUnlocked: false
+    - id: 272
+      code: '#F63F79'
+      isDefault: false
+      personalization_group_id: 55
+      isUnlocked: false
+    - id: 273
+      code: '#F254D'
+      isDefault: true
+      personalization_group_id: 55
+      isUnlocked: false
+    - id: 274
+      code: '#AA002D'
+      isDefault: false
+      personalization_group_id: 55
+      isUnlocked: false
+    - id: 275
+      code: '#520016'
+      isDefault: false
+      personalization_group_id: 55
+      isUnlocked: false
+    - id: 276
+      code: '#DBDBDB'
+      isDefault: false
+      personalization_group_id: 56
+      isUnlocked: false
+    - id: 277
+      code: '#9C9C9C'
+      isDefault: false
+      personalization_group_id: 56
+      isUnlocked: false
+    - id: 278
+      code: '#676767'
+      isDefault: true
+      personalization_group_id: 56
+      isUnlocked: false
+    - id: 279
+      code: '#3D3D3D'
+      isDefault: false
+      personalization_group_id: 56
+      isUnlocked: false
+    - id: 280
+      code: '#191919'
+      isDefault: false
+      personalization_group_id: 56
+      isUnlocked: false
