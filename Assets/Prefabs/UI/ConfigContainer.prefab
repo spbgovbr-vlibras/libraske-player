@@ -1320,6 +1320,7 @@ MonoBehaviour:
   _textMeshPro: {fileID: 0}
   _textMeshProUGUI: {fileID: 0}
   _text: {fileID: 3989556763467486188}
+  _effects: []
 --- !u!1 &3989556763483644870
 GameObject:
   m_ObjectHideFlags: 0
@@ -4058,69 +4059,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3989556763465898729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7153621838888771616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c70601ac8b21ac14bb11cc0a2e3f0b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3989556763483644873}
-        m_TargetAssemblyTypeName: SubtitleSettingsController, Assembly-CSharp
-        m_MethodName: SaveData
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 3989556764182093901}
-        m_TargetAssemblyTypeName: AudioSettingsController, Assembly-CSharp
-        m_MethodName: SaveData
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 3989556763465898729}
-        m_TargetAssemblyTypeName: SaveSettingsButton, Assembly-CSharp
-        m_MethodName: HasUnsavedChanges
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onPointerDown:
-    m_PersistentCalls:
-      m_Calls: []
-  _onEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  _onExit:
-    m_PersistentCalls:
-      m_Calls: []
-  _inactive: {fileID: 3989556763686626321}
-  _imageWhenEnter: {fileID: 7153621839304211617}
-  _imageWhenExit: {fileID: 7153621839794218161}
 --- !u!1 &7153621839063875901
 GameObject:
   m_ObjectHideFlags: 0
@@ -4693,22 +4631,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95a161ea1069edb48b8c12e1649f4bb7, type: 3}
---- !u!114 &1649055133749038445 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2431766043607481912, guid: 95a161ea1069edb48b8c12e1649f4bb7, type: 3}
-  m_PrefabInstance: {fileID: 3989556763173188437}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!224 &1488190503245240073 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2592628480256189532, guid: 95a161ea1069edb48b8c12e1649f4bb7, type: 3}
-  m_PrefabInstance: {fileID: 3989556763173188437}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &3860509520787203026 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 202248883055169671, guid: 95a161ea1069edb48b8c12e1649f4bb7, type: 3}
@@ -4718,6 +4640,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &1488190503245240073 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2592628480256189532, guid: 95a161ea1069edb48b8c12e1649f4bb7, type: 3}
+  m_PrefabInstance: {fileID: 3989556763173188437}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1649055133749038445 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2431766043607481912, guid: 95a161ea1069edb48b8c12e1649f4bb7, type: 3}
+  m_PrefabInstance: {fileID: 3989556763173188437}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &3989556763275665421
@@ -4877,11 +4815,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
---- !u!224 &7153621838452840285 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6060443856975492944, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
-  m_PrefabInstance: {fileID: 3989556763275665421}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &8642060482874050223 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4662075011478824610, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
@@ -4893,6 +4826,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd7a1f0bffa54bc4e9b48595e2b5ff0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &7153621838452840285 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6060443856975492944, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
+  m_PrefabInstance: {fileID: 3989556763275665421}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3989556763845842803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5100,11 +5038,6 @@ PrefabInstance:
     - {fileID: 4702500389185644020, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
     - {fileID: 6060443856975492945, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
---- !u!1 &7153621839304211617 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6060443858741619666, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
-  m_PrefabInstance: {fileID: 3989556763845842803}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7153621838888771616 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6060443856975492947, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
@@ -5120,6 +5053,74 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6060443858148324290, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
   m_PrefabInstance: {fileID: 3989556763845842803}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7153621839304211617 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6060443858741619666, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
+  m_PrefabInstance: {fileID: 3989556763845842803}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3989556763465898729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7153621838888771616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c70601ac8b21ac14bb11cc0a2e3f0b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3989556763483644873}
+        m_TargetAssemblyTypeName: SubtitleSettingsController, Assembly-CSharp
+        m_MethodName: SaveData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3989556764182093901}
+        m_TargetAssemblyTypeName: AudioSettingsController, Assembly-CSharp
+        m_MethodName: SaveData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3989556763465898729}
+        m_TargetAssemblyTypeName: SaveSettingsButton, Assembly-CSharp
+        m_MethodName: HasUnsavedChanges
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onPointerDown:
+    m_PersistentCalls:
+      m_Calls: []
+  _onEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  _onExit:
+    m_PersistentCalls:
+      m_Calls: []
+  _inactive: {fileID: 3989556763686626321}
+  _imageWhenEnter: {fileID: 7153621839304211617}
+  _imageWhenExit: {fileID: 7153621839794218161}
 --- !u!1001 &3989556763941565929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5297,11 +5298,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
---- !u!224 &7153621838844035769 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6060443856975492944, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
-  m_PrefabInstance: {fileID: 3989556763941565929}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &8642060482227065675 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4662075011478824610, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
@@ -5313,6 +5309,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd7a1f0bffa54bc4e9b48595e2b5ff0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &7153621838844035769 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6060443856975492944, guid: 478a6e3893948f045af98812da5d07f8, type: 3}
+  m_PrefabInstance: {fileID: 3989556763941565929}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3989556764309986572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5602,17 +5603,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95a161ea1069edb48b8c12e1649f4bb7, type: 3}
---- !u!114 &1649055134818280244 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2431766043607481912, guid: 95a161ea1069edb48b8c12e1649f4bb7, type: 3}
-  m_PrefabInstance: {fileID: 3989556764309986572}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3860509521840246155 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 202248883055169671, guid: 95a161ea1069edb48b8c12e1649f4bb7, type: 3}
@@ -5629,6 +5619,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2592628480256189532, guid: 95a161ea1069edb48b8c12e1649f4bb7, type: 3}
   m_PrefabInstance: {fileID: 3989556764309986572}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1649055134818280244 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2431766043607481912, guid: 95a161ea1069edb48b8c12e1649f4bb7, type: 3}
+  m_PrefabInstance: {fileID: 3989556764309986572}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3989556764569731193
 PrefabInstance:
   m_ObjectHideFlags: 0

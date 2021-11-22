@@ -13,6 +13,11 @@ namespace Lavid.Libraske.UnlockSystem
         [Header("Money system")]
         [SerializeField] GameObject _whenHaveMoney;
         [SerializeField] GameObject _whenDoesntHaveMoney;
+		
+		private void Start() 
+		{	
+			_tooltip.SetActive(false);
+		}
 
         internal void EnterUnlockRequest(int price, int moneyAmount)
         {
