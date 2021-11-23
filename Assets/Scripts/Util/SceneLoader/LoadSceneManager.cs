@@ -31,6 +31,7 @@ namespace Lavid.Libraske.Util
             bool isASetupScene = nextScene == SceneNames.Acesso.ToString();
             isASetupScene |= nextScene == SceneNames.BaixarMedia.ToString();
             isASetupScene |= nextScene == SceneNames.BaixarPersonalizacao.ToString();
+            isASetupScene |= nextScene == SceneNames.AutorizarWebcam.ToString();
 
             return isASetupScene;
         }
