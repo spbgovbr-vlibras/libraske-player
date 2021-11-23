@@ -16,30 +16,45 @@ namespace Lavid.Libraske.Touch
 
         protected override void OnEnable()
         {
+	        if(!EnableEffects)
+		        return;
+			
             if (_scales.onEnable.IsEnabled)
                 SetScale(_scales.onEnable.Value);
         }
 
         public override void OnPointerClick(PointerEventData eventData)
         {
+	        if(!EnableEffects)
+		        return;
+			
             if (_scales.onClick.IsEnabled)
                 SetScale(_scales.onClick.Value);
         }
 
         public override void OnPointerDown(PointerEventData eventData)
-        {
+        {	
+	        if(!EnableEffects)
+		        return;
+			
             if (_scales.onPointerDown.IsEnabled)
                 SetScale(_scales.onPointerDown.Value);
         }
 
         public override void OnPointerEnter(PointerEventData eventData)
         {
+	        if(!EnableEffects)
+		        return;
+			
             if (_scales.onEnter.IsEnabled)
                 SetScale(_scales.onEnter.Value);
         }
 
         public override void OnPointerExit(PointerEventData eventData)
         {
+	        if(!EnableEffects)
+		        return;
+			
             if (_scales.onExit.IsEnabled)
                 SetScale(_scales.onExit.Value);
         }

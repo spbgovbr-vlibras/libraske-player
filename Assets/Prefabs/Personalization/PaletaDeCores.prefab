@@ -893,6 +893,10 @@ PrefabInstance:
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 6636065408049596057}
+    - target: {fileID: 4037635028923869713, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4473054475870150007, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
