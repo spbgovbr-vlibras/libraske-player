@@ -32,7 +32,7 @@ public class RequestUserCredit : MonoBehaviour
         if (webRequest.result == UnityWebRequest.Result.Success)
         {
             UserData loaded = JsonUtility.FromJson<UserData>(webRequest.downloadHandler.text);
-
+			Debug.Log("Data " + webRequest.downloadHandler.text);
             _credit = int.Parse(loaded.credit);
 
             _onSuccess?.Invoke();
