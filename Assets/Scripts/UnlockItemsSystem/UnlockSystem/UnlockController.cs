@@ -16,6 +16,11 @@ namespace Lavid.Libraske.UnlockSystem
 
         private IUnlockable _itemToUnlock;
 
+        public void CancelRequest()
+        {
+            _view.CloseUnlockRequest(_itemToUnlock);
+        }
+
         public void EnterUnlockRequest(IUnlockable unlockable)
         {
             _itemToUnlock = unlockable;
