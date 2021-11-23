@@ -8,15 +8,17 @@ namespace Lavid.Libraske.UnlockSystem
         [Header("UI Controller")]
         [SerializeField] TextUI _priceText;
         [SerializeField] TextUI _moneyText;
-        [SerializeField] GameObject _tooltip;
+        [SerializeField] GameObject _priceTooltip;
+        [SerializeField] GameObject _confirmTooltip;
 
         [Header("Money system")]
         [SerializeField] GameObject _whenHaveMoney;
         [SerializeField] GameObject _whenDoesntHaveMoney;
 		
-		private void Start() 
+		private void OnEnable() 
 		{	
-			_tooltip.SetActive(false);
+			_priceTooltip.SetActive(false);
+            _confirmTooltip.SetActive(false);
 		}
 
         internal void EnterUnlockRequest(int price, int moneyAmount)
@@ -27,12 +29,13 @@ namespace Lavid.Libraske.UnlockSystem
             _whenHaveMoney.SetActive(moneyAmount >= price);
             _whenDoesntHaveMoney.SetActive(!(moneyAmount > price));
 
-            _tooltip.SetActive(true);
+            _priceTooltip.SetActive(true);
         }
 
         internal void CloseUnlockRequest(IUnlockable unlockable)
         {
-            _tooltip.SetActive(false);
+            _priceTooltip.SetActive(false);
+            _confirmTooltip.SetActive(false);
         }
     }
 }

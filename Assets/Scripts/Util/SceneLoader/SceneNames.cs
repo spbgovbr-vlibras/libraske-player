@@ -16,5 +16,7 @@ public enum SceneNames
 	Resultados,
 
 	BaixarMedia,
-	BaixarPersonalizacao
+	BaixarPersonalizacao,
+
+	AutorizarWebcam
 }

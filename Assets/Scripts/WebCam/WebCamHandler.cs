@@ -20,7 +20,15 @@ public class WebCamHandler : MonoBehaviour
     public void DisableWebcam()
     {
         if (_webcam != null)
+        {
             _webcam.Stop();
+        }
+
+        if(_renderer != null)
+        {
+            _renderer.material.mainTexture = null;
+            _renderer.enabled = false;
+        }
     }
 
     public byte[] GetImageInBytes()
