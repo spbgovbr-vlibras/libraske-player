@@ -7,9 +7,10 @@ public class CustomizationColorHandler : MonoBehaviour
 {
     [SerializeField] private Image _colorImage;
 
+    [Header("Selection")]
+    [SerializeField] private GameObject _enableCaseSelected;
     private int _id;
     public int Id => _id;
-
 
 
     [Header("Lock Settings"), Space(2)]
@@ -23,6 +24,12 @@ public class CustomizationColorHandler : MonoBehaviour
     public Color GetColor() => _colorImage.color;
 
     private void SetAlpha(float alpha) => _canvasGroup.alpha = alpha;
+
+    public void UpdateColorSelected(Color color)
+    {
+        bool isSelected = color == _colorImage.color;
+        _enableCaseSelected.SetActive(isSelected);
+    }
 
     public void OnHoverEnter()
     {
