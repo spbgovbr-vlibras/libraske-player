@@ -352,7 +352,7 @@ GameObject:
   - component: {fileID: 162517404}
   - component: {fileID: 162517403}
   m_Layer: 5
-  m_Name: Paleta_Olho
+  m_Name: Paleta_Iris
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -879,7 +879,7 @@ PrefabInstance:
       objectReference: {fileID: 651980396}
     - target: {fileID: 3168498828024071987, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: m_Name
-      value: PaletaOlhos2
+      value: PaletaIris2
       objectReference: {fileID: 0}
     - target: {fileID: 3168498828024071987, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: m_IsActive
@@ -1597,6 +1597,14 @@ PrefabInstance:
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _propertieToHandle
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _customizationToObserver
+      value: 
+      objectReference: {fileID: 11400000, guid: 64c2ebb0e886c774788cf60c2716e7cf, type: 2}
     - target: {fileID: 6085969262088206658, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _soundOnClick
       value: 
@@ -3924,6 +3932,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _propertieToHandle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _colorSets.Array.size
       value: 6
       objectReference: {fileID: 0}
@@ -3931,6 +3943,10 @@ PrefabInstance:
       propertyPath: _colorSets.Array.data[5]
       value: 
       objectReference: {fileID: 2007361876}
+    - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _customizationToObserver
+      value: 
+      objectReference: {fileID: 11400000, guid: 64c2ebb0e886c774788cf60c2716e7cf, type: 2}
     - target: {fileID: 6085969262088206658, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _soundOnClick
       value: 
@@ -5613,6 +5629,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _propertieToHandle
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _colorSets.Array.size
       value: 6
       objectReference: {fileID: 0}
@@ -5620,6 +5640,10 @@ PrefabInstance:
       propertyPath: _colorSets.Array.data[5]
       value: 
       objectReference: {fileID: 860774856}
+    - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _customizationToObserver
+      value: 
+      objectReference: {fileID: 11400000, guid: 64c2ebb0e886c774788cf60c2716e7cf, type: 2}
     - target: {fileID: 6085969262088206658, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _soundOnClick
       value: 
@@ -7749,6 +7773,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _propertieToHandle
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _colorSets.Array.size
       value: 6
       objectReference: {fileID: 0}
@@ -7756,6 +7784,10 @@ PrefabInstance:
       propertyPath: _colorSets.Array.data[5]
       value: 
       objectReference: {fileID: 1446210142}
+    - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _customizationToObserver
+      value: 
+      objectReference: {fileID: 11400000, guid: 64c2ebb0e886c774788cf60c2716e7cf, type: 2}
     - target: {fileID: 6085969262088206658, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _soundOnClick
       value: 
@@ -9551,6 +9583,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _propertieToHandle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _colorSets.Array.size
       value: 6
       objectReference: {fileID: 0}
@@ -9558,6 +9594,10 @@ PrefabInstance:
       propertyPath: _colorSets.Array.data[5]
       value: 
       objectReference: {fileID: 1693234635}
+    - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _customizationToObserver
+      value: 
+      objectReference: {fileID: 11400000, guid: 64c2ebb0e886c774788cf60c2716e7cf, type: 2}
     - target: {fileID: 6085969262088206658, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _soundOnClick
       value: 
@@ -11873,6 +11913,14 @@ PrefabInstance:
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _propertieToHandle
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _customizationToObserver
+      value: 
+      objectReference: {fileID: 11400000, guid: 64c2ebb0e886c774788cf60c2716e7cf, type: 2}
     - target: {fileID: 6085969262088206658, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _soundOnClick
       value: 
@@ -13553,6 +13601,14 @@ PrefabInstance:
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _propertieToHandle
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _customizationToObserver
+      value: 
+      objectReference: {fileID: 11400000, guid: 64c2ebb0e886c774788cf60c2716e7cf, type: 2}
     - target: {fileID: 6085969262088206658, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _soundOnClick
       value: 
@@ -14735,7 +14791,7 @@ PrefabInstance:
       objectReference: {fileID: 651980396}
     - target: {fileID: 3168498828024071987, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: m_Name
-      value: PaletaOlhos
+      value: PaletaIris
       objectReference: {fileID: 0}
     - target: {fileID: 3168498828024071987, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: m_IsActive
@@ -15413,6 +15469,14 @@ PrefabInstance:
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _propertieToHandle
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _customizationToObserver
+      value: 
+      objectReference: {fileID: 11400000, guid: 64c2ebb0e886c774788cf60c2716e7cf, type: 2}
     - target: {fileID: 6085969262088206658, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _soundOnClick
       value: 
@@ -16594,7 +16658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3110529082492168492, guid: 39c56110c6bbbb0429efff101c33774a, type: 3}
       propertyPath: m_Name
-      value: Olhos
+      value: Iris
       objectReference: {fileID: 0}
     - target: {fileID: 3110529082492168494, guid: 39c56110c6bbbb0429efff101c33774a, type: 3}
       propertyPath: _cameraClose
@@ -17439,85 +17503,13 @@ RectTransform:
   - {fileID: 314372552}
   - {fileID: 1627005843}
   m_Father: {fileID: 3302996509075090914}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 177}
   m_SizeDelta: {x: 300, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1425021347
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1425021348}
-  - component: {fileID: 1425021350}
-  - component: {fileID: 1425021349}
-  m_Layer: 5
-  m_Name: ref_pele
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1425021348
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1425021347}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3302996509075090914}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1440, y: 786}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1425021349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1425021347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 1fa3b297b52757d42b5d0f643041c645, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &1425021350
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1425021347}
-  m_CullTransparentMesh: 1
 --- !u!114 &1446210142 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4784867249181971713, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
@@ -17529,78 +17521,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e096be09c6f2af4abbd803d8c9ab859, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1461052584
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1461052585}
-  - component: {fileID: 1461052587}
-  - component: {fileID: 1461052586}
-  m_Layer: 5
-  m_Name: ref_olhos
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1461052585
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1461052584}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3302996509075090914}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1440, y: 786}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1461052586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1461052584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 238a331add034d540b1957d6beb31d56, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &1461052587
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1461052584}
-  m_CullTransparentMesh: 1
 --- !u!1001 &1481653557
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17745,78 +17665,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1440, y: 786}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1541187656
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1541187657}
-  - component: {fileID: 1541187659}
-  - component: {fileID: 1541187658}
-  m_Layer: 5
-  m_Name: ref_geral
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1541187657
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541187656}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3302996509075090914}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1440, y: 786}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1541187658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541187656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 3af1236dccdca944fb2577f14dbf710d, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &1541187659
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541187656}
-  m_CullTransparentMesh: 1
 --- !u!328 &1558723430 stripped
 VideoPlayer:
   m_CorrespondingSourceObject: {fileID: 6660599522516228804, guid: 81c1e82ec0e63b546b543304264e4ec8, type: 3}
@@ -18842,6 +18690,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _propertieToHandle
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _colorSets.Array.size
       value: 6
       objectReference: {fileID: 0}
@@ -18849,6 +18701,10 @@ PrefabInstance:
       propertyPath: _colorSets.Array.data[5]
       value: 
       objectReference: {fileID: 801230090}
+    - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _customizationToObserver
+      value: 
+      objectReference: {fileID: 11400000, guid: 64c2ebb0e886c774788cf60c2716e7cf, type: 2}
     - target: {fileID: 6085969262088206658, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _soundOnClick
       value: 
@@ -19635,7 +19491,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3302996509075090914}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1652885332
 GameObject:
@@ -20863,6 +20719,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _propertieToHandle
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _colorSets.Array.size
       value: 6
       objectReference: {fileID: 0}
@@ -20870,6 +20730,10 @@ PrefabInstance:
       propertyPath: _colorSets.Array.data[5]
       value: 
       objectReference: {fileID: 959965989}
+    - target: {fileID: 5858914793624801592, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
+      propertyPath: _customizationToObserver
+      value: 
+      objectReference: {fileID: 11400000, guid: 64c2ebb0e886c774788cf60c2716e7cf, type: 2}
     - target: {fileID: 6085969262088206658, guid: 77695359cb35d294190360c57db0e5e5, type: 3}
       propertyPath: _soundOnClick
       value: 
@@ -23339,9 +23203,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4959987997263500043}
-  - {fileID: 1425021348}
-  - {fileID: 1461052585}
-  - {fileID: 1541187657}
   - {fileID: 1649910592}
   - {fileID: 1392617668}
   - {fileID: 411997515}

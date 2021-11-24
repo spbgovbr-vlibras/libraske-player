@@ -11,12 +11,12 @@ public class RequestCustomizationColors : WebRequest
     [SerializeField] CustomizationGroups.Groups _groupToRequest;
 
     void OnEnable() => StartCoroutine(SendRequest());
-    public override string GetLogName() => "RequestPersonalizationColors";
+    public override string GetLogName() => "RequestCustomizationColors";
 
     public override IEnumerator SendRequest()
     {
         Logger.Log(this, "Solicitou requisição de cores");
-        var webRequest = WebRequestFormater.GetColors(_groupToRequest);// Get(WebConstants.URL.PersonalizationsColors);
+        var webRequest = WebRequestFormater.GetColors(_groupToRequest);
         yield return webRequest.SendWebRequest();
         VerifyRequest(webRequest);
     }
@@ -35,7 +35,7 @@ public class RequestCustomizationColors : WebRequest
     {
         _requestWasSuccess = true;
 		
-		Logger.Log(this, request.downloadHandler.text);
+		Logger.LogSuccess(this, request.downloadHandler.text);
 
         try
         {

@@ -42,6 +42,23 @@ public class ColorSet : MonoBehaviour, IUnlockable
         }
     }
 
+    public void OnUpdateSelection(Color newColor)
+    {
+        for (int i = 0; i < _colorHandlers.Length; i++)
+        {
+            if (_colorHandlers[i] != null)
+                _colorHandlers[i].UpdateColorSelected(newColor);
+        }
+    }
+
+    public void UpdateColorSelected(Color newColor)
+    {
+        for (int i = 0; i < _colorHandlers.Length; i++)
+        {
+            _colorHandlers[i].UpdateColorSelected(newColor);
+        }
+    }
+
     public void SetupColorSet(int personalizationID, int price)
     {
         _personalizationID = personalizationID;
@@ -84,7 +101,6 @@ public class ColorSet : MonoBehaviour, IUnlockable
     public void RefreshStatus()
     {
         _unlockButton.SetActive(!_isUnlocked);
-		//_containerScaleEffect.EnableEffects = !_isUnlocked;
 
         for (int i = 0; i < _colorHandlers.Length; i++)
             _colorHandlers[i].LockColor(!_isUnlocked);
