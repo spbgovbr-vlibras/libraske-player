@@ -4,7 +4,7 @@ public class PontuationFeedback : MonoBehaviour, ILoggable
 {
     private const string GoodPontuation = "GoodPontuation";
     private const string BadPontuation = "BadPontuation";
-    private const int GoodFeedbackMinValue = 40;
+    private const int GoodFeedbackMinValue = 30;
 
     [SerializeField] Animator _anim;
 

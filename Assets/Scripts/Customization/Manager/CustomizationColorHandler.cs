@@ -20,6 +20,10 @@ public class CustomizationColorHandler : MonoBehaviour
     [SerializeField, Range(0, 1)] private float _hoverAndLockedOpacity;
     [SerializeField] private CanvasGroup _canvasGroup;
     private bool _isColorLocked;
+    private bool _isADefaultColor;
+
+    // Default colors should not be locked
+    private bool ShouldLock(bool wantToLock) => wantToLock && !_isADefaultColor;
 
     public Color GetColor() => _colorImage.color;
 
@@ -45,12 +49,13 @@ public class CustomizationColorHandler : MonoBehaviour
     {
         _id = color.Id;
         _colorImage.color = color.GetColor();
+        _isADefaultColor = color.IsDefault;
     }
 
     public void LockColor(bool lockColor)
     {
-        _isColorLocked = lockColor;
-        _colorImage.raycastTarget = !lockColor;
-        SetAlpha(lockColor ? _lockOpacity : _regularOpacity);
+        _isColorLocked = ShouldLock(lockColor);
+        _colorImage.raycastTarget = !_isColorLocked;
+        SetAlpha(_isColorLocked ? _lockOpacity : _regularOpacity);
     }
 }
