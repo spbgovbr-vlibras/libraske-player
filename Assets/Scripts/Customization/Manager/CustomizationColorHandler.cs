@@ -10,10 +10,29 @@ public class CustomizationColorHandler : MonoBehaviour
     private int _id;
     public int Id => _id;
 
-    [Header("Lock Container"), Space(2)]
-    [SerializeField] private GameObject _lockContainer;
+
+
+    [Header("Lock Settings"), Space(2)]
+    [SerializeField, Range(0, 1)] private float _regularOpacity;
+    [SerializeField, Range(0, 1)] private float _lockOpacity;
+    [SerializeField, Range(0, 1)] private float _hoverAndUnlockedOpacity;
+    [SerializeField, Range(0, 1)] private float _hoverAndLockedOpacity;
+    [SerializeField] private CanvasGroup _canvasGroup;
+    private bool _isColorLocked;
 
     public Color GetColor() => _colorImage.color;
+
+    private void SetAlpha(float alpha) => _canvasGroup.alpha = alpha;
+
+    public void OnHoverEnter()
+    {
+        SetAlpha(_isColorLocked ? _hoverAndLockedOpacity : _hoverAndUnlockedOpacity);
+    }
+
+    public void OnHoverExit()
+    {
+        SetAlpha(_isColorLocked ? _lockOpacity : _regularOpacity);
+    }
 
     public void SetColor(CustomizationColor color)
     {
@@ -23,7 +42,8 @@ public class CustomizationColorHandler : MonoBehaviour
 
     public void LockColor(bool lockColor)
     {
+        _isColorLocked = lockColor;
         _colorImage.raycastTarget = !lockColor;
-        _lockContainer.SetActive(lockColor);
+        SetAlpha(lockColor ? _lockOpacity : _regularOpacity);
     }
 }

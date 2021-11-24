@@ -8,7 +8,6 @@ using UnityEngine;
 public class ColorSet : MonoBehaviour, IUnlockable
 {
 	[Header("Unlock System")]
-	//[SerializeField] private ScaleTouchButtonEffect _containerScaleEffect;
     [SerializeField] private GameObject _unlockButton;
     [SerializeField] private UnlockController _controller;
 
@@ -22,6 +21,26 @@ public class ColorSet : MonoBehaviour, IUnlockable
     public bool IsUnlocked => _isUnlocked;
     public int Price => _price;
     public UnlockController Controller => _controller;
+
+    // Called on canvas
+    public void OnUnlockButtonHoverEnter()
+    {
+        for (int i = 0; i < _colorHandlers.Length; i++)
+        {
+            if(_colorHandlers[i] != null)
+                _colorHandlers[i].OnHoverEnter();
+        }
+    }
+
+    // Called on canvas
+    public void OnUnlockButtonHoverExit()
+    {
+        for (int i = 0; i < _colorHandlers.Length; i++)
+        {
+            if(_colorHandlers[i] != null)
+                _colorHandlers[i].OnHoverExit();
+        }
+    }
 
     public void SetupColorSet(int personalizationID, int price)
     {
@@ -48,7 +67,6 @@ public class ColorSet : MonoBehaviour, IUnlockable
         }
 
         _unlockButton.SetActive(enableLockContainer);
-		//_containerScaleEffect.EnableEffects = enableLockContainer;
     }
 
     public void TryUnlock()
