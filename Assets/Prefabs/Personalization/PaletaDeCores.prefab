@@ -215,6 +215,10 @@ PrefabInstance:
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 6636065408049596057}
+    - target: {fileID: 2292253409231946083, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 4473054475870150007, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
@@ -349,6 +353,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 3174121451115065369}
     m_Modifications:
     - target: {fileID: 1712448616647622201, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 6636065408049596057}
+    - target: {fileID: 2292253409231946083, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 6636065408049596057}
@@ -489,6 +497,10 @@ PrefabInstance:
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 6636065408049596057}
+    - target: {fileID: 2292253409231946083, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 4473054475870150007, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
@@ -626,6 +638,10 @@ PrefabInstance:
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 6636065408049596057}
+    - target: {fileID: 2292253409231946083, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 6636065408049596057}
     - target: {fileID: 4473054475870150007, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
@@ -753,6 +769,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 3174121451115065369}
     m_Modifications:
     - target: {fileID: 1712448616647622201, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 6636065408049596057}
+    - target: {fileID: 2292253409231946083, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 6636065408049596057}
@@ -893,6 +913,14 @@ PrefabInstance:
       propertyPath: _audioController
       value: 
       objectReference: {fileID: 6636065408049596057}
+    - target: {fileID: 2292253409231946083, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: _audioController
+      value: 
+      objectReference: {fileID: 6636065408049596057}
+    - target: {fileID: 4037635028923869713, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4473054475870150007, guid: 107414a87fe01e54783e5e3540804b01, type: 3}
       propertyPath: _audioController
       value: 

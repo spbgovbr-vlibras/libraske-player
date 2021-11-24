@@ -13,5 +13,10 @@ public enum SceneNames
 	Configuracoes,
 	Personalizacao,
 	PerfilApagado,
-	Resultados
+	Resultados,
+
+	BaixarMedia,
+	BaixarPersonalizacao,
+
+	AutorizarWebcam
 }

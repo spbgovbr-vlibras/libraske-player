@@ -16,24 +16,36 @@ namespace Lavid.Libraske.Touch
 
         public override void OnPointerClick(PointerEventData eventData)
         {
+            if(!EnableEffects)
+		        return;
+
             if (_sounds.onClick.IsEnabled)
                 PlaySound(_sounds.onClick.Value);
         }
 
         public override void OnPointerDown(PointerEventData eventData)
         {
+	        if(!EnableEffects)
+		        return;
+
             if (_sounds.onPointerDown.IsEnabled)
                 PlaySound(_sounds.onPointerDown.Value);
         }
 
         public override void OnPointerEnter(PointerEventData eventData)
         {
+	        if(!EnableEffects)
+		        return;
+
             if (_sounds.onEnter.IsEnabled)
                 PlaySound(_sounds.onEnter.Value);
         }
 
         public override void OnPointerExit(PointerEventData eventData)
         {
+	        if(!EnableEffects)
+		        return;
+                
             if (_sounds.onExit.IsEnabled)
                 PlaySound(_sounds.onExit.Value);
         }

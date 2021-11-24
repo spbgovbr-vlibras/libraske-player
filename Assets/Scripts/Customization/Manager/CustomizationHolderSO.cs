@@ -4,7 +4,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Personalization Holder", menuName = "Libraske/Customization/Customization Holder")]
 public class CustomizationHolderSO : ScriptableObject
 {
-    [SerializeField] Wrapper<CustomizationColor> _colors;
     [SerializeField] Wrapper<CustomizationGroup> _groups;
 
     [SerializeField] Wrapper<CustomizationColor> _skinColors;

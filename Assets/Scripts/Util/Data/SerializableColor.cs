@@ -22,5 +22,7 @@ namespace Lavid.Libraske.Util
 
         public static implicit operator Color(SerializableColor sc) => new Color(sc._color.r, sc._color.g, sc._color.b, sc._color.a);
         public static explicit operator SerializableColor(Color color) => new SerializableColor(color);
+
+        public bool Compare(string hexaCode) => hexaCode == GetInHexaCode();
     }
 }
