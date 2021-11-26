@@ -37,9 +37,7 @@ public static class WebConstants
     {
         UrlDictionary = new Dictionary<URL, string>();
 
-        //UrlDictionary.Add(URL.BaseURL, "https://libraske-back-dth.vlibras.gov.br");
-        //UrlDictionary.Add(URL.BaseURL, "http://localhost:8080");
-        UrlDictionary.Add(URL.BaseURL, "http://150.165.204.122:4000");
+        UrlDictionary.Add(URL.BaseURL, "https://libraske-back.vlibras.gov.br");
 		
         UrlDictionary.Add(URL.SongsURL, UrlDictionary[URL.BaseURL] + "/libraske/songs");
         UrlDictionary.Add(URL.UsersURL, UrlDictionary[URL.BaseURL] + "/libraske/users");
