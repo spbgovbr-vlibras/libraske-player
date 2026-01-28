@@ -85,4 +85,9 @@ public static class WebConstants
 
         return UrlDictionary[url];
     }
+
+    public static void SetBaseUrl(string url)
+    {
+        UrlDictionary[URL.BaseURL] = url;
+    }
 }

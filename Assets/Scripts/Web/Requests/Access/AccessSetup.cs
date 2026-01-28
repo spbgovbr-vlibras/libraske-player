@@ -93,6 +93,12 @@ namespace Lavid.Libraske.Web
             }
         }
 
+        public void SetBaseUrl(string url)
+        {
+            WebConstants.SetBaseUrl(url);
+            Debug.Log($"Now Base URL is: {url}");
+        }
+
         private bool IsDataValid(string data) => data != null && data != "";
         private void LogReceivedData(string data, string fieldName)
         {
